@@ -1,0 +1,351 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><!-- InstanceBegin template="/Templates/cafe_green_1.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+
+<script type="text/javascript" src="/static/js/analytics.js" ></script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Cathy's EC Caf&eacute;</title>
+<!-- InstanceEndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="Cathy's Esophageal Cancer Cafe -- Providing information on esophageal cancer to patients and caregivers.">
+<meta name="Keywords" content="esophagus, gerd, oesophasgus, ec, barretts, adenocarcinoma, squamous, ec-group, cancer, support, health, medical, patient, caregiver, ecaa, acor, esophagectomy, esophageal, oesophageal, ec cafe">
+<link rel="stylesheet" href="/web/20101216122823cs_/http://eccafe.org/cafe.css" type="text/css" media="screen">
+
+<style type="text/css">
+<!--
+.bodyback {
+	background-image: url(../../web/grn/bgd.gif);
+	background-repeat: repeat-y;
+}
+-->
+</style>
+<link rel="stylesheet" href="/web/20101216122823cs_/http://eccafe.org/cafe_prt.css" type="text/css" media="print">
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+<body>
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script> if (window.archive_analytics) { window.archive_analytics.values['server_name']="wwwb-app16.us.archive.org";}; </script>
+
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1388534399999;
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http:\/\/eccafe.org\/sto\/pallin\/pallin1.html";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth = 450;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "16";
+var displayMonth = "Dec";
+var displayYear = "2010";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" lang="en" class="__wb_banner_div" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px">
+
+
+<div id="wm-ipp-inside" class="__wb_banner_div" style="position:fixed;padding:0!important;margin:0!important;width:97%;min-width:780px;border:5px solid #000;border-top:none;background-image:url(/static/images/toolbar/wm_tb_bk_trns.png);text-align:center;-moz-box-shadow:1px 1px 3px #333;-webkit-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333;font-size:11px!important;font-family:'Lucida Grande','Arial',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://eccafe.org/sto/pallin/pallin1.html" style="width:400px;font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20101216122823" /><input type="submit" value="Go" style="font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;margin-left:5px;width: inherit !important" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:'Helvetica','Lucida Grande','Arial',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20100926134156/http://eccafe.org/sto/pallin/pallin1.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="26 Sep 2010"><strong>SEP</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 12:28:23 Dec 16, 2010">DEC</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       Jan
+                       
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/web/20101122175713/http://eccafe.org/sto/pallin/pallin1.html" title="17:57:13 Nov 22, 2010" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 12:28:23 Dec 16, 2010">16</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
+                       
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/sto/pallin/pallin1.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="24 Jul 2008"><strong>2008</strong></a>
+		                
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 12:28:23 Dec 16, 2010">2010</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       2011
+                       
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="/web/20101216122823*/http://eccafe.org/sto/pallin/pallin1.html" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>9 captures</strong></a>
+           <div class="__wb_banner_div" style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">21 May 06 - 16 Dec 10</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:450px;height:27px;" href="" id="wm-graph-anchor">
+       <div class="__wb_banner_div" id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:450px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers('inline');" 
+				onmouseout="showTrackers('none');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="450"
+				height="27"
+				border="0"
+				src="/web/jsp/graph.jsp?graphdata=450_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000010001000_2007:-1:000020010000_2008:-1:000000100000_2009:-1:000000000000_2010:11:000000001011_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="/static/images/toolbar/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="/static/images/toolbar/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById('wm-ipp').style.display='none';" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_close.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;margin-bottom:23px;background-color:transparent;border:none;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_help.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;background-color:transparent;border:none;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<div id="cafebody" class="bodyback">
+  <div align="center"><img id="cafe_print_header"src="/web/20101216122823im_/http://eccafe.org/web/print_header.jpg" width="504" height="72"></div>
+  <img id="cafe_screen_header" src="/web/20101216122823im_/http://eccafe.org/web/grn/top.gif" usemap="#Map" border="0" alt="Cathy's EC Cafe">
+  <div id="cafemain"> <!-- InstanceBeginEditable name="body" -->
+    <h1 align="center">Phyllis' EC Story</h1>
+    <h4 align="center">as told by her spouse/caregiver, Phil </h4>
+    <table width="90%"  border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="50%"><p>Part 1&mdash;<a href="/web/20101216122823/http://eccafe.org/sto/pallin/index.html">Instead of Nepal</a><br>
+        Part 2&mdash;<strong><em>Thirty-eight Days in Hell</em></strong><br>
+        Part 3&mdash;<a href="/web/20101216122823/http://eccafe.org/sto/pallin/pallin2.html">Getting Back to Normal</a></p></td>
+        <td width="50%"><p>Part 4&mdash;<a href="/web/20101216122823/http://eccafe.org/sto/pallin/pallin3.html">She's Skiing Again!</a> <br>
+        Part 5&mdash;<a href="/web/20101216122823/http://eccafe.org/sto/pallin/pallin4.html">Back thru Hell</a> <br>
+        Part 6&mdash;<strong><a href="/web/20101216122823/http://eccafe.org/sto/pallin/pallin5.html">From Worse to Better</a></strong></p></td>
+      </tr>
+    </table>
+    <h2>Thirty-eight Days in Hell</h2>
+    <p> After Phyllis' surgery on Oct. 27th, we expected her to be in the hospital for 7 to 10 days. Since she was in such good physical condition, we assumed the lesser time.</p>
+    <p> On the morning following surgery she looked somewhat better than the shocking image I'd seen. The airtube had been removed and she could talk, but she still had multiple drain tubes and a Foley catheter. All of her nutrition was supplied via J-tube into the upper intestine. There also were various sensors for her heart, pulse and blood oxygen saturation. On Oct. 30th the heart sensors detected an abnormal rhythm that was determined to be an atrial fibrillation. This caused some alarm, but was corrected with medication. </p>
+    <p> Every day there were chest x-rays to see how her lungs were recovering. They had been collapsed during the operation to gain access to the tumor. The respiratory therapists gave her nebulizer treatments and breathing exercises. On the third day they discovered that she had pneumonia!</p>
+    <p> By the sixth day Phyllis was out of intensive care and walking the halls several times a day and started taking clear liquids by mouth: jello, tea, popsicles and juice. After a week they scheduled a barium &quot;leak test&quot; and a C-T scan. To prepare for the scan Phyllis drank about 4 cups of the contrast fluid. Suddenly we discovered that the fluid was leaking out from her main incision! The X-rays revealed fluid in and around her lungs. She was taken back to the operating room to clear the fluids from various body cavities and find the leak. </p>
+    <p> The surgeon found a hole the size of a nickel in the reconstructed stomach where a staple had pulled loose. The tissue was too inflamed and delicate to stitch-up, so we had to wait until the hole closed naturally. Drain tubes were placed in her chest cavity.</p>
+    <p> Phyllis was put back in the BCU for a week or so, then to the 4th floor cardiac ICU. She could not take anything by mouth until the hole was fully healed. During the second surgery they had installed an NGT, a tube through the nose that sucked out any fluids from the stomach. To insure that no medications were given via the NGT, they put a big sign above Phyllis' bed that read &quot;Absolutey (sic) nothing per NGT. Do not manipulate the NGT.&quot;</p>
+    <p> Gradually over the next four weeks some of the drain tubes were removed, but not the NGT (until Nov. 29). We would take walks down the hall with her IV tower holding all of the collectors. One day Dr. Maish said, &quot;Do you want to take a shower?&quot; So she ordered the nurse aides to take Phyllis to the shower, tubes and all. They muttered, &quot;This is crazy. We've never done this with a patient at this stage of recovery!&quot;</p>
+    <p> For me the daily routine was to rise early and take our dog Gigi for a walk, then hurry onto the freeway to beat the morning traffic. This took me through the junction of the 405 &amp; 101 freeways &ndash; the busiest highways in the world! Usually I was at the hospital by 6 am. By midday I would drive back to Van Nuys to check on the pets and take a short nap before returning to the hospital. After the evening shift break (8:30 pm) I would head home again to have a late dinner and go to bed. Sometimes it was much later.</p>
+    <p> The time dragged by. Sometimes Phyllis felt she just wasn't going to make it. Often her attitude was expressed by &quot;Oh Phooey!&quot; It was my job to keep her upbeat.</p>
+    <p> After 28 days she was scheduled for another endoscopy to see if the hole in her stomach had closed completely. At that time, some of the chest tubes/drains and the staples in the major incision were removed. The hole had closed to 4 mm. We estimated that it would be closed within a week.</p>
+    <p> Without the encumbrance of the tubes, we began to walk several times a day. One day we decided to see if we could walk to the main entrance of the hospital. This was working up to a reunion with our dog Gigi outdoors. We forgot that Phyllis was in a monitored unit, so when we returned the nurse was really excited. We had disappeared from their monitors and Security had been alerted. </p>
+    <p> On November 30 she had another endoscopy. Dr. Maish invited me to sit-in on the procedure. It was fascin-ating to watch the monitor as the scope explored her throat and stomach in living color. The doctor pointed out the sutures where the stomach had been attached and the spot where the hole had been. Now there was only a small depression. In time, even that would be gone. </p>
+    <p> Phyllis began to sip small amounts of water or juice leading up to her planned release on Dec. 3rd. At the last minute there was a fear that the hole was still leaking, so they had her swallow some intense blue dye. Then we went home to our trailer in Van Nuys and watched the one remaining J-P drain. No blue showed up!</p>
+    <p> In preparation for Phyllis' release the pharmacy delivered the supplies we would need for her tube feeding: 12 cases of Isocal, the pump and stand, a case of the bags &amp; tubing, syringes, etc. Phil was carefully trained in how to perform the feeding processes. </p>
+    <p> The first evening home, a home-care nurse stopped by to see if we needed help, but Phil had everything going well. After several days, we met with Dr. Maish and she said we could go on home. So on Dec. 8th, Phil's birthday, we put all of the essentials in the car, with the cats and our dog Gigi, and headed home! </p>
+<p align="center"> Part 3&mdash;<a href="/web/20101216122823/http://eccafe.org/sto/pallin/pallin2.html">Getting Back to Normal</a></p>
+    <!-- InstanceEndEditable --></div>
+  <img id="cafe_screen_disclaimer" src="/web/20101216122823im_/http://eccafe.org/web/grn/dsc.gif" alt="Information found here is not to be a substitute for professional care.">
+  <div align="center" class="webonly">
+    <div id="cafegoogle">
+      <script type="text/javascript"><!--
+google_ad_client = "pub-2176662973486049";
+google_ad_width = "468";
+google_ad_height = "60";
+google_ad_format = "468x60_as";
+google_ad_type = "text";
+google_ad_channel ="";
+google_color_border = "CCCCCC";
+google_color_bg = "FFFFFF";
+google_color_link = "000000";
+google_color_url = "666666";
+google_color_text = "333333";
+//--></script>
+      <script type="text/javascript"
+  src="/web/20101216122823js_/http://pagead2.googlesyndication.com/pagead/show_ads.js">
+      </script>
+      <br>
+      <p>The above advertisements, provided automatically, are neither selected nor endorsed by us.<br>
+        Some may lead to web sites that provide questionable or controversial medical information.<br>
+        If you encounter advertisements inappropriate for the Caf&eacute;, send us the advertisement's URL.</p>
+    </div>
+    <h5><a href="/web/20101216122823/http://eccafe.org/index.html">home</a> | <a href="/web/20101216122823/http://eccafe.org/cnt/index.html">contents</a> | <a href="/web/20101216122823/http://eccafe.org/sto/index.html">stories</a> | <a href="/web/20101216122823/http://eccafe.org/ecg/index.html">ec-group</a> | <a href="/web/20101216122823/http://eccafe.org/lnk/index.html">links</a> | <a href="/web/20101216122823/http://eccafe.org/etc/index.html">etc.</a></h5>
+    <img src="/web/20101216122823im_/http://eccafe.org/web/art/footer.gif" width="509" alt="Some graphics courtesy of Hoopla! disc, copyright 1995 Image Club Graphics. 1-800-661-9410" height="50">
+    <p><a href="/web/20101216122823/http://eccafe.org/cnt/contact.html">Send a message to Marc &amp; Tammy Wolfgram</a></p>
+    <table width="610" border="0" cellpadding="0" cellspacing="0">
+      <tr valign="middle">
+        <td width="49" align="center"><img src="/web/20101216122823im_/http://eccafe.org/web/cssprint.gif" alt="This page is printer friendly" width="45" height="50" border="0"></td>
+        <td align="center"><h6>Copyright &copy; 1995-2008&mdash;Last changed on
+            <!-- #BeginDate format:Am1 -->June 17, 2008<!-- #EndDate -->
+            &mdash; We comply with the<br> 
+            <a href="/web/20101216122823/http://www.hon.ch/HONcode/Conduct.html" onclick="window.open(this.href); return false;"> HONcode standard for trustworthy health</a> information: <a href="/web/20101216122823/https://www.hon.ch/HONcode/Conduct.html?HONConduct294647" onclick="window.open(this.href); return false;">verify here</a>.</h6></td>
+        <td width="45"><a href="/web/20101216122823/https://www.hon.ch/HONcode/Conduct.html?HONConduct294647" onclick="window.open(this.href); return false;" > <img src="/web/20101216122823im_/https://www.hon.ch/HONcode/Seal/HONConduct294647_s.gif" width="49" height="72" style="border:0px" title="This website is accredited by Health On the Net Foundation. Click to verify." alt="This website is accredited by Health On the Net Foundation. Click to verify." /></a></td>
+      </tr>
+    </table>
+  </div>
+  <img id="cafe_screen_footer" src="/web/20101216122823im_/http://eccafe.org/web/grn/bot.gif"> </div>
+<map name="Map">
+  <area shape="rect" coords="240,113,286,143" href="/web/20101216122823/http://eccafe.org/index.html" alt="Home">
+  <area shape="rect" coords="297,113,367,143" href="/web/20101216122823/http://eccafe.org/cnt/index.html" alt="Contents">
+  <area shape="rect" coords="376,113,434,143" href="/web/20101216122823/http://eccafe.org/sto/index.html" alt="Stories">
+  <area shape="rect" coords="443,113,516,143" href="/web/20101216122823/http://eccafe.org/ecg/index.html" alt="EC-Group">
+  <area shape="rect" coords="527,113,574,143" href="/web/20101216122823/http://eccafe.org/lnk/index.html" alt="Links">
+  <area shape="rect" coords="583,113,613,143" href="/web/20101216122823/http://eccafe.org/etc/index.html" alt="Etcetera">
+</map>
+</body>
+<!-- InstanceEnd --></html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 12:28:23 Dec 16, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 4:50:30 Dec 15, 2013.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

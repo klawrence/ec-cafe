@@ -1,0 +1,365 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><!-- #BeginTemplate "/Templates/cafe_green_1.dwt" --><!-- DW6 -->
+<head>
+
+<script type="text/javascript" src="/static/js/analytics.js" ></script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+
+<!-- #BeginEditable "doctitle" -->
+<title>Marc's Esophageal Cancer Story</title>
+<!-- #EndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="Cathy's Esophageal Cancer Cafe -- Providing information on esophageal cancer to patients and caregivers.">
+<meta name="Keywords" content="esophagus, gerd, oesophasgus, ec, barretts, adenocarcinoma, squamous, ec-group, cancer, support, health, medical, patient, caregiver, ecaa, acor, esophagectomy, esophageal, oesophageal, ec cafe">
+<link rel="stylesheet" href="/cafe.css" type="text/css" media="screen">
+
+<style type="text/css">
+<!--
+.bodyback {
+	background-image: url(../../web/grn/bgd.gif);
+	background-repeat: repeat-y;
+}
+-->
+</style>
+<link rel="stylesheet" href="/cafe_prt.css" type="text/css" media="print">
+<!-- #BeginEditable "head" --><!-- #EndEditable -->
+</head>
+<body>
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script> if (window.archive_analytics) { window.archive_analytics.values['server_name']="wwwb-app3.us.archive.org";}; </script>
+
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1388534399999;
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http:\/\/www.eccafe.org\/sto\/mwolfgram\/chemorad.html";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth = 450;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "3";
+var displayMonth = "Sep";
+var displayYear = "2011";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" lang="en" class="__wb_banner_div" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px">
+
+
+<div id="wm-ipp-inside" class="__wb_banner_div" style="position:fixed;padding:0!important;margin:0!important;width:97%;min-width:780px;border:5px solid #000;border-top:none;background-image:url(/static/images/toolbar/wm_tb_bk_trns.png);text-align:center;-moz-box-shadow:1px 1px 3px #333;-webkit-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333;font-size:11px!important;font-family:'Lucida Grande','Arial',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://www.eccafe.org/sto/mwolfgram/chemorad.html" style="width:400px;font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20110903093206" /><input type="submit" value="Go" style="font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;margin-left:5px;width: inherit !important" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:'Helvetica','Lucida Grande','Arial',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/sto/mwolfgram/chemorad.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="17 Jan 2011"><strong>JAN</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 9:32:06 Sep 3, 2011">SEP</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       Oct
+                       
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/sto/mwolfgram/chemorad.html" title="18:15:45 Jan 17, 2011" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 9:32:06 Sep 3, 2011">3</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
+                       
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/sto/mwolfgram/chemorad.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="3 Jun 2010"><strong>2010</strong></a>
+		                
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 9:32:06 Sep 3, 2011">2011</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       2012
+                       
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="/sto/mwolfgram/chemorad.html" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>34 captures</strong></a>
+           <div class="__wb_banner_div" style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">21 Apr 03 - 3 Sep 11</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:450px;height:27px;" href="" id="wm-graph-anchor">
+       <div class="__wb_banner_div" id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:450px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers('inline');" 
+				onmouseout="showTrackers('none');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="450"
+				height="27"
+				border="0"
+				src="/web/jsp/graph.jsp?graphdata=450_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000101110000_2004:-1:010101010001_2005:-1:010100001000_2006:-1:010011031001_2007:-1:000111100000_2008:-1:100010000000_2009:-1:000000000000_2010:-1:000001001022_2011:8:100000001000_2012:-1:000000000000_2013:-1:000000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="/static/images/toolbar/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="/static/images/toolbar/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById('wm-ipp').style.display='none';" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_close.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;margin-bottom:23px;background-color:transparent;border:none;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_help.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;background-color:transparent;border:none;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<div id="cafebody" class="bodyback">
+  <div align="center"><img id="cafe_print_header"src="/web/print_header.jpg" width="504" height="72"></div>
+  <img id="cafe_screen_header" src="/web/grn/top.gif" usemap="#Map" border="0" alt="Cathy's EC Cafe">
+  <div id="cafemain"> <!-- #BeginEditable "body" -->
+            <h1 align="center">Marc's Esophageal Cancer Story</h1>
+            <p align="center"><strong><a href="/sto/mwolfgram/index.html">diagnosis</a> | <a href="/sto/mwolfgram/surgery.html">surgery</a> | <b>chemo &amp; rad</b> | <a href="/sto/mwolfgram/afterward.html">afterward</a> | <a href="/sto/mwolfgram/resources.html">resources</a></strong></p>
+            <h2><img src="/sto/mwolfgram/meg_gwen.jpg" width="150" height="95" align="right" vspace="5" hspace="5" border="0">chemo &amp; rad - april-june 1995</h2>
+            <p><font color="#000000">Five weeks after my release I went back to Mayo for my official surgical sign off and to meet with my oncologists to map out the next phase of my treatment. I was to have three weeks of chemotherapy and five weeks of radiation.</font></p>
+            <p><font color="#000000">The schedule worked out like this:</font></p>
+            <table border=0 cellpadding=5 width="100%" align="center" bordercolor="#000000" cellspacing="0" >
+              <tr align="center">
+                <td width="20%" bgcolor="#99CC66"><p><strong>Week 1</strong></p></td>
+                <td width="20%" bgcolor="#99CC66"><p><strong>Weeks 2&ndash;4</strong></p></td>
+                <td width="20%" bgcolor="#99CC66"><p><strong>Week 5</strong></p></td>
+                <td width="20%"><p><strong>Weeks 6&ndash;8</strong></p></td>
+                <td width="20%" bgcolor="#99CC66"><p><strong>Week 9</strong></p></td>
+              </tr>
+              <tr align="center">
+                <td><p><strong>Cysplatin</strong> (Mon)<br>
+                    <strong>5FU</strong> (Mon&ndash;Thu) </p></td>
+                <td><p><em>No chemo </em></p></td>
+                <td><p><strong>Cysplatin</strong> (Mon)<br>
+                    <strong>5FU</strong> (Mon&ndash;Thu) </p></td>
+                <td rowspan="2"><p><em>No treatment </em></p></td>
+                <td><p><strong>Cysplatin</strong> (Mon)<br>
+                    <strong>5FU</strong> (Mon&ndash;Thu) </p></td>
+              </tr>
+              <tr align="center">
+                <td colspan="3"><p><strong>Alternating front or side radiation</strong> (Mon&ndash;Fri)</p></td>
+                <td><p><em>No radiation</em></p></td>
+              </tr>
+            </table>
+            <p>I had a PICC (Peripherally Inserted Central Catheter) line placed each Monday morning during the chemo weeks. I considered the PICC a better option than having a central catheter surgically placed for the entire nine week period. The PICC line came out each Friday and outside of a problem placing it one week, it was a fairly simple procedure.</p>
+            <p>The Cysplatin was administered through the PICC each Monday of my chemo weeks. The other chemo agent, 5FU wis dispensed continiously over a four day period by a small infusion pump that I wore in a "fanny pack" around my waist. </p>
+            <p>During the third chemo week Tammy and I actually got out on a golf course in Rochester, infusion pump and all, and I managed to play 5 out of 9 holes. I can't tell you how good that felt, doing something somewhat "normal" in my turned-upside-down world!</p>
+            <p>The chemo was rough, although its worse effects were short lived. I experienced severe nausea, and kept the oncology nurses working hard to find an anti nausea medication that was effective <b><font size="-2">(3)</font></b>. Zofran worked only when it was administered IV. Ativan was good at fuzzying me up enough not to care. I can't recall if the Compizine worked or not. Finally at the end of the third round, I tried Marinol, a marijuana derivative, which worked exceptionally well at reducing my nausea. I truly have an appreciation now for the efforts to legalize marijuana for medical use! </p>
+            <p>I continued to lose weight during and after each chemo round - I was down to 142 pounds by the second week at the end of my treatments! Because I was losing almost 15 pounds each chemo week, my medical oncologist, Dr. Richard Goldberg, reduced the chemo dosages in each subsequent round. When Tammy questioned the efficacy of the treatments at the lower dosages, Dr. Goldberg replied:</p>
+            <p align="center"><i>If we kill the cancer <b>AND</b> the patient we have no net gain.</i></p>
+            <p>Tammy got the point right away. </p>
+            <p>The radiation was a horse of another color! It is an insidious treatment that sneaks up on you. About midway through the 5 weeks of treatment I began coughing and throwing up my tracheal and esophageal lining. Also, since the bottom of my chin was marginally in the radiation field, that part of my beard started falling out sometime in week three. A trip to Cost Cutters in one of Rochester's malls removed the rest of my beard. (It subsequently grew back a few months later.) </p>
+            <p>The radiation really sapped my energy levels. Within an hour after the day's treatment, I found I had to nap for a few hours. My stamina as a whole started to degrade, a condition that lasted for almost a year. Additionally, I developed something called Radiation Pneumonitis, a scaring of lung tissue that is exposed to radiation. This began about 5 weeks after my last radiation treatment, and took at least six months to clear up.</p>
+            <p align="center"><strong><a href="/sto/mwolfgram/index.html">diagnosis</a> | <a href="/sto/mwolfgram/surgery.html">surgery</a> | <b>chemo &amp; rad</b> | <a href="/sto/mwolfgram/afterward.html">afterward</a> | <a href="/sto/mwolfgram/resources.html">resources</a></strong></p>
+            <blockquote>
+              <h6><strong>Photo -</strong> Megan &amp; Gwen relaxing in the RV at some National Park, August 2000.</h6>
+              <h6><strong>3</strong> - The nurses in the oncology department at Mayo are true heros in every sense of the word. They are a critical part of the chemotherapy process and are your best friends during that phase of treatment. I know that I was only able to meet the demands of my protocol through their tireless effort to make me as comfortable as possible.</h6>
+              <h6>When I went back to Mayo for my checkups I always took a few minutes to stop in and thank them again. Unfortunately, I realize how little thanks they get from those whose lives depended upon their efforts. They made a big difference in my life!</h6>
+            </blockquote>
+            <!-- #EndEditable --></div>
+  <img id="cafe_screen_disclaimer" src="/web/grn/dsc.gif" alt="Information found here is not to be a substitute for professional care.">
+  <div align="center" class="webonly">
+    <div id="cafegoogle">
+      <script type="text/javascript"><!--
+google_ad_client = "pub-2176662973486049";
+google_ad_width = "468";
+google_ad_height = "60";
+google_ad_format = "468x60_as";
+google_ad_type = "text";
+google_ad_channel ="";
+google_color_border = "CCCCCC";
+google_color_bg = "FFFFFF";
+google_color_link = "000000";
+google_color_url = "666666";
+google_color_text = "333333";
+//--></script>
+      <script type="text/javascript"
+  src="/web/20110903093206js_/http://pagead2.googlesyndication.com/pagead/show_ads.js">
+      </script>
+      <br>
+      <p>The above advertisements, provided automatically, are neither selected nor endorsed by us.<br>
+        Some may lead to web sites that provide questionable or controversial medical information.<br>
+        If you encounter advertisements inappropriate for the Caf&eacute;, send us the advertisement's URL.</p>
+    </div>
+    <h5><a href="/index.html">home</a> | <a href="/cnt/index.html">contents</a> | <a href="/sto/index.html">stories</a> | <a href="/ecg/index.html">ec-group</a> | <a href="/lnk/index.html">links</a> | <a href="/etc/index.html">etc.</a></h5>
+    <img src="/web/art/footer.gif" width="509" alt="Some graphics courtesy of Hoopla! disc, copyright 1995 Image Club Graphics. 1-800-661-9410" height="50">
+    <p><a href="/cnt/contact.html">Send a message to Marc &amp; Tammy Wolfgram</a></p>
+    <table width="610" border="0" cellpadding="0" cellspacing="0">
+      <tr valign="middle">
+        <td width="49" align="center"><img src="/web/cssprint.gif" alt="This page is printer friendly" width="45" height="50" border="0"></td>
+        <td align="center"><h6>Copyright &copy; 1995-2008&mdash;Last changed on
+            <!-- #BeginDate format:Am1 -->June 17, 2008<!-- #EndDate -->
+            &mdash; We comply with the<br> 
+            <a href="/web/20110903093206/http://www.hon.ch/HONcode/Conduct.html" onclick="window.open(this.href); return false;"> HONcode standard for trustworthy health</a> information: <a href="/web/20110903093206/https://www.hon.ch/HONcode/Conduct.html?HONConduct294647" onclick="window.open(this.href); return false;">verify here</a>.</h6></td>
+        <td width="45"><a href="/web/20110903093206/https://www.hon.ch/HONcode/Conduct.html?HONConduct294647" onclick="window.open(this.href); return false;" > <img src="/web/20110903093206im_/https://www.hon.ch/HONcode/Seal/HONConduct294647_s.gif" width="49" height="72" style="border:0px" title="This website is accredited by Health On the Net Foundation. Click to verify." alt="This website is accredited by Health On the Net Foundation. Click to verify." /></a></td>
+      </tr>
+    </table>
+  </div>
+  <img id="cafe_screen_footer" src="/web/grn/bot.gif"> </div>
+<map name="Map">
+  <area shape="rect" coords="240,113,286,143" href="/index.html" alt="Home">
+  <area shape="rect" coords="297,113,367,143" href="/cnt/index.html" alt="Contents">
+  <area shape="rect" coords="376,113,434,143" href="/sto/index.html" alt="Stories">
+  <area shape="rect" coords="443,113,516,143" href="/ecg/index.html" alt="EC-Group">
+  <area shape="rect" coords="527,113,574,143" href="/lnk/index.html" alt="Links">
+  <area shape="rect" coords="583,113,613,143" href="/etc/index.html" alt="Etcetera">
+</map>
+</body>
+<!-- #EndTemplate --></html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 9:32:06 Sep 3, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 4:49:10 Dec 15, 2013.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

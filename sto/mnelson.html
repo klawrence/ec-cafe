@@ -1,0 +1,917 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><!-- InstanceBegin template="/Templates/cafe_green_1.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+
+<script type="text/javascript" src="/static/js/analytics.js" ></script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Cathy's EC Caf&eacute;</title>
+<!-- InstanceEndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="Cathy's Esophageal Cancer Cafe -- Providing information on esophageal cancer to patients and caregivers.">
+<meta name="Keywords" content="esophagus, gerd, oesophasgus, ec, barretts, adenocarcinoma, squamous, ec-group, cancer, support, health, medical, patient, caregiver, ecaa, acor, esophagectomy, esophageal, oesophageal, ec cafe">
+<link rel="stylesheet" href="/cafe.css" type="text/css" media="screen">
+
+<style type="text/css">
+<!--
+.bodyback {
+	background-image: url(../web/grn/bgd.gif);
+	background-repeat: repeat-y;
+}
+-->
+</style>
+<link rel="stylesheet" href="/cafe_prt.css" type="text/css" media="print">
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+<body>
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script> if (window.archive_analytics) { window.archive_analytics.values['server_name']="wwwb-app0.us.archive.org";}; </script>
+
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1388534399999;
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http:\/\/www.eccafe.org\/sto\/mnelson.html";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth = 450;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "15";
+var displayMonth = "Aug";
+var displayYear = "2011";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" lang="en" class="__wb_banner_div" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px">
+
+
+<div id="wm-ipp-inside" class="__wb_banner_div" style="position:fixed;padding:0!important;margin:0!important;width:97%;min-width:780px;border:5px solid #000;border-top:none;background-image:url(/static/images/toolbar/wm_tb_bk_trns.png);text-align:center;-moz-box-shadow:1px 1px 3px #333;-webkit-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333;font-size:11px!important;font-family:'Lucida Grande','Arial',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://www.eccafe.org/sto/mnelson.html" style="width:400px;font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20110815021247" /><input type="submit" value="Go" style="font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;margin-left:5px;width: inherit !important" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:'Helvetica','Lucida Grande','Arial',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/sto/mnelson.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="20 Dec 2010"><strong>DEC</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 2:12:47 Aug 15, 2011">AUG</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/sto/mnelson.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="1 Nov 2011"><strong>NOV</strong></a>
+		                
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/sto/mnelson.html" title="0:42:03 Dec 20, 2010" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 2:12:47 Aug 15, 2011">15</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/sto/mnelson.html" title="11:16:40 Nov 1, 2011" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0"/></a>
+		                
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/sto/mnelson.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="25 Mar 2009"><strong>2009</strong></a>
+		                
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 2:12:47 Aug 15, 2011">2011</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       2012
+                       
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="/sto/mnelson.html" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>12 captures</strong></a>
+           <div class="__wb_banner_div" style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">27 Feb 08 - 1 Nov 11</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:450px;height:27px;" href="" id="wm-graph-anchor">
+       <div class="__wb_banner_div" id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:450px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers('inline');" 
+				onmouseout="showTrackers('none');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="450"
+				height="27"
+				border="0"
+				src="/web/jsp/graph.jsp?graphdata=450_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:010020000110_2009:-1:001000000000_2010:-1:000000001012_2011:7:000000010010_2012:-1:000000000000_2013:-1:000000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="/static/images/toolbar/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="/static/images/toolbar/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById('wm-ipp').style.display='none';" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_close.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;margin-bottom:23px;background-color:transparent;border:none;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_help.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;background-color:transparent;border:none;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<div id="cafebody" class="bodyback">
+  <div align="center"><img id="cafe_print_header"src="/web/print_header.jpg" width="504" height="72"></div>
+  <img id="cafe_screen_header" src="/web/grn/top.gif" usemap="#Map" border="0" alt="Cathy's EC Cafe">
+  <div id="cafemain"> <!-- InstanceBeginEditable name="body" -->
+    <h1 align="center">&quot;September&quot;<br>
+    my journey with esophageal cancer</h1>
+    <p align="center"><strong>by: Mark Roger Nelson<br>
+June 11, 1964 - October 31, 2007</strong></p>
+    <p align="center"><strong>Part 1, 2005</strong> | <a href="/sto/mnelson2.html">Part 2, 2006</a> | <a href="/sto/mnelson3.html">Part 3, 2007</a></p>
+     <img src="/sto/mnelson1.jpg" alt="Printed memorial produced by " width="249" height="320" style="float:right;margin-left:10px;">
+    <p><strong>The Preface</strong><br>
+      A lot has happened this week and I have a lot to say. The first week of this journal is quite lengthy but I hope it answers many of the questions you have.  This journal will detail what has happened, what I expect will happen, perhaps educate just a little, and reveal my thoughts throughout this entire experience. If nothing else, is should be an interesting read. This process will be therapeutic for me to keep the journal current and will be a good way for me to remember everything that happened. This week has been OVERWHELMING for me to say the least. And with me living alone, this journal has forced me to take notes along the way. I don't want to forget anything that has happened; as bad as some of it has been. I hope to update it once a week. Please use it to stay current as there is no way I will be able to inform everybody as things progress; as this will be a long ordeal.</p>
+    <p>Note: This journal is currently over 150 pages long. Nearly two years after my diagnosis, I never would have imagined that I would have so much to say and so much to write about.</p>
+    <p><strong>And so my journey begins</strong><br>
+      Here I am 41 years old and in the best shape I have ever been as an adult. I hired a personal trainer this year and was given three different workout routines to get rid of my beer gut, replace my man-boobs with a chest, tighten the abs a bit, and try to get a little muscle in my scrawny arms. So for the past several months I was actually working out about four times a week and actually beginning to feel better and noticing improvements. My stomach has trimmed down and if I squint, and use my imagination a little, I think I can actually see muscles in my abs.</p>
+    <p><strong>Then along came September...</strong><br>
+      The month started with an occasional, unusual sensation while swallowing. I don't recall which day this began? It felt as if food was getting stuck in my lower throat. I would have to pause to catch my breath. This would last 3-4 seconds and as long as I didn't eat immediately after this, the feeling subsided. Not only was I short of breath but it was accompanied with discomfort between my lower chest plates. Not to the point of pain as I have a high tolerance for pain. This problem occurred several times per week and it seemed to occur if I ate too quickly. But I almost always eat too quickly. I also started getting very slight heartburn a few times a week and I never get heartburn even though I've faced some mighty hot peppers in my days. So after three weeks of this, I thought something is different and it's not going away. I decided to go see my general doctor, Dr. Christopher Buck at Park Nicollet in St. Louis Park.</p>
+    <p><strong>The first appointment</strong><br>
+    So on September 22, 2005 I paid Dr. Buck a little visit. I was expecting him to tell me that I have acid reflux. I am somewhat familiar with it as I have a cousin that battled acid reflux and I know it can be troublesome. But I'm 41 years old now and I guess I have to face the facts that my parts are getting older and I'll have to put up with a body that isn't going to be as kind as it was for the first four decades. The exam was brief and routine. He felt my chest, stomach, neck, and used the stethoscope as I took deep breaths. We spoke for a few minutes. He said that we should run a test to see if it is acid reflux or cancer. I was not expecting to hear the C Word. I was slightly concerned as there is too much cancer in our family gene pool.</p>
+    <p><strong>The research begins</strong><br>
+    I immediately began researching cancer of the esophagus on the Mayo Clinic's website (www.mayoclinic.com). I noticed the link to find a disease by first letter so I clicked on E, then onto Esophageal Cancer. I did the same for Acid Reflux. It was then I first became concerned as I had most of the symptoms for cancer and few for acid reflux. And then when I read more into Esophageal Cancer, I became even more frightened. I did not like the words in front of me. I read that it's one of the worse cancers to get. That's not what I wanted to read.</p>
+    <p><strong>How do you spell it?</strong><br>
+    Before last week I didn't even know how to spell esophagus. And I still get it wrong sometimes. I had no idea why it's even in my body?</p>
+    <p><strong>Esophagus 101</strong><br>
+    The esophagus is the food tube that carries food and liquid from the mouth to the stomach. The stomach churns the food and secretes a strong acid that aids in digestion. A specialized muscle, known as the lower esophageal sphincter, is located at the end of the esophagus. This muscle normally contracts firmly, relaxing only to allow food and liquid to pass from the esophagus into the stomach. This muscle maintains a certain pressure to keep the end of the esophagus closed, preventing stomach acid and digested food from moving back into the esophagus.</p>
+    <p><strong>Esophageal Cancer 101</strong><br>
+    The word esophagus is pronounced with a hard G. When used as Esophageal Cancer, the G becomes soft. Who makes these rules? I have been told this is one of the fastest growing tumors.</p>
+    <p><strong>Who gets it?</strong><br>
+      Most people with the disease are between 45 and 70. The risk is much less if you're younger than 40. I am 41. My surgeon said I am younger than most but not the youngest he has seen.<br>
+      Men are far more likely to develop esophageal cancer than women are.<br>
+      Squamous esophageal cancer affects more black Americans than it does whites. I do not have squamous. I have adenocarcinoma. Adenocarcinoma arises in the glandular tissue in the lower part of the esophagus nearest the stomach. This is more common in whites than in black Americans. It is the fastest increasing cancer in the United States, possibly because of a rapid rise in the incidence of acid reflux disease. You probably know that I'm white.<br>
+    Women with breast cancer who had radiation treatments following mastectomy have a moderately increased risk of esophageal cancer.</p>
+    <p><strong>Factors:</strong><br>
+      Long-term heavy drinking irritates the lining of the esophagus, leading to inflammation that eventually may cause malignant changes in the cells. I am a casual drinker.<br>
+      Using tobacco in any form, including cigarettes, cigars, pipes and chewing tobacco, increases the likelihood of developing esophageal squamous cell carcinoma. I have never smoked or chewed.<br>
+      Chronic acid reflux can lead to Barrett's esophagus, a condition in which cells similar to the stomach's glandular cells develop in the lower esophagus. These new cells are resistant to stomach acid, but they also have a high potential for malignancy. Gastroesophageal reflux is the most common cause of esophageal adenocarcinomas. Smoking, obesity and a high-sodium diet put you at increased risk of reflux problems. I never experienced problems with acid reflux but my doctor said it may have been occurring without me even knowing it.<br>
+      Exposure to silica dust, a primary component of sandstone and granite. Miners and workers, especially those handling brick, concrete or tile, are most likely to be exposed to high levels of silica dust.<br>
+      Weighing 20 to 30 pounds more than your ideal weight has been linked to an increased risk of adenocarcinoma. I was at a good body weight, maybe a few pounds on the light side.<br>
+    A diet low in fruits and vegetables. My diet is relatively high in fruits and vegetables.</p>
+    <p><strong>A History Lesson</strong><br>
+      Unfortunately our family gene pool is not great, particularly on my mother's side.<br>
+      My mother died of breast cancer at the age of 45.<br>
+      My father was diagnosed with kidney cancer but died from complications from Deep Vein Thrombosis, a condition resulting from the formation of a blood clot thrombus inside a deep vein.<br>
+      An uncle died from esophageal cancer. I just found this out this week.<br>
+      An aunt is a survivor of breast and skin cancer.<br>
+    And I'm sure there other's that I don't know off-hand.</p>
+    <p><strong>I've always thought</strong><br>
+    As morbid as this sounds; I have always thought that I would not grow to be an old man. I thought something such as cancer would get me. Generally speaking I have lived my life for the now, not for my retirement. And there is something that has always haunted me that I have never shared with anybody. I grew up in a nice house in Cottage Grove Minnesota. In my early teens (I'm guessing) we had foam insulation injected in-between the studs of the exterior walls. At the time there were holes in our kitchen cabinets between the cabinet itself and the wall. This foam seeped into several of the cabinets and formed odd shapes of various sizes. As a kid, I was in heaven. I remember having fun playing with that foam. To this day I have no idea what chemicals were in this insulation? Is it a now-banned substance? Many times I have wondered if this would ever cause me health problems. Now I wonder more!</p>
+    <p><strong>I should have purchased stock</strong><br>
+    I should have purchased 3M stock before last week. It was a week full of jotting down questions and concerns that I had as I walked around the house. Things I wanted to ask the doctors. Thoughts I was having. Things I wanted to add to this journal. To know me is to know that if I don't write it down, I will forget. This journal wouldn't be possible without the 3M Post-It Note.</p>
+    <h2>The day before &quot;Day 1&quot; (Sunday Sept 25, 05)</h2>
+    <p>I don't recall where I was driving home from but I heard a song on the radio that took on a whole new meaning. &quot;Live Like You Were Dying&quot; by Tim McGraw.<br>
+      First verse:</p>
+    <p>&quot;He said I was in my early forties with a lot of life before me <br>
+      when a moment came that stopped me on a dime <br>
+      and I spent most of the next days, looking at the x-rays <br>
+      Talking bout the options and talking bout sweet time<br>
+      I asked him when it sank in that this might really be the real end <br>
+      how's it hit you when you get that kinda news <br>
+      man what'd you do&quot;</p>
+    <p>Second verse:</p>
+    <p>&quot;and he said I went sky diving, I went Rocky Mountain climbing, <br>
+      I went 2.7 seconds on a bull named FuManchu <br>
+      and I loved deeper and I spoke sweeter <br>
+      and I gave forgiveness I'd been denying <br>
+      and he said someday I hope you get the chance <br>
+      to live like you were dying.&quot;</p>
+    <p>I had an eerie feeling that this song is really going to hit home for me this week. Remember, this is three days after my general doctor ordered tests on Monday to check for signs of cancer.</p>
+    <p><strong>Not sure?</strong><br>
+    I jumped out of an airplane last year. Rocky Mountain climbing sounds fun. Not sure about riding a bull? Although I could be talked into running with the bulls in Pamplona, Spain.</p>
+    <h2>What I consider &quot;Day 1&quot; (Monday Sept 26, 05)</h2>
+    <p>No eating after midnight. Upper gastrointestinal (Upper GI) exam. This is x-ray imaging of the upper gastrointestinal tract, including the esophagus, stomach, and upper small intestine. It is requested when a patient experiences unexplained symptoms of abdominal pain, difficulty in swallowing, regurgitation, diarrhea, or weight loss. It is used to help diagnose disorders and diseases of, or related to, the upper gastrointestinal tract, including cases of hiatal hernia, ulcers, tumors, obstruction, gastroesophageal reflux disease. The patient stands against an upright x-ray table, and a fluoroscopic screen is placed in front of him. The patient is asked to drink from a cup of flavored barium sulfate, a thick and chalky-tasting liquid that allows the radiologist to see the digestive tract, while the radiologist views the esophagus, stomach, and duodenum on the fluoroscopic screen.</p>
+    <p>That was first-thing in the morning before going to work. I arrived at work around 9:00 and began my day. About 45 minutes into the day I received a call from Dr Buck, my general doctor. He told me that they detected &quot;a mass&quot;. That is the very moment my life changed forever. I knew! I tried asking the doctor a few questions. I don't recall what they were? I was choking up. He asked if I was OK. I replied &quot;No&quot;. I immediately left work and began crying as I walked out the door. I completely lost it once I got into my truck. After a few minutes I drove home, in shock.</p>
+    <p>I cried all morning and afternoon. I would contain myself for a few minutes, then out of nowhere I would break down again. That night I ended up going downtown and meeting up with my friend Damien from work. We had dinner at The Local, an Irish Pub downtown Minneapolis. I needed to get out of the house and be with a friend. And I knew that if I was out in public that it would prevent me from bursting into tears. I wanted a beer so badly but by that time I knew I had an early morning procedure that wouldn't allow me to eat after midnight. As much as I wanted (and deserved) a beer I thought it probably wouldn't be the best idea. We then walked over to see the animated movie &quot;Corpse Bride&quot;. The title is a little ironic given the situation. Watching the movie for 1-1/2 hours gave me some distraction to what was mentally happening to me. And I wasn't ready to tell my friends and family yet. After all it was &quot;a mass&quot; at that time. But &quot;I knew&quot;.</p>
+    <h2>Day 2 (Tuesday Sept 27, 05)</h2>
+    <p><strong>I'm not even going to try to pronounce it</strong><br>
+    No eating after midnight. I had an Esophagogastrodoudenoscopy (EGD) procedure with Dr. Michael Shaw, a specialist in Gastroenterology at Methodist Hospital. There are 26 letters in that word. Don't worry. You're not going to be tested on any of this material. It is done when the doctor suspects a problem within the swallowing tube. The patient receives a spray medication to numb the back of the throat and IV medications to help relax. Once the patient is relaxed the doctor slowly inserts the gastroscope into the mouth and down into the stomach and intestines. A biopsy was done. This is the day I was told that I have cancer.</p>
+    <p><strong>My most difficult thoughts</strong><br>
+    I have an amazing niece and nephew. Logan is eleven and Bailey is eight. I would become so depressed the first few days if I had thoughts that I may never see them become adults. And to see what they might become. I will not be surprised to see Logan in a pro-team of some sport. He is amazingly gifted at most sports. I have dreams to attend one of those games. And he is very academically-gifted too so the world is his oyster as they say. I don't know Bailey's direction yet but I expect her to be a wonderful woman. I want to live long enough to see these events. I would have to block out their image. It was WAY too much for me to comprehend. My mother did not live long enough to see her four children turn into adults. She has missed out on so much!</p>
+    <p><strong>Network news</strong><br>
+      I couldn't watch the network news as I do most nights. I couldn't handle listening to all of the bad news around the world. I opted for the radio instead. The only television programming I could watch was Will &amp; Grace and the Simpson's. Those shows were actually able to make me laugh during the first few days.</p>
+    <h2>Day 3 (Wednesday Sept 28, 05)</h2>
+    <p>No eating after 6:40 AM. 9:40 AM: A computerized tomography (CT) Scan at Methodist. It's a special x-ray study that takes pictures of the inside of the body. A narrow x-ray beam moves around a section of the body. A picture is taken quickly and fed into a computer. The images it produces are &quot;cross-sectional&quot; -- patterned much like slices of bread.  A series of these pictures is made to focus on the body part(s) the doctor needs to see. I had to drink Oral Contrast for three hours prior to the CT Scan. The Contrast highlights organs inside the body so that they can be detected more easily by the x-rays.</p>
+    <p><strong>Eyes wide shut</strong><br>
+      I believe this is the day that I met Dr. Robert Haselow, a Radiation Therapist at Park Nicollet Cancer Center. He was an interesting guy to talk to. His eyes were shut for most of the conversation. I wonder why and if he even knows he's doing it?</p>
+    <p><strong>Mmmm... lemony</strong><br>
+      I was told to drink a bottle of magnesium citrate today to rid all the Oral Contrast that I drank today. This is an inexpensive over-the-counter liquid that I purchased at Walgreens. I chose the lemon flavor over cherry. I was told to make sure I wasn't too far away from the toilet today. At 1:00 I drank the entire bottle as directed. The label says it may take about six hours to kick in. And so it did at 6:00 then about every hour after that. It was relentless into half of the next morning too. Now there's a color I've never seen before. Sorry, nobody ever said having cancer was glamorous.</p>
+    <p><strong>Ooops</strong><br>
+      So that night my stomach was still a little restless. So as I'm trying to fall asleep I go to release some gas. Well unfortunately sometimes a fart is more than just a fart. So after washing myself up, I ended up doing a late-night load of laundry that I was expecting to do. Again, not so glamorous.</p>
+    <p><strong>Too much to handle on my own</strong><br>
+      I decided that to get through this cancer diagnosis that I may need support from others who have gone through it. And if you've known me long enough, you know that I am not one to ask for help. I can do it myself; thank you very much. So this was a big step for me to know that I cannot be Superman with this one. I called the American Cancer Society to get information about support groups. I was given many in the Twin Cities area, most were general cancer support groups. One support group was a better fit as it was for cancers of the head, throat, and mouth. Does that sound like a fun group of people or what?</p>
+    <p><strong>Tick Tock Tick Tock</strong><br>
+      This was the slowest day of my life. I knew I had cancer. I just didn't know how bad? At 3:00 today I would find out. I'm sure I checked the clock every five minutes. Would it ever hit 2:30? This is the time I needed to leave home to get to an appointment that in my mind held the answers to whether I would live or die.</p>
+    <p>So a few minutes before 3:00 I entered the patients room to wait for Dr. Spooner, a Cardiac and Thoracic Surgeon at Methodist Park Nicollet Heart and Vascular Center. The seconds and the minutes slowly ticked away. I had direct view of the wall clock. It was now approaching 4:00. Earlier in the day I thought I would know my destiny a few minutes after 3:00. Doctor Spooner does pop in a few times to apologize for the delay. And each time as I heard the knock on the door, my heart briefly stopped as I think &quot;this is when I find out&quot;. It's nearing 4:00 when I finally get my quality time with him.</p>
+    <p>It started with your typical brief and friendly introduction. I watched his facial expressions like a hawk trying to read him and to anticipate his next few words. He became more serious when he asked if anybody was with me at the hospital. I think he may have asked if I was married or had children too. Whatever he said immediately concerned me. Within nanoseconds I interpreted this as REALLY bad news and he was concerned that I was going to need a driver to get home or that somebody else needs to hear the news as I did. I just knew it was bad. And it was.</p>
+    <p>We discussed the findings of all the tests and x-rays up to that point and begin to talk about possible treatments. It was then I learn that my cancer is &quot;descent&quot; size in (or around?) the esophagus. They stage cancer by 1-4, 4 being the worse. Dr Spooner guessed mine to be a 2 or 3. I think this is also when I found out that the cancer had appeared to have gotten into one or two of the nearby lymph nodes. I knew that was a bad thing. There are about 20 lymph nodes in this region. Was this the beginning of my death sentence?</p>
+    <p>Here were my options: Surgery next week followed by chemo (and I think radiation) or a series of chemo/radiation before the surgery. If I were to choose the chemo/radiation first it would delay my surgery about two months. Just knowing this cancer was inside me, and growing, freaked me out. I wanted it cut out immediately. But it was going to take eight more days before a date for surgery would open. I wondered how much it would spread during those eight days. And Dr Spooner, being a surgeon, kind of gave me the impression that surgery first might be the best approach. Although he didn't come out to say it, as ultimately it would be my decision. He referred me to an oncologist who I was to meet the next afternoon to get their opinion and to learn more about the chemo/radiation treatments. Yet another appointment.</p>
+    <p><strong>In good hands</strong><br>
+      I was very confident in the skills of Dr. Spooner after talking with him.</p>
+    <p>On this day I thought I could be going into surgery; possibly as soon as the end of this week. There is always the risk of dying during surgery. I have so much to prepare in case I'm not alive on Friday. That was an overwhelming thought to have; none-the-least!</p>
+    <h2>Day 4 (Thursday Sept 29, 05)</h2>
+    <p><strong>I don't want to play Superman anymore!</strong><br>
+      I can finally eat after midnight! Morning: I'm heading off to the &quot;Living with cancer&quot; support group at Hennepin County Medical Center. It's for people with all types of cancers and their friends and families. What do I expect to get out of this? Is this what I need right now? Am I going to be an observer in the back row or an active participant? I won't know until I get there. I ended up being the only person that showed up. The group facilitator and I talked for about 45 minutes. I didn't get the &quot;support&quot; I think I needed from fellow cancer-survivors. However I did pick up some pamphlets that I have yet to find time to read such as &quot;Life After Cancer Treatment&quot;, &quot;Eating Well Through Cancer&quot;, and &quot;Chemotherapy and You&quot;. This session also helped me talk through my situation for the first time to somebody that wasn't in the medical field and didn't know me. It was sometimes difficult for me to say the words but eventually the words came out. I guess I can't call it a support group when it was a group of just me but it was a good step in the right direction for me.</p>
+    <p>Afternoon: Consultation with oncologist Dr. Michaela Tsai at Park Nicollet Clinic. We discussed the likely series of chemo and radiation should I decide to go this route before surgery. I told her that surgeon Dr. Ted Spooner was slightly leaning toward surgery first. Doctor Tsai said that surgeons often feel that this is the best approach since it's their area of expertise. And as an oncologist she believes that it might be beneficial to do the chemo/radiation to shrink the size of the tumors in hopes they can remove it all during surgery. But there is a chance the tumors can increase or spread during the chemo/radiation treatment and the three week recovery period before the surgery. It was overwhelming to sit there and try to guess what I think would give me the best chance of survival. How would I know? I just fix computers for a living. I have one doctor leaning toward surgery and one leaning the other way. I couldn't get either of them to tell me overwhelmingly that this is the most obvious best course of action. Doctor Tsai printed out some information from ten years of studies for esophageal cancer. Some clinical studies were: surgery before chemo/radiation, surgery alone, radiation alone, chemo/radiation before surgery, and some with varying types of chemo itself. She said the results of the studies are not conclusive and are controversial at best. That didn't seem like a big help to me. I wanted hard numbers that would make my decision easy. It was overwhelming decision that I would have to make very soon.</p>
+    <p><strong>&quot;it is&quot;</strong><br>
+      I was afraid to ask but I did. I needed to confirm something that I read on the internet. I asked the oncologist if this is one of the worse cancers to get. She slowly nodded and quietly said &quot;it is&quot;. It's bad enough to be assigned to an oncologist let alone have her tell you that have one of the worst cancers.</p>
+    <p><strong>Better than the Atkins Diet</strong><br>
+      I lost seven pounds this week.</p>
+    <p><strong>The biggest decision of my life</strong><br>
+      I felt as if me living or not for a year or two decided on me guessing whether I would roll an odd or even number of a die. After reading through the studies (what I could comprehend) I decided the chances of longer term survival were SLIGHTLY higher with chemo/radiation before surgery. I hope I made the right call. I believe I came to peace with my decision the following day.</p>
+    <p><strong>Reassurance</strong><br>
+      I spoke with Gary, a friend's friend-of-the-family who was diagnosed with esophageal cancer in 1998. He had stage 3 cancer with some of his lymph nodes also having cancer. Sounded like my situation. His surgeon was also Dr. Spooner and he credits being alive today due to Dr. Spooner. He &quot;walks on water&quot; in his books. That reassured my already good feelings about Dr. Spooner. It was also very good to speak to a long-term survivor. I hope to meet Gary in the near future.</p>
+    <p><strong>The numbers</strong><br>
+      When looking at hard statistics, these are the numbers that were in front of me with the course of action that I selected. A 15-20% chance of surviving five years. I envisioned 5-6 people standing and wondering if I would be the one to survive five years. Those numbers are tough to ponder.</p>
+    <h2>Day 5 (Friday Sept 30, 05)</h2>
+    <p><strong>Where do they get their art supplies?</strong><br>
+      No eating after midnight. Morning: CT Scan # 2 this week. This time it seemed more intense. The session lasted longer. I was given a solution that quickly traveled through my body giving me a warming sensation that ended at my bladder giving me the sensation that I was urinating. It quickly passed. They also started mapping out where the radiation would be administered using the results of all the tests up to that point. They put three X marks on my chest using a purple magic marker. Well it wasn't very permanent as it quickly stained the shirt I was wearing. Off to Target I go to get some stain remover gel. Luckily the shirt was saved. They told me not to worry if the markings faded over the weekend. They could redo it Monday. One of them did disappear quite quickly. The other two faded but made it to Monday.</p>
+    <p><strong>Who'd ever thought?</strong><br>
+      I am not the type of person to get tattoos. Well I found out this morning that I'm getting three very small permanent tattoos next week. They will be the size of a small freckle that will be used to direct the upcoming radiation.</p>
+    <p><strong>Morning turns to afternoon</strong><br>
+      The morning appointment took longer than expected so I raced off to a company called LifeScan Minnesota in Edina for a Positron Emission Topography (PET) Scan. I got there just in time. Doctor Tsai brought up the benefits of getting a PET Scan but did not order the test. She did say that it may or may not be covered under insurance and is very expensive. It can detect whether the cancer has spread anywhere beyond the esophagus and the lymph nodes. This sounded like a must-have so I requested they make an appointment for me. I didn't know the cost and didn't care if it was covered under my insurance plan. But I needed to know what I was up against because if the cancer has spread it would greatly impact my treatment, particularly the radiation and surgery.</p>
+    <p>A PET Scan is used to diagnose and stage tumors. The scan is a non-invasive way to differentiate between malignant and benign tumors. It can also be used for neurological applications. It uses a radioactive tracer that mimics sugar metabolism once injected intravenously into the patient. There's another hole in my arm. Luckily I have large veins there so I'm a piece of cake for the technicians. Once injected I waited 45 minutes for it to be taken up by the tissue throughout my entire body. I then lied on a table and was moved into a donut-shaped scanner very similar to the CT scanners that I already had the pleasure of being inserted into twice this week. This one was going to take a while though. I had to sit still for close to an hour while they take about seven slices of the mid-section of my body in increments of eight minutes per slice. The table would move on it's own as it moved along to its next slice. It was easy for me to relax and to stay perfectly still. However occasionally I needed to take deep swallows. Was I messing up the images or giving out false reading as my saliva passed through my throat and esophagus? They didn't tell me I couldn't swallow so I'm sure it's OK. But I thought about it during every deep swallow. There was music playing in the background. I had the choice of stations. There was a nice mellow song playing at the time so I told them that this station would be fine. I think it was 102.9 LiteFM.</p>
+    <p><strong>And then I hear it again</strong><br>
+      About 1/2 hour in the scanning, wouldn't you know it, the song &quot;Live Like You Were Dying&quot; by Tim McGraw begins. This was a very surreal moment. To hear that song in the middle of a medical procedure in which the results may determine how long I might live. Wow! Toward the end of the song my left eye slowly began to form a single tear drop. It hung on there for a while but by the end of the song, it slowly worked down the side of my face.</p>
+    <p>Evening: I needed a drink and a distraction so I joined up with a few friends (Jolene, Louis, and Nathan), had two martinis, and called it an early evening. A big day was planned for the next day. Nobody knew that night what was going on inside my mind and body.</p>
+    <h2>Day 6 (Saturday Oct 1, 05)</h2>
+    <p><strong>And still, on Day 6, very few people even know</strong><br>
+      October begins. Today is the big day that 20 friends and family members were looking forward to. Every two years I charter a bus to take us to six or seven bars and restaurants that were voted the best of something in the Twin Cities. For instance: best burrito, best happy hour, best jukebox, and best neighborhood bar. This was to be our third tour and we have had so much fun in the past. And the weather forecast for today was an amazing 80 degrees.</p>
+    <p>I tormented on the idea of having to tell everybody that the bus is called off because I have cancer. Once I found out on Thursday that I would not be going under the knife or starting chemo/radiation this week, I knew the bus tour must go on. This would be a wonderful opportunity for me to have fun and take a heavy load off my mind. So from 4:00 PM to midnight we were driven around Minneapolis and St Paul and had so much fun! I think it was the best tour so far. And for everyone that joined me that day, please do not worry if you think you said or did something that may have upset me now that you know I have cancer. Believe me, you didn't. It was an amazing experience that I will never forget and it wouldn't have been the same without each and every one of you.</p>
+    <p>I actually danced a little jig to the radio for a few seconds while I was cleaning the house before my guests arrived. I found that interesting and somewhat surprising.</p>
+    <p><strong>And the Oscar goes to...</strong><br>
+      And the Oscar goes to me for being able to put this week aside and have an absolute blast without anyone figuring out that something is terribly wrong with me. For the first time in five days I wasn't thinking about cancer.</p>
+    <h2>Day 7 (Sunday Oct 2, 05)</h2>
+    <p><strong>Finally the end...</strong><br>
+      It's finally the end of the worst week of my life. But today was going to be a day full of the most difficult thing I had to do. It was time to tell my friends and family. Co-workers knew as I had missed all of last week from work. Friends I have made through my game business knew as I contacted them to see if they would help my siblings close out my business in case I didn't make it through surgery. Other than those few, &quot;nobody&quot; knew. I printed a list of everybody's name and phone numbers.</p>
+    <p><strong>&quot;told&quot;</strong><br>
+      I slept most of the morning. I started early afternoon with my brother Scott. I called him and tried to begin by just coming out with the news. There was no easy way to transition into it. I lost my composure and couldn't even begin. Scott thought we lost our cellular connection. I hung up and cried for a few minutes. On the second attempt I was able to get out the words &quot;I was diagnosed&quot; but I lost it again so I hung up the phone again. I knew I had to call him back quickly as he was probably at that point very frightened from the few words that I managed to get out. I was able to complete the sentence during the third call. It was horrible for both of us! I continued on making calls in no obvious particular order other than working around their schedule if I knew they wouldn't be home. If at all possible I wanted them to be home so they could deal with it more easily.</p>
+     <p>The afternoon and evening was full of shocking people. It was awful to pick up the phone each and every time of course. My speech almost became mechanical as I said the same words so many times that day. I would write the word &quot;told&quot; next to their phone number. I would make calls for about an hour or two before I needed a mental rest and to give my cell phone a chance to recharge.</p>
+    <p><strong>It hit me</strong><br>
+      The awful task I went through most of that day suddenly hit me as I tried to fall asleep that night. It was another brief moment. I was able to reach most of my friends and family today. I was able to tell a few more on Monday and Tuesday.</p>
+    <h2>(Monday Oct 3, 05)</h2>
+    <p><strong>What am I walking into here?</strong><br>
+      At 11:00 this morning is a monthly support group for people with cancers of the head, neck, and throat. Since my adventure is just days away, I really needed to see if I could actually meet somebody that has gone through what lies in my future. Perhaps even somebody with my cancer. I walk in. There are about four people talking, appearing to be in their 70's. A few more people soon followed. I introduced myself, only by name, to each of them and wrote their names down in my notebook. Now there are seven people other than myself and the facilitator. The facilitator began the meeting, starting with me because I was the only newbie. I felt like I was in an A.A. class. Here I am about to introduce myself and telling strangers why I'm here. I announce my name and begin to say that last week I was diagnosed with cancer of the esophagus. But the words were not coming out. I stopped speaking and began to cry. I thought I was going to be able to get through it. I was assured by several other members that they &quot;have been there too&quot;. I gathered my composure as best that I could and told them my story.</p>
+    <p><strong>My story can be topped</strong><br>
+      I quickly found out from this support group that as bad as I think I have it, that somebody else can top your story. Curt &quot;Habanera Man&quot; looks like a hippie from the sixties. He seems to be one of the nicest, funniest guys you could meet. He battled throat cancer and the sides of his neck made that apparent. He once brought in a pound of hamburger to his radiation session and asked the technician if he could bring it in with him so that he could get his dinner cooked too.</p>
+    <p>Karen had an extremely rare cancer of the sinus that she said nobody gets in the U.S. except her. They get it in China for some unknown reason. She had the most deformities from surgeries as she was missing much of her right cheek. I tried not to spend too much time looking at her but I'm sure she's use to it. The others seem to have throat and tongue cancers but nobody had my cancer. But that's OK for it was helpful to hear their stories and more importantly get their suggestions. Most of the 1-1/2 hours was focused on me as they asked me questions and shared their experiences that they thought might help me. One member said that our cancers are different from others in that it affects your ability to eat and that makes it a &quot;whole new animal&quot;.</p>
+    <p><strong>Things I learned from this interesting mix of people:</strong><br>
+      Habanera Man said to eat two tablespoons of organic honey to help prevent hair loss. He didn't lose any hair during his chemo.<br>
+      Take anti-nausea pills each day during chemo/radiation even if I think I won't need them because it will eventually catch up to me. <br>
+      Before going to this support group I was more concerned about the chemo and not as much for the radiation. Now I'm concerned for both as half the group had more problems with the radiation.<br>
+      I need to be concerned about depression. It may not be apparent to me if I do fall into depression. This may start a few weeks after radiation treatments. My friends and family need to be aware of this and let me know if they see signs.<br>
+      B.C. = Before Cancer diagnosis. That proved to me what I already knew... that once you have cancer, you always have cancer.</p>
+    <p><strong>The ink</strong><br>
+      Afternoon: Here come the permanent tattoos that I was expecting. They placed three drops of ink on my chest and stomach then inserted a pin through these drops and into my skin to inject the ink. As I'm lying on the table, and before the tattoos are applied, I begin to wonder if they are taking into consideration the test results from last Friday's PET Scan. If more cancer was found, that would likely change the entry point of the radiation beams. I asked the technician and she said they were no changes in the planning. That gave me a sense of relief because I knew the radiation doctor had seen the PET Scan results but I still didn't know if the cancer has spread. This same doctor then began to look over the radiation planning and x-rays as I lie still on the table. Then unexpectedly the doctor requested another barium swallow with x-rays. That alarmed me. Did he see something new that concerned him?</p>
+    <p><strong>It all comes down to this</strong><br>
+      I requested to speak with Dr. Haselow to discuss the PET Scan results. I could not wait another day. So a few minutes after getting my new really lame tattoos, I went into a patient's room to wait for the doctor. This was HUGE but I was surprisingly calm. My life might depend on what I will be hearing within the next few minutes. The news is great! The &quot;stomach looks OK&quot; and he could not see &quot;other spots&quot;. For the first time, I feel like now I have a chance.</p>
+    <p><strong>Another important decision</strong><br>
+      I had to decide between two different approaches to administer my chemo and withdraw blood. A PICC line is a thin flexible silicone tube inserted into one of the large veins in the arm. Advantages: No surgery    Disadvantages: Slightly greater chance of infection and more cleaning maintenance.<br>
+      My other option was a portacath. It is an implantable device that makes it much easier to draw blood for tests and much safer to administer chemotherapy. It consists of a catheter (small flexible tube) that is placed in a large vein and connected to a &quot;port&quot; about the size of a quarter. The port is placed under the skin of your upper chest. Advantages: Much easier on the arms, less chance of infection, less cleaning    Disadvantages: A surgical procedure<br>
+      I opted for the portacath even though it meant one more surgery.</p>
+    <p><strong>The chemicals and the beams</strong><br>
+      My chemo/radiation series begin Wednesday October 5. This will be a long day beginning at 6:30 AM at Methodist where I will prepare for the portacath surgery. About an hour after surgery I will be administered 260 minutes of chemo. I was not expecting over four hours of chemo. I do not have my chemo schedule so I hope my other days are not that long. After chemo I will be whisked off to my first ten minute radiation treatment. This will be a long nine hour day.<br>
+      The first week of treatments will be chemo combined with daily radiation, followed by three weeks of radiation only, then one week of chemo and radiation again. My treatments will be daily during the week but I will not have any treatments on weekends. This will be on an outpatient basis if I handle the treatments well.<br>
+      Chemo drugs:<br>
+      Day 1 &amp; 29 will be Cisplatin<br>
+      Day 1-4 and 29-33 a combination of Cisplatin and 5-FU<br>
+      Within a few weeks they should be able to tell if I am responding well to treatments. After three recovery weeks without chemo and radiation, I may be ready for the surgery if my blood counts are where they need to be.</p>
+    <p><strong>Side effects of chemo</strong><br>
+      On rare occasions, chemotherapy can cause permanent changes to the heart, lungs, nerves, kidneys, reproductive, and other organs. It might have delayed but rare effects such as a second cancer that may show up years later. I can expect low blood counts, fatigue, nausea, vomiting, hair loss, lack of sleep, and poor appetite. I may experience pain in my nerves leading to burning, numbness, tingling, or shooting pain most often in the fingers or toes. I may get headaches and stomach pains. The drugs and treatments today are better than they were in the past for managing these side effects. I should start feeling better 3-4 days after the last treatment. I will need to avoid people with colds and flu and those that have recently received &quot;live&quot; virus vaccines such as chicken pox and oral polio since they may be contagious to people with low blood cell counts such as myself.</p>
+    <p><strong>Side effects of radiation</strong><br>
+      I may get tired, queasy, and have flu-like symptoms around 3-4 weeks after the start of treatment. My skin may get red.</p>
+    <p><strong>The surgery</strong><br>
+      In December of this year I will be going into a major six-hour surgery that will remove part of my stomach, my esophagus, the nearby lymph nodes, and most of my throat. It creeps me out to think about it. I expect to have a hospital stay of nine days followed by six weeks of recovery at home. I will eat and get my nutrition through a feeding tube in my stomach. I better get used to eating everything blended. Within my six weeks of recovery I should gain enough strength to resume eating foods through the throat. I do not know yet if I will have lifetime dietary restrictions? There will be an incision made near my stomach and one other either near the neck or my side. If they have to go through the side they will likely need to crack some ribs to get to where they need to be.</p>
+    <p>Two days before surgery I will be allowed to eat only smooth soups (no chunks). The day before I will not be allowed to eat anything and I will have to drink something (I forget the name). My surgeon said that I will be cursing his name on that day.</p>
+    <p><strong>The risks</strong><br>
+      With every surgery comes risks. Here are mine:<br>
+      A 10% chance of leakage where the throat will be rejoined. This would occur during the hospital. It sounds like it can easily be managed should this occur.<br>
+      A 30% chance of &quot;structure&quot; (narrowing of the throat) 3-6 weeks after surgery. Should this happen they will be able to expand the tube somehow.<br>
+      Bleeding and infection is infrequent<br>
+      Bloating and diarrhea is common<br>
+      Hoarseness<br>
+      Possible pain from the incision</p>
+    <p><strong>To consider</strong><br>
+      These are things that I have yet to consider:<br>
+      Do I continue my game business? How will I sell the games that I have in inventory? What will I do with my copyrights and trademarks?<br>
+      My Personal Will that I had drawn a few years ago may need to be updated<br>
+      My brother Scott, sister Lisa, niece Bailey, and nephew Logan have plane and hotel reservations for Jamaica in mid-December. That isn't going to take place now. Should we reschedule in late November before my surgery? But I won't know how I will react to the chemo/radiation treatments. I may not have the energy and it may not be safe for me. We may need to reschedule for the spring. It sucks that we have to change our plans. We were really looking forward to our first tropical family vacation.</p>
+    <p><strong>Random odd thoughts</strong><br>
+      I have had some unusual thoughts throughout this ordeal. Many are probably to be expected when going through a similar situation. So here they are:<br>
+      I had dinner with a friend on Day 4. We were talking about some unusual liquor and my friend said something to the effect of the size of the bottle. I then proceeded to say &quot;That would last...&quot; and then I paused as I considered that I was getting ready to say &quot;That would last me a lifetime.&quot;<br>
+      Probably on Day 1: I looked at two of my houseplants. One is not doing so well. As I looked at the healthier one I wondered if that plant would live longer than me.<br>
+      On Day 1 or 2: I remember this happening twice; I was slicing ham and suddenly had an odd respect for the life of the pig. I continued to eat it anyway though. It was still tasty.<br>
+      Day 5: I picked up a Kit Kat bar from the reception desk after having my PET Scan. I said to myself; &quot;The last time I had a Kit Kat bar I didn't know that I had cancer.&quot;<br>
+      I saw a man walking into a house. I thought to myself &quot;I bet he doesn't have cancer.&quot;<br>
+      I had a difficult time looking at my face the first few days. I didn't want to see the redness of my eyes from crying.<br>
+      I had a more difficult time looking at my bare chest knowing it's there.<br>
+      Will I be able to continue to get my haircut at my salon once I start chemo? Are there state regulations?<br>
+      I want to spend the rest of my days traveling as much as possible.<br>
+      Can I spread this through kissing? My oncologist said No.<br>
+      I had orthodontia braces a few years ago to straighten my teeth. Every night I put retainers on to keep them straight. I paused for a moment one night early this week wondering if this was even necessary now.<br>
+      I better put the recyclables out on the curb this week. It may be more difficult next week.<br>
+      I have a parking pass from the radiology department. At least now I have free parking at Methodist.<br>
+      I went my entire working life (over 25 years) without ever missing a full day due to illness. Well that's the end of that streak.<br>
+      I might need friends to pick out a stylish cap if I lose my hair. And I don't look good in caps so I wish them luck.<br>
+      After the surgery; would I be able to speak? How will I throw-up? What if I get the stomach flu? Will I get more sore throats? And will be they be more painful or serious?</p>
+    <p><strong>Acceptance</strong><br>
+      I have also had to come to terms with some things. And here they are:<br>
+      I can no longer donate my organs when I die.<br>
+      I will have to take myself of the Red Cross Bone Marrow Donor Program.<br>
+      I was in the process of selling my townhouse in Minnetonka to move to a brand new condo in downtown Minneapolis. I was able to select all of the upgrades and it had just finished being built a few weeks ago. It looked great! Even thought the new mortgage was stressing me out, I was very much anticipating the move and starting the next phase of my life. Then everything changed. Suddenly the condo became trivial and unimportant. But can I back out now and get my $16,000 deposit? I found out 10/4/05 that I will be able to get my deposit back as soon as the builder is able to sell my unit. That is wonderful news! It was hard to say goodbye to the condo but I knew I would not have the strength to move and I didn't need the financial stress of the new mortgage. I didn't know how much work-time I would miss and my out-of-pocket medical expenses.<br>
+      I had been dating women that I met through an internet dating service. I cancelled my account on 10/2/05. I don't feel like a great &quot;catch&quot; right now.<br>
+      Even if all of the cancer is removed at surgery; will it return?<br>
+      I will always fear that this will someday claim me.<br>
+      I am now a cancer survivor.</p>
+    <p><strong>My personal plea</strong><br>
+      For my friends that smoke; please do what you need to do to quit. You do not want to go through this.</p>
+    <p><strong>Why September?</strong><br>
+      &quot;September&quot; --- The journal of my journey<br>
+      There is a new song from the group Green Day titled &quot;Wake Me Up When September Ends&quot;. It is one of my favorite current songs. Now it has taken on a whole new meaning. September started with what I thought were minor symptoms of acid reflux and ended with the worst news of my life. The last days of September were the scariest, saddest, most overwhelming, and in some ways the loneliest days of my life. I cried a few times this week when I heard that song as I too needed somebody to wake me up when September ends.</p>
+    <p><strong>And now the battle begins</strong><br>
+      In a few short hours I begin chemo and radiation. And with the loving help of my friends and family, I am now ready to fight the fight!</p>
+    <p>(Added: Thursday October 6, 2005)</p>
+    <p><strong>A little more education</strong><br>
+      I realized that I did not provide an explanation of chemotherapy and radiation. I am not a doctor nor do I play one on TV but here it goes:</p>
+    <p><strong>Chemotherapy 101</strong><br>
+      Chemotherapy is the use of medicines (or drugs) to treat disease. Although surgery and radiation therapy destroy or damage cancer cells in a specific area, chemotherapy works throughout the entire body. Chemotherapy drugs can destroy cancer cells that have metastasized or spread to parts of the body far from the primary (original) tumor.<br>
+      More than 100 chemotherapy drugs are used in various combinations. Although a single chemotherapy drug can be used to treat cancer, generally they are more powerful when used with other drugs. Your chemotherapy treatment probably will consist of more than one drug. This is called combination chemotherapy. A combination of drugs with different actions can work together to kill more cancer cells and reduce the chance that you may become resistant to a particular chemotherapy drug.</p>
+    <p><strong>Radiation Therapy 101</strong><br>
+      Radiation therapy uses high-energy rays aimed specifically at a malignant tumor or areas where there is cancer. Radiation kills cells or keeps them from growing and dividing. Radiation therapy can successfully treat many kinds of cancer. In fact, more than half of all people with cancer are treated with some form of radiation. For many cancer patients, radiation is the only kind of treatment they need. Others may need radiation in combination with another type of cancer treatment.<br>
+      The goal of radiation therapy is to kill cancer cells with as little risk as possible to normal cells. Normal cells are affected by radiation but, unlike cancer cells, most of them recover from the effects of radiation.</p>
+    <h2>(Wednesday Oct 5, 05)</h2>
+    <p><strong>The troops are in place</strong><br>
+      Today is the day that I can physically begin the battle. Mentally; I was ready a few days ago. I was a little apprehensive about my morning surgery to have the portacath installed. I have never before been cut open.</p>
+    <p><strong>The portacath</strong><br>
+      The implantable portacath consists of a small chamber (the &quot;port&quot;) and a catheter. The port has a self-sealing silicone rubber in the center called the septum, about the size of a quarter. The catheter is a flexible hollow tube. One end of the catheter is securely attached to the port, and the other end is placed in a large vein. The septum was implanted under my skin at my right chest. They made another small incision near my neck where they guided the catheter tube into a neck vein. They will use this device to deliver fluids or medications into the bloodstream. I was sedated through an I.V. but awake for the 45 minute procedure. The surgery went well and I had absolutely no discomfort.</p>
+    <p><strong>Airport security</strong><br>
+      My implanted portacath is composed of some metal. I will now be setting of the security alarms at airports. I have been given a card that identifies me as having this device. The card is written in English so I need to find out if it will be accepted at international airports. I suppose I will now have to get manual security checks with a wand.</p>
+    <p><strong>Here come the chemicals</strong><br>
+      After a brief rest from the surgery I was wheeled to the chemotherapy area. They placed a needle into the skin through my newly implanted portacath. This is how they will administer the fluids and chemo and withdraw blood when needed. I was administered two bags of liquid that would hydrate me before receiving the chemo. One of them was potassium. After about two hours of that, I was ready for the chemo. I felt absolutely nothing during this process. I watched TV, called a friend at work, and just relaxed. One possible side-effect of chemo is mouth sores. I have to rinse my mouth with a water/salt solution after meals and before bed. At first I thought I had to drink the solution but found out later that I can spit it out. That's a relief because it was upsetting my stomach. And it tasted like salt water.</p>
+    <p><strong>The fanny pack</strong><br>
+      I assumed that I would be going into the hospital to receive my daily injections of chemo. Instead I went home this day with a fanny pack complete with a bag of chemo and a pump. The pump makes a sound every few minutes similar to a shutter closing on older cameras. I now have a catheter tube than runs from this chemo bag, under my shirt, and into the needle that is taped to my chest and into the implanted septum. This pump is programmed to administer the chemo as I walk and sleep. It is taking a little getting use to having a bulky fanny pack and tubes running out of my shirt.</p>
+    <p>The needle and bandaging on my chest sticks out about one inch so I have to be careful when sleeping not to roll onto it. I propped two large pillows to my sides that will prevent me from rolling over as I sleep. Fortunately I am comfortable sleeping on my back. The fanny pack lies next to me in bed. I wanted to take my fanny pack off several times during the first day, forgetting why I even had it on in the first place. I never would have thought that an ugly fanny pack would save my life.</p>
+    <p><strong>Spongebob Squarepants or Dora The Explorer?</strong><br>
+      It is important that I do not run a fever greater than 100.5 degrees. I made a trip to Target to get a thermometer. For some unknown reason they were out of all thermometers except the really expensive ones or those for children. I didn't need a $45 thermometer so I opted for a kiddie one. I had the choice between Spongebob Squarepants or Dora The Explorer. I chose Spongebob.</p>
+    <p><strong>Thank goodness for insurance</strong><br>
+      I am taking four mediations to reduce the chance of feeling nauseas from the chemo. They are: Decadron, Compazine, Zofran, and Ativan. The Zofran tablets cost $800.00 each. Can you believe that? I took home a small prescription bottle containing only twelve of these Zofran tablets. This almost empty container is worth $9,600. Thank goodness for insurance!</p>
+    <p><strong>Nighty-night</strong><br>
+      As I'm updating my journal I notice a slight warming sensation in the bones of both my legs and right arm. It must be the chemo kicking in but it's not uncomfortable. I am a little nervous as to how I will feel in the morning.</p>
+    <p><strong>Feeling great</strong><br>
+      The long day is over. It's close to midnight and I'm feeling great!</p>
+    <p>(Added: Sunday October 9, 2005)</p>
+    <h2>(Thursday Oct 6, 05)</h2>
+    <p><strong>The &quot;pull test&quot;</strong><br>
+      First morning after chemo and radiation: No hair on my pillow and it doesn't come out when I give it a tug.  I am wonderfully surprised how excellent I feel throughout the entire day.</p>
+    <p><strong>Another decision (down the road)</strong><br>
+      My chest portacath can be surgically removed when I'm done with all of my chemo treatments or it can remain in me forever. Should the cancer return, it would beneficial to still have the portacath in place. However it would require a monthly flushing to prevent the catheter tube from becoming blocked. I will make that decision later.</p>
+    <p><strong>Not quite $800</strong><br>
+      According to the pharmacy label the Zofran tablets are a reasonable $452.46 each, not $800 as my nurse suggested.</p>
+    <h2>(Friday Oct 7, 05)</h2>
+    <p><strong>Finally a routine</strong><br>
+      First day back to work. It was a full eight hour day. I felt great and had lots of energy. After work I drove to St. Paul to meet up with my sister Lisa and friend Cheryl for dinner before going to an 8:00 performance of Cirque du Soleil. I was able to eat barbeque ribs. In hindsight I probably shouldn't have taken a chance by eating spicy food but my stomach fully cooperated. The show was amazing! It was good to have a normal day.</p>
+    <h2>(Saturday Oct 8, 05)</h2>
+    <p><strong>The big game</strong><br>
+      I had not been able to see one of nephew Logan's football game this year and today was his last. With the help of Logan's interception, an amazing catch, and a knock-away or two, Logan's team was victorious!</p>
+    <p><strong>That damn insulation</strong><br>
+      I found out today from my aunt that the insulation that I was playing with as a kid was indeed asbestos. My aunt had their house sprayed at the same time. Asbestos home insulation was banned shortly after this period.</p>
+    <p><strong>Oktoberfest</strong><br>
+      After a two hour nap in the afternoon I headed to my friends Jim and Diane for their annual Oktoberfest house-party. It's always guaranteed to be fun and filled with great food and beer. I was there for three hours, had one beer, and yummy German potato salad. My personal favorite. It's a treat I look forward to every year.  And I was still feeling terrific!</p>
+    <h2>(Sunday Oct 9, 05)</h2>
+    <p><strong>Goodbye ugly fanny pack</strong><br>
+      I drove to Methodist in the morning to have the chemo I.V. removed. My first round of chemo was over and my chemo bag was bone-dry. Still no hair coming out.</p>
+    <p><strong>Frankenstein</strong><br>
+      After getting home from having the chemo I.V. removed, I looked in the mirror to look at my chest. The bandages completely covered the surgery and portacath. Wow! It was much more noticeable than I had anticipated. It sticks out about ½ inch and the catheter tube is visible as it winds toward my neck. And it looks like I'll likely have a permanent &quot;manly&quot; scar. Now I'm not so sure that I want the portacath to be a permanent fixture?</p>
+    <p><strong>Keep eating</strong><br>
+      I have been told that I will lose weight and that I need to keep eating, particularly high-calorie foods that I normally wouldn't eat. I will need the weight later. So I ate a small breakfast, had leftover KFC, and by 1:00 I was joining my uncles Bud and Dave and aunt Evelyn for my third meal of the day at Country Kitchen. I was able to eat about ½ of my meal. The visit was nice.</p>
+    <p><strong>Very sleepy</strong><br>
+      I slept most of the afternoon away and had very little energy to get off the sofa at night. I weaned off most of my anti-nausea pills and do not plan on taking any tomorrow. I easily got through my first round of chemo. That is a huge relief!</p>
+    <p>It's 10:15 PM as I complete my journal update for now. It's time to go to bed.</p>
+    <p>(Added: Tuesday October 11, 2005)</p>
+    <h2>(Monday Oct 10, 05)</h2>
+    <p><strong>First tough night</strong><br>
+      Last night (Sunday) was a rough one. I had a very upset stomach that wouldn't allow me to fall asleep until at least 1:30 AM. I now have Pepto-Bismol in my arsenal. I think it might have been due to my last day of chemo being on Sunday, weaning off my anti-nausea meds, and my diet. I'm afraid of losing more weight than I already have so I ate more greasy and rich foods than I'm use to.</p>
+    <p>I did throw up this morning for the first time. I think it had more to do with the acidic stomach I had overnight than from the chemo, then drinking orange juice in the morning. I did work a full day today but did have to take a ½ hour power-nap in my truck shortly after lunch.</p>
+    <h2>(Tuesday Oct 11, 05)</h2>
+    <p><strong>Another rough night</strong><br>
+      Monday night I had the displeasure of getting a severe case of diarrhea that woke me up at least once an hour for much of the night. I woke up Tuesday with the intention of going to work but just didn't have the energy in me. I don't want to push myself too far so I took the day off from work to rest. I called the nurse support line in the morning because they want me to report any problems that I experience during chemo and radiation. I arrived at my radiation appointment a few minutes early to check in with the doctor. He took my vitals and everything looked good so he said I wouldn't need to have an I.V. hooked up to my portacath to restore fluids that I could have lost during the Montezuma's Revenge.</p>
+    <p>I didn't get off the sofa all afternoon and felt much better as the day went on.</p>
+    <p>(Added: Thursday October 13, 2005)</p>
+    <h2>(Wednesday Oct 12, 05)</h2>
+    <p><strong>Round 3</strong><br>
+      OK --- so I thought Sunday and Monday nights were bad sleep-nights. Tuesday night was probably the worst night of sleep in my life. I think it was because I slept in too late Tuesday morning and took too long of a nap during the day. I have to better manage my sleep and nap schedule. And to top it off, sometime after finally getting to sleep, I was awoken by a horrible dream. And I never have bad or scary dreams. If I try to analyze this dream it definitely stems from the anxiety of my upcoming surgery.</p>
+    <p>Dream - Part 1: So in this dream I was in inside a home that I believe represented my childhood home. I knew that monsters were outside and would soon be trying to get inside. The front door had a deadbolt at the top, bottom and near the handle. I struggled and struggled to try to get all three deadbolts locked in at the same time. People were in the house with me but I don't think they believed that monsters were outside. Analysis of the first part of the dream: My inability to securely lock the door equates to my inability to avoid this surgery. I know this bad thing is coming and there is nothing I can do about it. And perhaps the monsters are the surgery itself.</p>
+    <p>Dream - Part 2: Then for some stupid dream-reason I went outside into the woods. There were people with little green heads lined up getting the bottom of their jaw cut by a table saw, one after another. Sorry for the visual. This is obviously a direct correlation to my surgery where most of my throat will be removed.</p>
+    <p><strong>Feeling light-headed</strong><br>
+      I forgot to mention that on Monday of this week I had blood drawn from my portacath for the first time. I have never been a big fan of needles and hate to see my own blood being drawn. As a child, I once passed out from stepping on a nail and have felt light-headed after getting vaccinations. So on Monday the nurse wiped down my portacath with rubbing alcohol and pierced the skin with a needle to get into the portacath. Of course my eyes were shut tightly as I tried to think happy-thoughts. But the idea of having blood removed from my chest, combined with the smell of rubbing alcohol under my nose, was more than I could take. I had to wait a few minutes before I could stand to rid the queasiness. I better get use to this procedure as I will be getting blood drawn every Monday during chemo/radiation.</p>
+    <h2>(Thursday Oct 13, 05)</h2>
+    <p><strong>Feeling the effects</strong><br>
+      I skated through week one which I expected would be my toughest period. My overall strength has declined this week but my vitals and blood counts are good.  I am usually very tired and feel weak. My tongue always feels rough like coarse sandpaper, the taste of food isn't as enjoyable, and my stomach usually bothers me. I seem to wake up feeling great but by mid-morning my stomach has the sensation that I cannot even begin to try to put into words. It is not painful like a stomach ache. It's just plain uncomfortable. I hiccup every once in a while and I never feel hungry. I am eating smaller portions for all meals than I normally would but am snacking throughout the day and trying to drink nutrient-shakes. The weight continues to slowly come off and that has me concerned. I will speak with the nurse about this tomorrow.</p>
+    <p><strong>Mind games</strong><br>
+      It is very frustrating for me that I have lost months of exercising and strength-building in two short weeks. Last month I was pleased with my physique and was looking forward to building a little more muscle. Now I am so skinny that my pants do not stay on my hips without a belt. And I don't like touching my body. I feel nothing but bone. I cannot believe how little muscle I have left. I need to make sure this mind-game does not consume me. I will ask if it is healthy for me to try to slowly work into another exercise routine.</p>
+    <p><strong>Something I had to do</strong><br>
+      A few minutes ago I went to the website for the National Marrow Donor Program. As I previously mentioned, I am no longer able be a volunteer donor. I signed up in 1990 after watching a heart-wrenching Sally Jesse Raphael show on children with cancer and leukemia. The show was asking people to sign up to be a bone marrow donor and I was very willing to do so. I really hoped that someday I would get a call that I might be a suitable match for somebody that needs healthy marrow. The odds are very unlikely that a non-relative is a suitable match but something told me that I would someday get the call.</p>
+    <p>The National Marrow Donor Program (NMDP) facilitates an average of 200 marrow or blood cell transplants each month and has helped give more than 20,000 patients a second chance at life.</p>
+    <p>Each year more than 35,000 children and adults in the United States are diagnosed with diseases for which a marrow or blood cell transplant could be a cure.<br>
+      A transplant requires matching tissue types between patient and donor. These tissue types are inherited, but 70% of patients do not have a matched donor in their family.<br>
+      These patients and their physicians can turn to the NMDP for help with the search for a match and for support through every step of the transplant journey.<br>
+      Another personal plea<br>
+      I am saddened that I am no longer able to be a donor. And now there is one less person on the donor registry. I hope that someone is willing to take my place. For more information, please go to: http://www.marrow.org<br>
+      There is a fee that ranges from $65 to $96 for the cost of blood sampling and determining your tissue type. And it's a commitment that cannot be taken lightly. It was an honor to have been on the registry!!!</p>
+    <p>(Added: Wednesday October 19, 2005)</p>
+    <h2>(Monday Oct 17, 05)</h2>
+    <p><strong>I don't want it anymore</strong><br>
+      Cancer --- tried it --- not a big fan. Tonight was a little rough on me mentally. For a brief moment I got really pissed-off. This is the first time that I've felt this emotion. Today I had another moment where I mentally wrapped up all of the bad things that have happened and how my life is going to be forever changed in so many ways, and none of them being positive. It's tough on me when I really think about it. I know that I need to stay positive but it's a lot easier said than done sometimes.</p>
+    <p>I'm also sick and tired of my stomach feeling the way it does most of the time. I felt very good over the weekend; probably because I had two days off from getting beams zapped into my esophagus. I haven't had to take very much Pepto-Bismol lately so that's a good sign that maybe I'm finding a diet that works for me. I still need my daily naps though.</p>
+    <p>I met a registered dietician/nutritionist at the hospital. She put me on a 3,000+ calorie diet to gain weight. Most things that are bad for people are good for me right now. Fried meats and vegetables, potatoes, gravies, cream sauces, butter, butter, and more butter. Real mayonnaise, heavy syrup, desserts, high-calorie shakes, pancakes, peanut butter.... you get the idea. Well at least I get to enjoy bad food and not have to feel guilty about it.</p>
+    <p>I continue to feel weakness within the bones of both my knees and hip. I notice it when I sit or lay down. I assume that is side-effects of the chemo.<br>
+      Oh yeah &ndash; my tongue is almost back to normal. But now I'm no longer able to sand wood with it.</p>
+    <h2>(Tuesday Oct 18, 05)</h2>
+    <p><strong>Didn't feel queasy this time</strong><br>
+      Had blood drawn again today. This time I didn't get queasy. The nurse told me do take a deep breath before she injected the needle and I thought about the picture of Norway that was in the room. So that got me through it.</p>
+    <p>I then met up with my oncologist. She was happy with my two blood counts. They are in the range where they should be. However, as I type this I don't know if that means the numbers are in the normal range for a healthy person or for somebody going through chemo/radiation. I will have to ask that question next time. But she was very pleased that I am feeling well and my vitals have been great.</p>
+    <p>I asked what my treatment would be should the cancer return after surgery. She said that I would like just get chemo since I'm getting a lifetime's worth of radiation in this five week period. I also asked if I will be getting any tests to determine if the tumor has shrunk once I have completed my series of chemo/radiation. As a result, I now have a PET Scan scheduled for November 18. Sometimes you just have to ask.</p>
+    <p>Gained another pound or two.</p>
+    <h2>(Wednesday Oct 19, 05)</h2>
+    <p><strong>Having a bad stomach day</strong><br>
+      My stomach was not in a good mood today. I woke up worse than any other day and it lingered through the entire day. It was almost a feeling of needing to throw-up, but not quite. But I knew that I didn't need to actually throw up. Again, it's hard to explain the feeling in words. It compares to nothing like I've ever experienced.</p>
+    <p>The weakness in my knees and hips is diminishing.</p>
+    <p><strong>42 in 49</strong><br>
+      Looking at my calendar, I have 42 medical appointments scheduled within 49 days (Sept. 22 &ndash; Nov. 9). And I'm sure they will throw in a few more just for fun.</p>
+    <p><strong>Can you hear me now?</strong><br>
+      I began a new cell phone billing cycle so I have a fresh batch of minutes. So please feel free to call me during normal (peak) times too. Thank you for working around my lack of peak minutes. You can now go to bed at 9:00 pm.</p>
+    <p>(Added: Sunday October 23, 2005)</p>
+    <h2>(Friday Oct 21, 05)</h2>
+    <p><strong>New meds</strong><br>
+      Last weekend my bowel stools were very dark. I read somewhere that it could be a side-effect of either chemo or radiation. I don't recall which? It returned to normal on Monday so I didn't worry about it too much until it returned Wednesday. I spoke with my oncologist who said it might be blood loss as a result of my esophagus eroding or the tumor shrinking. I hope it's the latter one. So now I'm on Omeprazole which blocks acid production in the stomach and is taken for erosive esophagus, in addition to acid-reflux and other throat conditions.</p>
+    <h2>(Sunday Oct 23, 05)</h2>
+    <p><strong>I hope it grows back wavy</strong><br>
+      I noticed during breakfast this morning that my hair is beginning to fall out. When I pulled on my hair, sometimes one or more hairs came out. I now wonder how much I will lose and how quickly it will occur? I'm sure round two of chemo will accelerate the need to find a really cool hat.</p>
+    <p><strong>In some ways I consider myself fortunate</strong><br>
+      Sometimes I realize that I could have it worse than I do. Every weekday I go to the cancer center for radiation during my lunch hour. This can be a depressing experience depending on the other patients that I see waiting. Occasionally I see people that are in really poor shape and I wonder how much time they have left. Of course I hope I never get to that point and consider myself (relatively) fortunate that for now I am strong and able to fight this.</p>
+    <p>And most of the time the side-effects are just an annoyance. My side-effects have been very few and minor compared to the long list of possible side-effects from chemo and radiation. Please do not think that I am miserable and in pain because I am not. Sundays are good stomach days for me since it gets a two day break from radiation.</p>
+    <p>(Added: Thursday October 27, 2005)</p>
+    <h2>(Wednesday Oct 26, 05)</h2>
+    <p><strong>What lies ahead</strong><br>
+      Tonight I met and had dinner with Gary who was diagnosed with esophageal cancer about seven years ago. He went through the same surgery that I will be going through and actually had the same surgeon that I will have. Gary credits this surgeon as being the reason he is still alive today. Gary is one of the nicest people you could ever meet. It was a pleasure to meet him. He has to sleep at an incline with his head higher than his feet to keep everything in his stomach in his stomach. He has to eat smaller portions for meals. I'm sure the same lies ahead for me.</p>
+    <h2><br>
+      (Thursday Oct 27, 05)</h2>
+    <p><strong>Bad stomach week</strong><br>
+      This has been a bad stomach week for me. It's still not painful but quite often I have the feeling that I could throw up at any moment. I never do though. It's very odd how the feeling in my stomach can change so quickly and changes mood throughout the day. I can feel almost no discomfort one moment then feel awful the next. I wonder what is going on in there. My stomach really revolts shortly after eating large meals.</p>
+    <p><strong>Busy Busy Busy</strong><br>
+      I have been keeping myself so busy lately that most of my nights have been meeting up with friends and family. It's been wonderful. But as a result I'm a little behind in my correspondence. I plan on getting caught up Saturday. So until then thank you everyone for your e-mails and cards. I enjoy getting them and love you for keeping me in your thoughts and prayers!</p>
+    <p>It continues to be very easy for me to work full-time. I do take an hour nap to rest and rejuvenate if I go home after work.</p>
+    <p>I now have a tentative surgery date of December 2.</p>
+    <p><strong>No worry mon</strong><br>
+      I am thrilled that I am still getting to go to Jamaica after all. Yippee!!! Originally it was scheduled for mid-December. I rescheduled our resort and flights this week for November 25-30. Fortunately my sister Lisa, her children Logan and Bailey, and my brother Scott were able to change their vacation days too. And now my cousin Edi and aunt Georgia are joining us. Yeah! All of us are very excited about this trip! I'm looking forward to the jerk chicken and being served drinks on the beach.</p>
+    <p>(Added: Wednesday November 2, 2005)</p>
+    <h2>(Wednesday Nov 2, 05)</h2>
+    <p><strong>The return of the blue fanny pack</strong><br>
+      I started up round two of chemo today. I will have the fanny pack, chemo bag, and pump constantly at my hip through Sunday. I now return to my daily regimen of eight tablets of four anti-nausea meds. I have four of five more radiation treatments, so mid-next week the pre-surgery treatments will all be over.</p>
+    <p>Fortunately the health care is much better than the food at Methodist. My lunch today was a very uninspiring chicken salad with a small dinner roll that didn't feel to tasty to the touch. The Tomato Florentine soup was very good though. Dessert was apple crisp that probably was descent enough but just didn't hit the spot for me. And this is the same lunch they serve every Wednesday which unfortunately was the same day and lunch I had at the start of chemo round one. Their cooks need to be a lot more creative.</p>
+    <p><strong>Bear hugs</strong><br>
+      My white blood cell counts continue to decline, which is expected. Fortunately my overall blood counts were good enough to allow me to continue my chemo on schedule. I have decided that since I am more susceptible to illness, and we're heading into the cold and flu schedule, that I should not be passing out kisses or sharing my drinks. So don't be offended if you just get a bear hug from me during the next two months. I don't want to get sick during my treatment, while I recover, while in Jamaica, and after my surgery. I have been lucky to avoid illness so far.</p>
+    <p><strong>Side-effects continue</strong><br>
+      My stomach problems continued into last weekend with a vengeance. I felt best when I rested so I napped much of Saturday away. Dark stools continued and the pace of hair loss slightly sped up. The skin around the center of my chest is now red, a common side-effect of radiation. There is no discomfort though. I do feel chest pressure if I exert myself too much, even if I walk up stairs too quickly. My doctor said this is common but it feels a little scary to me. Kind of like it could turn into a minor heart attack. Over the past few days, that feeling has diminished but it may be a result of me taking life easy.</p>
+    <p>(Added: Tuesday November 8, 2005)</p>
+    <p><strong>Nauseous. Period.</strong><br>
+      So round two of chemo plain-and-simply did not go as smoothly as round one. It is now Tuesday November 8 and I have been nauseous consistently since Thursday.</p>
+    <h2>(Thursday Nov 3, 05)</h2>
+    <p><strong>Sleeping is best</strong><br>
+      I woke up to painful dry heaves, and to the point of throwing up sour bile. I thought getting oatmeal into me would be the answer. A few minutes later that proved to be the incorrect answer. Two more times that day I had the dry heaves with bile. The best I could do all day was to keep down about four tablespoons of creamy soup broth.</p>
+    <h2>(Saturday Nov 5, 05)</h2>
+    <p>Not a good day, probably the worst overall to date. I never threw up but certainly thought I could at any moment.</p>
+    <h2>(Sunday Nov 6, 05)</h2>
+    <p><strong>Hopefully never again</strong><br>
+      This morning I had the chemo removed. As long as the cancer never again rears its ugly head, I will never have to go through that again.</p>
+    <h2>(Monday Nov 7, 05)</h2>
+    <p><strong>The dreaded scale</strong><br>
+      I was expecting weight loss when I jumped on the scale at the hospital. However, I was not expecting the loss of ten pounds in less than one week. My blood pressure and pulse were also concerning to the nurse. They said they would weigh me the following day and would administer fluids and nutrients if I lost more weight. Fortunately I was able to eat some food for the first time in four days. I guess I have eaten two cups of food from Thursday to Monday. Today I was able to eat about 1/4 of a Wendy's Frosty and 1/4 of only the chicken breast from a chicken sandwich. Later that night I had four small squares of pizza. Progress at last.</p>
+    <p><strong>Why ten pounds in five days?</strong><br>
+      I don't know if the nausea I am going through compares to that experienced by pregnant women? Nor will I ever know first-hand. This is why I lost so much weight so quickly... I could not find any food that even remotely sounded appetizing. To make it worse, I couldn't think of food that I could even keep down. Even drinking water and Gatorade sometimes gave me the sensation of going to vomit. The best I could do with any food was about two tablespoons worth. I knew that if I ate more that I would likely throw it up and that wouldn't do me any good. Plus I knew that I would feel even worse shortly after eating. I was just surprised how relentless this feeling was. It just never let up.</p>
+    <p><strong>Slide pictures</strong><br>
+      I went back to the Throat and Neck Cancer Support Group today, for the cookies of course. There was going to be a cancer surgeon speaking so I thought I should attend. I didn't know the subject matter but I thought the more I know the better. It was interesting, albeit a bit high-level at times for me since I've never taken any classes on cancer molecular composition. His audience was made up entirely of survivors and their spouses or friends. Most of the talk was brought down to a level that was appropriate although the cancers he discussed were all in the head that didn't apply to mine. Some of the slide pictures were less than appetizing but even nauseated, I got through them. The one thing that I did learn is that there is a new scan that combines CT and PET scan technology at the Fairview University Clinic. This new combination is suppose to be better in that it takes the two technologies and compares the results to give a more accurate picture of the cancer. At least that is what I took away from it. So now it's on my list of questions to find out if my PET Scan in September was this technology or not. And if not, can I get this when I go in for my progress check November 18? So I did come away from this support group with a little more knowledge that may prove to be useful.</p>
+    <p>I met a man, before the meeting got underway, that was just diagnosed with his third round of oral cancer last week. It had tripled in size in just a few days. His doctor, the one that spoke at the group today, told him that he has never seen such an aggressive cancer. This man blames his cancer on his exposure to Agent Orange in Vietnam.</p>
+    <h2>(Tuesday Nov 8, 05)</h2>
+    <p><strong>Back on the scale again</strong><br>
+      I was able maintain my weight since the day before. No weight gain, but none was expected. My blood pressure and pulse were better so I did not have to get fluids administered.</p>
+    <p><strong>Graduation Day</strong><br>
+      I have completed 25 treatments of radiation. Yippee! I have been subjected to a lifetime's worth of radiation in five weeks. I should never be subjected to the invisible beam again. I received a &quot;Congratulations&quot; certificate on completing my treatment. I told the radiation therapist that this means more to me than my college diploma.</p>
+    <p>Since Thursday, I have missed more days than I have worked. Now that my chemo and radiation treatments are complete, I expect to feel a little bit better each day. And now it's time to plan for Jamaica mon!</p>
+    <p>(Added: Monday November 14, 2005)</p>
+    <h2>(Wednesday Nov 9, 05)</h2>
+    <p><strong>An unusually good day</strong><br>
+      I went out for dinner with co-worker friends from my office and another from our Netherlands office. We went uptown to Chino Latino and surprisingly I was hungry and was able to eat a LOT of food. I have no idea why I was feeling relatively OK and actually had an appetite for the first time in a long time. We had a great time and the food was wonderful.</p>
+    <h2>(Thursday Nov 10, 05)</h2>
+    <p><strong>Late-night emergency visit</strong><br>
+      Back to reality... stomach not happy. I continued to feel worse throughout the day and around 8:00 pm I started getting SEVERE abdominal cramps. I was hunched over in so much pain and I couldn't tell if it was going to result in vomiting or diarrhea. As my luck would have it, it resulted in both. I had three very severe episodes of vomiting that caused a great deal of pain in my chest. Shortly thereafter I had the first of four bowel movements in less than one hour. The first stool was normal in color but where hard, round pellets. The subsequent three stools continued to get softer with the last one ending in diarrhea. The color of the last three stools were very dark so I knew that internal bleeding was occurring again, as it has frequently has throughout my treatment. But this is the first time that I got so sick with vomiting, diarrhea, and dark stools at the same time. I knew that this was possibly serious and I couldn't just let the symptoms pass. I apologize for the unpleasant details of my bowel movements --- this journal also helps me record my medical history. My sister Lisa, who works at an urgent care in Woodbury, suggested I go in for care. It was too late to go to urgent care so my brother Scott drove me to the emergency room at Methodist. We arrived around 11:00 pm and had to wait at least an hour before I was admitted. The waiting room was not nearly as exciting as it is on the television show ER.</p>
+    <p><strong>I passed the tests</strong><br>
+      I expected to be treated for dehydration in the emergency room for a few hours and would go home to rest. I ended up staying two nights hooked up to I.V. in the hospital. During the emergency visit they took x-rays and ran tests on my urine, blood, and stool sample. There were traces of blood in the stool but fortunately my hemoglobin (red blood cell) counts were normal so they were not concerned that I was losing too much blood. They said I would need to spend the night to monitor my blood counts to make sure the bleeding doesn't get worse.</p>
+    <h2>(Friday Nov 11, 05)</h2>
+    <p><strong>The worst day and half in my life</strong><br>
+      I could go on for pages about my hospital visit. Quite simply, it was horrible from start to finish and not because of the hospital staff. I probably had twenty people care for me during my stay and they were all very professional and caring. They did a wonderful job! Some of the things that made it so awful were: 1. of course I wasn't feeling well;  2. I was out of my environment;  3. I didn't sleep for 26 hours;  4. they had me on a liquids only diet on Friday when I needed to try to eat solid food. On Friday afternoon I was actually feeling OK but continued to feel worse as the day progressed. I was told that the blood in my stomach is what is making me feel nauseous. And with a liquids only diet, this blood did not have anything to absorb into so I started getting sicker. I asked for solid foods but was denied. I understand that they have policies and procedures to follow. It was just very frustrating for me because I knew that I needed to try to get food into my stomach. I asked if I could discharge myself because I was so tired and in need of food. The doctor recommended that I stay a second night. I reluctantly accepted the suggestion. My negotiation skills were not very good that day as I was 0 for 2 on my pleas. By 9:00 PM I was getting very nauseous and frustrated so I begged for food. I was given a box of Cheerios and milk that did help a little. What I really wanted was what my roommate had for dinner, roast beef and potatoes. It smelled wonderful and he said it actually tasted very good. I could only imagine what it must have tasted like. My lunch was chicken broth soup and dinner was beef broth. Both of which were horrible. It can't be too difficult to make good tasting broth, is it?</p>
+    <h2>(Saturday Nov 12, 05)</h2>
+    <p><strong>Finally solid food (I think)</strong><br>
+      Breakfast was a very small portion of scrambled eggs that tasted very odd. Even my roommate thought so. We put a lot of salt and pepper on it to make it edible. I had small muffin that was good (only because the hospital didn't bake it) and a bowl of oatmeal with the consistency and taste of wallpaper paste. I tried drowning it in sugar but it was still not edible. Lunch was a hamburger with a meat patty (I think) that tasted awful. The corn and vegetable soup were awful too. I know that it is next to impossible to find food that I can eat but the entire kitchen staff at Methodist needs to be fired.</p>
+    <p><strong>The bleeding</strong><br>
+      I am concerned about the continual bleeding. I asked to get a scope inserted into throat to make sure something really bad isn't happening. The doctor said that what I am experiencing is typical of the aggressive treatments that I have gone through. He said going in with a scope could only damage something and isn't worth the risk. He said he knows what he would see. I accepted his opinion.</p>
+    <p><strong>I need to leave now</strong><br>
+      So I patiently waited all morning for a doctor to discharge me. Late in the morning the nurse told me that she was currently discharging a patient and that I would be next. I waited and waited until the clock struck 1:00 PM. I am normally a very patient person and I completely understand that there are many things going on behind the scenes and that I would be attended to as soon as possible. However I continued to feel worse as the hours ticked. I knew I needed to get home to rest and try to get food into me. The only food that I thought I could possibly eat was a burrito supreme from Taco Bell. There was no other food that I could think of that I might be able to eat. At 1:00 pm I asked the nurse if I had the right to discharge myself. I told her that I needed to leave now. She paged the doctor that I was &quot;very anxious&quot; to leave. In other words: becoming unruly. The doctor showed up 20 minutes later. She was very nice and caring and discharged me after I told her why I needed to leave.</p>
+    <p><strong>Where's my burrito?</strong><br>
+      My brother Scott drove me home from the hospital. We picked up a burrito supreme at Taco Bell along the way. Finally I was going to eat real food for the first time in nearly two days. I was cautiously optimistic that I could eat this tortilla-wrapped wonder-food from Taco Bell. I was wrong. I was only able to eat about two tablespoons of the meat filling. It was very frustrating that I couldn't eat it. I'm sure some people probably don't understand why I cannot eat when I know that I need to. The only way that I can begin to explain it is to think of the worst stomach flu you have ever had and to try eating while feeling you're absolute worst. Of course I have had the stomach flu in the past but the way I feel at times is so much worse than any stomach flu I have ever experienced. I know that I need to eat. I have so much food in my cupboards but still my body does not allow me to eat. I don't know if people can fully appreciate this sense of frustration this puts me through. I pick at my food but am not able to put it into my mouth. And I know that quite often the food that I am able to eat will likely make me feel ill within an hour. It's not as simple as eating even though I'm not hungry.</p>
+    <p>Saturday night sucked!</p>
+    <h2>(Sunday Nov 13, 05)</h2>
+    <p>Most of Sunday sucked!</p>
+    <p><strong>Scary skinny</strong><br>
+      Now it's getting serious. I wouldn't be surprised if I lost another five pounds this week. I am probably close to 150 lbs and for being 6'-1&quot; that is not good. I really looked at myself carefully in the mirror today. I now see somebody that has anorexia. My back is nothing but skin on bones. I have to go in one more hole on my belt to keep my pants up. Though not as bad, I see images of men in holocaust camps. And to think that I will probably lose more weight after my surgery concerns me.</p>
+    <p><strong>A setback</strong><br>
+      This week was a setback for me both physically and mentally. I was hoping that I would feel better and get stronger each day after my chemo and radiation treatments finally ended. I was not prepared to go through this. I am physically and mentally exhausted. I felt light-headed just standing up this morning. I was able to eat some food today.</p>
+    <h2>(Monday Nov 13, 05)</h2>
+    <p><strong>Now I know why</strong><br>
+      I woke up feeling awful, like I have most mornings lately, so I did not go into work again. I started to feel a little bit better as the day went on and I was able to eat substantially more food. But now that I am finally finding an appetite, it is becoming very painful to eat and drink. Even eating very small bits of food can send very intense pains throughout my chest. Now I'm concerned that the tumor could be increasing in size. I left a voice message on behalf of my oncologist with the concerns that I was not feeling better and swallowing is becoming very painful. She returned the message a few hours later after consulting with another oncologist. My oncologist is currently in China adopting a child and will not be returning to the office until the beginning of January. The oncologist was not concerned after reviewing all of the tests during my emergency stay. It is just the results of such aggressive treatments. I blame most of it now on the radiation, not the chemo. Now I fully understand why this is one of the worst cancers to get. This is really hitting me hard in so many ways.</p>
+    <p><strong>Side-effects</strong><br>
+      My chest continues to look as if it was sunburned. I noticed my skin sores and cuts appear dark and are taking much longer to heal.</p>
+    <p><strong>What a depressing read</strong><br>
+      I realize that my journal has not been a fun read for quite some time. I did forget to mention one thing last week. On Tuesday November 8, I became concerned when I noticed the color of my tongue was an odd shade of green. I wondered what could be causing that now. Several hours later it dawned on me... it was from green M&amp;Ms.</p>
+    <p>(Added: Thursday November 17, 2005)</p>
+    <h2>(Wednesday Nov 16, 05)</h2>
+    <p><strong>Dermy</strong><br>
+      I had an appointment today with a dermatologist to see if I should be doing something about the radiation &quot;burns&quot; on my chest. The doctor informed me that the same thing is occurring on my back. He gave me samples of Aquaphor healing ointment from Eucerin. I am to apply it two to three times a day. He also removed part of a mole on my back because it was darker than others. It will be biopsied and I should get the results next Wednesday. I have had mole biopsies several times over recent years and the results have always been negative. So I'm not too concerned about it.</p>
+    <h2>(Thursday Nov 17, 05)</h2>
+    <p><strong>Finally &ndash; a turnaround</strong><br>
+      Tuesday was the first day in nearly 1-1/2 weeks that I didn't wake up in pain and feeling ill. So Tuesday, Wednesday, and today keeps getting a little better each day. My appetite is returning. I don't get as ill after eating food. The pain in my chest is less frequent. I don't feel as nauseous and it's less painful to eat food and swallow liquids. Finally!!!</p>
+    <p>(Added: Wednesday November 23, 2005)</p>
+    <h2>(Wednesday Nov 23, 05)</h2>
+    <p><strong>Feeling better every day</strong><br>
+      Fortunately, each day I continue to feel a little better than the day before.</p>
+    <p><strong>The pre-op</strong><br>
+      This morning I had consultation with my surgeon. He answered all of my questions that I've accumulated over the past few weeks. I also found out the results of my CT scan from last Friday that was to determine if the size of the tumor has changed since the diagnosis. Fortunately I did not get bad news in that the tumor size has not increased. I prepared myself a little for possibly receiving bad news. Unfortunately, according to the original hospital staff who reviewed my scan results, the size of the tumor has not decreased. My surgeon thinks the tumor has decreased slightly. I was disappointed that all of the chemo, radiation, puking, diarrhea, and bloody stools did not result in a noticeable decrease in tumor size. I feel as if I went through a lot and benefited little. However I still believe that I made the correct decision to do the chemo/radiation therapy before surgery. If the surgeon is correct, it did result in a smaller tumor and that increases the chance that it will all be removed during surgery.</p>
+    <p><strong>The surgery</strong><br>
+      The surgery will take place at 7:30 AM on Friday December 2 at Methodist Hospital in St. Louis Park. It will be led by Dr. Ted Spooner, a cardiac and thoracic surgeon. He will be removing my esophagus, the surrounding area where it appears to have attached to nearby lymph nodes, some of the surrounding stomach, and as much of the throat as possible. He will make an incision near my stomach to determine how far the tumor has spread. If it hasn't spread too much, he will make a second, smaller incision near my neck. I assume this is how he will sever my throat. If the cancer is not as contained as we hope, the second incision will be to my side and he will need to break a few ribs to get to where he needs to be. The less he removes of the stomach, the better as he will stretch and move my stomach upward to meet up with the severed throat. And since I have a long torso he will need as much stomach as possible. There is a chance that the cancer has moved up the throat so that is another reason they prefer to remove as much of the throat as possible. My esophagus will not be &quot;recreated&quot; using other parts of my innards. He expects me to be in the hospital for nine days. I believe the main reason that I will need to stay in the hospital for such a long time is because of risk item # 1 below.</p>
+    <p><strong>The risks</strong><br>
+      With every surgery comes risks. Here are mine:<br>
+      A 10% chance of leakage where the throat will be rejoined. This would occur during the hospital. It sounds like it can easily be managed should this occur.<br>
+      A 30% chance of &quot;structure&quot; (narrowing of the throat) 3-6 weeks after surgery. Should this happen they will be able to expand the tube somehow.<br>
+      Bleeding and infection is infrequent<br>
+      Bloating and diarrhea is common<br>
+      Hoarseness<br>
+      Possible pain from the incision</p>
+    <p>My brother Scott will be sending out an e-mail after the surgery to inform you as to how it went. I am giving him quite a lengthy list of e-mail addresses. I apologize if I forget to include you on the list. It that happens, I hope you are able to get information from one of my friends or family members. He will also send out a second e-mail to let you know when I am physically and mentally ready to have visitors at the hospital.</p>
+    <p><strong>Jamaica bound</strong><br>
+      I will not be thinking about my surgery from Friday November 25 through Wednesday November 30. I will worry about it when I get home. The forecast for Jamaica calls for highs in the upper 80s with lows in the mid 70s. Sounds mighty good to me!</p>
+    <p>I hope you had a great Thanksgiving and holiday weekend!</p>
+    <p>(Added: Friday December 2, 2005)</p>
+    <h2>(Thursday Dec 1, 05)</h2>
+    <p><strong>Back to reality</strong><br>
+      We had a wonderful family vacation in Jamaica! Last Friday was our first day. We landed in Montego Bay to cloudy conditions. It wasn't too long before we began our expected two hour tour-bus ride to our resort in Ocho Rios. I read on the internet that the road conditions are very poor. Shortly into our ride it started pouring, continued to pour, and then poured a whole lot more. Several Jamaicans told us they have never seen it rain so much, even during tropical storms. And they have never seen the roads get so flooded. Jamaica is currently working on a new highway between these two cities. Much of the road is gravel and bumpy even in dry conditions. Stretches of the road were flooded and cars were somehow slowly getting through. At some places two-way traffic turned into one-way traffic and we had to wait for opposing traffic to pass. It was amazing we even got to our resort, although it did take nearly 3-1/2 hours. It didn't impact us too much but we did miss the beach party the resort throws on Friday nights. The weather was very nice for the rest of our stay with highs in the low 80s.</p>
+    <p>We went on a bamboo river raft tour down the Martha Brae River. It was a 30' long raft made of bamboo poles that sat two or three people. Each raft had a captain that stood at the front and guided us down the river. Normally it would take 1-1/2 hours but with the rain on Friday, the river was fast so it only took one hour. It was a very relaxing and enjoyable tour.</p>
+    <p>Most of us went on a horseback beach tour. We started in the lower region of a mountainous hill and followed a trail down to the beach. Along the way we were introduced to the native plants and history of the region. We continued to the beach where Christopher Columbus shipwrecked at 1503-1504 during the explorer's fourth expedition to Jamaica. Our horses walked gingerly on land and galloped through the ocean. The horses seemed to enjoy running in the water and it was good exercise for them. It was very fun to be on horses for about 15 minutes running through the warm ocean water! We all had our own (large) horses including Bailey and Logan. I was concerned that Bailey would get scared and back out at the last moment. But she was brave and had a great time. She said she was a little nervous when she first got onto the horse and when the horse started running in the ocean.</p>
+    <p>Health-wise I felt very well during the trip. I was able to eat and drink anything I wanted --- although I did stay away from spicy food just to play it safe. I did have a sore throat for a day or two and was a little concerned that if it didn't go away that it could impact my surgery. Fortunately the sore throat went away with the help of Jamaican cough syrup that I purchased in a very poor town near the ocean after our horseback ride. I did experience the same chest pain that I had during the chemo/radiation treatments after playing a few minutes of beach volleyball. Fortunately I did not have this sensation the following day after playing tennis with Logan or after snorkeling off our resort's beach.</p>
+    <p>I must say the people in Jamaica are amazingly friendly. Just like in the tourism commercials. The jerk chicken and pork in Jerk Centre of Ocho Rios was delicious. The RIU resort was new and beautiful. Our two rooms were upgraded to two adjoining junior suites with a beautiful view overlooking one of the pools and the ocean. Very nice indeed!</p>
+    <p><strong>Thank goodness for Crystal Lite</strong><br>
+      Today I unpacked, paid future bills, got caught up on e-mails, messages, completed insurance forms, and delivered a small game order to a nearby mall. My medical assignment was to drink a gallon of laxative. I was given a plastic container that contained about a 1/2 cup of powder. I filled the container to the one gallon mark and was given instructions to drink eight ounces every ten minutes. It's amazing how quickly ten minutes goes when you are forced to drink laxative. And it made it quite difficult to get my tasks done. The liquid tasted a little like saline solution that started making me gag about 1/4 of the way through the jug. I had to have a friend from work, Damien, run to the grocery store to purchase Crystal Lite Lemonade powder to give the water a more tolerable taste. At that time I was in no condition to drive to the store. I had to be pretty darn close to the porcelain within a moments notice. The Crystal Lite was the only way I would get through all of that liquid. It took many hours before the jug was emptied. I was not allowed to eat or drink anything else all day. The surgeon wants me cleaned up and empty when he gets in there. And I was only allowed to eat non-chunky soups yesterday. I thought I was going to be a lot more miserable than it ended up being. However it was still far from a pleasant day.</p>
+    <p>You would think that with my previous colorful descriptions of my bowel movements that I would have counted the number of times that I had a diarrhea-induced bowl movement. Believe me, if I would have thought of it earlier in the day, I would have.</p>
+    <p><strong>An unexpected hospital visit</strong><br>
+      I received a call today from somebody at Methodist Hospital asking me pre-op questions. I made the mistake of being too honest. I told her that I occasionally received chest pains during my chemo/radiation treatments when I over-exerted myself physically. She asked when the last time this happened and I told her it was while on vacation last week. She said I should inform my surgeon and that she would also inform him. I received a call from my surgeon a few minutes later. He was a little upset that I had not mentioned this to him when we had our consultation last week. I chalked it up to one of the many possible side-effects of chemo or radiation and was not too concerned. Lesson learned! He said the anesthesiologist may not be able to administer the anesthetics before tomorrow's surgery. That got me anxious because if that happens I would have to schedule a new surgery date. And not knowing when that would be, I was concerned that a delay of the surgery could give the tumor a chance to grow or spread. And I was mentally and physically ready for the surgery. The surgeon told me he would try to get me in today for a Stress Echo test. This all happened very quickly and fortunately they were able to get me in at 4:00. Basically I had to pedal a stationary bike for about 20 minutes until my heart rate reached a certain level. They checked my heart condition during this process. Fortunately I passed this test. The surgery remains on.</p>
+    <p>This unexpected trip to the hospital was my 47th medical appointment associated with my diagnosis.</p>
+    <h2>(Friday Dec 2, 05)</h2>
+    <p><strong>Getting late</strong><br>
+      It's now 1:30 AM and I have to wake up at 3:30 AM to be at the hospital by 5:00 to prep for the 7:30 surgery. I must go to bed.</p>
+    <p><strong>A little different from now on</strong><br>
+      I know my life will forever be different after a few short hours. How much, I just don't know for sure?</p>
+    <p><strong>Under the knife</strong><br>
+      This whole experience has reaffirmed to me how fortunate I am to have wonderful and loving friends and family. So before I go under the knife, I want to thank each and every one of you for your best wishes, prayers, concerns, and support. I love you very much for being such great friends and family!</p>
+    <p>(Added: Friday December 16, 2005)</p>
+    <h2>(Friday Dec 2, 05)</h2>
+    <p><strong>Not much going on</strong><br>
+      Nothing too interesting to report on today --- oh wait --- the surgery. I arrived at the hospital at 5:00 AM. I signed a few forms, had blood drawn, vitals were taken, and that's all I remember of that fateful morning. I do not recall going in for anesthesia or being wheeled into the surgery room.</p>
+    <p><strong>It went well</strong><br>
+      The surgeon said the surgery went as well as it could go. It lasted five hours --- a little less than expected. The only thing I recall from post surgery is my siblings in my room. I was not able to stay awake so I must have been a poor conversationalist. My sister Lisa told me that several times I asked &quot;What did the surgeon say about the tumor?&quot; That is not in my recollection.</p>
+    <p>Below is a representation (to the best of my knowledge) of the pre- and post-surgery of my innards. Picture A below shows the normal location of the esophagus and stomach and the two approximate cut lines during my surgery. Picture B shows how my stomach is now tubular shaped and much higher into my chest area. Approx 85% of my esophagus (which includes the food tube we commonly call the throat) was removed, along with 10-15% of the stomach, and the nearby lymph nodes. The tumor was at the bottom of my esophagus. The surgeon said these parts were all removed in one piece.</p>
+    <p><strong>I find this fascinating</strong><br>
+      I can see at least 22 markings from where they stapled me in the abdomen and ten in my neck incision. A cut was made in my stomach and toward the top of my food tube. The surgeon took these two ends and moved them out through the incision in my neck. The two new ends were joined outside of body then &quot;stuffed&quot; back in. Fascinating! I'm glad I wasn't awake to see that.</p>
+    <p><strong>More than I was expecting</strong><br>
+      The surgeon guessed me to have a stage 3 cancer (which I was expecting) but that 6 of 11 lymph nodes had cancer. Originally they suspected two when looking at the scans. The good news is he said that he did not see any cancer near the two cut areas so hopefully it was contained and removed during surgery. He continued to say that he removed all lymph nodes in that region but that some lymph nodes cannot be seen and may still exist. That concerns me but I assume that is always the case. He did say the surgery went as well as it could go and that he &quot;enjoys&quot; performing this surgery on healthy, tall people. I wish I could recall what he meant by that. Perhaps I have more food tube to work with. Who knows?</p>
+    <h2>(Saturday and Sunday - Dec 3 &amp; 4, 05)</h2>
+    <p><strong>As to be expected</strong><br>
+      It is painful to swallow saliva, as to be expected. It felt as if I had a tube in my throat or a marble was stuck in there. In fact for the first few days I thought I did have a tube down my throat. After all I had at least seven tubes sticking out of me. It was kind of scary to swallow. I wondered if that is the way it was suppose to feel or if there was a problem. Would it close up on me while sleeping?</p>
+    <p><strong>Baskets of stuff</strong><br>
+      I do not recall much of the weekend. I know I had a few visitors including my siblings and a few friends and family. Damien, from my day job, showed up with two huge baskets of stuff to keep me busy. It was hilarious. It included items such as magazines, tabloids, books, puzzles, electronic games, tacky knick-knacks, classic movies and cartoons on DVD, a CD/MP3 player, and a Nerf gun that launches Nerf missiles with an actual working light beam for &quot;precision blasting &ndash; even in the dark&quot; (according to the packaging). Damien told me to use it on the nurses. I regret not putting that to the test. Many people from my employment at Tennant pooled together money, signed a card, and then a few of them went out on a shopping trip to buy me stuff. I really appreciated all of the work they put into buying me things to keep me busy in the hospital and during recovery. I received several comments from the hospital staff that they have never seen a gift basket quite like that.</p>
+    <h2>(Monday Dec 5, 05)</h2>
+    <p><strong>Ouch</strong><br>
+      Today was full of frequent and painful coughing. Try to imagine what it would feel like to cough a few short days after having your stomach opened up and your throat cut. And I was producing a lot of phlegm that need to come out. One of the post surgery risks is pneumonia. I was given a plastic device that I was to inhale into for lung exercises. This would help clear up my lungs. I was told to do several reps each hour while awake. As important as it was to do, I did not look forward to it because it often resulted in me coughing. And I was not enjoying the whole coughing experience. But I knew it had to be done. I look back now and I don't think I took the risk of pneumonia as seriously as I should have.</p>
+    <h2>(Tuesday Dec 6, 05)</h2>
+    <p><strong>A very important test to pass</strong><br>
+      I was wheeled into a room very early in the morning to do a swallow test to determine if there were any leaks in the area where my stomach and food tube were joined. I have since read how some people became very ill if food escapes the food tube through a leak and enters the body. I have never been so physically tired in my life when they wheeled me away due to the lack of sleep that night. I had to use my two hands to prop up my head. The nurse asked me if there is something wrong with my head. It must have looked like I had a serious headache. And I know I must have looked in very bad shape to people as I wheeled passed them in the hallway. I was asked to stand on a platform and to drink a liquid as they took x-rays. The liquid was the most awful tasting thing I have ever experienced. The closest comparison I can come up with is that it tasted like very burned coffee smells. They said I needed to take one more sip. I told them that I might gag so they gave me a plastic tray to hold just in case. Somehow I got through it and fortunately the results were good --- no leaks. That was huge! I don't know what would have been done if there were looks? Perhaps a longer recovery or another surgical procedure.</p>
+    <p><strong>Bye-bye yet another tube</strong><br>
+      My nose tube was removed today. I don't know what that tube was doing but I know I didn't care for it. I think swallowing became slightly easier after that was removed. I continued to do my daily walks around the nurse's station, pushing ahead of me my I.V. stand. I would have the strength to make 2-4 circumferences.</p>
+    <h2>(Wednesday Dec 7, 05)</h2>
+    <p><strong>Finally real (but bad) food</strong><br>
+      I was allowed to eat for the first time post surgery. I think this is when I was put on a liquids diet, meaning broth soup. Again, the food was so horrible I was not able to eat most of it. It continues to get easier to swallow saliva each day.</p>
+    <p><strong>The chest pressure continues</strong><br>
+      I continue to be very uncomfortable from the chest pressure that started about half way through my chemo and radiation. It was very troublesome during the hospital stay because it made me very winded doing simple tasks and made sleeping quite difficult. Several times nurses would listen to my heart, and it was normal, but my surgeon was a bit concerned. He ordered a chest x-ray to see if there was liquid in my chest cavity which can sometimes result from this surgery. Within a few minutes two technicians were wheeling in this big x-ray machine into my room. The test results showed a little fluid but not enough to warrant it being extracted with a needle. It would naturally be absorbed into my body. My chest pressure was at its worse this morning. It would take about 40 minutes before I could fully catch my breath after having a bowel movement. This did get a little better throughout the day. I was also having very bad coughing attacks and abdominal cramps in the morning. They gave me medication to help with that (I think it was Tylenol 3). Despite the chest pressure, my surgeon told me that I am probably recovering quicker than any of his other patients that have had this surgery. Although it certainly didn't feel like things were going well at the time. Several times I imagined how much worse this post-recovery would be for smokers. I cannot even imagine!</p>
+    <p><strong>A few less tubes</strong><br>
+      My I.V. and catheter was removed today. I guess that means I actually have to get out of bed now to pee. Now I'm down to just a tube going into the feeding tube in my stomach. I also had a Jackson-Pratt (JP) tube removed from my neck which was used to drain blood and fluid from my neck wound. It is used so that the body does not have to try to absorb all of the liquid draining from the wound and helps prevent infection. It just dangled from my neck for a few days so it was good to get that thing out of my way.</p>
+    <p>Somebody from the hospital came in today and said they had to conduct an &quot;infectious&quot; test on all their patients. She inserted a cotton swab DEEP into both of my nostrils. So deep that it made my eyes water. It seemed very cruel at the time. I didn't think my nostril cavity was that deep. I really don't know what that test was all about? Maybe they thought I had the bird flu.</p>
+    <p><strong>An awful sleep experience</strong><br>
+      This might have been the worst night of my life. I could not get comfortable enough to fall asleep. I know it took at least three hours of doing very slight body adjustments to try to find a comfortable position. I would move an arm one inch in one direction, move my hip slightly to the right, try crossing my legs, try to sleep slightly to my side, tuck a pillow under my knees, adjust the angle of the bed for my back and feet, etc. I must have tried hundreds of different body and bed positions but nothing was working. The hospital beds were so uncomfortable. I blame my continued chest pressure during the hospital stay on these beds. The chest pressure would start as soon as I lied on the bed. I think I was a little too tall for the bed and could not find a comfortable angle for my back. I tried to sleep on the recliner but that didn't work either. I was given two pills to help me fall to sleep but I don't think that helped much. I finally ended up falling asleep with my head at the foot of the bed with the bed flat. That was probably not a good idea as I think I should always sleep with my head at a higher level to keep everything in my stomach in my stomach.</p>
+    <h2>(Thursday Dec 8, 05)</h2>
+    <p>I can safely say that I have never done that before<br>
+      I was shown how to use a syringe to remove the contents of my stomach to determine if I have processed enough food before I begin my nightly feeding through my stomach J-tube. The removed liquid was lemon-lime in color and I could see small particles within. I don't know where this J-tube is inserted into my stomach as the withdrawn contents are not anything you would ever see from vomiting. It must be at a &quot;lower&quot; level where the food is more processed. It was both gross and fascinating at the same time. I was told to push it back in as it contains valuable nutrients. In the process I spilled some on my hand. That was less than pleasant. Footnote: I have not done this process since. I start my night feedings at about 10:00 PM each night. I don't need to see that liquid again.</p>
+    <p><strong>Frankenstein --- no more</strong><br>
+      The surgeon removed the staples from my neck and abdomen with some device that seemed to just clip them in half. I was surprised that it did not bleed after they were removed.</p>
+    <p><strong>Tubeless and clean</strong><br>
+      The last of my seven tubes were finally removed and I was able to shower for the first time. I'm sure my visitors appreciated that. Previously I asked a couple visitors if it smelled in the room. In other words, if I smelled. I have &quot;a thing&quot; about keeping my body and teeth clean. They said &quot;no&quot; but I couldn't help but wonder if they were just being polite.</p>
+    <p><strong>I'm not as high-maintenance as I once was</strong><br>
+      They told me I had to leave the Advanced Care Unit of the Oncology dept since I was doing much better and did not require nearly as much care as my first six days. The nurse said she would check to see if there was a private room available but the additional expense would not be covered under insurance but she thought it was only about ten dollars. I expected it would have cost a lot more than that. I asked for the private room and fortunately she was able to find the only one available. I was still not sleeping well through the night so not having a roommate would be worth the extra few bucks. I hope she was correct about the ten dollars. I'll find out when the bill arrives.</p>
+    <h2>(Friday Dec 9, 05)</h2>
+    <p><strong>Back Home</strong><br>
+      I was discharged from the hospital today, one week after being admitted and a couple days earlier than expected. The week in the hospital was horrible! For the first five days I would wake up every twenty minutes while sleeping. It was so frustrating not to be able to sleep well. This resulted in long, uncomfortable nights. I cannot wait to sleep in my own bed.</p>
+    <p><strong>Homework</strong><br>
+      Here is my assignment for the next few weeks: I am to do &quot;night feedings' for ten hours each night where I empty four cans of liquid into an I.V. bag. These four cans will provide 1200 calories, fiber, and many of the nutrients I will need. This will provide me with about half of the daily intake of calories I will need. During the day I am allowed to eat most foods as long as they are smooth and blended. I should eat smaller portions at least four times a day. I thought I was going to be strictly on the I.V. feeding and not allowed to eat normal food so that was a pleasant surprise. I will record my weight on a daily basis before having a follow-up appointment with my surgeon on December 21st to see how well I am able to maintain my weight. I am to stop my I.V. night feedings three days before seeing him which will force me to rely on the regular food I eat during the day to maintain my weight. If I lose weight during those last three days it means I am relying too much on my I.V. feedings to get my calories. He may upgrade my diet on the 21st based on my weight control.</p>
+    <p><strong>Not just anything can be blended</strong><br>
+      I gave my brother Scott a list of food items and asked him to go grocery shopping for me. I found out over the next few days that I really didn't have enough food items to make a meal. I experimented with a frozen chicken pot pie which is high in needed fat and calories. I cooked it in the microwave then put it into my blender. I quickly found out that this idea didn't work so well. It ended up being one big blob of thick lard tasting goop. And it didn't taste anything like a chicken pot pie. I also tried a can of Chef Boyardee ravioli that I thought might blend OK. It's been years since I had food from the Chef and I had forgotten just how much I didn't like it back then. And to blend it only made it taste and look worse. I obviously have to figure out what will blend and what will not.</p>
+    <h2>(Saturday Dec 10, 05)</h2>
+    <p><strong>Here we go again</strong><br>
+      Fortunately I am able to navigate the 31 steps in my townhouse without pain. However I do get winded so I try to limit the number of trips walking up and down the two flights of steps. I tried to take a nap during the day but my heart was pounding a little faster than normal and I could not calm myself down to rest. That night proved to be an awful experience trying to sleep. Same problem. My head hit the pillow at 11:00 PM but my heart was beating too fast again. I tried for 3-1/2 hours to fall asleep but couldn't. I was getting a little concerned about what was going on. At 2:30 AM I reluctantly called the health support line fearing that I would be going into the hospital AGAIN. An on-call heart doctor soon called me back and said I should go into Emergency to have test conducted. So poor Scott was my victim once again ---- as my ambulance driver. I'm quite confident he was up at 3:00 in the morning anyways. Well surprise --- he wasn't. But he was more than willing to help me. I was admitted into Emergency at 3:30 AM. They did an EKG test and a chest x-ray. Both of which showed no heart problems. They said it was heart palpitations. They gave me Ativan to help with the palpitations and the accompanied anxiety I was feeling as a result. Within about 20 minutes I was sleeping in the Emergency room. That did the trick. They gave me a prescription of Ativan to take as needed. I was home by 6:30 AM and physically exhausted.</p>
+    <p><strong>Interruption of the night feeding</strong><br>
+      Since my unexpected trip to Methodist interrupted my ten hour night feeding, I had to resume that upon my return from the hospital. Fortunately I was able to sleep well until about noon.</p>
+    <h2>(Monday Dec 12, 05)</h2>
+    <p><strong>My first drive</strong><br>
+      I had to run a few errands today and was pretty sure I was up-to-the-challenge to drive. The condo unit I was going to buy in downtown Minneapolis was sold over the weekend by a young couple. They really like the options that I had picked out. I needed to sign a cancellation agreement with the condo builder so off to downtown I went. I was a little winded but was comfortable. It is bittersweet that the condo sold. I was really looking forward to moving downtown. I was hoping that something would happen that would allow me to still purchase it. This would have been a great time for my Gopher 5 numbers to finally be drawn.</p>
+    <p>Each day I am feeling a bit stronger and less winded doing simple tasks.</p>
+    <h2>(Tuesday Dec 13, 05)</h2>
+    <p><strong>Good thing I didn't get caught</strong><br>
+      Since I really didn't have many meals options that were smooth or could be blended, I decided that I needed to go to the grocery store myself to find appropriate foods. I went down most aisles picking up things that I thought might work. I was getting fatigued toward the end of my shopping and started to doubt my decision to do the shopping. I got through it OK and I think I rested when I got home. Good thing my surgeon didn't catch me at Rainbow Foods. I'm sure he would not have been pleased.</p>
+    <p><strong>Not so pretty</strong><br>
+      The tube that is going into my stomach needs to be flushed with water four times a day to keep it from getting clogged. The water also helps to hydrate me. I use a syringe to pump water into my stomach. I do not feel this sensation just like I never feel hungry or full. The area where the tube is stitched into my stomach is a little tender and red and does create an ugly green pus that needs to be squeezed out every day. I then apply a new bandage over this area daily. The pus is normal and I must keep the area clean so that it doesn't get infected.</p>
+    <h2>(Thursday Dec 15, 05)</h2>
+    <p><strong>Not a pleasant day</strong><br>
+      The day started just fine. I jumped on the computer early in the morning and started getting caught up on e-mails. For lunch I made myself a very large strawberry fudge malt (love those calories). Shortly after eating the entire malt I started getting minor stomach pains. It later turned into more painful abdominal cramps and very severe gas and frequent diarrhea. It was definitely the worse gas and diarrhea I have ever experienced. More wonderful times! I was able to take a nap through this and everything started to settle down around 7:00 PM. It was really bad but I was not going back into the emergency room and risk the chance of another overnight stay. I was just going to rough it out. I weighed myself at 149 lbs that night. Not good ---- not good at all. I have found this whole ordeal very frustrating (for many obvious reasons). Just when I think I am doing well I have a setback that makes me ill or requires me to go back to the hospital. These emotional highs and lows have been tough on my psyche.</p>
+    <p><strong>Surprise Surprise --- difficulty sleeping</strong><br>
+      I have had to take an Ativan each night to calm my heart rate to allow me to sleep. I tried to wean myself off the pill tonight as I thought my heart rate was much closer to normal.  I tossed and turned until I remember seeing at least 2:00 in the morning. It was time to succumb to the drugs. I took the Ativan. I don't want to have to rely on this pill so hopefully tonight will go better.</p>
+    <p><strong>Too much</strong><br>
+      I am getting very tired of this disease effecting every moment of my day and night. I cannot do anything without being reminded of it. From seeing the many scars on my chest and stomach, getting sick, not being able to eat normal foods, diarrhea, fatigue doing simple tasks, not being able to sleep, hooking myself up for ten hours of night feeding, caring for wounds and stomach tubes, being stuck at home, not having a social life, rarely being comfortable, trips to the hospital, losing weight, etc. I have had a couple brief moments of crying over the past few days but I try to force myself to stop. It's all too overwhelming if I really think of the big picture. And I don't like to do that.</p>
+    <p>(Added: Saturday Christmas Eve, 2005)</p>
+    <h2>(Saturday Dec 17, 05)</h2>
+    <p><strong>A better nights sleep</strong><br>
+      I was able to fall asleep without having to take Ativan. My heart is no longer beating faster than normal. As Martha Stewart says &quot;It's a good thing&quot;.</p>
+    <h2>(Wednesday Dec 21, 05)</h2>
+    <p><strong>One more step closer to normalcy</strong><br>
+      I had my post-surgery follow-up with my surgeon this morning. He said things are going well and upgraded my diet to regular food. Yes!!! He said to avoid bones and potato chips (sharp edges). Does he think I eat bones? He was not concerned that I had lost a few pounds since being discharged from the hospital. I guess it is to be expected. He also removed my feeding tube so I am finally tubeless. I was a little worried that it was going to hurt to have this tube removed. It was a little tender as he removed the stitches but it was painless. I didn't watch him remove the tube but I did see it after it was out of me. I was surprised to see that there was about one foot of tube inside me. Surprisingly the hole in my stomach will easily seal itself within a few days. No stitches required. I do have a minor cough that I have not been able to shake since being in the hospital. My surgeon said it should go away on its own.</p>
+    <p><strong>The dead zone</strong><br>
+      The area below my stomach incision and above my belly-button feels as if it has fallen asleep. It feels numb to the touch and is most noticeable when I lie down to sleep. My surgeon said this is because the incision severed the muscles (or tendons?) in my stomach. He was not clear, and I neglected to ask, if this is a temporary or permanent condition.</p>
+    <p><strong>Real food</strong><br>
+      So after my morning appointment with the surgeon, I went to my day job as they were having a holiday pot-luck lunch. It was good to see all my co-workers again and to eat food that I previously had to overlook for weeks. I ate a fair amount of food but felt ill about a half hour later. I guess my altered digestive system went into shock. I went home and rested. Later that afternoon I met up with friends for a beer and a buffalo wings appetizer. I was really pushing my luck. The beer did not go down well but the wings did. Again, I did not feel well after eating. I was feeling warm so I had to leave the happy hour early.</p>
+    <h2>(Thursday Dec 22, 05)</h2>
+    <p><strong>Food &ndash; my friend and enemy</strong><br>
+      I did not feel well again after eating lunch and dinner. Fortunately, not as ill as yesterday. I weighed in at a measly 146 lbs. I was shocked that I had lost three pounds since being put on a regular diet. I didn't think my weight would go that low. I don't know how to counteract this downward slide? I never feel hungry. I eat as much as I can when I do eat. And I don't feel well after I do eat. My surgeon said some of his other patients &quot;graze&quot; all day. I will have to try this approach. I am so skinny and bony in my stomach, chest, and back that I do not like to look at myself in the mirror when I am shirtless. I do not appear healthy and this has negatively impacted my self-esteem. I am concerned as to how much weight and muscle I will be able to regain even after I start feeling better.</p>
+    <h2>(Friday Dec 23, 05)</h2>
+    <p><strong>Improvements</strong><br>
+      I went over to my Aunt Evelyn's house for lunch and enjoyed home-made cooking. I made dinner out of the leftovers. Fortunately I did not feel ill after eating lunch and dinner so hopefully my digestive system is starting to get back to normal.</p>
+    <h2>(Saturday Christmas Eve, 05)</h2>
+    <p>I am looking forward to seeing friends and family over the Christmas weekend. I am going to my sister Lisa's house tonight and Rochester tomorrow for my Dad's side of the family. Ho Ho Ho --- Have a Merry Christmas!</p>
+    <p>(Added: Friday December 30, 2005)</p>
+    <h2>(Friday Dec 30, 05)</h2>
+    <p><strong>What a day --- What a week</strong><br>
+      I continue to lose weight. This week I hit an all-time low of 145 pounds. Then a few days later I weighed in at 144.5 pounds. I did not expect to see numbers that low. I am eating as much as I am able to tolerate since I often am forced to eat while enduring abdominal cramps and often do no feel well after eating.</p>
+    <p><strong>Now what is going on with my body?</strong><br>
+      Last night it felt as if I wasn't getting enough blood circulating through both of my legs. My legs were numb as if they had fallen asleep. I was recently told that I am now at higher risk of getting blood clots. However I wasn't too concerned that this was the result of blood clots since it was equally affecting both of my legs. I would expect a blood clot to form in only one leg. But I knew I needed to find out the source of this discomfort.</p>
+    <p><strong>Methodist here I come</strong><br>
+      I was not able to get an appointment with my primary doctor today. The nurse I spoke to recommended that I get checked out to make sure it isn't something serious. So I drove myself to Emergency. I must have looked like a sad puppy dog at the hospital because the nurse that checked me in and took my vitals said she felt connected to me and wanted to hug me. I probably needed one at the time so I stood up and we hugged. She told me that she is aware of how tough of an ordeal esophageal cancer is and she was amazed that I looked so well.</p>
+    <p>It did not take long to get an Emergency room assigned to me. Within an hour I had a doctor checking me for signs of a stroke or blood clots. I passed all of the physical tests so he ordered blood to be drawn to make sure I was not running low on (a couple things I now forget). It may have been Potassium and something else. I laid on the bed for three hours waiting for the doctor to give me the test results. My blood work was fine too. The attending doctor spoke with an oncologist and said that it may be side-effects of the chemotherapy drug Cisplatin that I was taking. He did say that it would be unusual for the side-effect to kick in so late after ending chemo but it was possible. He told me only to worry about it if the symptoms get worse.</p>
+    <p><strong>The Golden Arches</strong><br>
+      So after being discharged from the hospital, I treated myself to a Quarter Pounder with Cheese and fries at McDonalds. Or should I say I subjected myself to a Quarter Pounder with Cheese and fries. I am getting a little concerned that it seems to be getting a little more difficult to swallow food. I had to be very careful not to swallow too much food at one time, particularly the bun. The food is definitely slowing down as it passes through my food tube. And that is an uneasy feeling. I will have to get that checked out to make sure the healing process is not narrowing the food tube where the stomach and food tube were joined during surgery. I did eat most of my hamburger and fries.</p>
+    <p>I was getting very severe abdominal cramps while driving home after visiting the home of Ronald McDonald. These were some of the most intense cramps that I have experienced so far.</p>
+    <p><strong>And somehow things were able to get even worse</strong><br>
+      First of all I need to preface this paragraph by saying that I was not injured. I was in a bad car accident on the way home from the hospital. I was on the entrance ramp to Highway 169 when I drove into a patch of heavy, wet slush that were remnants of an all-day snow on a warm day. I was probably going about 45 mph when I hit this slush. I immediately lost control of my truck and it forced me onto the shoulder where I then hit a guard rail head on. It happened so quickly. I was greeted with the sound, smell and force of my airbag. After hitting the guard rail head on, it rotated my truck so that I hit the guard rail again with great force on my driver's side. I couldn't believe what had just happened. There was light smoke and the aroma of an electrical fire coming out of my air bag. I was concerned that the truck could explode if there was a gas leak. Perhaps I've seen to many Hollywood movies where vehicles explode after getting in a wreck.  I got out of my truck and approached the highway shoulder, maintaining a safe distance from my truck. I saw liquids pouring out of my engine. I did go back into the vehicle to try to recover proof of insurance and my cell phone to call for help. I was unable to locate my cell phone. It was in my center console at the time of the accident and must have been catapulted to the left of my body between me and my driver's-side door. This door was pushed in too far for me to be able to recover it. I was still a bit nervous even being inside my truck so I made my rescue attempt as brief as possible.</p>
+    <p><strong>Unbelievable</strong><br>
+      So there I was standing there on the shoulder of the highway with my truck all smashed up. And now the horn was blaring. Two women at a nearby apartment complex asked me if I was OK and called for help.</p>
+    <p>Within 5 minutes an ambulance appeared and asked if I was OK. I told him that the only thing that appeared to be wrong is that my two thumbs had been forced back when the airbag exploded. I was sure they were not broken, just sore. They were soon dispatched to another call and took off after making sure somebody was on the way to help me.</p>
+    <p><strong>River of tears</strong><br>
+      I was sitting in the tow truck when the highway patrol officer approached me. He said I must have been going to fast for the conditions since I hit the guard rail so hard. I told him that I didn't think I was going too fast. Fortunately he said that he would not issue me a citation. That was a relief. I did not tell the officer this but in my mind I was just nearing the approach of the highway and was getting up to speed to merge with the flow of traffic when I hit the slush.</p>
+    <p>Then I lost my composure. I sobbed uncontrollably for several minutes in front of the tow truck driver and the patrol officer. It must have hit me that this was way too much for me to handle at the time. The patrol office thought I was just being emotional over the accident. It was difficult to speak while I was sobbing like a baby but I did get out the words that I was upset because I had just gotten out of the hospital and was recovering from a &quot;really bad cancer&quot;. It took me a few more minutes to regain enough composure to find my proof of insurance. About five minutes later the patrol officer returned with an accident form that I will need to complete and mail in. He wished me luck that things get better for me. I mouth'd a &quot;thank you&quot;.</p>
+    <p>The tow truck driver was surprised that I was not hurt. And I am too when I look at the damage done to the driver's side and front bumper. The truck frame is pushed in about one or two foot at the pillar just behind my driver's seat. I am very fortunate that I did not get hurt, particularly in the fragile condition I am in.</p>
+    <p><strong>Next stop the repair shop</strong><br>
+      We drove about five miles to a repair shop that had an adjoining auto rental agency. I was still an emotional wreck when I checked in at the repair shop. I lost it again. I could not stop crying in front of two employees behind the desk and somebody waiting in the lobby. The lady helping me thought I was just crying over the accident. I tried telling her the Readers Digest version of my story but was just able to get out that I was just released from the hospital. She asked if &quot;they found anything&quot;. I didn't answer her question. At that point I was ready to start the process for my car rental. I gave the lady the information she requested then walked over to the car rental desk.</p>
+    <p><strong>And then there were three</strong><br>
+      So then I completely lost it for the third time at the auto rental agency. I was not able to answer her questions. She asked me if I needed to sit down. I took her advice and sat in the only chair in the lobby. I felt like I needed to explain to these people why I was crying uncontrollably over a common car accident. So again, I told my sob story, while sobbing of course.</p>
+    <p>So now I'm driving around in a Ford Taurus and researching automobiles on the internet. I know that they will consider my 1998 Ford Explorer a totaled wreck. So tomorrow I start shopping for a vehicle. It should be a good time to buy a new or used car with all of the New Years auto sales and year-end closeouts going on. This is the second time I have been in an accident where the vehicle was totaled. High safety-ratings will be the primary reason for selecting my replacement vehicle. And I want it to have all-wheel-drive or four-wheel-drive.</p>
+    <p><strong>Adios to 2005</strong><br>
+      I must say that most of 2005 was actually a very good year for me. I had taken some great vacations, was getting into the best physical shape of my adult life, and was looking forward to moving into my new condo downtown. Then of course my diagnosis in September changed everything. It turned my life upside down and forever changed me. The last four months of 2005 devastated me. I cannot wait until I can be happy again. I am not there yet. However, I do not consider myself depressed. I think that I will be able to fend off true depression.</p>
+    <p>Of course there is never a good time to get in a car accident and to lose your only vehicle. The timing of this accident is very unfortunate. I didn't need anything more to go wrong. Not now.</p>
+    <p>There is now less than 26 hours remaining of 2005. And I cannot wait to say goodbye.</p>
+    <p><strong>Onward to 2006</strong><br>
+      I hope 2006 is a great year for my family and all of my friends!!!</p>
+      <p align="center"><strong>Part 1, 2005</strong> | <a href="/sto/mnelson2.html">Part 2, 2006</a> | <a href="/sto/mnelson3.html">Part 3, 2007</a></p>
+    <hr>
+    <img src="/sto/mnelson.jpg" alt="Mark Nelson" width="120" height="125" style="float:left;margin-right:10px;">
+    <p>Mark Nelson died peacefully on October 31, 2007 at the age of 43 after a two year battle with cancer. He is preceded in death by parents, Roger and Ardyce. He is survived by brother, Scott; sisters, Becky and Lisa (Kevin) Johnson; nephew, Logan Johnson; niece, Bailey Johnson; and many other friends and family. A celebration of life will be held at BUNNY'S BAR AND GRILL in St. Louis Park, on Monday, Nov., 5, 2007, from 2-6PM. Memorials preferred to N.C. Little Memorial Hospice, 7019 Lynmar Lane, Edina, 55435.</p>
+    <p>Published in the Pioneer Press on 11/4/2007.</p>
+    <!-- InstanceEndEditable --></div>
+  <img id="cafe_screen_disclaimer" src="/web/grn/dsc.gif" alt="Information found here is not to be a substitute for professional care.">
+  <div align="center" class="webonly">
+    <div id="cafegoogle">
+      <script type="text/javascript"><!--
+google_ad_client = "pub-2176662973486049";
+google_ad_width = "468";
+google_ad_height = "60";
+google_ad_format = "468x60_as";
+google_ad_type = "text";
+google_ad_channel ="";
+google_color_border = "CCCCCC";
+google_color_bg = "FFFFFF";
+google_color_link = "000000";
+google_color_url = "666666";
+google_color_text = "333333";
+//--></script>
+      <script type="text/javascript"
+  src="/web/20110815021247js_/http://pagead2.googlesyndication.com/pagead/show_ads.js">
+      </script>
+      <br>
+      <p>The above advertisements, provided automatically, are neither selected nor endorsed by us.<br>
+        Some may lead to web sites that provide questionable or controversial medical information.<br>
+        If you encounter advertisements inappropriate for the Caf&eacute;, send us the advertisement's URL.</p>
+    </div>
+    <h5><a href="/index.html">home</a> | <a href="/cnt/index.html">contents</a> | <a href="/sto/index.html">stories</a> | <a href="/ecg/index.html">ec-group</a> | <a href="/lnk/index.html">links</a> | <a href="/etc/index.html">etc.</a></h5>
+    <img src="/web/art/footer.gif" width="509" alt="Some graphics courtesy of Hoopla! disc, copyright 1995 Image Club Graphics. 1-800-661-9410" height="50">
+    <p><a href="/cnt/contact.html">Send a message to Marc &amp; Tammy Wolfgram</a></p>
+    <table width="610" border="0" cellpadding="0" cellspacing="0">
+      <tr valign="middle">
+        <td width="49" align="center"><img src="/web/cssprint.gif" alt="This page is printer friendly" width="45" height="50" border="0"></td>
+        <td align="center"><h6>Copyright &copy; 1995-2008&mdash;Last changed on
+            <!-- #BeginDate format:Am1 -->June 17, 2008<!-- #EndDate -->
+            &mdash; We comply with the<br> 
+            <a href="/web/20110815021247/http://www.hon.ch/HONcode/Conduct.html" onclick="window.open(this.href); return false;"> HONcode standard for trustworthy health</a> information: <a href="/web/20110815021247/https://www.hon.ch/HONcode/Conduct.html?HONConduct294647" onclick="window.open(this.href); return false;">verify here</a>.</h6></td>
+        <td width="45"><a href="/web/20110815021247/https://www.hon.ch/HONcode/Conduct.html?HONConduct294647" onclick="window.open(this.href); return false;" > <img src="/web/20110815021247im_/https://www.hon.ch/HONcode/Seal/HONConduct294647_s.gif" width="49" height="72" style="border:0px" title="This website is accredited by Health On the Net Foundation. Click to verify." alt="This website is accredited by Health On the Net Foundation. Click to verify." /></a></td>
+      </tr>
+    </table>
+  </div>
+  <img id="cafe_screen_footer" src="/web/grn/bot.gif"> </div>
+<map name="Map">
+  <area shape="rect" coords="240,113,286,143" href="/index.html" alt="Home">
+  <area shape="rect" coords="297,113,367,143" href="/cnt/index.html" alt="Contents">
+  <area shape="rect" coords="376,113,434,143" href="/sto/index.html" alt="Stories">
+  <area shape="rect" coords="443,113,516,143" href="/ecg/index.html" alt="EC-Group">
+  <area shape="rect" coords="527,113,574,143" href="/lnk/index.html" alt="Links">
+  <area shape="rect" coords="583,113,613,143" href="/etc/index.html" alt="Etcetera">
+</map>
+</body>
+<!-- InstanceEnd --></html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 2:12:47 Aug 15, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 4:50:15 Dec 15, 2013.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

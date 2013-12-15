@@ -1,0 +1,518 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><!-- InstanceBegin template="/Templates/cafe_green_1.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+
+<script type="text/javascript" src="/static/js/analytics.js" ></script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Cathy's EC Caf&eacute;</title>
+<!-- InstanceEndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="Cathy's Esophageal Cancer Cafe -- Providing information on esophageal cancer to patients and caregivers.">
+<meta name="Keywords" content="esophagus, gerd, oesophasgus, ec, barretts, adenocarcinoma, squamous, ec-group, cancer, support, health, medical, patient, caregiver, ecaa, acor, esophagectomy, esophageal, oesophageal, ec cafe">
+<link rel="stylesheet" href="/cafe.css" type="text/css" media="screen">
+
+<style type="text/css">
+<!--
+.bodyback {
+	background-image: url(../web/grn/bgd.gif);
+	background-repeat: repeat-y;
+}
+-->
+</style>
+<link rel="stylesheet" href="/cafe_prt.css" type="text/css" media="print">
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+<body>
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script> if (window.archive_analytics) { window.archive_analytics.values['server_name']="wwwb-app17.us.archive.org";}; </script>
+
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1388534399999;
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http:\/\/www.eccafe.org\/sto\/toconnor.html";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth = 450;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "30";
+var displayMonth = "Aug";
+var displayYear = "2011";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" lang="en" class="__wb_banner_div" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px">
+
+
+<div id="wm-ipp-inside" class="__wb_banner_div" style="position:fixed;padding:0!important;margin:0!important;width:97%;min-width:780px;border:5px solid #000;border-top:none;background-image:url(/static/images/toolbar/wm_tb_bk_trns.png);text-align:center;-moz-box-shadow:1px 1px 3px #333;-webkit-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333;font-size:11px!important;font-family:'Lucida Grande','Arial',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://www.eccafe.org/sto/toconnor.html" style="width:400px;font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20110830093606" /><input type="submit" value="Go" style="font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;margin-left:5px;width: inherit !important" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:'Helvetica','Lucida Grande','Arial',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/sto/toconnor.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="20 Dec 2010"><strong>DEC</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 9:36:06 Aug 30, 2011">AUG</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/sto/toconnor.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="1 Nov 2011"><strong>NOV</strong></a>
+		                
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/sto/toconnor.html" title="0:42:36 Dec 20, 2010" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 9:36:06 Aug 30, 2011">30</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/sto/toconnor.html" title="11:15:42 Nov 1, 2011" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0"/></a>
+		                
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/sto/toconnor.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="25 Mar 2009"><strong>2009</strong></a>
+		                
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 9:36:06 Aug 30, 2011">2011</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       2012
+                       
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="/sto/toconnor.html" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>36 captures</strong></a>
+           <div class="__wb_banner_div" style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">21 Dec 03 - 1 Nov 11</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:450px;height:27px;" href="" id="wm-graph-anchor">
+       <div class="__wb_banner_div" id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:450px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers('inline');" 
+				onmouseout="showTrackers('none');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="450"
+				height="27"
+				border="0"
+				src="/web/jsp/graph.jsp?graphdata=450_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000001_2004:-1:010101010101_2005:-1:010100001000_2006:-1:000010003101_2007:-1:400102000100_2008:-1:011111000000_2009:-1:001000000000_2010:-1:000000001012_2011:7:000000010010_2012:-1:000000000000_2013:-1:000000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="/static/images/toolbar/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="/static/images/toolbar/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById('wm-ipp').style.display='none';" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_close.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;margin-bottom:23px;background-color:transparent;border:none;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_help.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;background-color:transparent;border:none;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<div id="cafebody" class="bodyback">
+  <div align="center"><img id="cafe_print_header"src="/web/print_header.jpg" width="504" height="72"></div>
+  <img id="cafe_screen_header" src="/web/grn/top.gif" usemap="#Map" border="0" alt="Cathy's EC Cafe">
+  <div id="cafemain"> <!-- InstanceBeginEditable name="body" -->
+            <h1 align="center">Thank heavens for the flu</h1>
+            <h3 align="center">Tom O'Connor's story &#8211; by Marjie O'Connor</h3>
+            <p>Talk about dumb luck. If it weren't for my 65-year-old husband
+              getting a stomach virus in April of last year, we'd be spending
+              at least the first part of this year in blissful ignorance of the
+              cancer that very likely would have killed him before the end of
+              next year. And maybe just as ignorant of the heart disease that
+              very likely would have killed him well before then. I've never
+              been so grateful to a virus!</p>
+            <p> I came home from work one night to find Tom not feeling at all
+              well. His stomach was bothering him. However, his stomach had been
+              bothering him for years, and he didn't seem to think it was enough
+              of a problem to demand that his primary care physician check it
+              out. So when he told me he wasn't hungry, I just thought, &quot;Oh,
+              good. I don't have to make dinner.&quot;</p>
+            <p> Callous? Oh, yes! But you know how calluses are developed: constant
+              irritation or pressure to the same spot. I'd thrown up my hands
+              in despair at Tom's GERD (gastroesophageal reflux disorder) years
+              ago. He was in enough discomfort that he spent at least part of
+              every night sleeping in his recliner. He kept bottles of over-the-counter
+              antacids in his nightstand. He talked to his doctor about it, and
+              the doctor prescribed the first of a series of medications. I don't
+              remember now which it was &#8211; Pepcid AC, I think.</p>
+            <p> As time progressed, Tom's condition worsened. However, his doctor
+              did nothing other than change the medication &#8211; first Prilosec,
+              then Prevacid. He never ordered any tests, and Tom &#8211; being
+              a guy &#8211; never made enough of a stink about it to try to force
+              the doctor's hand in the matter.</p>
+            <p> I, however, being unencumbered by testosterone, did everything
+              I could to rock the boat enough to get the doctor's attention.
+              I sent him two faxes to provide more detailed information about
+              just how much the GERD was affecting Tom's life. (I don't think
+              the term GERD had even been brought up at this point, though.)
+              When that failed, I actually accompanied Tom to a regular check-up
+              (he's also diabetic), figuring I could convince the doctor to get
+              to the root of the problem if I talked to him in person.</p>
+            <p> I was wrong. I explained my concern that Tom had ulcers, a hiatal
+              hernia, or both. The doc just brushed aside my worry with a blas&eacute; explanation
+              that Tom's sleep apnea created a vacuum that pulled stomach contents
+              up into his esophagus. I was not satisfied, but I decided that
+              if Tom didn't mind the discomfort and pain, and his doctor wasn't
+              worried, I'd just quit nagging.</p>
+            <h3> This is <em>not</em> apnea</h3>
+            <p> Fast forward a couple of years to April 2002 and the fortuitous
+              stomach flu. By bedtime, Tom was vomiting pretty hard. Vomiting
+              was not unusual for him, so I just told him, &quot;Good night,&quot; and
+              headed upstairs. Quite frankly, I was tired of dealing with what
+              appeared to be just an unusually bad case of reflux.</p>
+            <p> But at 4:30 the next morning, I was awakened by the sounds of
+              Tom vomiting again, and more forcefully. Now that wasn't normal,
+              so I ran downstairs to discover he was experiencing projectile
+              vomiting. But even worse was the fact that the vomitus was black.
+              It looked like someone had thrown India ink all over the bathroom.
+              I told Tom, &quot;That's it. You don't get to decide anymore. I
+              am calling your doctor.&quot;</p>
+            <p> Fortunately for both of us, Tom had finally switched doctors
+              after my company switched to an insurance network that didn't include
+              Dr. Apathy. I reached his new doctor within a matter of minutes,
+              and he advised us to go to the emergency room. Gosh, sounded like
+              a good idea to me! So off we went.</p>
+            <p> I won't bore you with the details of a Day in the ER. But by
+              late afternoon, Tom had been admitted to the hospital and undergone
+              an endoscopy &#8211; also known as an esophagoscopy. A gastroenterologist
+              put a tiny camera down Tom's throat to see where the bleeding was
+              coming from and take some biopsies. And whaddya know? There were
+              a whole bunch of esophageal ulcers! A hiatal hernia! And as a bonus,
+              inflammation of the stomach and discoloration of the duodenum!
+              As one of the nurses put it, Tom's esophagus looked like raw hamburger
+              meat.<br>
+              Now, I try really hard not to say, &quot;I told you so!&quot; I
+              really do. But I just let him have it as he was coming out from
+              the sedation. I was truly obnoxious, but after all those years
+              of biting my tongue, I just couldn't do it any longer. So by the
+              time the doctor came in, Tom was good and sick of me gloating.
+              (So was I, for that matter.)</p>
+            <p> As it turned out, Tom had developed a condition called Barrett's
+              esophagus, in which cells from the stomach wash up into the gullet
+              with the acid, and eventually take root in the irritated tissues
+              and start growing. About 5%-10% of GERD sufferers develop Barrett's,
+              and about 5%-10% of those who develop Barrett's eventually develop
+              cancer. But Tom's biopsies came back negative, and we breathed
+              a huge sigh of relief. We left the hospital with yet another medication
+              (Nexium this time), a low-acid diet to get the esophagus to heal
+              up, and advice to eat several small meals a day to keep from overfilling
+              the stomach at one time.<br>
+              A humbler, quieter Tom started taking more responsibility for his
+              own health. He was very faithful to the new regimen; his experiences
+              in the ER were painful enough that he didn't want to repeat them
+              again. So we went back six weeks later for a follow-up endoscopy
+              hoping that there would be significant improvement. </p>
+            <p> And there was! The ulcers were almost healed; the inflammation
+              was gone. The doctor was very pleased with Tom's progress. He said
+              he'd taken another biopsy, but that everything looked good, and
+              that we should have the Barrett's checked again in a couple of
+              years. We had dodged the bullet &#8211; we thought.</p>
+            <h3> Never mind ...</h3>
+            <p> The next day, Tom got a call from the same doctor. This biopsy &#8211; taken
+              with a much clearer view of the tissue now all that inflammation
+              was gone &#8211; was positive: signet cell adenocarcinoma. Tom
+              called me at work to tell me, and I went into some kind of altered
+              state right away. My dad had died of colon cancer 15 years before;
+              I knew what cancer meant.</p>
+            <p> For the next week, I spent hours every night researching esophageal
+              cancer on the Internet. My findings left me in tears. EC is relatively
+              unusual, but it is also unusually lethal. The most recent statistics
+              indicate an 85% mortality rate. It is the fastest-growing kind
+              of cancer in the United States (it is much more common in some
+              other countries). There are actually two kinds of EC: adeno (as
+              Tom had) and squamous cell. </p>
+            <p> Risk factors include being male (men get EC two to three times
+              more often than women); being black; being a smoker and/or a drinker
+              (more directly related to squamous cell EC); and suffering from
+              GERD (more related to adeno). About the only risk factor Tom didn't
+              have was his race, although he had quit smoking when he met me
+              13 years ago (I can't tolerate tobacco smoke) and had essentially
+              quit drinking when he was diagnosed with diabetes several years
+              later.</p>
+            <p> Like ovarian cancer and colon cancer, EC is usually symptom-free
+              until it's too late. But here's where we got lucky: Because of
+              that stupid stomach flu, we had found Tom's cancer much earlier
+              than usual: Stage IIa instead of the all-too-common Stage IV. </p>
+            <p> So here we are in the last quarter of 2003. Since Tom's diagnosis
+              in May of last year, he has undergone a quadruple bypass for heart
+              disease discovered in the course of testing him for his ability
+              to withstand cancer treatment. He flunked the stress test, then
+              flunked the angiogram a few days later. He had between 85% and
+              95% blockage in all major arteries going to his heart. It's a minor
+              miracle he hadn't dropped dead already.</p>
+            <p> One month and 10 days after the heart operation, Tom started
+              six weeks of concurrent chemotherapy and radiation. Five and a
+              half weeks following the last radiation treatment, he had an esophagectomy.
+              The surgeons made two large incisions &#8211; one from the sternum
+              to the navel and one curving all the way around his right shoulder
+              blade &#8211; that allowed them to remove the esophagus, the top
+              part of his stomach and some lymph nodes, and pull the rest of
+              Tom's stomach up through his diaphragm to form a new esophagus
+              and stomach, which is now located in Tom's chest. It's called the
+              Ivor-Lewis procedure, and depending on whom you talk to, it's either
+              the most invasive surgery performed, or the second most invasive
+              after transplants. Between the I-L and the bypass, Tom looks like
+              he has had a zipper installed the length of his torso &#8211; and
+              taken some bullets and stab wounds, too. </p>
+            <p> Once Tom healed up sufficiently from the esophagectomy, he started
+              another six weeks of chemo. He had no leakage at the anastomosis &#8211; the
+              point in the throat at which the new &quot;esophagus&quot; is attached
+              to the stump of the old one. He had no infections, and he only
+              needed supplemental feeding for a week through a j-tube; liquid
+              nutrition was administered through a tube inserted directly into
+              the small intestine.</p>
+            <h3> Counting our blessings</h3>
+            <p> The good news here is that it looks like will be around to show
+              off his scars for a long time to come. He bounced back from surgery
+              beautifully. The pathologist could find &quot;no living cancer
+              cells&quot; anywhere in the considerable amount of tissue removed
+              during Tom's esophagectomy. It looks now like we've got the coveted &quot;complete
+              response&quot; to treatment. It looks now like we've beaten the
+              cancer.</p>
+            <p> I know, I know. Once you've had cancer, you can never be really
+              sure it won't come back. Just this week, I heard of another case
+              of &quot;complete response&quot; to treatment for EC who now has
+              secondary tumors riddling his skeletal system. That shook me badly.
+              There is no safe haven from this disease. EC is especially sneaky,
+              and because it's so unusual, there isn't even a standard protocol
+              for treating it.</p>
+            <p> Tom still is learning to deal with his new plumbing. He can't
+              eat as much as before, and he lost about 28 lb. since this all
+              started. If he does eat too much, he pays for it with several hours
+              of pretty bad discomfort. But he can eat just about anything he
+              wants; many post-esophagectomy patients have to wait for year before
+              they can resume anything close to normal diets, if they every can
+              at all. </p>
+            <p> In October 2003, Tom had to have his new esophagus dilated to
+              open up a stricture caused by scar tissue. About one-third of esophagectomy
+              patients face that &#8211; in many cases, multiple times annually
+              for years. The dilation was performed during an endoscopy, which
+              was done to take an up-close-and-personal view of the new esophagus
+              to make sure nothing scary was going on. A routine biopsy was also
+              done, which is standard procedure during an endoscopy.<br>
+              Thanks for sticking with me this far. But please do me a favor,
+              too. If you or someone you love suffers from chronic GERD, insist
+              on an endoscopy to rule out Barrett's esophagus. If Barrett's is
+              present, it should be monitored by annual endoscopies and biopsies.
+              As with every other kind of cancer, catching EC early is critical
+              to curing it. If your doctor seems indifferent to a problem or
+              stumped about what to do about it, find a new doctor!</p>
+            <p> There is more information about EC at <a href="/web/20110830093606/http://www.ecaware.org/">http://www.ecaware.org/</a> or <a href="/index.html">http://www.eccafe.org/</a>.
+              There also are stories of other EC patients on both sites. Not
+              all of them have happy endings. And most of them have had much
+              more difficult journeys than we've had. Thanks to that stomach
+              flu, we discovered the EC and &#8211; just as important &#8211; the
+              heart disease. I don't know whether it was just dumb luck or God
+              tapping us on the shoulder, but I repeat: I've never been so grateful
+              to the flu.</p>
+            <p align="center"> This story originally appeared on CancerLynx at <a href="/web/20110830093606/http://www.cancerlynx.com/">http://www.cancerlynx.com/</a>.</p>
+            <p align="center"><strong>Send e-mail to Marjie &amp; Tom O'Connor
+                at <a href="mailto:marjieoc@comcast.net?subject=%27Tom%27s%20story%27">marjieoc@comcast.net</a></strong></p>
+            <!-- InstanceEndEditable --></div>
+  <img id="cafe_screen_disclaimer" src="/web/grn/dsc.gif" alt="Information found here is not to be a substitute for professional care.">
+  <div align="center" class="webonly">
+    <div id="cafegoogle">
+      <script type="text/javascript"><!--
+google_ad_client = "pub-2176662973486049";
+google_ad_width = "468";
+google_ad_height = "60";
+google_ad_format = "468x60_as";
+google_ad_type = "text";
+google_ad_channel ="";
+google_color_border = "CCCCCC";
+google_color_bg = "FFFFFF";
+google_color_link = "000000";
+google_color_url = "666666";
+google_color_text = "333333";
+//--></script>
+      <script type="text/javascript"
+  src="/web/20110830093606js_/http://pagead2.googlesyndication.com/pagead/show_ads.js">
+      </script>
+      <br>
+      <p>The above advertisements, provided automatically, are neither selected nor endorsed by us.<br>
+        Some may lead to web sites that provide questionable or controversial medical information.<br>
+        If you encounter advertisements inappropriate for the Caf&eacute;, send us the advertisement's URL.</p>
+    </div>
+    <h5><a href="/index.html">home</a> | <a href="/cnt/index.html">contents</a> | <a href="/sto/index.html">stories</a> | <a href="/ecg/index.html">ec-group</a> | <a href="/lnk/index.html">links</a> | <a href="/etc/index.html">etc.</a></h5>
+    <img src="/web/art/footer.gif" width="509" alt="Some graphics courtesy of Hoopla! disc, copyright 1995 Image Club Graphics. 1-800-661-9410" height="50">
+    <p><a href="/cnt/contact.html">Send a message to Marc &amp; Tammy Wolfgram</a></p>
+    <table width="610" border="0" cellpadding="0" cellspacing="0">
+      <tr valign="middle">
+        <td width="49" align="center"><img src="/web/cssprint.gif" alt="This page is printer friendly" width="45" height="50" border="0"></td>
+        <td align="center"><h6>Copyright &copy; 1995-2008&mdash;Last changed on
+            <!-- #BeginDate format:Am1 -->June 17, 2008<!-- #EndDate -->
+            &mdash; We comply with the<br> 
+            <a href="/web/20110830093606/http://www.hon.ch/HONcode/Conduct.html" onclick="window.open(this.href); return false;"> HONcode standard for trustworthy health</a> information: <a href="/web/20110830093606/https://www.hon.ch/HONcode/Conduct.html?HONConduct294647" onclick="window.open(this.href); return false;">verify here</a>.</h6></td>
+        <td width="45"><a href="/web/20110830093606/https://www.hon.ch/HONcode/Conduct.html?HONConduct294647" onclick="window.open(this.href); return false;" > <img src="/web/20110830093606im_/https://www.hon.ch/HONcode/Seal/HONConduct294647_s.gif" width="49" height="72" style="border:0px" title="This website is accredited by Health On the Net Foundation. Click to verify." alt="This website is accredited by Health On the Net Foundation. Click to verify." /></a></td>
+      </tr>
+    </table>
+  </div>
+  <img id="cafe_screen_footer" src="/web/grn/bot.gif"> </div>
+<map name="Map">
+  <area shape="rect" coords="240,113,286,143" href="/index.html" alt="Home">
+  <area shape="rect" coords="297,113,367,143" href="/cnt/index.html" alt="Contents">
+  <area shape="rect" coords="376,113,434,143" href="/sto/index.html" alt="Stories">
+  <area shape="rect" coords="443,113,516,143" href="/ecg/index.html" alt="EC-Group">
+  <area shape="rect" coords="527,113,574,143" href="/lnk/index.html" alt="Links">
+  <area shape="rect" coords="583,113,613,143" href="/etc/index.html" alt="Etcetera">
+</map>
+</body>
+<!-- InstanceEnd --></html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 9:36:06 Aug 30, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 4:50:37 Dec 15, 2013.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

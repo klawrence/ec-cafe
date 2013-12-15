@@ -1,0 +1,428 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><!-- InstanceBegin template="/Templates/cafe_green_1.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+
+<script type="text/javascript" src="/static/js/analytics.js" ></script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Cathy's EC Caf&eacute;</title>
+<!-- InstanceEndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="Cathy's Esophageal Cancer Cafe -- Providing information on esophageal cancer to patients and caregivers.">
+<meta name="Keywords" content="esophagus, gerd, oesophasgus, ec, barretts, adenocarcinoma, squamous, ec-group, cancer, support, health, medical, patient, caregiver, ecaa, acor, esophagectomy, esophageal, oesophageal, ec cafe">
+<link rel="stylesheet" href="/cafe.css" type="text/css" media="screen">
+
+<style type="text/css">
+<!--
+.bodyback {
+	background-image: url(../web/grn/bgd.gif);
+	background-repeat: repeat-y;
+}
+-->
+</style>
+<link rel="stylesheet" href="/cafe_prt.css" type="text/css" media="print">
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+<body>
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script> if (window.archive_analytics) { window.archive_analytics.values['server_name']="wwwb-app16.us.archive.org";}; </script>
+
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1388534399999;
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http:\/\/www.eccafe.org\/sto\/bcameron.html";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth = 450;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "1";
+var displayMonth = "Nov";
+var displayYear = "2011";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" lang="en" class="__wb_banner_div" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px">
+
+
+<div id="wm-ipp-inside" class="__wb_banner_div" style="position:fixed;padding:0!important;margin:0!important;width:97%;min-width:780px;border:5px solid #000;border-top:none;background-image:url(/static/images/toolbar/wm_tb_bk_trns.png);text-align:center;-moz-box-shadow:1px 1px 3px #333;-webkit-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333;font-size:11px!important;font-family:'Lucida Grande','Arial',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://www.eccafe.org/sto/bcameron.html" style="width:400px;font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20111101111216" /><input type="submit" value="Go" style="font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;margin-left:5px;width: inherit !important" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:'Helvetica','Lucida Grande','Arial',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20101216115523/http://eccafe.org/sto/bcameron.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="16 Dec 2010"><strong>DEC</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 11:12:16 Nov 1, 2011">NOV</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       Dec
+                       
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/web/20101216115523/http://eccafe.org/sto/bcameron.html" title="11:55:23 Dec 16, 2010" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 11:12:16 Nov 1, 2011">1</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
+                       
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20100926130914/http://eccafe.org/sto/bcameron.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="26 Sep 2010"><strong>2010</strong></a>
+		                
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 11:12:16 Nov 1, 2011">2011</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       2012
+                       
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="/sto/bcameron.html" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>14 captures</strong></a>
+           <div class="__wb_banner_div" style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">25 Sep 06 - 1 Nov 11</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:450px;height:27px;" href="" id="wm-graph-anchor">
+       <div class="__wb_banner_div" id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:450px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers('inline');" 
+				onmouseout="showTrackers('none');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="450"
+				height="27"
+				border="0"
+				src="/web/jsp/graph.jsp?graphdata=450_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000001010_2007:-1:000011000010_2008:-1:010110100000_2009:-1:000000000000_2010:-1:000100001011_2011:10:000000000010_2012:-1:000000000000_2013:-1:000000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="/static/images/toolbar/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="/static/images/toolbar/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById('wm-ipp').style.display='none';" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_close.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;margin-bottom:23px;background-color:transparent;border:none;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_help.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;background-color:transparent;border:none;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<div id="cafebody" class="bodyback">
+  <div align="center"><img id="cafe_print_header"src="/web/print_header.jpg" width="504" height="72"></div>
+  <img id="cafe_screen_header" src="/web/grn/top.gif" usemap="#Map" border="0" alt="Cathy's EC Cafe">
+  <div id="cafemain"> <!-- InstanceBeginEditable name="body" -->
+    <h1 align="center">Chasing The Crab</h1>
+    <h4 align="center">by Bill Cameron<br>
+    The Walrus &mdash; May 2005 </h4>
+    <p align="center"><em>In this story, the last he ever wrote, broadcaster, journalist, and author<br>
+      <strong>Bill Cameron</strong> describes his journey into what he called "Cancerland"</em></p>
+    <hr width="50%">
+    <p><img src="/sto/bcameron2.jpg" width="190" height="262" hspace="10" vspace="5" align="left">The anaesthetic was lifting. The surgeon's face was two inches above mine, perpendicular to mine, as though he was preparing for a kiss. I'm pretty sure the conversation went this way:</p>
+    <p>"Can you hear me?"</p>
+    <p>"Yes."</p>
+    <p>"I know what this is. We'll do a biopsy but I've seen it before. Adenocarcinoma of the esophagus. Advanced. Aggressive, moves quickly. Your wife took some notes." He patted my shoulder. His face lifted away.</p>
+    <p>In the May sunshine, my wife told me what he'd said. It was difficult to absorb. My chance of survival less than 20 percent. Surgery to remove my esophagus. Before that, chemotherapy, radiation, a clinical trial to test a new drug. I could feel the iron walls of cancer clanging together around me, shutting down the rest of my life. I had a book half-written, grandchildren not yet conceived. The judgment was unacceptable, but how do you resist it?</p>
+    <p><em>"Don't give up on me."</em></p>
+    <p><em>"I won't," my wife says. "Don't give up on yourself."</em></p>
+    <p>Two weeks later, a battery of tests. After the first one, my cellphone rang while I was driving my car. The surgeon's resident wanted to know if I'd been experiencing double vision or headaches. "We think we've found something on your brain. Do you have the phone number of your pharmacy? We need to control the swelling." I pulled over. The next week, a neurosurgeon chiselled open the right side of my skull and pulled out an alien mass, a jellyfish-shaped creature with trailing tendrils. It was a metastasis of the esophageal cancer, which rarely travels to the brain. This distant colony of my cancer promoted me to Stage IV, no surgery possible, clinical trial out of the question, early death a virtual certainty.</p>
+    <p>Esophageal cancer is mostly a male disease, not common and not kind. Some 14,250 Americans were diagnosed last year: 13,300 died. There are two main forms: squamous cell carcinoma, more common in blacks, and adenocarcinoma, which is quickly rising from its boutique position in the hierarchy of cancer and is now the fastest growing of all cancers on the continent. For all that, it is deemed rare, an orphan cancer in the research world, dwarfed by the Big Four: breast, colorectal, prostate, and lung. <em>"You can fight this." "Your mind is your most important ally." "We'll beat this together."</em> Yes, yes, of course, but how? </p>
+    <hr  width="50%">
+    <p>Cancerland, the world of therapy, faith and hope, is an enormous kasbah, with huge rooms at the front devoted to conventional treatment, radiation, and chemotherapy, and smaller and smaller rooms behind them, some well-lit, some murky: experimental drug treatment, massive infusions of multivitamins, new vaccines, the application of powerful light, the insertion of tiny radioactive spheres in the area next to the tumour, distant healing. And then, at the end of the bazaar, the little chambers of the long shot: goji juice from Asia, blood cleansing, distillations from apricot pits, amino acids, green tea. Someone with Stage IV cancer looks for hope in places the doctors say there is none.</p>
+    <p>"The treatment for this cancer," says the small, neat, radiation oncologist, "is not curative. It is palliative." This is medicine-speak for: you're on your way out, and we will try to keep the road as smooth as possible. Conventional oncology has seen my cancer before, has fought it, almost always without success, and is now weary and wary of arousing false hope. Diagnosis, then treatment for a few months, which will fail, then close the file. Nothing works.</p>
+    <p>I'm a broadcaster. For a few years, I had noticed my voice faltering. Twice in the middle of a newscast I lost it entirely. It became thin and cracked easily. A throat specialist prescribed expensive speech therapy. I was having difficulty swallowing. Then, in the late winter and early spring of 2004, I found myself vomiting chunks of raw carrot into the kitchen sink, strips of prime beef into the bushes at my son's hockey banquet. I've drunk enough alcohol in my time to be familiar with the shame of this, but during these attacks, which came more and more often, I was sober. The throat specialist interpreted my problem as tension, or "web-and-pouch," a benign blockage of the throat. A surgical resident said it was a fibrous growth of some sort, nothing to worry about, and scheduled a test two months away. These missed diagnoses are hard to justify. Difficulty swallowing is one of esophageal cancer's more obvious symptoms. It's half a year from those early symptoms until the surgeon leans into my face and tells me I have advanced, aggressive cancer.</p>
+    <p>The conventional, more or less for-the-look-of-the-thing treatment for Stage IV adenocarcinoma of the esophagus is radiation and chemotherapy, given in sequence or together. The High Temple of this treatment is the Princess Margaret Hospital, part of the University Health Network, a gigantic sheaf of high-rise medical buildings along University Avenue in Toronto. There are two particular layers of Princess Margaret the cancer outpatient gets to know. In the basement, radiation suites. On the second floor, infusion rooms, where bags hang from poles and drip toxic chemicals into your arm. </p>
+    <p>Here and there, people from our lives outside, our healthy pasts, meet in the therapy wards as though caught by coincidence in the same trap. My children's pediatrician, fighting a lymphoma. A baseball broadcaster with a brain tumour, keeping his chin up in the radiation waiting room. Not a thief, a mugger, a murderer in the bunch&mdash;why us? But that takes you toward the degrading sequence of denial, anger, pleading. <em>Why me? Why not you? Put your head down and get on with it.</em></p>
+    <hr  width="50%">
+    <p>Radiation first. Ten units to neutralize what's left of the brain tumour. Works apparently: no news from that quarter for months. Ten units to attack the main tumour in the esophagus. The technicians measure my chest and tattoo it with little dots. Permanent tattoos, which I will wear punkily and proudly <em>for the rest of my life</em>. A great metal half-wheel slides under me, then around and above, clattering and grinding. Radiation loses its effectiveness when your bones start breaking, but my radiation oncologist has done her sums correctly, and I come out of the treatment intact and able for the first time in months to swallow food like a grown-up.</p>
+    <p>Chemotherapy. After radiation or with it. This is a Dresden carpet-bombing model. In theory, in hope, the cancer stays dead and the healthy tissue regenerates.</p>
+    <p>My medical oncologist has a suite of toxins with attractive, scientific names; she'll move from one to the other as each fails in turn. Actually, the doctors put it another way. The treatments don't fail you. You fail them. "You've failed 5-<span class="cap">fu</span> now, no effect on the disease. And you've failed cisplatin. We'll move on to a third-line treatment."</p>
+    <p>Chemo daycare. Maybe the term is a medical joke, code for the infantilization of cancer patients. A great long ward staffed with jocular nurses and businesslike doctors, lined with beds and smooth reclining chairs. The middle-aged, the old, the young, one girl pregnant, barely into her twenties, with a needle in her arm and a clear tube running above her, with spouses and subdued gaggles of children in attendance. Headgear to cover hair lost to the toxins. Continual, ickily cute little alarm-chimes as bags run dry. The sound of instructional videotapes from the next bed. "<em>Cancer patients may find their sexual impulses reduced during treatment. You may also experience some difficulty in sleeping....</em>" "Remember," says a friend who has an evil case of pancreatic cancer, "most people with our kind of illness are old and weak and die fast anyway. So don't believe the statistics. We are statistical outliers. We're strong."</p>
+    <p>Each time, you leave the infusion suite feeling not great, not bad, much as before, but apprehensive, curious. Three or four days later, a giant sandbag falls from the sky and hits you directly on the top of the head. You are tired, suddenly, very tired, your feet drag, your body seems plastered against the unmoving air. You are despondent. You may be nauseous. You may experience epic, almost unstoppable diarrhea. Your self-pity index rises. Some people refuse chemotherapy in advance, having seen what it's done to others. Alternative clinics around the world are filled with people who are terrified of chemical treatment. </p>
+    <p>Then, after two or three days, the great weight lifts, and you are free to get on with your life, frayed and each time a little more fatigued, but alive.</p>
+    <p>"What's it like having cancer?" asks my fourteen-year-old son. We are driving to a baseball game. He's direct, as usual.</p>
+    <p>Damn good question, Nick, I think to myself. To begin with, you become suspicious of your own body. It hid this pernicious condition from you for months. Now you can't trust the signs it sends out. A cramp in the shoulder from too long at the keyboard must mean a tumour in the neck bone. Hiccups, farts: the march of malignancy. Hair loss. If you want to wound a television performer, take his hair away. Mine slithers down the tub drain two weeks after my first chemotherapy. I'm left with a ludicrous halo of fine brown sprouts like a bad salad arranged around an ostrich egg. It's humiliating. For the first time in my life I wear hats.</p>
+    <p>But all this would be too much information for Nick, even if I had the ability or the courage to explain it.</p>
+    <p>"Hard," I say, "and it makes you tired. But I'm going to beat it." He asks one question, then backs away from talk of my illness. I know why. I was sixteen when my mother died of cancer. I remember all this exactly.</p>
+    <hr  width="50%">
+    <p>Four o'clock in the morning is cancer hour. I blink awake, trying to remember what's just gone wrong. It's not the vanishing dream that's the horror, but the conscious world with this inescapable menace. Fortunately, there's work. If I were a stonemason or an oncologist I'd be stuck, but my novel lies on my laptop, and I can put in three hours every morning, driving my hapless protagonist through his journey. I can do a little broadcasting, chip away at journalism&mdash;the store of yakking skills declines slowly. One morning, an appalled <span class="cap">cbc</span> Radio producer has to watch me commute vigorously from microphone to men's room, shaving deadlines by a micrometre. </p>
+    <p>Tastes change. My sister makes Nanaimo bars, succulent treats of our childhood. Now, they taste oversweet and clingy. I order soup and a hamburger, and can manage only a couple of spoonfuls and bites. I'm always explaining to servers that no, no, it was very good, I'm just not as hungry as I thought. I use little-old-man tricks to help me through my new physical weakness. I get out of the car by pushing off the door frame with my left elbow. I grunt and sigh as I move.</p>
+    <p>But mostly, Nick, it's the fear and sadness at the thought that I might not see you growing up, see your brother and sister emerge from the whirlpools of young adulthood: Patrick already a fine writer, Rachel a fine artist. I can see looking back how your personality blossomed from, say, eight to fourteen, but I can't see the same distance ahead. I want to live that. </p>
+    <p>My marriage is suffused with a new closeness. Cheryl is my spirit guide, my overwhelmingly best friend. She arranges schedules, doles out drugs and vitamins, insists that I eat, indulges me when I'm feeling sorry for myself. Leave this? No.</p>
+    <p>Not that we don't argue. Some days I'm pissed off or uncaring, I skip the endless intake of vitamin pills and capsules or the tall glass of vile-tasting Chinese herbs. It's clear I'm lazy and unfocused. I don't value her help, so why the hell should she spend her life trying to save mine if I'm too bloody lazy to co-operate? This discussion does not reach the high-volume <em>Sturm und Drang</em> of the early years of our marriage, but it stings, all the more because she's usually right. </p>
+    <hr  width="50%">
+    <p>Late August. A CT scan&mdash;the first since I began chemotherapy. </p>
+    <p>"The results are mixed," says the medical oncologist, a slim woman with a precise manner. "The primary tumour is stable," she says, "but the metastases on the liver have increased." The scan shows little white chips, flakes, on a darker mass; more than before, a thriving colony. The aggressive, adaptable cancer has made a beachhead and is constructing fortifications. How many lesions, I ask. "Too many to count," she answers.</p>
+    <p>I felt more nauseous than chemotherapy made me. The painless radiation treatments, the improvement in my throat, my recovery from the chemical fatigue had made me complacent. I assumed that if I were obedient and followed the protocol, I would be rewarded. Now I have failed the first line of defence. 5-<span class="cap">fu</span> is off the table, and we move on to other treatments. I am stunned and discouraged. Too real, too real. Death moved closer.</p>
+    <p>What moved closer, exactly? I had written about death&mdash;some contrived device about a big jar or pot moving downward past the eyeline, cutting off the view, turning life to black. I don't think it's that. Maybe it is simply a dispersal of molecules at the end of the day. My identity, my marvellous life, with its broadcasting triumphs, my writing, my family, my taste for music, my modest gourmet cooking, my treacheries and defeats: will all this vanish instantly? To be recycled as ions or mustard seeds? Wasn't it all worth a little more than that? Or am I to be greeted by some peal of cosmic laughter on the other side of the famous white light? "What a fool, to be afraid that that was all there was." And straight to hell for lack of imagination.</p>
+    <hr  width="50%">
+    <p>Supplements. Throw everything at it. See if anything works. Vitamins B, C, D, E, R-lipoic acid, magnesium, acidophilus, beta-carotene, biotin, whey protein shakes, milk thistle, fish oil, German enzymes and a great wheel of a sickly sweet multivitamin to bind it all together. Linus Pauling and his colleagues reported results with cancer from large doses of vitamin C. Oncologists dismiss the idea with a wave of the hand. Doctors, particularly those at teaching hospitals where the orthodoxy is guarded and passed on, are always waving their hands dismissively. In general, any treatment that does not fall within the traditional, proven, conventional canon is treated with great suspicion or simply dismissed. Many demand patients stop using vitamins entirely during chemotherapy, on the grounds that it may interfere with the action of the chemicals. There is no proof for this. But the belief hangs on. </p>
+    <p>Well, take your choice. Nutritionists develop cancer-fighting menus; old-line doctors say eat what you like, forget the turnips and beet greens, just keep your weight up. Doctors of Chinese medicine make up teas from dried fungi, moss, bark, and roots, and practise acupuncture, the placement of tiny needles at various junctures of the body to shape and liberate the <em>chi</em> (spiritual energy). Western doctors react with indifference or, sometimes, with rage.</p>
+    <p>Cancerland is at war. On one side, a range of conventional healers, contemptuous of alternative therapists, quick to charge quackery, confined by the steel cage of rigorous testing and scientific proof. On the other, a wide span of non-conventional doctors, from scientists testing new substances and techniques in the lab to psychic healers and blood-purifiers to outrageous, cynical predators with magic pills and cancer-fighting electrodes. Traditionalists say the alternative-medicine people are bunko artists, from acupuncturists and chiropractors on down. The alternative-medicine practitioners paint a picture of traditional medicine financed by a cabal of drug companies and supported by a bloc of bought-and-paid-for politicians.</p>
+    <p>All this presents someone with a disease like esophageal cancer with some unhappy choices. New treatments and drugs, say the orthodox, must be proven scientifically, through clinical trials. But cancer of the esophagus draws little interest from the lab. In Canada at the moment, there are two clinical trials specific to esophageal cancer. One, two. Still, if you rush to the hospital with news about a great new treatment for bowel or stomach cancer, you'll hear the mantra&mdash;not a proven therapy for esophageal cancer. Not yet.</p>
+    <p>This opens the way for alternative healers, many of them respectable and responsible people with new ideas, some of them sharks. And that has intensified the war in Cancerland.</p>
+    <p>The war is prosecuted on the Internet, through law-enforcement agencies, government regulators, the police, and the courts. The Internet gives you the best focus. Search for alternative therapy or cancer treatment on the Net and there is an instant cacophony, a buzzing, whining, and banging as the traditionalists trade artillery rounds with the New Age therapists.</p>
+    <hr width="50%">
+    <p>It's November, dank and sad. America has just voted, and woken to find George W. Bush in the White House again. Pennsylvania is disconsolate and looks sadly sideways at Ohio, which did the deed. I spent the night in Philadelphia. Now I'm on my way to Allentown, an industrial suburb of classic Burger King style, just off the freeway.</p>
+    <p>Dr. Stephen Barrett doesn't seem depressed at the election results, or encouraged either. He doesn't seem to have noticed there was a vote. He leads me to his basement office, beginning a very long, unstoppable monologue about publishing a web page on the Internet.</p>
+    <p>Barrett is a retired psychiatrist, a short man with a shock of white hair, difficult to interrupt when in full flow, which begins instantly, and something of an obsessive, underground in his paper-stacked basement firing salvos into the ether against his enemies. Perhaps all those years of silent listening have taken their toll. I've come to talk to him about his web page, <em>quackwatch.org</em>, the scourge and flail of alternative medical practice of all kinds: chelation, naturopathy, dental revision to remove mercury fillings, magnetic bracelets, oxygenated water, an enormous range of techniques, some plausible, some arcane, each with a constituency and a healthy cash flow. Barrett could concentrate on the obviously fraudulent and make his life easier, but he attacks anything outside mainstream medicine with equal zeal whenever he can. He can't back away from a fight, and it must be a complete fight, in the centre of a circle with enemies all around.</p>
+    <p>He has three or four fat targets lined up at this point: the most sinister, he says, is the television infomercial, which creeps onto the air in the early hours of the morning and seduces the sad, sick, and hopeless.</p>
+    <p>"Infomercials are like mail fraud. There are a few people out there who are delusional, but most of them are conscious criminals. They know what they have is illegal and they hope they will make millions before the government gets them and puts them away somewhere. The industry is organized... it has set up a regulatory process for advertising, I am going to send them thirty complaints...I'm going to be right in there."</p>
+    <p>The single most striking infomercial Barrett has in his stack of tapes is produced and hosted by a California physician named Lorraine Day, who says she cured herself of cancer by avoiding radiation and chemotherapy, and developing insights from the Bible. She offers as a bonus a new analysis of <span class="cap">aids</span>: it is not stopped by condoms, it can penetrate intact skin, an <span class="cap">hiv</span>-positive doctor or surgeon is dangerous, and the government could control the epidemic immediately, but refuses to do it. The back of her video box is lined with trigger phrases: <em>You Can't Improve On God. Why You Don't Have To Accept A Death Sentence From Your Doctor. Cancer Doesn't Scare Me Anymore</em>. At three o'clock in the morning, from inside a ravaged body, sent home by your oncologist to die as comfortably as you can, this can be hard to resist.</p>
+    <p>And then there's Hulda Clark. She is a minor player in the alternative-therapy world, but I find her bizarre, compelling. Her website shows a plump, motherly woman with a Wife of Bath gap in her front teeth. She's a Canadian who studied biology in Saskatchewan and naturopathy at the Clayton College of Natural Health in Alabama. Her insight is that people who have cancer always have a human intestinal fluke, a parasite, in their livers; the livers of those who are cancer-free are fluke-free. This discovery has escaped everyone else, but that may not matter; the condition can be cured quickly through application of electricity from a special Hulda Clark zapper. Stephen Barrett's <em>quackwatch.org</em> stooped on Hulda Clark's operation, based in Tijuana, Mexico, with cries of delight, and the regulators stooped as well. Her New Century Nutrition offices, then just "Century Nutrition," have been shut down twice.</p>
+    <p>And where is Hulda Clark now? I ask Barrett. "Oh, still in Tijuana, but I don't think she's really big potatoes, you know." Perhaps four or five cases of blood-purifying and electronic zapping of human parasitical flukes. Four or five lives almost certainly shortened and several thousand dollars a week pouring into Dr. Clark's purse. In Cancerland, small stuff.</p>
+    <p>Barrett is admiring when I tell him I have Stage IV esophageal cancer, surprised I'm driving, working, and walking around. But when I tell him I take acupuncture treatments and drink Chinese herbs, he almost hops like Rumpelstiltskin. "Chinese herbs? Herbs? They've got you then! They've got you!" </p>
+    <hr  width="50%">
+    <p>Four a.m. cancer thoughts.Writing therapy. Scribble scribble.</p>
+    <p>I'm on a spiritual journey, according to the meditation manuals, a healing journey. Certainly, I realize one night in the bathtub, I'm travelling backwards in time. My forearms are the pipestems I remember from hateful gym class in Ottawa in the late 1950s. My legs have lost their flab. My hip bones poke down on the thinned-out flesh of my ass and pin the skin to any hard surface I sit on. In church I'm fifteen years old again. My weight has fallen from more than 200 to 156, aided by chemotherapy diarrhea, which strips weight from the body like a deer stripping an elm tree. My wife puts me on slimy chocolate protein drinks.</p>
+    <p>Nobody besides their shareholders cares much for the drug companies, in spite of many advertisements featuring sincere, doe-eyed models in lab-coat costumes miming research. The first thing a cancer patient learns is the ferocious cost of cancer drugs&mdash;if you're without a drug plan, prescription expenses of thousands of dollars a year will break you fast. Half the bankruptcies in the US are caused by medical costs&mdash;and after you're bankrupt, then what? A new book on the economics of the pharmaceutical business recently bounded toward the top of the best-seller lists, indicating a certain jaundiced attitude in the US toward the drug industry. It's called <em>The Truth About the Drug Companies: How They Deceive Us and What to Do About It</em>, as straightforward a title as you'll find. The author, Dr. Marcia Angell, is the former editor-in-chief of the <em>New England Journal of Medicine</em>. She makes a persuasive case that the large pharmaceutical companies distort and exploit patients everywhere.</p>
+    <p>Angell estimates Americans are spending $200 billion a year on prescription drugs, many of them modestly reformulated from previous medicines to protect a patent. She says that most of the new drugs come not from the labs of the big companies, but from taxpayer-funded research at academic institutions, biotechnology firms or the government, and that for years the industry was the most profitable in the US, falling only recently behind commercial banking and mining/crude oil production. The drug companies have one of the largest, most aggressive lobbies in Washington, they are lavish contributors to political campaigns, often hype or invent disorders to match new treatments, and routinely twist research results to protect their products.</p>
+    <p>So, as you watch the liquid drip into your arm&mdash;the cisplatin, 5-fluorouracil, docetaxel, gemcitabine, oxaliplatin and the ever-popular, never-to-be-forgotten irinotecan, which flattens you with a giant punch and tramps on your intestines afterwards&mdash;you can see money slipping into the ether, back toward the corporate headquarters of Bristol-Myers Squibb, Hoffman-La Roche, Pharmacia &amp; Upjohn, Aventis. This lends a certain poignancy to the New Age view of conventional medicine as a corrupt cor-porate front.</p>
+    <hr  width="50%">
+    <p>There are a few hundred of us in a banquet room at a waterfront hotel in Toronto. The man next to me has cancer of the pancreas. A Canadian, he's abandoned his work as a horse trainer in the southern US to come home for treatment, and the results he's gotten so far have sent him straight to Dreamhealer.</p>
+    <p>Dreamhealer is Adam, a West Coast teenager who heals either up close or at a distance, by sensing and visualizing a disorder inside the body and then confronting it, throwing it into limbo. Adam runs us through various exercises in visualization&mdash;the disease is vulnerable to imagination, so imagine the tumour flinching away from fire, from attacking white cells. Then cleanse yourself with a visualization of a sweet cascade of water.</p>
+    <p>Oh, phooey. The theory laid out in Adam's book is a tangle of science: quantum physics that dictates that all matter, human, animal, and otherwise, is linked, that illness is energy gone awry. Adam inexplicably cured the advanced pancreatic cancer of the singer Rompin' Ronnie Hawkins&mdash;took that solid tumour wrapped around an artery in Hawkins' body and busted it up, they say, leaving Hawkins' surgeon muttering something about him maybe not having cancer after all. Adam scanned my body twice, from thousands of miles away, wrestled with my cancer and failed to evict it, but did not charge me a dime for the effort. That, in alternative medicine, may be the most rigorous test of faith available.</p>
+    <p>Just before I was catapulted into Cancerland, I got an assignment to interview the Dalai Lama. These days, I'm lucky. The Dalai Lama is praying for me, along with the congregations of the First Congregational Church in Halifax and Runnymede United Church in Toronto and dozens of freelance worshippers around the world. I have been the focus of prayer services (and felt myself lifted for a little after them) and the focus of supportive thoughts from friends and colleagues. This may be more than morale-building: there is some evidence that "therapeutic touch" and even Reiki treatment, which involves miming massage without physical contact, may improve a sick person's well-being and influence the course of his recovery. Some evidence. This kind of phenomenon does not go under the microscope easily. The philosopher argued that he might as well believe in God, because if he was wrong it wouldn't matter, and if he was right he was ahead of the game. Maybe it's the same for distant or psychic healing. Who, exactly, is in a position to dismiss the possibility that it might work? Who is confident enough to tell the dying that their hopes are futile?</p>
+    <p>There is, however, a Ouija-board, incense-scented dimension to much of the alternative world, and deep anger and suspicion as well. You can get at some of what the alternative world is saying by rummaging around on the Internet and turning up transcripts of meetings and professional seminars. It's a bit like being a child, sitting on the steps during a grown-ups' party and hearing grown-up talk, spicy and forbidden, the voices of the angry and disaffected, sharing secrets and suspicions. </p>
+    <hr  width="50%">
+    <p>We meet the Princess Margaret chemotherapy oncologist on January 3, cheered by the holidays. She makes nervous chat. "How are you feeling?" </p>
+    <p>"Quite good, actually. What does the scan say?"</p>
+    <p>"It's not good."</p>
+    <p>I've been bumping down the repertoire, failing chemicals as I go; cisplatin and 5-<span class="cap">fu</span>, then cisplatin and docetaxel, and finally irinotecan, which was so gruelling I thought it must be doing a heroic job. Instead, the cancer has seized on me like a dog on dinner. The lesions on my liver are growing. </p>
+    <p> "I don't know where to go from here. I'm out of bullets. I'd like to arrange a referral to Palliative Care. They'll come to your house. Manage your pain."</p>
+    <p>We are silent. </p>
+    <p>"It's going to kill you, you know," she says. </p>
+    <p>I know I shouldn't ask this. I bite my lip to prevent myself. "How long do you think I've got?" </p>
+    <p>"Three months."</p>
+    <p>Ninety days. Ninety days? You can't run up a dollar library fine in ninety days. I've been waiting for the Seventh Cavalry, the sudden stunning research breakthrough. A manipulated measles virus. A denatured smallpox virus. Shark cartilage. I'd been hoping to string it out as long as I could until something came up. But this is cutting it a bit fine.</p>
+    <hr  width="50%">
+    <p>There is one option, short of lying down and accepting the sentence. My friend with pancreatic cancer has turned up a doctor in Brooklyn who's developed a new approach to chemotherapy: instead of large doses of one or two agents, he combines several in smaller doses, given more frequently, expecting a synergistic strengthening of the attack. We visit him in his office; he sits behind his desk like a large, wise St. Bernard, making the occasional joke and signalling the joke with a wink from behind his little round glasses. His theory makes intuitive sense. A doctor in Brampton, Ontario, is prepared to adapt and administer the protocol. Five hundred dollars for the consultation: bargain basement for US medicine. Treatment will begin in three weeks.</p>
+    <p>But what if we fail that too? A backup plan makes sense. Best to check out the very last ditch.</p>
+    <hr  width="50%">
+    <p>Tijuana is a sudden, shocking shot of Central America: hillsides gouged and abandoned next to built-up blocks, ragged kids, signs pointing to high-proof debauchery on Revolution Street. The tour takes us to four clinics. The first two are sleek, smooth places with sophisticated-looking technology, a CT scanner, a magnetic-resonance imager, cozy cafeterias with jolly cooks in the clean kitchens behind. The first offers an instant tender on my treatment: $40,000 (US), plus extras, plus rent for a bachelor flat next door if I want privacy. The second seems warmer, a little less focused on my wallet, and serves us lunch&mdash;fruit, avocado salad, vegetable soup. The third seems deserted, the kitchen empty two hours before dinnertime. The guide is an empty-headed chatterbox, and the physician in charge, an obese man who rocks behind his desk, emphasizes that he treats the entire patient, not just the disease. And there is a whiff of Hulda Clark here. The fat doctor shifts in his chair and says, "Clark? The woman? Well, she might once in a while treat one patient here. Many doctors use our facilities." The tour organizer later confirms that much of this clinic's business involves Hulda Clark. </p>
+    <p>The fourth clinic is the domain of a strange, hyper, Haitian surgeon who lectures us on the development of cancer and his mighty contributions to the fight against it. He goes into his office refrigerator and pulls out one little bottle after another: "This is a serum for breast cancer, this is for bone cancer. I invented all this. I sell these all around the world." After an hour we ask for a tour; again, an atmosphere of vacancy and deception, almost desperation. This clinic, in spite of the genius of its proprietor, seems to be slipping down the drain.</p>
+    <p>Nice lunch, though, at that second hospital, and friendly people at the long cafeteria table. One man in particular waves us over to talk. He's Ken from Sacramento, and he's finishing up a month and a half of treatment. He, too, has adenocarcinoma of the esophagus, Stage III. One of the "lucky ones," he was eligible for surgery. The doctors in the US cut him, flipped him over, and cut him some more, eighty stitches in all; his wife says they moved his lung over and broke some ribs in their efforts to get everything. After all that, he said no to chemotherapy and they wrote him off. "They tell you there's no hope," he says dryly. "And they do it with a smile on their face." Walking away has paid off&mdash;so far. He's <em><span class="cap">ned</span></em>, the hungered-for badge of cancer victory&mdash;No Evidence of Disease.</p>
+    <p>"How are you doing?" I inquire.</p>
+    <p>"Depends on who you ask."</p>
+    <p>What did it? Experimental vaccines: the cancer is sampled, the sample analysed, reformulated, and turned into a vaccine, and returned to destroy its mother. Multivitamins, a stringent natural diet, coffee enemas (I judge each clinic on how many of these it promises to administer every day; one required five); and laetrile, a mysterious concoction derived from fruit pits that has natural cancer-fighting properties. A large circle of laetrile believers and manufacturers has been promoting the substance for decades, in the teeth of fraud prosecutions and prison time. Exasperated researchers have run laetrile through the experimental high hurdles repeatedly with no result. <em>But that's what you'd expect, with the drug lobby and the government, wouldn't you? It's like the permanent light bulb; they know it works but they won't let you have it.</em></p>
+    <hr  width="50%">
+    <p>Cancer is not the best thing that ever happened to me. Even if against all odds I emerge five years from now able to walk and talk, cancer will still have been a colossally enervating and humiliating drag, a sudden shunt into old age and infirmity. But it has taught me some lessons. I have never been very good at friendships. Now it seems I have friends I barely knew were friends, whose affection and company I treasure. Before, I would have wriggled away from companionship; now I savour it. I've always felt a bit of a fake as a father, a plaster paterfamilias at the end of the table. Now I can feel my children's love, and it warms me. I never imagined the connection between me and my wife could grow this deep, affectionate, humorous, respectful. I would just as soon have passed on the whole experience, even if that meant half-living on a remote asteroid of self-absorption: this is just a little stressful for an artist. But as an experience, since there's really not much choice, it will do.</p>
+    <hr  width="50%">
+    <p>At cancer hour in the dark bedroom, I wonder what it would be like to die of this cancer. I do not say <em>will</em>, not yet. Cancer shuts down internal organs. My mother died when her breast cancer reached her brain. The target here seems to be the liver, and that would, not will, involve discolouration of the skin and, no doubt, abdominal pain, and, in the end, shutdown, since you can't live, the doctors say, without a liver. The oncologist at Princess Margaret cancels the referral to Palliative Care "since you're seeking further treatment" and wishes us luck. My wife has already talked to the unit, explained that I am still driving my son to hockey and doing a little grocery shopping. They agree it's a bit early and say to call any time.</p>
+    <p><img src="/sto/bcameron1.jpg" width="200" height="220" hspace="10" vspace="5" align="right">The chemotherapy unit in the William Osler Health Centre in Brampton is a little shabbier than the one at Princess Margaret. The oncologists here take occasional shifts with sprained ankles and stab wounds in the emergency room, and show up the next morning with bags under their eyes. But the puritanical orthodoxy of the teaching hospital that is Princess Margaret does not exist here. The Brooklyn formula, drugs given in combination in smaller doses, more frequently, makes intuitive sense, and if that fails, says my new oncologist, we'll move on to something else. Nobody here is sending me home to die. Not yet. </p>
+    <p>So here we are: docetaxel, gemcitibine, and our old friend irinotecan&mdash;all mixed up in a bag-and-tube cocktail. At home, I down a daily regimen of oral chemo: thalidomide, Tarceva, and Temodar. When I feel the familiar dull weight of the drugs, the chemo fatigue, begin to settle in, I almost welcome it. That which does not kill you, says the proverb, makes you stronger. Well, we shall see.</p>
+    <hr  width="50%">
+	<div align="center">
+    <p><em>Bill passed away on March 12, 2005.</em></p>
+    <p><em><strong>Chasing The Crab</strong> was published in <a href="/web/20111101111216/http://www.walrusmagazine.com/" target="_blank">The Walrus<br>
+    </a>magazine as the </em><em>feature story of its May 2005 issue.</em></p>
+    <p><em>Permission to reproduce  Bill's article here was granted by Bill's wife, Cheryl Hawkes.</em></p>
+	</div>
+  <!-- InstanceEndEditable --></div>
+  <img id="cafe_screen_disclaimer" src="/web/grn/dsc.gif" alt="Information found here is not to be a substitute for professional care.">
+  <div align="center" class="webonly">
+    <div id="cafegoogle">
+      <script type="text/javascript"><!--
+google_ad_client = "pub-2176662973486049";
+google_ad_width = "468";
+google_ad_height = "60";
+google_ad_format = "468x60_as";
+google_ad_type = "text";
+google_ad_channel ="";
+google_color_border = "CCCCCC";
+google_color_bg = "FFFFFF";
+google_color_link = "000000";
+google_color_url = "666666";
+google_color_text = "333333";
+//--></script>
+      <script type="text/javascript"
+  src="/web/20111101111216js_/http://pagead2.googlesyndication.com/pagead/show_ads.js">
+      </script>
+      <br>
+      <p>The above advertisements, provided automatically, are neither selected nor endorsed by us.<br>
+        Some may lead to web sites that provide questionable or controversial medical information.<br>
+        If you encounter advertisements inappropriate for the Caf&eacute;, send us the advertisement's URL.</p>
+    </div>
+    <h5><a href="/index.html">home</a> | <a href="/cnt/index.html">contents</a> | <a href="/sto/index.html">stories</a> | <a href="/ecg/index.html">ec-group</a> | <a href="/lnk/index.html">links</a> | <a href="/etc/index.html">etc.</a></h5>
+    <img src="/web/art/footer.gif" width="509" alt="Some graphics courtesy of Hoopla! disc, copyright 1995 Image Club Graphics. 1-800-661-9410" height="50">
+    <p><a href="/cnt/contact.html">Send a message to Marc &amp; Tammy Wolfgram</a></p>
+    <table width="610" border="0" cellpadding="0" cellspacing="0">
+      <tr valign="middle">
+        <td width="49" align="center"><img src="/web/cssprint.gif" alt="This page is printer friendly" width="45" height="50" border="0"></td>
+        <td align="center"><h6>Copyright &copy; 1995-2008&mdash;Last changed on
+            <!-- #BeginDate format:Am1 -->June 17, 2008<!-- #EndDate -->
+            &mdash; We comply with the<br> 
+            <a href="/web/20111101111216/http://www.hon.ch/HONcode/Conduct.html" onclick="window.open(this.href); return false;"> HONcode standard for trustworthy health</a> information: <a href="/web/20111101111216/https://www.hon.ch/HONcode/Conduct.html?HONConduct294647" onclick="window.open(this.href); return false;">verify here</a>.</h6></td>
+        <td width="45"><a href="/web/20111101111216/https://www.hon.ch/HONcode/Conduct.html?HONConduct294647" onclick="window.open(this.href); return false;" > <img src="/web/20111101111216im_/https://www.hon.ch/HONcode/Seal/HONConduct294647_s.gif" width="49" height="72" style="border:0px" title="This website is accredited by Health On the Net Foundation. Click to verify." alt="This website is accredited by Health On the Net Foundation. Click to verify." /></a></td>
+      </tr>
+    </table>
+  </div>
+  <img id="cafe_screen_footer" src="/web/grn/bot.gif"> </div>
+<map name="Map">
+  <area shape="rect" coords="240,113,286,143" href="/index.html" alt="Home">
+  <area shape="rect" coords="297,113,367,143" href="/cnt/index.html" alt="Contents">
+  <area shape="rect" coords="376,113,434,143" href="/sto/index.html" alt="Stories">
+  <area shape="rect" coords="443,113,516,143" href="/ecg/index.html" alt="EC-Group">
+  <area shape="rect" coords="527,113,574,143" href="/lnk/index.html" alt="Links">
+  <area shape="rect" coords="583,113,613,143" href="/etc/index.html" alt="Etcetera">
+</map>
+</body>
+<!-- InstanceEnd --></html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 11:12:16 Nov 1, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 4:50:48 Dec 15, 2013.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

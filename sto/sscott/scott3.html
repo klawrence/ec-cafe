@@ -1,0 +1,525 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><!-- InstanceBegin template="/Templates/cafe_green_1.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+
+<script type="text/javascript" src="/static/js/analytics.js" ></script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Cathy's EC Caf&eacute;</title>
+<!-- InstanceEndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="Cathy's Esophageal Cancer Cafe -- Providing information on esophageal cancer to patients and caregivers.">
+<meta name="Keywords" content="esophagus, gerd, oesophasgus, ec, barretts, adenocarcinoma, squamous, ec-group, cancer, support, health, medical, patient, caregiver, ecaa, acor, esophagectomy, esophageal, oesophageal, ec cafe">
+<link rel="stylesheet" href="/web/20101216122746cs_/http://eccafe.org/cafe.css" type="text/css" media="screen">
+
+<style type="text/css">
+<!--
+.bodyback {
+	background-image: url(../../web/grn/bgd.gif);
+	background-repeat: repeat-y;
+}
+-->
+</style>
+<link rel="stylesheet" href="/web/20101216122746cs_/http://eccafe.org/cafe_prt.css" type="text/css" media="print">
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+<body>
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script> if (window.archive_analytics) { window.archive_analytics.values['server_name']="wwwb-app14.us.archive.org";}; </script>
+
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1388534399999;
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http:\/\/eccafe.org\/sto\/sscott\/scott3.html";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth = 450;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "16";
+var displayMonth = "Dec";
+var displayYear = "2010";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" lang="en" class="__wb_banner_div" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px">
+
+
+<div id="wm-ipp-inside" class="__wb_banner_div" style="position:fixed;padding:0!important;margin:0!important;width:97%;min-width:780px;border:5px solid #000;border-top:none;background-image:url(/static/images/toolbar/wm_tb_bk_trns.png);text-align:center;-moz-box-shadow:1px 1px 3px #333;-webkit-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333;font-size:11px!important;font-family:'Lucida Grande','Arial',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://eccafe.org/sto/sscott/scott3.html" style="width:400px;font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20101216122746" /><input type="submit" value="Go" style="font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;margin-left:5px;width: inherit !important" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:'Helvetica','Lucida Grande','Arial',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20100926133654/http://eccafe.org/sto/sscott/scott3.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="26 Sep 2010"><strong>SEP</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 12:27:46 Dec 16, 2010">DEC</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       Jan
+                       
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/web/20101122175356/http://eccafe.org/sto/sscott/scott3.html" title="17:53:56 Nov 22, 2010" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 12:27:46 Dec 16, 2010">16</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
+                       
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/sto/sscott/scott3.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="24 Jul 2008"><strong>2008</strong></a>
+		                
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 12:27:46 Dec 16, 2010">2010</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       2011
+                       
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="/web/20101216122746*/http://eccafe.org/sto/sscott/scott3.html" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>22 captures</strong></a>
+           <div class="__wb_banner_div" style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">19 Apr 03 - 16 Dec 10</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:450px;height:27px;" href="" id="wm-graph-anchor">
+       <div class="__wb_banner_div" id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:450px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers('inline');" 
+				onmouseout="showTrackers('none');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="450"
+				height="27"
+				border="0"
+				src="/web/jsp/graph.jsp?graphdata=450_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000100000101_2004:-1:010101010101_2005:-1:010100010000_2006:-1:000010101000_2007:-1:000010010001_2008:-1:000000100000_2009:-1:000000000000_2010:11:000000001011_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="/static/images/toolbar/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="/static/images/toolbar/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById('wm-ipp').style.display='none';" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_close.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;margin-bottom:23px;background-color:transparent;border:none;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_help.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;background-color:transparent;border:none;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<div id="cafebody" class="bodyback">
+  <div align="center"><img id="cafe_print_header"src="/web/20101216122746im_/http://eccafe.org/web/print_header.jpg" width="504" height="72"></div>
+  <img id="cafe_screen_header" src="/web/20101216122746im_/http://eccafe.org/web/grn/top.gif" usemap="#Map" border="0" alt="Cathy's EC Cafe">
+  <div id="cafemain"> <!-- InstanceBeginEditable name="body" -->
+            <h1 align="center">Sheryl Ann Scott's Cancer Journey</h1>
+            <h3 align="center">By Robert G. Scott</h3>
+            <p align="center"><strong><a href="/web/20101216122746/http://eccafe.org/sto/sscott/index.html">Part 1</a> | <a href="/web/20101216122746/http://eccafe.org/sto/sscott/scott2.html">Part 2</a> | Part 3</strong></p>
+            <h2> Part 3: January - March 2001</h2>
+            <h4>4 January 2001</h4>
+            <p>Sheryl is eating less and dropping weight again. She has headaches and &quot;torso aches&quot; her whole upper
+              body is beginning to hurt. She keeps saying how she can't wait for Spring, when the weather is warmer and she
+              can get outside and walk her dog. I hope Spring gets here soon, I wouldn't want her to miss it. </p>
+            <h4>4 January 2001 (later)</h4>
+            <p>Today started out much better! After her cup of Honey Flu and tea in bed, she got up and asked for bacon and
+              eggs, toast and coffee. I fixed it and she ate it. If it still goes this well this afternoon, I'll be able
+              to work this weekend. </p>
+            <h4>7 January 2001</h4>
+            <p> She's not any worse, and tries to eat. She said she was looking forward to going outside today the weather
+              is supposed to be warmer. I'm staying home from work today, to keep an eye on her and clean up some. It's hard
+              to work a twelve hour shift, plus cook and clean.</p>
+            <h4>9 January 2001</h4>
+            <p>Sheryl spends about 80% of her waking time bent over double, her chest on her thighs; it's the only way she
+              gets relief from a stomachache. She also drinks about 3 or 4 cups of Theraflu a day. Yesterday she ate very
+              little, and started vomiting again. Her next appointment is with the chemo doctor on the 11th. She asked me
+              what would happen if he couldn't do anything for her. All I could say was that miracles do happen. I'm trying
+              to resign myself to the inevitable. </p>
+            <h4>13 January 2000</h4>
+            <p>The doctor's visit went pretty well yesterday. For some reason (crush) Sheryl always perks up when she has
+              an appointment with this one. When she woke up her stomach problems had disappeared and she ate breakfast.
+              When we returned home she ate supper. She drank several cans of &quot;Boost&quot; supplement.</p>
+            <p>Her weight had dropped to an all time low 106 pounds from not eating. Her heart rate was up (The crush?) as
+              well as her BP. He will try a second line chemo if she can get her weight back up; the next appointment is
+              on the 18th. </p>
+            <h4>18 January 2001</h4>
+            <p>We see the doctor in a few hours. I don't think she has gained much weight although she has been eating; about
+              the equivalent of one meal a day. She doesn't get much exercise though, so maybe it's enough. Yesterday she
+              managed to do a load of laundry.</p>
+            <h4>18 January 2001 (cont.)</h4>
+            <p>She wasn't feeling well enough to go in today; upset stomach and spitting up, so I called and had the appointment
+              rescheduled. I'm no longer pushing her into anything; it has been too hard on me, and it's really her decision. </p>
+            <h4>24 January 2001</h4>
+            <p> We made the appointment yesterday, and surprisingly Sheryl actually gained four pounds. Her doctor once again
+              reiterated that there was nothing more that they could do for her, but he would give her another round of chemo
+              - less intense - if she wanted. This would be conditional on her gaining weight and strength. I explained it
+              to her in non-clinical terms, and she understood.</p>
+            <p>We came home to a clean apartment one of her sisters and a friend came over at 5:30 AM (before we left) so
+              they could do it. The place was getting rather nasty, I work from about 5 AM to 7 or 8 PM, with a short break
+              during the day for Sheryl and can hardly keep up with the dishes. I'm hoping the clean up will help her.</p>
+            <p>She changed the prognosis some when retelling to her friends and relatives she doesn't want them to know the
+              real situation and wants to spare them. My attitude is different - they should be allowed to prepare. </p>
+            <h4>30 January 2001</h4>
+            <p>Sheryl is experiencing stomach pain again, and eating less. Yesterday she had a can of &quot;Boost&quot;,
+              some Pepsi, and half a bowl of Chicken Noodle Soup. Today she is aching all over. I'm now beginning to look
+              forward to the end of it.</p>
+            <h4>2 February 2001 </h4>
+            <p>Still not much change. The pain is intensifying, her stomach is still acting up, and she still doesn't eat
+              enough. It's getting more difficult every day to watch and think. </p>
+            <h4>5 February 2000</h4>
+            <p>Sheryl allowed her pain patches to run out yesterday. They need to be changed every three days yesterday was
+              the forth day. I saw that she was in more pain than usual and asked if she wanted them changed but she answered
+              no. When she came to bed last night I asked her again, and again no.</p>
+            <p>The patches plus Tylox keep the pain to a nearly acceptable level, sometimes she allows it all to clear her
+              system just to see if she really needs it. She does. The pain will not go away and neither will the cancer
+              that is causing it. </p>
+            <p>I woke up at 3:00 AM this morning to hear her retching and moaning in pain. I put new patches on her back
+              and she didn't object. I was going to go to work early today anyway I guess who needs sleep?</p>
+            <p>On a brighter note: one of her sisters and an old friend are in the process of organizing a party? dinner?
+              get together? for her soon. They are inviting all her old friends, some she hasn't seen in several years. I
+              think it is a good idea; too many people die without saying their last good byes. How often do people at a
+              funeral say, &quot;I wish I had told her &quot;. </p>
+            <h4>11 February 2001</h4>
+            <p>Sheryl's pain is under control again, and she's eating. Her attitude is much better - possibly because she
+              has another appointment with her favorite doctor next week. I still think she has a crush on him! The weather
+              has been nice lately, highs near 70, and that might have something to do with it along with the pain being
+              controlled. </p>
+            <h4>17 February 2001</h4>
+            <p> Back down again. Sheryl was up all night in pain; another &quot;total body ache&quot;. She is continually
+              getting weaker. She barely made it from the couch to the bed last night, very weak and dizzy when she finally
+              made it. She can barely hold a cup of coffee with one hand. </p>
+            <h4>17 February 2001</h4>
+            <p>Sheryl didn't eat much today, part of a can of Boost and a turkey and cheese sandwich. She was too weak to
+              make it on her own from the couch to the bedroom. She tried to stand and nearly fell she was so weak and dizzy.
+              I helped her to bed and she lost the turkey sandwich.</p>
+            <p>I am again wondering what I am going to do when she is a complete invalid. I can't afford the co-payment on
+              a hospice nurse - even a part time visiting nurse, and I can't afford to take more time off work. There might
+              be a free program through hospice but I don't seem to have the mental energy to find out. I feel that I am
+              running out of steam. I wake up around 3:30 AM, check Email and eat breakfast and I'm on the road by 4:30 or
+              5:00. I come home around 9 or 10 the check on her and then back on the road. If I hustle I can make $50 or
+              $60 dollars by early afternoon (on a good day) and be back by 3:00 or 4:00 PM. If the day is slow, I'll get
+              back around 7:00 PM. I then fix her something to eat, do dishes and laundry and try to clean up some. Bed by
+              9 or 9:30.</p>
+            <p>Thanks for being there so I can unload.</p>
+            <h4>21 February 2001</h4>
+            <p> We won't make it to the doctor's office today, Sheryl is too weak. I'll call in and cancel, and have her
+              prescriptions refilled. She fell trying to get out of the tub this morning, I had to lift her out. I think
+              she had a view of reality when she realized how weak she was, and she knows she won't survive this. This insight
+              has occurred before, but then she would get a little better and think she was winning. I have to go to work
+              today just like every day. I don't want to, I want to stay by her.</p>
+            <h4>24 February 2001</h4>
+            <p>She finally ate today the first time in three days. Half a cup of Jell-O Desert. </p>
+            <p>Her little dog, &quot;The Booger&quot;, came running into the kitchen to get me a few minuets ago. I thought
+              he wanted to go outside; he hasn't left her side in several days even to eat. Instead of running for the door
+              he ran to the bedroom. Sheryl had fallen off the bed (no injuries) and couldn't get back on it. I took the
+              opportunity to change the sheets. Good dog! </p>
+            <h4>25 February 2001</h4>
+            <p>One of Sheryl's sisters will be coming over tomorrow to be with her while I'm at work, and that will be a
+              great help. Her brother stopped by today for a few hours and cheered her up a lot. He wasn't too cheerful when
+              he left. I had tried to prepare him, but I guess nothing really prepares a person for reality. We tend to remember
+              people the way they were when last we saw them.</p>
+            <p>Cognitive degeneration is beginning to set in, possibly a result of starvation. It's hard to live on ice water
+              and a little ice tea, but that's all she can handle. She is starting to have auditory and spatial hallucinations;
+              she has heard her grandson talking, as well as various random sounds. She wondered when I had rearranged the
+              bedroom. It's hasn't changed in six years. Her short term memory is slipping as well.</p>
+            <p> Sheryl just called me back to the bedroom. She wanted to know why the paper towels were making noise.</p>
+            <h4>26 February 2001 evening.</h4>
+            <p>Cognitive degeneration is setting in faster than I could ever imagine. This morning she could talk, now (afternoon)
+              she is unable to communicate. The first two or three words come out OK, like &quot;Where is&quot;, or &quot;I
+              want&quot;; but everything that follows is a meaningless jumble of nonsense sounds. This is terribly frustrating
+              for both of us. One of her sisters came to day to be with her for most of the day while I was at work. She
+              too was shocked and unprepared by how bad off she is. She did a fantastic job of house cleaning, and promised
+              to come back tomorrow.</p>
+            <p>I just got off the phone with her doctor. He's going to arrange for a Hospice representative to contact me.</p>
+            <p>Every time I think it's gotten as bad as it can get, and I can't handle anymore it gets worse.</p>
+            <h4>27 February 2001</h4>
+            <p>People do survive esophageal cancer. <A href=/web/20101216122746/http://www.oatridge.co.uk/cancer.shtml target="_parent">Here
+                is a link to one such person</A>.</p>
+            <p>Sheryl is so much weaker this morning. Even with her sister coming over in the day, I don't think I can take
+              care of her. She is getting very frustrated with her weakness and now with not being able to communicate. I
+              promised her that I would see to it that she could die at home and not in a hospital, but when I made the promise
+              I did not know what that would entail. I may not be able to keep that promise, and it rips me apart knowing
+              that.</p>
+            <h4>1 March 2001</h4>
+            <p>Last night was bad, and neither of us got much sleep. Sheryl had a hard time breathing, and I had to help
+              her with the inhaler several times. She spent much of the night crying and apologizing. She fell out of bed
+              again this morning when I was getting a cup of coffee. I ask; no, I beseech her not to try to get out of bed
+              but she keeps trying. I guess she hopes she will miraculously regain her strength. </p>
+            <p>I promised I would stay home from work today, because I'm a lease driver it will cost me $64. A couple of
+              her family members forced some money on me yesterday so I can afford it. I need to, as I haven't been able
+              to spend as much time with her as we need.</p>
+            <p>The hospital care coordinator called me a short time ago and said that the Hospice people will contact me
+              this morning. The Hospice care is fully covered under our health plan, they will provide 21 hours of nurses
+              aide care, unlimited nursing visits, a hospital bed, medications, and counseling.</p>
+            <h4>2 March 2001 (morning)</h4>
+            <p>The Hospice nurses showed up yesterday afternoon. I signed the papers and was briefed on what they offer.
+              They tried to give Sheryl a cursory exam to confirm her state after I filled them in on her recent medical
+              history and perceived state of health. They couldn't check much; even taking her oral temperature was stressful,
+              so they didn't try to take blood pressure. The hospital bed will be delivered and set up this morning; it will
+              help a lot. She will be in the living room and can see out the sliding glass door as well as watch a bigger
+              TV.</p>
+            <p>After they left she spent several hours crying. The arrival of Hospice was the final confirmation of her impending
+              death; she had been holding out a spark of hope and that is now gone. It might be a good thing, as she can
+              now prepare herself.</p>
+            <p>I'm not overly religious, and this is driving me further away from believe in the traditional Judeo-Christian
+              concept God and back toward the Hindu concept of a &quot;Godhead&quot;. I cannot believe in a &quot;kind and
+              loving&quot; God that has a direct hand in the affairs of man. Just in case I'm wrong, I'm beginning to wish
+              that all those people who are praying for her to live would stop, and pray that her suffering would end.</p>
+            <h4>2 March 2001</h4>
+            <p>Hospice has come through. Sheryl now has a hospital bed with side rails and six-way adjustment in the living
+              room. She can see out the sliding glass doors, watch the big TV, listen to a good stereo, and I can be in the
+              same room with her 90% of the day. I turned the cab back in so I am unemployed again (but thanks to a couple
+              of donations I can do it), I paid the rent, sent out the bills, renewed the cars license tags and my drivers
+              license, and picked up her prescriptions. I now have no reason to have to leave for several days. I do have
+              to take her little dog, &quot;The Booger&quot; to the vet for grooming Monday, but someone will be here and
+              I won't be gone long.</p>
+            <p>The move from our bed to the hospital bed was very stressful for her, and she went to sleep quickly. We had
+              two of her sisters, her daughter and her boyfriend, a nephew and niece, grand son and grand nephew here all
+              at once everyone trying to be helpful. Half have left now, and those remaining are relatively quiet. I picked
+              up a prescription for Atavan to mellow her out and it seems to be working pretty well. Now all we have to do
+              is wait.</p>
+            <h4>3 March 2001 - 5:30 AM</h4>
+            <p>We both had a very quiet night, slept through from about 9:30 PM until 5:00 AM. She hasn't retched all night,
+              never awoke from pain. I think the Atavan (lorazepam) and the hospital bed are a god-sent. The Atavan is a
+              very strong tranquilizer in a very tiny pill. She doesn't even have to swallow it, as it will dissolve in her
+              mouth without any bad taste. The bed allows her to sleep slightly elevated and it doesn't bounce when either
+              The Booger or I roll over we have the couch beside the bed.</p>
+            <p>If anyone reaches the stage that care giving becomes difficult and the chances of recovery approach zero,
+              do not do as I did and wait for the last minute to call Hospice. Don't wait until the patient is a complete
+              invalid. I waited too long because it was admitting to myself - and telling Sheryl that all hope was gone.
+              It was a very difficult call to make, but I am so glad I made it.</p>
+            <p>Hospice will send a nurse's aide Monday, Wednesday, and Friday to bathe and care for her. There is an RN on
+              call 24/7 should anything happen. Volunteers are available if I have to leave for anything and a family member
+              isn't here. It's as if a great weight has been lifted from me.</p>
+            <p><em>Just a note on the hospital bed:</em> I have had this pathological fear of waking up to find my wife dead
+              beside me. I doubt anyone wants to wake up beside a corpse, particularly that of a spouse and lover. I would
+              sleep very lightly and come fully awake at any change in her breathing pattern, or when ever she would move.
+              That was hardly conducive to a good night's sleep; then I would try to drive a cab in the city for ten or twelve
+              hours while worrying about her. One hell of a strain, and a lot of (unnecessary) stress.</p>
+            <h4>3 March 2001 - 6:30 PM</h4>
+            <p>Sheryl has slept (or been comatose) most of the day. She has had a couple sips of water this morning, but
+              refuses anymore. Her eyes no longer focus and appear somewhat foggy and glazed. Breathing is labored and shallow.
+              Her little dog, &quot;The Booger&quot; has withdrawn from her. </p>
+            <h4>4 March 5:00 AM</h4>
+            <p>I went to sleep on the couch beside Sheryl's bed about midnight, listening to her harsh labored breathing.
+              I awoke again about three and her breathing had changed to shallow and weak. At about 4:00 AM I could hear
+              no more breathing. I checked with a stethoscope and could hear no sound; no bubbling or rasping or rushing,
+              and no heart beat. She was cold to the touch and her eyes were milky and glazed.</p>
+            <p>I called the Hospice nurse, and she came over and certified her death. I called a couple family members and
+              soon her friends and family were gathered.</p>
+            <h4 align="center">Sheryl Ann Scott died in her home on March 4, 2001</h4>
+            <div align="center"><img src="/web/20101216122746im_/http://eccafe.org/sto/sscott/composit.jpg" width="576" height="384"></div>
+            <blockquote>
+              <p><strong>She loves you, yea, yea, yea,<br>
+                And with a love like that you know you should be glad.</strong><br>
+&nbsp; &nbsp; &nbsp; <em>-- John Lennon</em></p>
+            </blockquote>
+            <p align="center"><strong><a href="/web/20101216122746/http://eccafe.org/sto/sscott/index.html">Part 1</a> | <a href="/web/20101216122746/http://eccafe.org/sto/sscott/scott2.html">Part 2</a> | Part 3</strong></p>
+            <p align="center"><a href="mailto:robertscott1@cox.net"><strong>Send an e-mail to Robert</strong></a></p>
+            <!-- InstanceEndEditable --></div>
+  <img id="cafe_screen_disclaimer" src="/web/20101216122746im_/http://eccafe.org/web/grn/dsc.gif" alt="Information found here is not to be a substitute for professional care.">
+  <div align="center" class="webonly">
+    <div id="cafegoogle">
+      <script type="text/javascript"><!--
+google_ad_client = "pub-2176662973486049";
+google_ad_width = "468";
+google_ad_height = "60";
+google_ad_format = "468x60_as";
+google_ad_type = "text";
+google_ad_channel ="";
+google_color_border = "CCCCCC";
+google_color_bg = "FFFFFF";
+google_color_link = "000000";
+google_color_url = "666666";
+google_color_text = "333333";
+//--></script>
+      <script type="text/javascript"
+  src="/web/20101216122746js_/http://pagead2.googlesyndication.com/pagead/show_ads.js">
+      </script>
+      <br>
+      <p>The above advertisements, provided automatically, are neither selected nor endorsed by us.<br>
+        Some may lead to web sites that provide questionable or controversial medical information.<br>
+        If you encounter advertisements inappropriate for the Caf&eacute;, send us the advertisement's URL.</p>
+    </div>
+    <h5><a href="/web/20101216122746/http://eccafe.org/index.html">home</a> | <a href="/web/20101216122746/http://eccafe.org/cnt/index.html">contents</a> | <a href="/web/20101216122746/http://eccafe.org/sto/index.html">stories</a> | <a href="/web/20101216122746/http://eccafe.org/ecg/index.html">ec-group</a> | <a href="/web/20101216122746/http://eccafe.org/lnk/index.html">links</a> | <a href="/web/20101216122746/http://eccafe.org/etc/index.html">etc.</a></h5>
+    <img src="/web/20101216122746im_/http://eccafe.org/web/art/footer.gif" width="509" alt="Some graphics courtesy of Hoopla! disc, copyright 1995 Image Club Graphics. 1-800-661-9410" height="50">
+    <p><a href="/web/20101216122746/http://eccafe.org/cnt/contact.html">Send a message to Marc &amp; Tammy Wolfgram</a></p>
+    <table width="610" border="0" cellpadding="0" cellspacing="0">
+      <tr valign="middle">
+        <td width="49" align="center"><img src="/web/20101216122746im_/http://eccafe.org/web/cssprint.gif" alt="This page is printer friendly" width="45" height="50" border="0"></td>
+        <td align="center"><h6>Copyright &copy; 1995-2008&mdash;Last changed on
+            <!-- #BeginDate format:Am1 -->June 17, 2008<!-- #EndDate -->
+            &mdash; We comply with the<br> 
+            <a href="/web/20101216122746/http://www.hon.ch/HONcode/Conduct.html" onclick="window.open(this.href); return false;"> HONcode standard for trustworthy health</a> information: <a href="/web/20101216122746/https://www.hon.ch/HONcode/Conduct.html?HONConduct294647" onclick="window.open(this.href); return false;">verify here</a>.</h6></td>
+        <td width="45"><a href="/web/20101216122746/https://www.hon.ch/HONcode/Conduct.html?HONConduct294647" onclick="window.open(this.href); return false;" > <img src="/web/20101216122746im_/https://www.hon.ch/HONcode/Seal/HONConduct294647_s.gif" width="49" height="72" style="border:0px" title="This website is accredited by Health On the Net Foundation. Click to verify." alt="This website is accredited by Health On the Net Foundation. Click to verify." /></a></td>
+      </tr>
+    </table>
+  </div>
+<img id="cafe_screen_footer" src="/web/20101216122746im_/http://eccafe.org/web/grn/bot.gif"> </div>
+<map name="Map">
+  <area shape="rect" coords="240,113,286,143" href="/web/20101216122746/http://eccafe.org/index.html" alt="Home">
+  <area shape="rect" coords="297,113,367,143" href="/web/20101216122746/http://eccafe.org/cnt/index.html" alt="Contents">
+  <area shape="rect" coords="376,113,434,143" href="/web/20101216122746/http://eccafe.org/sto/index.html" alt="Stories">
+  <area shape="rect" coords="443,113,516,143" href="/web/20101216122746/http://eccafe.org/ecg/index.html" alt="EC-Group">
+  <area shape="rect" coords="527,113,574,143" href="/web/20101216122746/http://eccafe.org/lnk/index.html" alt="Links">
+  <area shape="rect" coords="583,113,613,143" href="/web/20101216122746/http://eccafe.org/etc/index.html" alt="Etcetera">
+</map>
+</body><!-- InstanceEnd -->
+</html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 12:27:46 Dec 16, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 4:50:37 Dec 15, 2013.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

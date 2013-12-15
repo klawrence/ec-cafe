@@ -1,0 +1,1637 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><!-- InstanceBegin template="/Templates/cafe_green_1.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+
+<script type="text/javascript" src="/static/js/analytics.js" ></script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Cathy's EC Caf&eacute;</title>
+<style type="text/css">
+<!--
+.style1 {font-style: italic}
+-->
+</style>
+<!-- InstanceEndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="Cathy's Esophageal Cancer Cafe -- Providing information on esophageal cancer to patients and caregivers.">
+<meta name="Keywords" content="esophagus, gerd, oesophasgus, ec, barretts, adenocarcinoma, squamous, ec-group, cancer, support, health, medical, patient, caregiver, ecaa, acor, esophagectomy, esophageal, oesophageal, ec cafe">
+<link rel="stylesheet" href="/cafe.css" type="text/css" media="screen">
+
+<style type="text/css">
+<!--
+.bodyback {
+	background-image: url(../web/grn/bgd.gif);
+	background-repeat: repeat-y;
+}
+-->
+</style>
+<link rel="stylesheet" href="/cafe_prt.css" type="text/css" media="print">
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+<body>
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script> if (window.archive_analytics) { window.archive_analytics.values['server_name']="wwwb-app15.us.archive.org";}; </script>
+
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1388534399999;
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http:\/\/www.eccafe.org\/sto\/lcoleman.html";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth = 450;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "24";
+var displayMonth = "Aug";
+var displayYear = "2011";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" lang="en" class="__wb_banner_div" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px">
+
+
+<div id="wm-ipp-inside" class="__wb_banner_div" style="position:fixed;padding:0!important;margin:0!important;width:97%;min-width:780px;border:5px solid #000;border-top:none;background-image:url(/static/images/toolbar/wm_tb_bk_trns.png);text-align:center;-moz-box-shadow:1px 1px 3px #333;-webkit-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333;font-size:11px!important;font-family:'Lucida Grande','Arial',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://www.eccafe.org/sto/lcoleman.html" style="width:400px;font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20110824025956" /><input type="submit" value="Go" style="font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;margin-left:5px;width: inherit !important" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:'Helvetica','Lucida Grande','Arial',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/sto/lcoleman.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="23 Feb 2011"><strong>FEB</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 2:59:56 Aug 24, 2011">AUG</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/sto/lcoleman.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="1 Nov 2011"><strong>NOV</strong></a>
+		                
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/sto/lcoleman.html" title="9:14:33 Feb 23, 2011" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 2:59:56 Aug 24, 2011">24</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/sto/lcoleman.html" title="11:15:46 Nov 1, 2011" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0"/></a>
+		                
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/sto/lcoleman.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="12 Nov 2008"><strong>2008</strong></a>
+		                
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 2:59:56 Aug 24, 2011">2011</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       2012
+                       
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="/sto/lcoleman.html" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>38 captures</strong></a>
+           <div class="__wb_banner_div" style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">11 Oct 04 - 1 Nov 11</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:450px;height:27px;" href="" id="wm-graph-anchor">
+       <div class="__wb_banner_div" id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:450px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers('inline');" 
+				onmouseout="showTrackers('none');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="450"
+				height="27"
+				border="0"
+				src="/web/jsp/graph.jsp?graphdata=450_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000201_2005:-1:020100001000_2006:-1:001010021101_2007:-1:000111120111_2008:-1:111111000110_2009:-1:000000000000_2010:-1:000000001012_2011:7:010000010010_2012:-1:000000000000_2013:-1:000000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="/static/images/toolbar/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="/static/images/toolbar/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById('wm-ipp').style.display='none';" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_close.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;margin-bottom:23px;background-color:transparent;border:none;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_help.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;background-color:transparent;border:none;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<div id="cafebody" class="bodyback">
+  <div align="center"><img id="cafe_print_header"src="/web/print_header.jpg" width="504" height="72"></div>
+  <img id="cafe_screen_header" src="/web/grn/top.gif" usemap="#Map" border="0" alt="Cathy's EC Cafe">
+  <div id="cafemain"> <!-- InstanceBeginEditable name="body" -->
+            <h1 align="center">Les Coleman's EC Diary </h1>
+            <h2>Background</h2>
+            <p>Over Memorial Day Weekend 2003 and the following weekend, a series
+              of &quot;upset stomachs&quot; gave me some problems. Since Carolee
+              and I were departing on a trip to Russia, I wanted to ensure I
+              didn't have problems in rural Russia. I couldn't make an appointment
+              with my regular gastroenterologist, Dr. Pamela Connors while she
+              was on maternity leave until October. The first appointment I could
+              get with her partner Dr. Bradford Lavigne was in late July. I went
+              to my PCP and internist Dr. Walter Lentz to get a prescription
+              to handle the symptoms of an ulcer while I was away. I was given
+              a Prevacid which combines a strong acid blocker and medicine to
+              kill H-pylori. Throughout the trip to Russia, in spite of jet lag
+              and odd foods, I had no digestive upset. All went very well. </p>
+            <blockquote>
+              <p class="red"><em>Occasionally I will make an aside about the conclusion of something
+                  which happened later than the date noted. It will be in this
+                  red color.</em></p>
+            </blockquote>
+            <p><strong>July 27</strong> Upon my return to the USA, no problems
+              occurred. I began to think that my appointment would make me look
+              like a prize hypochondriac. On the evening before I was scheduled
+              to see Dr. Lavigne, suddenly I had a sharp attack around 6 PM.</p>
+            <p><strong>July 28</strong> (2003) I had my appointment with Dr.
+              Bradford Lavigne for the odd sensation in my stomach which I suspected
+              might be an ulcer forming. Dr. Lavigne asked if I had trouble swallowing,
+              had nausea or changes in my bowel movements [no to all]. Dr. Lavigne
+              wished to examine me with an endoscope as soon as possible. He
+              also wanted some blood work as soon as possible. I remarked to
+              the phlebotomist that 5 large test tubes of blood seemed unusual.
+              She said that I was having tests for white and red blood cell counts,
+              liver function, blood consistency and density, standard block testing
+              and perhaps other tests which I could not remember. I thought this
+              was a bit much for a stomach problem but I figured Dr. Lavigne
+              was just being thorough.</p>
+            <p><strong>July 29 </strong>I had endoscopy at Westerly Hospital.
+              Upon awakening Dr. Lavigne told Carolee and I that he had found
+              a cancer in my esophagus. He has taken 8 biopsies. In retrospect,
+              we should have known something serious was occurring when Dr. Lavigne
+              wanted us in at 6 AM after the first appointment but the diagnosis
+              of cancer was totally unexpected. The blood work including liver
+              function and counts of white and red blood cells should also have
+              tipped me off, but I simply did not make the association.</p>
+            <p>The remainder of today and the next day were passed in a complete
+              funk. As I went online to find out more about EC, I went from dreadfully
+              upset to almost paralysis. 95% mortality within 18 months is not
+              a diagnosis anyone wants to hear. What I did not know then and
+              was not to find out for sometime was that I had a 50/50% chance
+              of being in the lucky 5%. In reality, the numbers are something
+              like 90% of the EC suffers have no chance at long term survival,
+              and about 10% have a realistic 50/50% chance of long term survival.
+              The stage is very critical. Stage 0, cancer &quot;in situ&quot; (a
+              unattached self contained cancer) at 75%, Stage 1 - cancer contained
+              in innermost two tubes of the esophagus 50% all the way down to
+              Stage IV - remote metastasis is less than 1%. </p>
+            <p><strong>July 24</strong>  Somewhere during these two days, an aspect of my
+              personalty arose that I had never suspected. A no nonsense fiercely
+              focused hardened core took over ever time I needed to make a grim
+              decision or I began to panic. When Tim visited me a few days later
+              he said that he knew how frightened I must be, and I was startled
+              to hear myself say in all truth that I wasn't frightened at all.
+              I felt angry and vengeance at the disease, concern and grief that
+              I might leave Carolee a widow, but I had absolutely no personal
+              fear. When I needed to do hard things or understand hard choices,
+              a hardened and resolved core was there buffering my kinder gentler
+              selves from the grim realities. All the harden core cared about
+              was percentages, best outcomes and what we had to do to make sure
+              I gave myself the best possible chance. The hardened core made
+              sure that I picked up my physical activity, swimming longer and
+              faster. Over the weeks to follow, while I suffered periodic depression
+              at the nastiness of what was happening, and in particular each
+              setback be it dumping, weight loss or weakness, I never was fearful. </p>
+            <p><strong>July 29</strong> At 1:30, Carolee, Kevin, Mary and I met
+              with Dr. Lavigne when the pathology report was back. He showed
+              us the endoscopic picture of cancer.</p>
+            <img src="/sto/lcoleman.jpg" alt="tumor endoscopy photographs" width="610" height="464" border="0">
+            <p>The situation is that the tumor is in its early stages. The cells
+              look like the cells of the esophagus rather than the wildly undifferentiated
+              cells of a late stage tumor. There are no signs of spreading. The
+              liver shows neither signs of penetration in the CT Scan. This is
+              confirmed by a positive liver function blood test. Lymph nodes
+              in the area do not appear to be enlarged, but it is not possible
+              from a CT Scan alone to determine if they harbor breakaway tumor
+              cells yet. </p>
+            <p>There are various ways to specify the staging of a tumor. It can
+              be done from visual examination, from a biopsy, from CT and PET
+              Scans, from ultrasound endoscopy but the definitive staging can
+              only be determined after surgical removal of the effected area
+              and pathology of the diseased tissue. Dr. Lavigne has arranged
+              a meeting with Dr. Robert Knisley, who is now my medical oncologist.
+              Dr. Lavigne is essentially turning over management to Dr. Knisley
+              at this point. The tumor is about the size of my thumb pointing
+              down to my stomach. They have been confirmed as a moderately well
+              defined adinocarcinoma (pathology by Dr. Paul Cardi at Westerly
+              Hospital confirmed by Dr. Robert Odze at Brigham & Women's Hospital
+              in Boston on August 4th). The tumor has not wrapped around the
+              esophagus; it does not look aggressive; it is moderately well differentiated;
+              and does not show discoloration. All of these are positive signs.
+              It tentatively identified the tumor as an <strong>adenocarcinoma
+              of the Barrett's Esophagus</strong>  (which has proved to be a
+              correct diagnosis). </p>
+            <p><strong>August 1</strong>  I've had CT Scan and X-rays at Westerly Hospital
+              today. My lab work tested a wide variety of things including liver
+              function. The CT Scan dye burned when it was pumped in my arm.
+              Over the next few days, I developed a bumpy rash (hives?) which
+              various doctors confirmed was an allergy to the dye. The tests
+              at Westerly Hospital did not reveal any additional nodes of cancer. </p>
+            <p><strong>August 5</strong>  Carolee and I had our first meeting with Dr. Knisley.
+              Dr. Knisley and his partner Dr. Robert Lagare strongly feel I should
+              go out of state for surgery. He suggested that Memorial Sloan-Kettering
+              and Massachusetts General Hospital [MGH] have fine programs. [Dr.
+              Knisley discussed possible surgeons and he and Dr. Lagare suggested
+              Dr. Henning Gaissert. With Kevin's help we discovered that Dr.
+              Gaissert is indeed a fine EC surgeon.] </p>
+            <p><strong>August 11</strong>  Carolee and I had our first meeting with Dr.
+              Gaissert. It is very important to have confidence in your surgeon.
+              What he does has life altering changes on your body. Not only does
+              a doctor hold your life in his hands, his ability to communicate
+              with you can foster or inhibit the vital flow of information. We
+              are favorably impressed with Dr. Gaissert. I felt very comfortable
+              with him as did Carolee. Dr. Gaissert will be on leave until early
+              September but I am already scheduled for surgery on September 5th
+              (Friday). </p>
+            <p>We were amazed how sensitive a huge hospital like MGH can be with
+              severely ill patients such as myself. I later came to realize that
+              MGH is more a collection of little intimate &quot;villages&quot; each
+              focusing on a particular area. The whole is bound together by an &quot;state
+              government&quot; where a single village just isn't enough. Some
+              villages serve other villages (the shopping area, restaurants,
+              and administration), other villages treat a condition (maternity
+              or a kind of cancer) and still other villages deal with common
+              needs (X-ray, physiotherapy etc.). I never dealt with MGH as a
+              whole but just those folks with a special interest in my disease.
+              It seemed that everyone knew who I was and what I needed. Communication
+              was great and unobtrusive. </p>
+            <p>Dr. Gaissert's physician's aide Andrea (last name?) discussed
+              the details of the surgery with us. I will have a Jejunum Tube
+              (J-tube) inserted in lower left side for feeding (&quot;chocolate
+              milk shake on a pole&quot; [yah right and hamburger is porterhouse
+              steak]). I will awake with multiple tubes, in bladder, nose, back
+              (epidural drip), a drain in my lower neck, various ports in my
+              arms, possibly a vein tube leading to my heart (never had it) and
+              a mouth tube (taken out before I awoke). There will be many feeding
+              machines, monitors. I can expect to take a barium swallow on the
+              7th day if all goes very well, and physical therapy will begin
+              on the 2nd or 3rd day (I forced the issue by starting to walk immediately
+              after sitting up on day 1). I will have chest X-rays every day
+              (initially via portable unit, then by going down to the 2nd floor.
+              I will start on a series of diets starting with liquids and finally
+              going to anything goes 4-5 weeks later. If J-tube falls out I have
+              to get it inserted immediately - preferably at Westerly Hospital
+              Emergency Room (never a problem). J-tube may be left in for chemotherapy
+              and radiation. Andrea is on the floor of Ellison 19 (my home away
+              from home). </p>
+            <p><strong>August 12</strong>  Dr. Knisley called to see how things went with
+              MGH. We said they went very well and that we were very favorably
+              impressed with Dr. Gaissert. </p>
+            <p><strong>August 25</strong>  My 9 AM PET [Positron Emission Tomography ] Scan
+              began in the MGH White Building's Nuclear Medicine on Floor 2.
+              At 9:25 I was given some radioactive glucose. Just prior to the
+              injection, they drew blood through the same port. My blood sugar
+              level prior to injection and after a 17 hour fast was 85 where
+              80-120 is ideal. The actual PET Scanning began at 10:30 in a trailer
+              when MGH houses its second PET Scanner. The technician Lesley Lenher.
+              It was uneventful except that my arms (held above my head due to
+              the very narrow PET Scanner opening) grew painfully cramped. The
+              whole session took about an hour. The PET Scan showed no remote
+              metastatic nodes. </p>
+            <p>Carolee and I then went up to the GI Specialists in MGH Blake
+              Floor 4. We had a bit of confusion about when it was scheduled.
+              We thought that it was for 1 PM with a 12 Noon check-in. In fact
+              it was 2 & 1 PM. I had a complete medical history taken by a nurse
+              [Judy?]. She hooked me up to blood pressure, heart & pulmonary
+              monitors, started me on an IV. About 3 PM I was wheeled into the
+              procedure room. An unknown resident asked me my entire history
+              again, checked that I knew what the procedure was for and tried
+              to explain ultrasound to me. [I understand ultrasound at least
+              as well as he explained it but he was doing his job.] My actual
+              ultrasonic endoscope was conducted by Dr. Brenna Bounds who I met
+              just prior to sedation. Dr. Bounds has tentatively suggested a
+              single tumor (possibly 2) with no nodes involved. </p>
+            <p><strong>September 2</strong>  In a phone conversation with Dr. Gaissert,
+              we confirm that surgery is on for Friday. I am very anxious to
+              get started. </p>
+            <p><strong>September 3</strong>  We arrived at Boston two days early so that
+              I can take the much dreaded Golitely. This will be my last real
+              meal perhaps forever, because of limits on how much I can eat. <em class="red">My
+              outlook about eating normally proved to be much too pessimistic.
+              A year later I was fine.</em> They gave me a full dose of Golitely
+              with strong antibiotics. With my tendency to diarrhea, this was
+              massive overkill. </p>
+            <p><strong>September 4</strong>  A series of tests were scheduled today on an
+              outpatient basis. I did not find out until later that these were
+              crucial tests. Failing anyone of them meant that surgery was off.
+              Blood work (many vials) were taken at 12 Noon. I moved to the Pulmonary
+              Testing Unit [MGH Bigelow Room 952] at 1 PM with technician Barry
+              Callahan. I was told that I had to have spare capacity if surgery
+              went awry. I was asked to blow hard into an initial machine before
+              the more serious test began. After looking at this test Barry said
+              the rest of the tests would be pro-forma. I did tests in hyperbaric
+              chambers, lung capacity tests, pressure test and what Barry said
+              would be the worst - the treadmill. Actually as I waited for the
+              treadmill to come up to speed, Barry announced everything was done.
+              I normally run the treadmill twice as fast at the YMCA and didn't
+              understand that I had already passed. By 2 PM I was in for an EKG
+              and a discussion of how the blood tests went (fine including the
+              crucial liver tests for cancer spread). </p>
+            <p>We moved to the Grey Building's Admitting area where things began
+              by checking insurance and signing lots of waivers saying MGH could
+              share what they learned with people involved in my treatment. I
+              had a nurse interview with Hilda Morrison who explained all the
+              support services. I learned I would have to arrive at the hospital
+              by 5:30 AM. I was told not to bring anything at all. Hilda explained
+              many support features available at MGH if I needed them. She was
+              exceedingly kind and gentle. </p>
+            <p>My final interview was with Anesthesiologist Dr. Annetta Murphy.
+              She explained that two types of anesthesiology would be used -
+              general (by mouth and via a port in my hand) and epidural (via
+              a tube in my back). Dr. Murphy repeated all the tubes that I might
+              encounter. She explained the common side effects and explained
+              that while very rare, epidural sometimes caused paralysis. She
+              stressed that long surgeries like mine were stressful to the body
+              and that I would probably not be moved from the ICU to acute care
+              (Ellison 19) for a minimum of 24 hours (I actually was ready to
+              be moved 8 hours later but they held off until morning). </p>
+            <p>Tim came the evening before surgery and met us in the room. We
+              planned to meet early to go over for the early admissions. </p>
+            <p><strong>September 5</strong>  Carolee, Tim and I arrived at the admitting
+              area in Wang by 5:30 AM in the Same Day Surgical Admission area.
+              I was scheduled for the very first access to the surgical area
+              (a blessing not to be hung up waiting for one to free up). It wasn't
+              long until I was admitted and shortly afterwards I was on a gurney
+              in a hospital dickey wrapped up in some warmed blankets. [MGH keeps
+              preheated blankets in warming cabinets for patients who are chilly
+              - bless whoever thought this one up.] I moved down to surgical
+              ward 8 and was in an alcove while the room was set up. I met for
+              the first time a head resident (?) Dr. James Cacciatola who prepped
+              me for the surgery and started the anesthesia. </p>
+            <p>From here until the evening I have no recollection. Surgery was
+              rapid and without complications. Within 5-1/2 hours
+              Dr. Gaissert told Carolee and the others that all was well. It
+              was sometime in the evening until I awoke enough to know my family
+              was close but I still was very groggy and cannot say much of what
+              happened. Visual examination indicated the cancer had not spread
+              at all but pathology (several days later) discovered a few escaped
+              cells in one out of thirty nodes. </p>
+              <p>The following are Carolee's notes about the day: 
+              </p>
+            <blockquote>
+              <p class="style1">            &quot;Surgery began at 8:15. We had updates
+                from rotating nurses Gloria and Katy who said that Les' surgery
+                was going well and that Les was stable. We met with Dr. Gaissert
+                at 1:45 who said that everything went according to plan. There
+                was no [visible] evidence of spread. They took nearby lymph nodes
+                for a biopsy whose results are due in 6 to 7 days. Les is still
+                groggy, in some pain, is connected to lots of tubes and looks
+                good considering.
+              </p>
+              <p><em>            &quot;We visited Les in the ICU at 6:45. He was more
+                  alert and in more pain. When a nurse told him to take a few
+                  deep breaths, it was very painful for him. The nurse removed
+                  the oxygen mask briefly to make talking easier but soon had
+                  to put it back on. Les wanted to know exactly where he was.
+              </em></p>
+            </blockquote>
+            <p><strong>September 6</strong>  In the early morning hours I finally really
+              awoke. I was asked how painful things were for me. I said that
+              I knew what real pain was having passed a 5 mm &quot;arrowhead&quot; kidney
+              stone. (It doubled me up with pain in spite of a heavy dose of
+              morphine.) Using that as a 10 I said I was hurting no worse than
+              a 3. Medication was given and pain dropped back to background and
+              never got as bad the rest of the day. I was told that after breakfast
+              I would be moved to Ellison 19. Time dragged incredibly slowly.
+              I was about the only patient in the ICU, at least at the far end
+              where I was. Others had left the evening before. I heard a Code
+              Blue come over the loudspeaker down in &quot;Eat Street&quot; the
+              MGH main cafeteria but other than that everything was very slow. </p>
+            <p>At 6:30 AM, a man came down with a portable X-ray machine and
+              slid a film under my back. I felt like a leaden blanket, unable
+              to do much more than grunt. The X-ray technician was upset that
+              the film was bad until it was explained by a nurse that &quot;No,
+              it isn't bad, his stomach really is under his collarbone now.&quot; I
+              could feel my legs but my body from my diaphragm to my groin was
+              totally numb. </p>
+            <p>Somewhere around 7 Carolee and Kevin were admitted. I told them
+              I was scheduled to go up to Ellison 19 earlier rather than later.
+              When we finally got to Ellison 19, I was placed initially on the
+              inner bed. The view from the far bed was spectacular. My first
+              roommate was going home after having almost identical surgery.
+              We asked for and got the window bed when he left. What an incredible
+              view of Harvard, MIT, the Charles River, and the Esplanade. Outside
+              I would watch the traffic on Storrow Drive, or the crew rowers
+              and scullers zipping under one bridge or another. I could see the
+              Red Line Trains going across the bridge below, watch softball teams,
+              cyclists and runners on the path and had a wonderful view day and
+              night </p>
+            <p><strong>September 7-12</strong>  Ellison 19th floor is also known as by everyone
+              as <strong>Thoracic Park</strong> . It comes complete with island map and
+              dinosaurs (various nurses and physiotherapists). Serious thoracic
+              patents are collected in this acute care facility. The nature of
+              acute care starts with a patient very much unable to do more than
+              press a button to ask for help and if all goes well, it ends with
+              someone well enough to manage for himself. Each day began with
+              an early chest X-ray once I could stand. I wore elastic sox designed
+              to help people with phlebitis. An automatic pump massaged my lower
+              legs with inflatable leggings to prevent clots. I learned far more
+              about heart and pulmonary monitors than I ever wanted learn. &quot;Smoke
+              (black wire) above fire (red wire) far from the snow (white wire
+              on right side)&quot;. I became a fairly pleasant patient and I
+              found that I was being used as &quot;a live crash dummy&quot; by
+              nursing students (under the closest care of a supervising nurse).
+              I actually looked forward to chatting with the nursing students
+              and wishing them well in their studies. </p>
+            <p>Mornings began with a very early visit by Dr. Gaissert. Carolee
+              was amazed how early (by 6 AM) she had to come to meet him. Having
+              him there to discuss the latest results did a huge amount to bolster
+              my confidence that I was indeed mending very well. Shortly after
+              he came, Dr. Cacciatola would arrive with first year residents
+              in tow. He was always asking probing questions to make sure that
+              I was comfortable, and about each and every feeling or symptom.
+              Later pain specialists made sure I was in no pain. [I had low level
+              pain sometimes, but almost nothing like I expected] . </p>
+            <p>Most people got breakfast next but I had an NBM (nothing by mouth)
+              sign on my chart until the fifth day. Physical therapy came next,
+              and this was the territory of my grim hard core to push myself.
+              Actually, I had the nurses and physiotherapists upset - I was too
+              aggressive. Usually they have troubles getting someone to do anything.
+              I was supposed to sit up the first day, but I got myself up and
+              started marching down the corridor (too fast). Finally I was told
+              that exercise was great but busting a gut [a very real possibility]
+              was moronic. I slowed down a bit but made the walks longer. I learned
+              a lot. I made rapid progress. <em class="red">I wasn't
+              to learn until weeks later that I was burning up the physical fitness
+              that I had built into my body over many years at the YMCA pool
+              and exercise rooms. Eventually the spare stamina ran out and it
+              was a few weeks before a compromise could be forged between the
+              body (<strong>I'm really hurting and exhausted.)</strong>  and necessity <strong>(So
+              what? Move it, now!)</strong>  Once I was chemotherapy and radiation
+              I wish I had used up less earlier. I exhausted my reserves too
+              soon. Later when starvation was a problem, the reserves were gone.</em></p>
+            <p>My first bed was literally falling apart. One night several parts
+              fell off next to the controls including the side rail. A guy from
+              maintenance said the &quot;bed could short out&quot; and begin
+              to move up and down on its own. In fact he was wrong the bed's
+              controls are pneumatic and are failed safe. But to a heavily sedated
+              patient, it seemed plausible. I sat up much of the night in a chair
+              and was exhausted by the time Carolee came in. Carolee raised the
+              roof and pretty soon, the &quot;broken bed incident&quot; got escalated
+              more than it was worth. I am grateful to the MGH social councilor
+              who listened to my tale. In hind sight, this is the one item where
+              my sensible hard core didn't emerge when perhaps it should have.
+              Too much happened and I was finally unable to maintain composure. </p>
+            <p>Aside from the bed, the only complaint I had was eating. Most
+              of the time I was fed simply by machine. For some reason, my extremely
+              simple meals (colored flavored ices, clear fruit juice or broth)
+              seemed beyond the MGH kitchen's ability to produce. I sometimes
+              got breakfast as late as the afternoon and supper as late as 9:30
+              when everyone else got meals on time. Since I looked forward to
+              eating with my visitors (they bringing up a tray), it was really
+              a bummer. Worse yet, I needed practice eating because my swallowing
+              is anything but automatic. </p>
+            <p>I could measure my progress by the tubes, wires, monitors, pumps
+              and various prosthetic devices that were removed. Early removals
+              were the direct blood pressure monitor (in a vein), then several
+              heart medications (preventing arythymias) were dropped, the epidural
+              tubes came next to be replaced by a pump that allowed me to self
+              medicate pain relievers. Eventually the dreaded nose tube came
+              out and I stopped sounding like Donald Duck. I was allowed to move
+              about without having the heart and lung monitors attached (although
+              they were back on when I was in bed). The drain in my neck stayed
+              until the end. It was very annoying because it wouldn't stay put. </p>
+            <p>As a slightly amusing anecdote, one morning near the end I knew
+              that I was scheduled to have a variety of tubes and wires removed.
+              As always critical patients come first and while the nurses were
+              always caring and helpful, I was the healthiest critter they had
+              so I came last when there was a conflict. I finally decided to
+              removed some of the intravenous tubes, tape, and electrical connectors
+              from my body. Dr. Gaissert came in and asked what I was doing.
+              I gave him a grin and said &quot;I'm making a break for it Doc.
+              Give me a head start of 15 feet past the nursing station and they
+              will never catch me.&quot; He grinned back and said &quot;I'll
+              help you with a disguise. They'll never recognize you without that
+              tube in your nose. Stand up and take it like a man!&quot; He whipped
+              the nose tube and its tape in one single deft motion and I was
+              ready to make my break. </p>
+            <p>I was off oxygen for a while but had to go back on it after I
+              had a problem during my &quot;barium swallow&quot; on the 6th day.
+              I aspirated about 30 cc of some testing liquid into my left lung
+              while on the fluoroscope. I surprised the radiologists examining
+              me when I simply cleared my lungs using the &quot;breathing and
+              coughing&quot; exercises I had been taught. I calmly asked for
+              more fluid and continued. Back in Thoracic Park, the male nurses
+              took turns pummeling my back until everything had cleared. They
+              used oxygen and a kind of a vaporizer to loosen my lungs. A de-aspirator
+              tube was used to clear mucus and phlegm where I couldn't clear
+              it by myself. In spite of my near disaster (I could have been Code
+              Blue and in Emergency easily) I managed to pass the test handily. </p>
+            <p>Carolee stayed at Beacon Hill House most nights while I was ill.
+              On the last night Kevin and Carolee stayed at the same hotel to
+              avoid problems with suitcases and bags. </p>
+            <p><img src="/sto/lcoleman.gif" alt="Tumor Diagram" width="380" height="280" hspace="5" border="0" align="right">On the
+              day before I left I had a series of consultations at MGH with Dr.
+              Jeremy Abramson (radiation) assisted by his resident Dr. Ronald
+              Chen and Dr. Panos Fidias (chemotherapy). They offered to help
+              either by setting up a treatment at MGH or working with Rhode Island
+              doctors if I felt like going that way. </p>
+            <p>They described the tumor in more detail than I had seen before.
+              The tumor had not managed to even invade the outer wall of the
+              esophagus being constrained mainly to the mucous layer and adjoining
+              the muscle. <strong>One</strong>  node was found to have microscopic traces
+              of carcinoma. So immediately I went from being <strong>T1N0M0 (pure
+              Stage 1)</strong>  to <strong>T1N1M0 (early Stage IIb)</strong> . No cancer has
+              been found at either the upper end of the esophagus nor anywhere
+              in the removed portion of the stomach. This has been confirmed
+              by pathology under the microscope. Dr. Gaissert could not detect
+              any spread of cancer to the nodes visually, but only pathology
+              can really tell. After surgery I am assumed to be <strong>T1N1M0</strong>  (requiring
+              chemo and radiation for a cure). I may be T0N0M0 (ie free of cancer)
+              but we can't assume this. </p>
+            <p><strong>September 13</strong>  Going home! In spite of savage bruises on
+              my arms after a week of heparin injections, various intravenous
+              injections, numerous blood test and allergic reactions to adhesive
+              tape, I feel elated. </p>
+            <p>My brother Dennis brought his Suburban up from Old Lyme CT to
+              MGH to cart me, my stuff, and the three of us (Kevin, Carolee and
+              myself) to Westerly. I was up early and the very last of the drains
+              was removed. I had the first true shower since the beginning. With
+              the exception of the J-tube, I was free of tape and tubes at last.
+              I dressed in real clothes and by the time Dennis arrived I looked
+              more than half human. I felt great but I was to learn how little
+              real stamina I had by late afternoon. </p>
+            <p>I was told to cut the two hour trip into two sections. I was no
+              longer receiving heparin intra muscular shots every six hours and
+              blood clots might yet form, so I had to walk around every hour
+              of the trip. Dennis stopped, somewhere in darkest Woonsocket. I
+              strode off toward a sign in the road, and three quarters of the
+              way there the last of my reserves suddenly began to give way. I
+              made it back to the Chevy but I was exhausted. I remember little
+              of the remainder of the trip. At home, I focused on climbing the
+              stairs and I fell into the guest room bed and was asleep within
+              minutes. I was vaguely aware that something had been left in the
+              Chevy, and that Dennis came back to deliver it, but I didn't really
+              come to until evening. I was so disappointed with my performance
+              but I have come to realize that stamina is no longer my middle
+              name. </p>
+            <p><strong>September 14</strong>  Carolee and Kevin went out and bought all
+              sorts of sick room and soft foods for me. I have a sitty-downy
+              ring (my posterior maximus is at best a posterior minimus now).
+              A bed wedge allows me to sleep at a safe 30 degree angle (to avoid
+              midnight saliva gagging). For a while the guest room will be my
+              bedroom. A nurse, Holli Simmons, from the Coram Corporation brought
+              a pump, Jevity, an elevated pole and explained how to feed myself
+              by machine. It is basically the same setup as the hospital except
+              that it is battery powered for up to 10 hours if need be. Since
+              I am not on continuous feed, for the most part I simply wait until
+              I can disconnect before doing much more than moving about the guest
+              room, kitchen and bathroom. </p>
+            <p><strong>September 15 to October 1</strong>  Each day is much like the prior.
+              Dr. Gaissert is weaning me from the feeding tube. I started at
+              2000 calories every third day with 1750 every two out three days.
+              After 5 days, I dropped to 1000 calories. A week later I was down
+              to 750 calories for four days then 500 calories a day for four
+              days before stopping altogether in October. </p>
+            <p>I have telephone consultations at least every with Dr. Gaissert
+              in which he slowly allows me to do more and more. I am able to
+              do more and more for myself. During this time I returned to the
+              YMCA and actually was able to do dome aerobic cycling, treadmills
+              and (light) weight machines. The showers at the YMCA are much better
+              than at home. Guys at the YMCA are encouraging and say I look very
+              well. <em class="red"> As chemo and radiation hit
+              and worst off all dumping/diarrhea hit, I began to lose this appearance
+              of wellness. Eventually even trips to the YMCA became rare until
+              six weeks after treatments.</em></p>
+            <p>My downstairs guest room bedroom is practical but I do feel like
+              I am in Coventry. I can get up from the bed at night and wheel
+              the food pump tube into the bathroom. However I really want to
+              snuggle up to Carolee especially when the temperature drops. Sleeping
+              on my back is getting better but I still wish I could turn over
+              on my side for at least a few minutes. However this would mean
+              tangling my food pump tubes and lying on the J-tube valve. <em class="red">When
+              the J-tube was removed and after my abdominal muscles healed, I
+              once again could sleep on my side.</em></p>
+            <p>One of the really annoying problems is my J-tube. It pokes me
+              and leaves painful red areas. Trying to attach it without discomfort
+              is impossible. While I try to &quot;pad&quot; my tummy from the
+              knobs on the end of the tube, it really isn't successful. I am
+              very sensitive to adhesive tape. Leaving it in one area causes
+              big red welts. When I shower, I must change everything. I need
+              to take medicines and food by the J-tube, and everything has to
+              be cleaned over and over again. </p>
+            <p>The end of the J-tube ends in a dingus called a Lopez valve. It
+              is both a very sensible idea and a a dumb idea rolled into one.
+              It allows multiple uses of the J-tube without replugging (sensible),
+              but it just won't stay in place and has sharp corners which gouge
+              me (dumb). It must be taped away from the body, but adhesive tape
+              simply isn't strong enough. Finally Carolee suggested that perhaps
+              MoleSkin would work. It does, but I have to tape it over gauze
+              to avoids welts. I actually got so annoyed that I wrote to the
+              company which produces the Lopez valve and suggested then come
+              up with a Lopez Valve case which would allow the unit to have no
+              poking knobs and would attach via an elastic belt rather than adhesive
+              tape. </p>
+            <p>Hooking up to the food pump at night isn't too much of a hassle.
+              It starts with me flushing the J-tube with 60-100 milliliters of
+              spring water. I don't require sterility but I must have cleanliness.
+              Medicines and vitamins are ground up, dissolved and injected through
+              the medication port on the Lopez valve. More water is flushed in
+              and then I pour cans of Jevity (which smells like baby colic) into
+              a fresh feeding bag. I hook the bag onto the machine pole, pre
+              pump the air out of the tubes, insert the pentagonal pumping wedge
+              into the machine, connect the thin feeding funnel into the Lopez
+              valve. If I do everything right, I then turn on the Lopez valve,
+              the pump and away I go. If I goof, either the pump begins to beep
+              or worse yet if I forget to open all the valves and doohickies
+              in the right order, gooey Jevity squirts onto my clothes. </p>
+            <p>I optionally take pain killers. I am weaning myself from the strongest
+              (OxyCodone) to the mildest (Advil). I am actually afraid of OxyCodone
+              (a drug of which OxyContin is a form). My IQ drops when I take
+              it and I simply don't consider things that turn out to be dangerous.
+              For example Carolee was rightfully terrified when she discovered
+              I was moving cases of Jevity food when 5 pounds was my maximal
+              safe weight lifting limit. A step down in power, and somewhat less
+              stupefying, is Codeine Phosphate. After the very beginning, I found
+              that Codeine was the maximum power I needed. I tried to get off
+              this stuff too soon, but I only had to go back once in a while.
+              Advil works quite well and has no problems of me acting stupid.
+              By the end of September I was off all these drugs permanently. </p>
+            <p><strong>October 2</strong>  Carolee and I got lost trying to find Rhode Island
+              Hospital [RIH]. She found driving in Providence nerve wracking.
+              Hopefully I will be able to do most if not all the remaining driving. </p>
+            <p>We made our first visit with Dr. DiPetrillo, who has come well
+              recommended by both Dr. Knisley and Dr. Gaissert. I was frankly
+              skeptical of what use radiation would be in a case like mine, and
+              not at all happy with the idea of radiation near a very tender
+              anastimosis (joining of unlike tissues) in my throat. Dr. DiPetrillo
+              explained that there were two tubular columns that were on either
+              side of the spine that used to run along the esophagus. These contain
+              the lymph nodes that were most likely to harbor any escaped cancer
+              cells. </p>
+            <p>Radiation is going to be a bitch. I am having considerable problems
+              eating currently. I vomit and gag with almost no provocation. I
+              get diarrhea at the drop of a hat. I still can't eat more than
+              1500 calories or so on a normal day. Yet much as I don't want to
+              do it, the doctors have convinced me that my best interest are
+              to radiate. So I will.<strong> </strong>  </p>
+            <p><strong>October 6</strong>  We had a follow up session with Dr. Knisley.
+              He had not received the surgical, pathology or consultation reports
+              yet, after his vacation. [A day later he called to say they had
+              unearthed themselves from someone's desk.] Dr. Knisley remarked
+              how well I looked exactly a month after surgery. I am still not
+              sure exactly what type of chemotherapy if any I will undergo. I
+              discussed the drawbacks of some drugs like Cisplaten (hearing loss). </p>
+            <p><strong>October 9</strong>  We made a trip to Boston MGH to have the first
+              of our follow up visits with Dr. Gaissert. Carolee was nonplused
+              to discover the train station closed to ticket buyers earlier in
+              the week, but we got them the day before. </p>
+            <p>Our first trip was to Wang Outpatient X-ray. I carried the photos
+              to my meeting with Dr. Gaissert who removed the J-tube much to
+              my relief. He made sure that I understood that having to reinsert
+              one later would involve considerable extra difficulty. If the problem
+              is only for a few days near the end of radiation and/or chemotherapy,
+              I do not see worrying about it. [This turned out to be much too
+              optimistic.] If I really need massive food by tube for many days,
+              then an operation to install another tube will be the least of
+              my problems. I have been given permission to eat anything, to exercise
+              (except for sit-ups and crunches for another month) and to generally
+              administer my own recovery. We discussed the problem I am having
+              with my throat constricting, vomiting and generally having eating
+              problems. Dr. Gaissert still feels that with time these problems
+              will recede. </p>
+            <p>We had a long wait (most of it at South Station) for a train home.
+              It was exhausting. </p>
+            <p><strong>October 15</strong>  Carolee and I drive to RIH for the preparation
+              for the start of radiation on Monday. I was taken to a CT Scan
+              room and told that basically two things would happen - a form fitting &quot;pillow&quot; of
+              semi-hard foam would be made of my head, shoulders and arms (held
+              above my head) and that I would be tattooed (three small dots)
+              on my chest and under my arms. It was relatively quick and except
+              for an uncomfortable tugging at the bottom of my rib cage quite
+              painless. It took perhaps 15 minutes, most of it flat on my back
+              and unable to move except to breath. </p>
+            <p><strong>October 16</strong>  I had a session (private lesson) with Carolee's
+              Yoga teacher - Anita. The purpose of this in my mind was three
+              fold: improve my breathing and pain control, retain and if possible
+              improve range of motion and if it is the case find a way to lie
+              flat on my back with my arms above my head without strange tugging
+              pain at the bottom of my ribcage. </p>
+            <p>In the afternoon (2:15) Carolee and I had a session with Dr. Knisley.
+              It started as with all such session with the weekly blood test
+              (good). Dr. Knisley is getting a bit concerned about the weight
+              loss. It isn't that 178 pounds is so bad but that I still have
+              potentially the worst weight loss ahead of me. Dr. Knisley introduced
+              me to Dr. Lagare his partner. Doctors Gaissert, DiPetrillo, Knisley
+              and Lagare have been discussing chemotherapy for me. They have
+              taken my concerns about Cisplatin and Carboplatin (additional crucial
+              hearing loss) to heart. My chemotherapy will be 5FU (Fluorouricil)
+              carried by Leucovorin. I will get two hours of Leucovorin and during
+              this time I will get 450 units of 5FU. </p>
+            <p>We were introduced to the nurse Angela who runs the center where
+              the actual chemicals are delivered. We also met Dawn who is my
+              phlebotamist. She gave me some samples of Boost. Some sort of caloric
+              supplement will be part of my life from now to the end of chemo
+              (at least). I will go every Tuesday at 9-11. Chemotherapy will
+              last at least as long as radiation and may continue for as long
+              as 6 months. The day before I will have blood work done by Dawn
+              to speed up my ability to get to RIH on time. </p>
+            <p><strong>October 20</strong>  Today was supposed to be the start of radiation
+              treatment, but wires got crossed and it wasn't scheduled until
+              Wednesday. My appointments will be at 12:40 every weekday - the
+              only available time between 10 and 2. The radiation will continue
+              for 5 to 6 weeks. We want to avoid rush hour traffic in cases where
+              Carolee has to drive. We also wish to avoid impact to YMCA time
+              etc. </p>
+            <p>In the afternoon the technician called delaying the start for
+              a day. The &quot;digital map&quot; of what they want to do to my
+              body isn't ready. The first two or three sessions will be with
+              a low intensity beam (basically an X-ray) that they will use for
+              calibration. </p>
+            <p>I still had to go to Dr. Knisley's phlobotamist Dawn for blood
+              work a day ahead of treatment. </p>
+            <p><strong>October 21</strong>  I started chemotherapy today. Dr. Knisley's
+              office contains a chemotherapy room with hospital like isolation
+              curtains. The chairs are comfortable recliners. Angela (the nurse)
+              inserts an IV needle into my arm and begins a saline drip. After
+              a while Leucovorin (a Folic Acid [B vitamin] look alike) is introduced
+              into the IV bag. The more powerful 5FU (fluorouricil) is added
+              through a port. It gives me a flush sensation. I will have to be
+              careful that its most notorious side effect - diarrhea - doesn't
+              overwhelm me. The first session took 2 hours and 40 minutes but
+              Angela promises that the remaining sessions will only take two
+              hours giving me time to get to Radiation at RIH. </p>
+            <p><strong>October 22</strong>  I awoke about 1:45 AM with fairly heavy reflux.
+              By 5:45 AM I found it very difficult to drink even a single can
+              of Boost. I swam five laps and suddenly had to stop with severe
+              diarrhea. By the time I got home, I was totally exhausted. I slept
+              from 8:30 AM until 11:15 AM. </p>
+            <p><strong>October 23 </strong>  We arrived early at the hospital but there
+              was a long delay. After checking and being told I would be next,
+              a technician came out and said that I would not be next because
+              the doctors were still working on the digital map but that it would
+              be soon. Soon was not really too long, about another 15 minutes
+              or roughly a delay of an hour in total. </p>
+            <p>I was placed on an X-ray machine which look like a box connected
+              to a wide semicircular arm ending in a head about half a meter
+              across. The whole rigmarole spins about you in a semicircle. After
+              making the calibration runs and conferring with the doctors behind
+              the radiation screening, the technicians said they had a good lock
+              on me and asked if I was ready for a real dose. I said yes. The
+              machine clicked, whirred and rotated about me but otherwise I could
+              not see or feel anything. I saw the screening mechanism changed
+              the pattern by sliding thin metal strips in and out until the right
+              shape mask was created. </p>
+            <p><strong>October 27</strong>  I saw both Dr. DiPetrillo and Dr. Knisley and
+              discussed my problems with diarrhea and vomiting that seems to
+              have lead to weakness and exhaustion. In fact my problem seems
+              to be <strong>low blood pressure!</strong>  My pressure has dropped to <strong>86/60</strong> .
+              As Dr. Knisley says high blood pressure is one thing but you can't
+              live with no blood pressure. I am off most of my medications. The
+              Hydrochlorothiazide and the Norvasc have been dropped entirely.
+              The Lisinopril and Metoprolol Tartrate remain but at a single dose
+              a day. My weakness is from low potassium in spite of taking 550
+              mg per day. </p>
+            <p>I've begun to eat a little better. I have eaten sizable portions
+              of chicken and chicken salad. I have tried ProSure - a fish based
+              high protein drink. I literally have to hold my nose to gag it
+              down. </p>
+            <p><strong>October 30</strong>  This was a really poor day. It started all right
+              but once diarrhea hit with a vengeance I lost stamina and was dizzy
+              most of the day. I went to the Y, but felt exhausted by the time
+              I got home. For the most part eating was OK, but my session with
+              radiation at RIH was nearly a wipeout. I needed help to keep from
+              wobbling and perhaps falling, in the hospital and heading back
+              to the car. On the way home, I had to pull over at exit 7 and turn
+              the car over to Carolee. I actually phased out between exits 6
+              and 3. In spite of naps before and after the RIH trip, I feel really
+              pretty punk. I need to get some sort of blood pressure gauge. <strong>Hyper</strong> tension
+              is the silent killer but <strong>hypo</strong> tension can kill you just as
+              quickly - just pass out on I-95. </p>
+            <p><strong>October 31</strong>  I started the day by visiting the eye doctor
+              to pick up my new glasses, and to recovery my tailbone cushion
+              which I had left at Dr. Knisley's office. On the way home I checked
+              my blood pressure at CVS which is now a relatively decent 118/70
+              after four days of lowered blood pressure medications. </p>
+            <p>Carolee and I met with Karen Pasquaini, RIH's Senior Dietitian.
+              Karen used to work with Dr. Gaissert while he was the EC surgeon
+              at RIH. She has some practical ideas for stopping the &quot;dumping&quot; syndrome
+              which is plaguing me. It seems likely that the diarrhea isn't true
+              diarrhea but a condition where the body tries to dump water to
+              dilute sugary or starchy foods. Even when I eat protein meals I
+              have been drinking fruit juice which probably triggers the reaction.
+              Milk isn't much better - it is common for EC patients to develop
+              lactose intolerance. I have to eat protein at every meal along
+              with normal foods. </p>
+            <p>Well of all the hobgoblins bedeviling me, none is worse than the
+              plethora of foul concoctions that the medical/industrial complex
+              is trying to foist on patients. The current leader of the pack
+              is Deliver-2.0. The dietitian says it is so bad that trying to
+              drink one can of this at a sitting is impossible. Yup! True! Its
+              awful! It purports to taste like vanilla. Well Vanilla flavored
+              what? Road tar? I am in no position to judge. I'll simply say,
+              it won't make the flavor of the month. </p>
+            <p><strong>November 1</strong>  I slept very poorly last night for no particular
+              reason. I didn't even try to go to bed until nearly 11 PM and didn't
+              get to sleep for over an hour. I was awake by 4:45. I did get back
+              into bed after AM and slept for a bit over an hour. All day today
+              has been a poor eating day. While the dumping syndrome seems to
+              have subsided, swallowing without gagging is nearly impossible. </p>
+            <p>As Carolee keeps saying, it is so hard to keep all the balls in
+              the air at one time. I need to eat as close to 2200-2300 calories
+              as possible to have full vitality (1500 calories are required to
+              avoid weight loss for total bedridden patients). However my stomach
+              won't allow that much food in a day unless it is loaded with sugar
+              and fats. If I eat sugar and fats then I trigger the dumping syndrome
+              and lose the calories and minerals in spite of myself as diarrhea.
+              If I try to eat I diet high in protein (wonderful in terms of bodily
+              health and suppression of dumping) I run into the mechanical problem
+              that I simply can't stuff more than about 1100-1200 calories of
+              protein in per day. Protein is simply too dense and my stomach
+              is too small. I'm swallow high calorie, high protein supplements
+              but they really trigger the gagging reflex. I used to walk on a
+              high plateau. On one side was anorexia but I never got close enough
+              to see the edge. Other edges had problems like obesity, bloating
+              and cholesterol. With EC, the once spacious plateau has become
+              a narrow route along a mountain ridge. Gaps appear where only a
+              jump across allows me to progress. The abyss of anorexia is all
+              too evident. If I avoid that area, I still have the problems of
+              eating. </p>
+            <p><strong>November 3</strong>  Every Monday is &quot;Doctor Day&quot; when
+                I meet with both Dr. DiPetrillo and Dr. Knisley. Today was an
+                absolute winner. In a nearly perfect reversal of last Monday
+                (October 27th), </p>
+            <ul>
+              <li>I seem to have kept &quot;dumping&quot; under control </li>
+              <li>I'm eating a more normal diet with more real foods, especially
+                    meat </li>
+              <li>My blood pressure is normal 118/68 with 1/3 of the prior drugs </li>
+              <li>My weight has <strong>increased</strong>  to 175 </li>
+              <li>I feel comparatively full of energy. </li>
+            </ul>
+            <p>Both doctors were very pleased, needless to say and Carolee and
+              I feel justly happy with the results. I'll look at the blood tests
+              tomorrow, but good, bad or simple OK, it won't ruin a good day
+              today. </p>
+            <p><strong>November 4</strong>  C'est La Vie! My left foot feels very odd today.
+              Actually I noticed a few twinges yesterday but the foot feels much
+              stranger today. It has feeling and it obeys commands to walk but
+              there almost seems to be a half second delay between the thought
+              and the action. The top of the foot has an odd padded feel when
+              I touch it. If I use a pencil to touch it, the sensation seems
+              more &quot;immediate&quot;. I called Dr. Knisley and told him the
+              symptoms. I said I was told to call if any odd problems occurred
+              and he agreed but he has no idea at all what if anything this might
+              be. I will go in tomorrow if things get worse. If they get really
+              bad I will go into the emergency room tonight. </p>
+            <p>When I got home after radiation, I couldn't eat a Pot Pie. Any
+              attempt to eat or even drink water brought on vomiting. However
+              things were OK prior to chemo and radiation this morning. I attempted
+              the standard trick of waiting things out but it is a false hope.
+              I can't even keep down pure water much less food. Strangely I don't
+              feel bad actually eating the stuff but shortly after that my stomach
+              begins to knot and heave violently. By 7:15 PM I have just begun
+              to be able to keep mouthfuls of cold water down. While eating for
+              today is a disaster, maybe I can hydrate myself through the evening. </p>
+            <p>I had to sleep for a substantial part of the afternoon. In spite
+              of a reasonable room warmth (middle sixties) and the fact I am
+              wearing my FDO &quot;monogrammed&quot; warming shirt over a standard
+              long sleeve shirt, I was cold. I just cannot have too many good
+              days without something new and odd. <strong>Nertz! Rats-a-frast! May
+              the fleas of a thousand diseased camels infest the navel of esophageal
+              cancer and associated radiation and chemo therapies!!!! May it
+              live in interesting times in the company of congress critters!!! </strong>  </p>
+            <p><strong>November 5</strong>  The day started off like yesterday ended with
+              dry heave vomiting even with nothing to trigger it. I have been
+              able to sip little bits of water and in one of the sips I managed
+              to swallow dissolved pills and vitamins. I called Dr. Knisley's
+              office for anti-vomiting medicine. I will be taking Prochlorperazine
+              to calm my nausea. In its first outing it seems to have done the
+              job. Shortly after taking it I was able to keep down 4 ounces of
+              Lactaid (a lactose free milk). About an hour later I was able to
+              eat a portion of applesauce. </p>
+            <p>When I got home after radiation, I was so tired I simply had to
+              take an immediate hour and a half nap. I drank 3 ounces of the
+              dreaded Deliver goo. I have learned for the first time the meaning
+              of &quot;Stand and deliver!&quot;. No wonder so many waylaid travelers
+              chose to fight their way out instead. </p>
+            <p><strong>November 6</strong>  I tried a new product called Support. It has
+              more protein than Deliver but fewer calories (470:360). The first &quot;box&quot; went
+              fine, but then I tried a second box a few hours later and triggered
+              a major &quot;dumping&quot; session. I had to pull off the road
+              to use a bathroom on the way up to my radiation session. I just
+              can't seem to keep all the ball in the air at the same time. </p>
+            <p><strong>November 7</strong>  After a couple of high readings at the CVS blood
+              pressure machine, we decided to buy our own machine. I will have
+              to tell Dr. Knisley that I have partially returned to the blood
+              pressure medications because my pressure is between 150/95 and
+              165/104 variously. Just what we needed, yet another added complication.
+              I really need to talk with Dr. Lentz about adjusting the medications. </p>
+            <p><strong>November 8</strong>  This day was a disaster food wise. Almost everything
+              I took in ended up lost through vomiting. My weight overnight dropped
+              a record 3.2 pounds although I really think some of that was simply
+              dehydration. My blood pressure is high and my pulse rate is high.
+              On the positive side, I managed to do a hour of heavy work in the
+              garden, cutting down the entire north forty, the hostas along the
+              road, and most of the beds outside the wall. I ended up with five
+              large wheelbarrow loads of stuff for the compost heap. I was tired
+              but I wasn't faint. </p>
+            <p><strong>November 10</strong>  What an exhausting day. The day started with
+              the landscaper we hired arriving a bit late to pick up the leaves.
+              The drive to Providence was bad, and then everything got delayed.
+              I didn't get in to the X-ray machine until late and my session
+              with Dr. DiPetrillo was late. I reported my &quot;clown feet&quot; syndrome,
+              my weight loss and my inability to eat. After this session he called
+              DR. Knisley. The drive to Dr. Knisley's office resulted in my third
+              turn over of the car to Carolee at exit 7. This session ran slow
+              as well. I had a bout of diarrhea but was able to use his facilities
+              in time. I was actually prone on the examination bench when Dr.
+              Knisley came in, I was so tired. When we arrived home the landscapers
+              still had not finished. </p>
+            <p><strong>November 11</strong>  Well I am back to my naval weight of 165 -
+              down 40 pounds from the start of this diary when I arrived home
+              (actually 53 pounds from my all time heaviest). I should be reaching
+              my &quot;ideal&quot; weight where my weight loss slows to a trickle.
+              We'll see since I am still having eating problems. I am weak and
+              very tired almost all the time now. I hope this chemo/radiation
+              really works. I guess I'll settle for no sign of disease for half
+              a decade as proof even though they may be blasting a non-entity.
+              At least I have a one day delay from chemo due to Veteran's Day.
+              This day actually went quite well. Although I went to bed early
+              (8:45) in spite of an afternoon hour nap, I felt better and had
+              energy. </p>
+            <p><strong>November 12</strong>  Hopefully I am &quot;on a new plateau&quot; since
+              my weight bounced up a bit. Very rough day. Chemo was slow and
+              radiation was late. I was too tired to drive home. Managed to choke
+              down only 900 calories. I spent the afternoon sleeping. The shipment
+              of food supplements has come from Walgreens'. </p>
+            <p><strong>November 13</strong>  I feel really punk on awakening. My weight
+              seems to be holding. I came across information suggesting &quot;clown
+              foot&quot; or &quot;drop foot&quot; may indicate a need for extra
+              Vitamin B12. I can no longer &quot;snap&quot; my right toes or
+              pick up pencils. </p>
+            <p><strong>November 25</strong>  The last day of the initial session of chemo
+              therapy. I'll be on 6 on/3 off weeks starting in December. I need
+              the time off for feeding. I am eating only handfuls. </p>
+            <p><strong>November 26</strong>  I saw Dr. Jon Solis my dermatologist. 5FlouroUracil
+              has eliminated this seasons crop of keratoses. One small side advantage
+              to stack up against a host of bad side effects. </p>
+            <p><strong>November 27 Thanksgiving</strong>  Today was the pits. Carolee made
+              a tiny Thanksgiving meal which she ate and which I picked at. Next
+              Wednesday is the end of radiation. I hope I can come back in weight.
+              I'm down to 161.8. I have been eating less than 1000 calories a
+              day for most of the last eight days. </p>
+            <p><strong>November 29</strong>  Kevin and Mary arrived for a visit on their
+              way home after they had Thanksgiving at her folks. It was very
+              nice to see them. We had dinner at Shelter Harbor Inn. I actually
+              ate most of a bowl of Crab/Corn Chowder. No incidents. I also ate
+              lots of Belgian Chocolate without dumping. Only three days to go
+              in Providence. I am getting very tired of these trips. </p>
+            <p><strong>December 1</strong>  Today's session at RIH was as close to a fiasco
+              as possible without a true disaster. We got there on time and the
+              backup didn't seem that great but I never was called. We asked
+              and we were told that we were next plus one after it was longer
+              than usual for my turn. Then we were told that it would be a bit
+              longer perhaps 5 minutes which turned into a quarter hour and several
+              others went ahead of me. Carolee went to find out what was going
+              on. It seems that they were about to start a third phase of treatment
+              which required new X-rays. However my chart was &quot;lost&quot;.
+              So we were waiting on the AWOL charts. </p>
+            <p>Finally we got the charts and I went in for a very long sessions
+              of X-ray pictures and unknown to me no treatment today meaning
+              that they were pushing the completion date back another day. Carolee
+              and I made it very clear that we didn't think much of the idea
+              of skipping a day of treatment when it meant yet another days travel
+              to Providence. They didn't even ask me what I preferred. </p>
+            <p>I asked three questions of Dr. John Purviance who was sitting
+              in for Dr. DiPatrillo (1) What % of the lifetime radiation have
+              I taken - roughly 70%. A normal X-ray adds 1/10 of one percent.
+              The area of major effect is the spine. (2) Will there be a post
+              treatment follow up visit. Yes, about one month later. (3) I asked
+              what if any symptoms I should be alert to report. Primarily additional
+              difficulty swallowing. This includes painful symptoms, and any
+              sense of mechanical problems. My upper bowels presumably have a
+              still intact adequate blood supply so damage from radiation should
+              be minimal. </p>
+            <p>The drive home very late into the teeth of the Sun was very stressful. </p>
+            <p><strong>December 2</strong>  Today we reached total fiasco, both X-ray machines
+              broke down completely. My machine had a software hang-up in communications.
+              The other machine broke a gear. They sent the other side people
+              home but we waited until we gave up. I've made an appointment for
+              Thursday afternoon, hoping to get a session in. I will call as
+              we get close to each day's session. </p>
+            <p>One encouraging thing, I actually felt something akin to hunger
+              this evening. I went into the fridge and &quot;snitched&quot; ice
+              cream. It was my first even vague desire for food. Everything else
+              has been duty and time. </p>
+            <p><strong>December 4</strong>  I had my doctors' meetings with Dr. Knisley
+              and Dr. Lentz today. Both went well. Much of the Dr. Knisley meeting
+              was a standard rehash of the fact that I am doing very well. We
+              discussed the fact that I will be getting CT scans at fairly frequent
+              intervals stretched out after several years. The very fact that
+              he is talking about what and how many tests I will have five years
+              down the pike is encouraging. He was also pleased to see me eating
+              a pudding when he came in. . </p>
+            <p>Dr. Lentz was catching up with a half year of EC changes in me.
+              We spent most of the time talking about the blood pressure. I am
+              to avoid pressures above 160/105 and pulse rates above 110. I can
+              take metoprolol half doses up to twice a day to keep things in
+              check but I absolutely should stay away from hydroclorothiazide.
+              I may or may not cut back on potassium </p>
+            <p><strong>December 5</strong>  This is the true last day of radiation if all
+              goes well. We switched the appointment to 11 because a huge winter
+              storm is due in this afternoon and evening with snow amounts measured
+              at 10 inches and above. We are expected to get a period of sleet
+              or freezing rain at the coast before the really cold air settles
+              in. Joy. </p>
+            <p><strong>December 9</strong>  The last radiation set which was aimed directly
+              at the area of the tumor has done a real job on me. Each day for
+              the last several, the pain has increased. Today while Tim visited
+              it reached the point that I had to take codeine to keep the pain
+              low enough to let me sleep. I believe the bowel is inflamed where
+              the tumor used to be. When I take something soothing, the pain
+              goes away as soon as the area is coated. Pain goes away and then
+              returns as the coating wears away to be finally held at bay for
+              hours by the medication. </p>
+            <p><strong>December 10</strong>  We are headed to Boston on the train for an
+              overnight visit to Dr. Gaissert at MGH. We decided not to visit
+              him at Newton/Wellesley hospital because of the six hour long drive
+              up and back. Frankly I'm not sure I could go six hours by car without
+              staying over. So Boston by the train seems best. We'll stay at
+              the Holiday Inn next to MGH. </p>
+            <p>I wish the pain in my belly wasn't so painful. I'm losing weight
+              gain. I've finally reached a loss of 50 pounds since I came back
+              from the hospital (155). This is 10 pounds lower than I ever expected
+              to fall. I'm not particularly weak but I have no stamina and I
+              nap a lot. I have to control the weight loss and the radiation
+              burns and maybe the chemo are no help. My desire for food which
+              had returned has evaporated again. I am depressed. </p>
+            <p>The train to Boston was delayed several hours, but a make-up train
+              was created this side of NYC which cut the delay to about 1:40.
+              While it was late, it really caused no problem thanks to the kindness
+              of Bob in the AMTRAK office who called us to let us know the situation. </p>
+            <p><strong>December 11</strong>  Our meeting with Dr. Gaissert was very pleasant
+              as usual. Essentially while I can call on him at any time, I will
+              be relying on Dr. Knisley from now on. I tried to eat as well as
+              possible on the trip but I averaged only 1150 calories. Most of
+              that was from a huge vanilla frappe I bought at Eat Street, MGH's
+              large food court. </p>
+            <p><strong>December 12</strong>  I swam again today for the first
+              time in many weeks. I managed 1/3 mile (12 laps) before I decided
+              discretion was the better part of valor. I did OK form wise but
+              my speed was very slow. I won't time myself for weeks to come.
+              Just swimming is enough. <em class="red">My assumption that I would
+              get back to the YMCA soon proved very premature. I really didn't
+              resume a full schedule until late spring 2004.</em></p>
+            <p><strong>December 13</strong>  I made a determined push to load food in and
+              managed to eat 1690 calories before my body wouldn't take anything
+              else. I ate tuna casserole on rice for supper with Carolee. </p>
+            <p><strong>December 15</strong>  This is the last day of experimentation before
+              Chemo resumes tomorrow. I was able to eat a hard bun with lots
+              of butter and jelly. I have had a set of major bowel movements
+              which I hope do not lead to diarrhea. I am very unhappy about chemo
+              starting up again. I make the best of it but I really hate being
+              tied to a saline drip with chemicals. </p>
+            <p>I've had a very strange gagging late in the afternoon. I could
+              not keep down chicken and it went on and on with lots of mucous.
+              I suspect my attempt to eat bread/jelly/butter was the cause. <em class="red">Although
+              I did not know it until the summer of 2004, this gagging was the
+              first sign that my anastimosis would require dialations. I spent
+              several months trying to overcome the saliva/mucous problem with
+              drugs before dilations cured me.</em></p>
+            <p><strong>December 16</strong>  This was a long tiring shopping day at the
+              Mall in New London. I had to spend much of it sitting. Standing
+              in stores is double torture for me. I hate shopping and worse yet
+              standing without walking causes me to feel faint. We managed to
+              buy me some clothes that fit. Anything larger than a 34 waist just
+              hangs in folds around me now, and before the operation 38 waists
+              were getting tight. It took forever to find a belt because they
+              were all mislabeled. Finally succeeded by measuring my belt against
+              the store belts. I can wear 33 waists very comfortably and 32 waists
+              are coming into range. </p>
+            <p><strong>December 24</strong>  This is a very odd Christmas Eve since we haven't
+              decorated or done very much. Carolee packed me off to the cinema
+              to see &quot;The Return of the King&quot;. It is a very impressive
+              version of the Tolkien classic, but it was a little strange to
+              eat snacks out of baby food jars during the 3.5 hour film. </p>
+            <p><strong>December 25</strong>  This is the least joyous Christmas I can remember.
+              Even as an adult I woke early to turn on the tree and maybe play
+              some carols. None of that this year - I slept until 8 AM, missing
+              my 6 AM feeding entirely. We opened a few momentos after breakfast
+              but otherwise it is has been a dreary day. I am very disappointed
+              at my losing race to feed myself. This morning I inched closer
+              to the 140s which I once thought were impossibly low. I see myself
+              as something akin to a concentration camp survivor and something
+              akin to an old man. I dress neatly everyday as much to hide how
+              I look from myself as to be in style. </p>
+            <p><strong>January 1</strong>  My weight has inched up over the last two days.
+              I hope but don't really believe that I have finally reached the
+              bottom of the weight cliff I have fallen off. I am eating nearly
+              enough to maintain basal metabolism but little else. I am very
+              tired all the time and weak. I have been going to the YMCA but
+              my work output is 15 minutes on the bicycle or a third of a mile
+              swimming. Both leave me very tired. </p>
+            <p><strong>January 2</strong>  After successfully eating some of Carolee's steak
+              dinner, my stomach went into rebellion this afternoon and night.
+              It absolutely refused to take anything, even water without immediately
+              vomiting it up. I became very thirsty (and I suspect somewhat dehydrated)
+              but I could not keep even sips of water down throughout the afternoon
+              and as late as 3 AM the next morning. However by 4 AM I finally
+              got some water down. However the damage was done, my weight gain
+              of the past several days is gone and I am down to 148 flat. I am
+              very depressed about the setback but somewhat heartened that I
+              will not have to go to the hospital to keep hydrated. I was only
+              able to eat 1075 calories before the setback. </p>
+            <p><strong>January 4</strong>  After an attempt to eat some salmon, I again
+              had the problem of vomiting. I am beginning to suspect that certain
+              dense foods form a &quot;ball&quot; which doesn't dissolve as rapidly
+              as it should and block the exit from the stomach. I suspect that
+              I am not producing enough stomach acid. Carolee has suggested that
+              the last dose of radiation did some damage to the digestive track
+              and that either it has slowed production of stomach acid or has
+              closed the valve when dense foods are eaten. Both ideas seem plausible.
+              We will discuss this with the doctors. </p>
+            <p><strong>January 6</strong>  I talked with Dr. Knisley about my eating problems.
+              He suggested that perhaps REGLAN would work. Carolee remembered
+              that Dr. DiPetrillo had prescribed some which at the time did not
+              seem to stop vomiting. However REGLAN is specific for opening the
+              valve to the bowels. We are going to try it that way. </p>
+            <p><strong>January 8/9 night</strong>  What should have been a triumph - I finally
+              broke through for a major caloric day (1565 calories) became a
+              real setback when at Carolee's prompting I tried for the gold ring
+              by taking Support as my last &quot;meal&quot;. I reached the magical
+              gain weight calorie level (actually <strong>1925</strong>  ) except that two
+              hours after eating I awoke to major abdominal cramps. For two hours
+              I was on and off again on the toilet with a major dumping session.
+              The net of it was I lost weight, almost 3/4 of a pound. Hopefully
+              most of it is water loss and I will regain some or all of it. I
+              am now down below 147 for the first time. I also had major sleep
+              problems. I was unable to sleep for 4 to 5 hours throughout the
+              night and finally had to go down to the couch. </p>
+            <p><strong>January 16</strong>  I have had a fairly successful week and more
+              with higher average levels of calories and protein. That is not
+              to say that I haven't had setbacks like experiments which have
+              gone awry. For example, I tried turnip today. It was shredded and
+              coated with butter and it might as well have been a Brillo pad.
+              Even four hours later I cannot get down juice with my pills. I
+              have been in the 146-148 range for two weeks. I hope I am bottoming
+              out - I should be as I reach basal metabolism level but the extreme
+              cold (subzero) works against me. </p>
+            <p><strong>January 20 </strong>  For two days my belly has been upset. Yesterday
+              and this morning I could not get anything, even water down and
+              I lost two pounds. Since it was the day I get chemo, I knew I would
+              see Dr. Knisley. Angela asked how I was and when I replied she
+              said, &quot;No chemo yet, you need to have blood work and talk
+              with the doctor.&quot; It seems the combination of 5FU and leucovorin
+              has a common side effect of sores and a dry mouth. I don't have
+              these symptoms but a parallel symptom is mucousivitis (upset mucous
+              membranes) which I do have along with a generally irritable bowel.
+              Upshot, no chemo but a liter of saline with potassium, as my treatment
+              and I am off the treatment until I can recover. I am trying to
+              eat to recover from this morning's problems. </p>
+            <p><strong>January 22</strong>  I made a trip to see Dr. Knisley because the
+              chemo induced mucousivitis has triggered gingivitus particularly
+              in my right eye. Some drops from CVS fixed this problem but I am
+              feeling run down. </p>
+            <p><strong>January 23</strong>  Go team! Yeaahh! I finally broke the 2000 calories
+              barrier and big time without dumping or secondary problems. 2100
+              big calories and I didn't feel choked with food. I am still getting
+              too much of my food from ice cream and I still can't manage fibrous
+              foods (Can you say <strong>Beechnut</strong>  and <strong>Gerber</strong>  , boys and
+              girls?) but at least the stuff can be bought on the regular aisles
+              of a supermarket. Carolee wants me off ice cream soon but I need
+              some type of concentrated caloric input and artificial foods wipe
+              me out. </p>
+            <p><strong>January 27</strong>  A less than great day but not horrible. I went
+              out to the YMCA and the library but I slept a lot today. I could
+              not keep oatmeal down and the rest of the day has been mediocre
+              as an eating day. I am trying to get basal metabolic level calories
+              in, but I'm still low at 7 PM. </p>
+            <p><strong>February 2</strong>  This is a up beat day for me. The Patriots have
+              won a squeaker, and I have managed to add a pound to my weight
+              after the best eating day in five months. Best ever if you discount
+              days on Jevity. Back to chemo in the morning. Ugh! </p>
+            <p><strong>February 5</strong>  At my examination by Dr. Lentz, we dropped Norvasc
+              from my drugs. </p>
+            <p><strong>February 7</strong>  This was our first major outing since the operation.
+              I went to my Aunt Joan's 75th birthday party. We stayed over at
+              Moira's so that I could nap and sleep soon after the party. I doubt
+              that I would have survived as well without a place to crash. My
+              eating took a nose dive for two reasons - mucousavitis and irregular
+              meals. I wish I could have eaten the shrimp that was served at
+              the party but I didn't dare. </p>
+            <p><strong>February 17</strong>  The chemo drugs are doing their side effect
+              thingees on me for sure. I have intestinal aches and pains every
+              day. And on the last few days I have had dumping again. A new and
+              disturbing problem is &quot;eating nightmares&quot; which are dreams
+              about being somewhere where I should be able to eat but find forces
+              prevent me from doing it. Once I was in a company cafeteria where
+              kids had been on a tour. By the time I got to the serving line
+              everything edible was gone. Even the last crust of bread. Another
+              dream was a large picnic where my meal was eaten when it was supposed
+              to be kept for me while I tended cars. By the time I got there,
+              it was raining and all the paper plates and cups were gone along
+              with my food. These are becoming a nightly event. Sometimes they
+              come several times in a single night. I wake up feeling horribly
+              depressed and it is easy to see where the problem arises. </p>
+            <p><strong>March 1-2</strong>  What a difference two days can make. Day 1 and
+              I felt on top of the world. I ate up a storm and even managed to
+              eat mixed nuts on top of a major meal including meat, veggies,
+              ice cream, and tea. The next day after chemo, I suffered dumping
+              badly. Sigh! </p>
+            <p><strong>March 8-9</strong>  Chemo has really made life miserable. I have
+              been sleeping it off as best I can but I feel really sick to my
+              gut (not stomach anymore). The sensation is like cramps but quite
+              deep. I have had a fair amount of dumping over these days. It was
+              very hard to go ahead with this last dose of chemo when I was still
+              feeling ill from last week's dose. I have reach an all time low
+              weight since I was in grade school. I am now at <strong>140</strong>  pounds
+              which is more than <strong>1/3</strong>  of my original
+              body weight. </p>
+            <p><strong>March 10</strong>  Carolee and I went to the seminar on Nutrition
+              held by the ACS (Melissa Campbell) at Dr. Knisley's office. It
+              was quite good although I was the only male in the group. I was
+              sort of the prize guinea pig since everything that could happen
+              in eating has happened to me except eating normally and gaining
+              weight. Every side effect listed has happened to me, sometimes
+              seriously like weight loss and inability to eat enough to regain
+              weight. [Melissa sent me a cordial Thank You note for being so
+              active.] I did get some useful information. &quot;Designer&quot; brand
+              Whey is very much suggested as a protein source. Spagettios can
+              be eaten whenever soft food can be tolerated. </p>
+            <p><strong>March 15</strong>  We had planned to drive to Providence in the morning
+              to get me a new suit. My only prior suits are now too large to
+              wear and a couple of weeks ago I gave them to Blue Mitten. However,
+              a storm is coming that makes this trip look like a very bad idea.
+              Predictions vary from 2-3 inches of mostly ice to 10 inches of
+              wet snow. Even if we make it in the store may be understaffed.
+              It seems crazy after today which had me walking a mile to the end
+              of Nichols Road in 55 degree weather. Figures! We are royally pissed
+              off. </p>
+            <p><strong>March 18</strong>  Kevin stopped overnight after a business trip
+              to a local hospital. I tried on his suit jacket. I'm down from
+              a size 44 regular to a size 38 regular. The incredible shrinking
+              man. </p>
+            <p><strong>March 21</strong>  Yesterday was a very disappointing day. I started
+              with high hopes of actually making progress with eating and ended
+              up with a terrible day trying to keep food down. My intake was
+              actually a mediocre 1655 calories but in reality it was probably
+              less than 500 that I actually kept from barfing along with heavy
+              phlegm. I lost weight badly dropping from 140.4 to 138.8, the lowest
+              point in my cycle so far. It wasn't all water loss either because
+              I was able to drink without throwing up everything I sipped. </p>
+            <p><strong>March 23-24</strong>  Carolee and I did an overnighter to Providence
+              - sort of a trial run to see how I'll do on the trip overseas.
+              We bought me a suit - Navy pinstripe at Nordstrom's. The salesman
+              and the tailor had differing ideas about my first choice and I
+              finally decided to cut and go with my second choice. I am down
+              from a size 44 to 38 Regular. My shirt size is down from 16 to
+              either 14.5 or 15 with a 33 sleeve. I picked up a blue shirt with
+              a silver gray tie. I like the stuff but at nearly 780 bucks I got
+              sticker shock. I haven't bought a suit since the late 1980s. It
+              is weird to think of myself as a &quot;smaller&quot; person. I
+              was quite tired by the time I crashed at the Marriott's CourtYard
+              where we used a awards night from earlier trips. </p>
+            <p><strong>March 26</strong>  Had an office visit with Dr. Knisley which went
+              very well. We had some questions which came back fine. We asked
+              when we would be doing some follow up testing - basically it will
+              be toward the end of May after chemo has had two months to work
+              itself out. I checked on the &quot;bump&quot; in my hand. As expected
+              it is part of my DuPretyn's Syndrome - a cyst where the tendon
+              enters the finger. I asked about the trip and whether I needed
+              any special medications or should avoid any medications like sea
+              sickness drugs. The answer was take whatever a normal person would
+              take. I asked about my bending over and was told that exercise
+              was the ticket there but that I had no problem. We discussed my
+              continuing weight loss and eating problems but Dr. Knisley wasn't
+              particularly worried and said he expected me to put on 5-10 pounds.
+              We'll be seeing Dr. Knisley again in early May. </p>
+            <p><strong>March 28</strong>  Carolee and I made a trip to Enfield Connecticut
+              to see Ellen and Mo before he dies which is likely in the next
+              few days. Basically he has renal failure after abscesses in his
+              kidneys. I find it hard to believe that his battle with colon cancer
+              isn't involved in someway but perhaps not. The trip was physically
+              hard on me because I could not keep any food at all down all day. </p>
+            <p><strong>April</strong>  Carolee and I took a trip on the Princess Star through
+              Italy, Greece with stopovers in Croatia and Turkey. I ate pureeed
+              regular meals. </p>
+            <p><strong>May 3</strong>  I discussed my current blood preassure condition
+              with Dr. Lentz. I am now back on regular half year check-ups rather
+              than monthly check-ups. </p>
+            <p><strong>May 10-13</strong>  After several days with extreme mucous problems
+              and an inability to eat anything, Dr. Knisley called Dr. Lavigne.
+              The upshot of it was I had my first dialation (in a series of dialations).
+              My anastimosis was very narrow and Dr. Lavigne had trouble inserting
+              the EGD tube. After the dilation I was able to swallow for a couple
+              of days, but today (April 13), the mucous has returned after I
+              tried to eat a Graham Cracker. I am scheduled for a second dilation
+              in two weeks. </p>
+            <p><strong>May 17</strong>  Dr. DiPetrillo asked to see me for a final time.
+              Basically he offered to resume anytime I think I might need his
+              opinion but effectively we are through radiation. </p>
+            <p><strong>May 26</strong>  Office visit with Dr. Lavigne in preparation for
+              second dialation. </p>
+            <p><strong>June 1</strong>  I went into Westerly Hospital for my second dialation
+              a day early. This was lucky because a piece of Brazil nut had closed
+              off the anastimosis and I had been unable to eat or drink since
+              May 29 at the Brown University Reunion. Dr. Lavigne was (rightly)
+              very annoyed with me. I have dropped (partially due to dehydration)
+              to an all time low weight of 134.0 pounds. After the dialation
+              my eating has been considerably better. </p>
+            <p><strong>June 14</strong>  Meeting with Dr. Knisley in preparation for CT
+              Scan. He is very happy with my progress. </p>
+            <p><strong>June 18</strong>  Yesterday, my throat closed down and I couldn't
+              eat. I was concerned that I would not be able to drink the contrast
+              dye in preparation for my CT Scan at 8 AM. However I had no problem
+              swallowing the quart of liquid in two sessions of a pint each.
+              Stuff tastes slightly metallic but compared to some of the &quot;food
+              drinks&quot; I used to have to take it is ambrosia. </p>
+            <p><strong>June 21</strong>  Office visit to Dr. Lavigne to discuss
+              a <strong>THIRD
+                DIALATION</strong>. We will hold this in abeyance for the time
+                being. My 2000 colonoscopy &quot;polyps&quot; turned out to be
+                benign, so we will not do another colonoscopy for a period of
+                perhaps a few years. </p>
+            <p>Dr. Knisley called with the results of the CT Scan. They are ambiguous
+              but contain &quot;shadows&quot; or &quot;granularities&quot; in
+              the left lung. Certainly not the glowing bill of health that I
+              was hoping to receive. Perhaps I will advance the date of my meeting
+              with Dr. Knisley to discuss these results more completely. </p>
+            <p><strong>July 2</strong>  While visiting Kevin and Mary, I became dizzy at
+              the Air and Space Museum and passed a small amount of dark urine.
+              At their house I passed a good deal of bloody red urine. I called
+              Dr. Knisley's office after hours and talked to Angela who told
+              me to get to an ER. In the ER, Dr. Kevin Campbell confirmed I was
+              passing blood but said it was unlikely to be kidney stones. He
+              said that it is probably a polyp or a tumor in my bladder. </p>
+            <p><strong>July 8</strong>  I met with Dr. Franklin Leddy (my urologist) in
+              fis office today. I will be scheduled for a bladder examination
+              to rule out any possible cancer spread. </p>
+            <p><strong>July 13</strong>  I had a follow up PET Scan at Lawrence & Memorial
+              Hospital in New London. The results of this which came back roughly
+              a week later indicated that the shadows seen in my left lung were
+              scar tissue and almost certainly benign. Once again I am officially
+              NED. </p>
+            <p><strong>July 19</strong>  Today's weeting with Dr. Knisley was routine. He
+              was glad to see I am slowly putting on weight. </p>
+            <p><strong>July 27</strong>  Dr. Leddy performed a cytoscope examination on
+              my bladder. There are no polyps or tumors. The prostate is enlarger
+              and the blood vessels near the urinary tract are near the surface
+              and fragile. They appear to be the cause of the bleeding and are
+              minor. </p>
+            <p><strong>July 29</strong>  After having severe swallowing difficulties yesterday
+              afternoon, saliva collecting and a complete shutdown except for
+              a spoonful of ice cream today, I called Dr. Lavigne's office and
+              had my third dialation today. I will have to make another appointment
+              to have something a little more permanent done. Dr. Lavigne's Nurse
+              Practioner (Lori?) suggested that this might be a stent. In a way
+              I hope it isn't. </p>
+            <p><strong>August 16</strong>  Dr. Lentz office visit went particularly well.
+              How can I tell? Easy, he is scheduling my next visit more than
+              four months out! </p>
+            <p><strong>August 23</strong> I had my fourth (and hopefully final) dilation
+              with Dr. Lavigne today. I am eating quite well and easily subsequent
+              to these dilations. </p>
+            <p><strong>September 2</strong>  I can't help feeling that in some way today
+              is graduation day. At least it is the doctor's office visit closest
+              to my one year anniversary of surgery. Dr. Knisley is extremely
+              pleased with the way evrything is going. I have put on some real
+              weight and am now 149.0 pounds. Even though I no longer measure
+              my food proportions, I am obviously eating enough to gain.
+            <H2>Who is Who</H2>
+            <h4>&mdash;Family</h4>
+            <blockquote>
+              <p>Carolee [Carol] wife and primary caregiver.<br>
+                Timothy [Tim] older
+                son<br>
+                Kevin younger son<br>
+                Mary daughter in law - Kevin's wife.
+              </p>
+            </blockquote>
+            <h4>&mdash;Doctors</h4><p>I have alphabetically listed the doctors by their relationship to
+            me. I understand that many of them have much broader areas of expertise.
+            Hopefully I have not gotten any of them wrong but some of them were
+            known to me only while I was very ill recovering at Massachusetts
+            General Hospital.
+            </p>
+            <blockquote>
+              <p> Jeremy Abramson - Radiation Oncologist at MGH<br>
+                Brenna Bounds - Ultrasonic Endoscopist at MGH<br>
+                James Cacciatola - Thorasic ICU Resident at MGH<br>
+                Kevin Campbell - Emergency Room Physician at VMC<br>
+                Ronald Chen - Radiation Oncology Resident at MGH<br>
+                Thomas DiPetrillo - Radiation Oncologist at RIH<br>
+                Panos Fidias - Medical Oncologist at MGH<br>
+                Henning Gaissert - Thoracic Surgeon at MGH<br>
+                Robert Knisley - Medical Oncologist in Westerly<br>
+                Bradford Lavigne - Gastroenterolist in Westerly<br>
+                Franklin Leddy - Urologist in Westerly<br>
+                Walter Lentz - Primary Care Physician in Westerly<br>
+                Annetta Murphy - Anesthesiologist at MGH<br>
+                John Purviance - Radiation Oncology Resident at RIH</p>
+            </blockquote>
+            <h4>&mdash;Hospitals</h4>
+            <blockquote>
+              <p>
+                MGH - Massachusetts General Hospital, (Boston MA)<br>
+                RIH - Rhode Island Hospital, (Providence RI)<br>
+                VMC - Virginia Medical Center, (Arlington VA)<br>
+                L&amp;M - Lawrence &amp; Memorial Hospital (New London CT)</p>
+            </blockquote>              
+            <p align="center"><a href="mailto:les11@cox.net?subject=EC Story">Send Les Coleman a note</a></p>
+
+          <!-- InstanceEndEditable --></div>
+  <img id="cafe_screen_disclaimer" src="/web/grn/dsc.gif" alt="Information found here is not to be a substitute for professional care.">
+  <div align="center" class="webonly">
+    <div id="cafegoogle">
+      <script type="text/javascript"><!--
+google_ad_client = "pub-2176662973486049";
+google_ad_width = "468";
+google_ad_height = "60";
+google_ad_format = "468x60_as";
+google_ad_type = "text";
+google_ad_channel ="";
+google_color_border = "CCCCCC";
+google_color_bg = "FFFFFF";
+google_color_link = "000000";
+google_color_url = "666666";
+google_color_text = "333333";
+//--></script>
+      <script type="text/javascript"
+  src="/web/20110824025956js_/http://pagead2.googlesyndication.com/pagead/show_ads.js">
+      </script>
+      <br>
+      <p>The above advertisements, provided automatically, are neither selected nor endorsed by us.<br>
+        Some may lead to web sites that provide questionable or controversial medical information.<br>
+        If you encounter advertisements inappropriate for the Caf&eacute;, send us the advertisement's URL.</p>
+    </div>
+    <h5><a href="/index.html">home</a> | <a href="/cnt/index.html">contents</a> | <a href="/sto/index.html">stories</a> | <a href="/ecg/index.html">ec-group</a> | <a href="/lnk/index.html">links</a> | <a href="/etc/index.html">etc.</a></h5>
+    <img src="/web/art/footer.gif" width="509" alt="Some graphics courtesy of Hoopla! disc, copyright 1995 Image Club Graphics. 1-800-661-9410" height="50">
+    <p><a href="/cnt/contact.html">Send a message to Marc &amp; Tammy Wolfgram</a></p>
+    <table width="610" border="0" cellpadding="0" cellspacing="0">
+      <tr valign="middle">
+        <td width="49" align="center"><img src="/web/cssprint.gif" alt="This page is printer friendly" width="45" height="50" border="0"></td>
+        <td align="center"><h6>Copyright &copy; 1995-2008&mdash;Last changed on
+            <!-- #BeginDate format:Am1 -->June 17, 2008<!-- #EndDate -->
+            &mdash; We comply with the<br> 
+            <a href="/web/20110824025956/http://www.hon.ch/HONcode/Conduct.html" onclick="window.open(this.href); return false;"> HONcode standard for trustworthy health</a> information: <a href="/web/20110824025956/https://www.hon.ch/HONcode/Conduct.html?HONConduct294647" onclick="window.open(this.href); return false;">verify here</a>.</h6></td>
+        <td width="45"><a href="/web/20110824025956/https://www.hon.ch/HONcode/Conduct.html?HONConduct294647" onclick="window.open(this.href); return false;" > <img src="/web/20110824025956im_/https://www.hon.ch/HONcode/Seal/HONConduct294647_s.gif" width="49" height="72" style="border:0px" title="This website is accredited by Health On the Net Foundation. Click to verify." alt="This website is accredited by Health On the Net Foundation. Click to verify." /></a></td>
+      </tr>
+    </table>
+  </div>
+  <img id="cafe_screen_footer" src="/web/grn/bot.gif"> </div>
+<map name="Map">
+  <area shape="rect" coords="240,113,286,143" href="/index.html" alt="Home">
+  <area shape="rect" coords="297,113,367,143" href="/cnt/index.html" alt="Contents">
+  <area shape="rect" coords="376,113,434,143" href="/sto/index.html" alt="Stories">
+  <area shape="rect" coords="443,113,516,143" href="/ecg/index.html" alt="EC-Group">
+  <area shape="rect" coords="527,113,574,143" href="/lnk/index.html" alt="Links">
+  <area shape="rect" coords="583,113,613,143" href="/etc/index.html" alt="Etcetera">
+</map>
+</body>
+<!-- InstanceEnd --></html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 2:59:56 Aug 24, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 4:50:14 Dec 15, 2013.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

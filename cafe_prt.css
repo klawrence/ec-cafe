@@ -1,0 +1,140 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 7:59:32 Nov 1, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 4:49:05 Dec 15, 2013.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+.webonly { height:0; margin:0; visibility:hidden; display:none; }
+.prtonly { visibility:visible; }
+
+#cafe_print_header { width:7in; height:1in; margin:0px; padding:0px; visibility:visible; }
+#cafe_screen_header, #cafe_screen_disclaimer, #cafe_screen_footer, .noprint { width:0px; height:0px; margin:0px; padding:0px; visibility:hidden; display:none; }
+#cafemain { width:7in; height:auto; position:absolute; top:1.25in; left:0; }
+.bodyback {
+	background-image: url(/web/20111101075932/http://www.eccafe.org/web/spacer.gif);
+}
+
+body, td {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 10pt;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+p {
+	font-size:10pt;
+	margin: 0;
+	padding: 0.5em 0;
+}
+
+a {
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+blockquote { margin:0; padding:0em 0 0em 2em; }
+
+h1, h2, h3, h4, h5 {
+	font-style: normal;
+	font-weight: bold;
+	line-height: 1em;
+	margin: 0;
+	padding: .5em 0;
+}
+h1 {
+	font-size: 18pt;
+}
+h2 {
+	font-size: 16pt;
+}
+h3 {
+	font-size: 14pt;
+}
+h4 {
+	font-size: 12pt;
+}
+h5 {
+	font-size: 10pt;
+}
+h6 {
+	font-size: 8pt;
+	margin: 3px;
+	padding: 3px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1em;
+	margin: 0;
+	padding: .5em 0;
+}
+li {
+	font-size:10pt;
+	margin: 0;
+	padding: 0.5em 0;
+	line-height: normal;
+}
+.red {
+	color: #900;
+}
+
+#cafebody {
+	margin: 10px auto 0px auto;
+	height: auto;
+	width: 90%;
+	padding: 0px;
+}
+
+#cafemain {
+	position:relative;
+	top: 0px;
+	left:0px;
+	margin: 0px;
+	height: auto;
+	width: 100%;
+	padding: 0px;
+}
+
+#cafeleft { float:none;
+}
+#caferight { float:none;
+}
+
+#cafegoogle {
+	width:0; height:0; margin:0; visibility:hidden;
+}
+
+#cafegoogle p {
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-align: center;
+	color: #666;
+}
+.colleft {
+	float: left;
+	height: auto;
+	width: 47%;
+	margin: 0px;
+	padding: 0px;
+
+}
+.colright {
+	float: right;
+	height: auto;
+	width: 47%;
+	margin: 0px;
+	padding: 0px;
+}
+.clearcol {
+	clear: both;
+}

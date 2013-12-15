@@ -1,0 +1,165 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 7:49:06 Nov 1, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 4:49:04 Dec 15, 2013.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+.webonly { visibility:visible ; }
+.prtonly { height:0; margin:0; visibility:hidden; display:none; }
+
+#cafe_screen_header { width:650px; height:170px; margin:0px; padding:0px; visibility:visible; }
+#cafe_screen_disclaimer { width:650px; height:31px; margin:0px; padding:0px; visibility:visible; }
+#cafe_screen_footer { width:650px; height:24px; margin:0px; padding:0px; visibility:visible; }
+#cafe_print_header { width:0px; height:0px; margin:0px; padding:0px; visibility:hidden; display:none; }
+
+body, td {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: small;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1.1em;
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	font-size:0.8em;
+	margin: 0;
+	padding: 0.5em 0;
+	line-height: normal;
+}
+
+a {
+	text-decoration: underline;
+	color: #900;
+	font-weight: bold;
+}
+
+a:hover {
+	text-decoration:none;
+	background-color: #FC0;
+}
+
+a:active { }
+blockquote {margin:0; padding:0em 0 0em 2em; }
+
+h1, h2, h3, h4, h5 {
+	font-style: normal;
+	font-weight: bold;
+	line-height: 1.1em;
+	margin: 0;
+	padding: .5em 0;
+}
+h1 {
+	font-size: 1.4em;
+	color: #666;
+}
+h2 {
+	font-size: 1.2em;
+	color: #666;
+}
+h3 {
+	font-size: 1.2em;
+	color: #333;
+}
+h4 {
+	font-size: 1.0em;
+	color: #666;
+}
+h5 {
+	font-size: 1.0em;
+	color: #333;
+}
+h6 {
+	font-size: 0.7em;
+	margin: 3px;
+	padding: 3px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1.1em;
+	margin: 0;
+	padding: .5em 0;
+}
+li {
+	font-size:0.8em;
+	margin: 0;
+	padding: 0.5em 0;
+	line-height: normal;
+}
+.red {
+	color: #900;
+}
+
+#cafebody {
+	margin: 10px auto 0px auto;
+	height: auto;
+	width: 650px;
+	padding: 0px;
+}
+
+#cafemain {
+	position:relative;
+	top: 0px;
+	left:0px;
+	margin: 0px;
+	height: auto;
+	width: 610px;
+	padding: 0px 20px;
+}
+
+#cafeleft {
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	height: auto;
+	width: 300px;
+}
+#caferight {
+	margin: 0px;
+	padding: 0px;
+	float: right;
+	height: auto;
+	width: 300px;
+}
+
+#cafegoogle {
+	margin: 0px auto;
+	padding: 6px 0px;
+	text-align: center;
+	clear: both;
+}
+
+#cafegoogle p {
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-align: center;
+	color: #666;
+}
+
+.colleft {
+	float: left;
+	height: auto;
+	width: 300px;
+	margin: 0px;
+	padding: 0px;
+
+}
+.colright {
+	float: right;
+	height: auto;
+	width: 300px;
+	margin: 0px;
+	padding: 0px;
+}
+.clearcol {
+	clear: both;
+}

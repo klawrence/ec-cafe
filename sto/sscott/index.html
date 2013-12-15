@@ -1,0 +1,651 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><!-- InstanceBegin template="/Templates/cafe_green_1.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+
+<script type="text/javascript" src="/static/js/analytics.js" ></script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Cathy's EC Caf&eacute;</title>
+<!-- InstanceEndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="Cathy's Esophageal Cancer Cafe -- Providing information on esophageal cancer to patients and caregivers.">
+<meta name="Keywords" content="esophagus, gerd, oesophasgus, ec, barretts, adenocarcinoma, squamous, ec-group, cancer, support, health, medical, patient, caregiver, ecaa, acor, esophagectomy, esophageal, oesophageal, ec cafe">
+<link rel="stylesheet" href="/cafe.css" type="text/css" media="screen">
+
+<style type="text/css">
+<!--
+.bodyback {
+	background-image: url(../../web/grn/bgd.gif);
+	background-repeat: repeat-y;
+}
+-->
+</style>
+<link rel="stylesheet" href="/cafe_prt.css" type="text/css" media="print">
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+<body>
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script> if (window.archive_analytics) { window.archive_analytics.values['server_name']="wwwb-app12.us.archive.org";}; </script>
+
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1388534399999;
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http:\/\/www.eccafe.org\/sto\/sscott\/index.html";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth = 450;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "27";
+var displayMonth = "Aug";
+var displayYear = "2011";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" lang="en" class="__wb_banner_div" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px">
+
+
+<div id="wm-ipp-inside" class="__wb_banner_div" style="position:fixed;padding:0!important;margin:0!important;width:97%;min-width:780px;border:5px solid #000;border-top:none;background-image:url(/static/images/toolbar/wm_tb_bk_trns.png);text-align:center;-moz-box-shadow:1px 1px 3px #333;-webkit-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333;font-size:11px!important;font-family:'Lucida Grande','Arial',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://www.eccafe.org/sto/sscott/index.html" style="width:400px;font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20110827094255" /><input type="submit" value="Go" style="font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;margin-left:5px;width: inherit !important" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:'Helvetica','Lucida Grande','Arial',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/sto/sscott/index.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="26 Feb 2011"><strong>FEB</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 9:42:55 Aug 27, 2011">AUG</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/sto/sscott/index.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="1 Nov 2011"><strong>NOV</strong></a>
+		                
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/sto/sscott/index.html" title="10:35:15 Feb 26, 2011" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 9:42:55 Aug 27, 2011">27</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/sto/sscott/index.html" title="11:23:14 Nov 1, 2011" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0"/></a>
+		                
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/sto/sscott/index.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="25 Mar 2009"><strong>2009</strong></a>
+		                
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 9:42:55 Aug 27, 2011">2011</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       2012
+                       
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="/sto/sscott/index.html" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>36 captures</strong></a>
+           <div class="__wb_banner_div" style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">19 Apr 03 - 1 Nov 11</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:450px;height:27px;" href="" id="wm-graph-anchor">
+       <div class="__wb_banner_div" id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:450px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers('inline');" 
+				onmouseout="showTrackers('none');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="450"
+				height="27"
+				border="0"
+				src="/web/jsp/graph.jsp?graphdata=450_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000101110001_2004:-1:000101010101_2005:-1:010100001000_2006:-1:000010102101_2007:-1:000121100100_2008:-1:010020000000_2009:-1:001000000000_2010:-1:000000001012_2011:7:010000010010_2012:-1:000000000000_2013:-1:000000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="/static/images/toolbar/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="/static/images/toolbar/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById('wm-ipp').style.display='none';" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_close.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;margin-bottom:23px;background-color:transparent;border:none;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_help.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;background-color:transparent;border:none;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<div id="cafebody" class="bodyback">
+  <div align="center"><img id="cafe_print_header"src="/web/print_header.jpg" width="504" height="72"></div>
+  <img id="cafe_screen_header" src="/web/grn/top.gif" usemap="#Map" border="0" alt="Cathy's EC Cafe">
+  <div id="cafemain"> <!-- InstanceBeginEditable name="body" -->
+            <h1 align="center">Sheryl Ann Scott's Cancer Journey</h1>
+            <h3 align="center">By Robert G. Scott</h3>
+            <p align="center"><strong>Part 1 | <a href="/sto/sscott/scott2.html">Part 2</a> | <a href="/sto/sscott/scott3.html">Part 3</a></strong></p>
+            <h2> Part 1: February - September 2000</h2>
+            <h4>2 February 2000</h4>
+            <p>We recently learned that my wife Sheryl has esophageal cancer. She has been handling it better than I, possibly
+              due to a lack of information. The first thing I did was research the subject. What I learned was not encouraging.</p>
+            <p>I will be updating this as we progress, as much for my own personal therapy as to let others in the same position
+              know what to expect. Not knowing is very hard to handle.</p>
+            <h4>6 February 2000 </h4>
+            <p>She asked me why they wanted to do a CAT scan when they already have X-rays; I told her that it was to determine
+              if the cancer had metastasized, and if it had, to find out how far it had spread. That is the moment that realization
+              hit her. She had thought that she would simply go into the hospital for a few days, have half her esophagus
+              removed, and it would be over. Death was only an abstraction.</p>
+            <h4>9 February 2000</h4>
+            <p>We saw the thoracic surgeon today, he didn't sound very optimistic - want's to start cutting ASAP. The surgery
+              involves removing the entire esophagus and the upper part of the stomach. The remainder of the stomach will
+              then be reshaped and moved into the chest cavity and attached directly to the throat. </p>
+            <p>There apparently weren't any signs that the cancer has metastasized yet, but no one will know for sure until
+              the esophagus is removed and examined.</p>
+            <h4>15 February 2000</h4>
+            <p>We had a consult with the radiation oncologist today, very upbeat. Sheryl goes into the hospital on the 20th
+              or 21st to start the chemo and radiation therapy. It seems there is a slim outside chance that the surgery
+              might not be needed, but the side effects of this therapy are bad enough. She will be in the hospital for about
+              four days for each chemo, and the radiation will be every day for about 6-8 weeks.</p>
+            <h4>16 February 2000</h4>
+            <p>The thoracic surgeon called this morning. The surgery, in conjunction with radiation and chemo, is necessary.
+              Bummer. This roller coaster ride of optimism/pessimism does no good for the mind.</p>
+            <div align="center"><IMG src = "/web/20110827094255im_/http://www.eccafe.org/sto/sscott/endo.jpg" width=432 height=216  border=0>
+              <h6>Endoscopic view of interior of esophagus, showing narrowing</h6>
+            </div>
+            <div align="center"><IMG src = "/web/20110827094255im_/http://www.eccafe.org/sto/sscott/xray.jpg" width=212 height=235  border=0>
+              <h6>Barium Xray of esophagus.&nbsp; Tumor is wrapped<br>
+                around narrow section (between arrows)</h6>
+            </div>
+            <h4>18 February 2000</h4>
+            <p>Sheryl underwent an Esophageal Ultra Sound of the tumor and a biopsy of a lymph node to day.</p>
+            <p>The results of the biopsy won't be in for several days, but the ultra sound showed that it is a class 3 tumor
+              - it has broken through the esophagus. The biopsy will show if the cancer has metastasized. </p>
+            <p>Every test seems to move her life expectancy further to the left of the bell curve.</p>
+            <p>She goes into the hospital next week to have a feeding tube installed in her stomach and a permanent IV put
+              in her arm. Chemo and radiation start soon after.</p>
+            <h4>22 February 2000</h4>
+            <p>Today was a bad day for me. Sheryl is handling this far better than I am. Today at work the radio started
+              playing oldie songs about death. I changed the station and another death of a lover song was playing. I started
+              crying and couldn't stop. Boss sent me home very early. I didn't tell Sheryl why I was home early - she feels
+              bad when other people cry for her. </p>
+            <p>I started thinking again. We've never had a real vacation together, in a dozen years of marriage; we had one
+              weekend at Natural Bridge, VA. Great place and I hope we can go there again before it's to late.</p>
+            <p>The cure rate for esophageal cancer is 5 - 10%. 10% if caught early. Her's wasn't caught early. The average
+              time remaining after discovery is 15-18 months. She will be beating the odds if she sees another birthday.</p>
+            <h4>25 February 2000</h4>
+            <p>Sheryl went into the hospital today to have a feeding tube and permanent IV installed. The tube had to be
+              put into her duodenum instead of her stomach because the surgeon didn't want to damage what's left of her stomach
+              - the good part will be moved into her chest when the esophagus is removed.</p>
+            <p>When she came out of the OR she was in a good deal of pain, and they said that she would be moved to a room
+              when the pain was under control. I saw her in the room - the first time I had ever seen her admit to being
+              in pain. She has a very high pain tolerance.</p>
+            <p>Hopefully she will be feeling better tomorrow.</p>
+            <h4>26 February 2000</h4>
+            <p>Sheryl is a bit better today, still phasing in and out from the morphine; but at lest she's more comfortable
+              than yesterday. It hurts to see her with IVs and catheters, but she needs them. Doctors said she might be allowed
+              to have a drink of water today. Small things to us, big things to her. </p>
+            <h4>27 February 2000</h4>
+            <p>Sheryl was feeling - and looking much better today. They did another MRI this morning, and discovered that
+              she picked up a slight case of pneumonia from the surgery. One result of the abdominal surgery is that it hurts
+              when she laughs. It was good to hear her laugh, even if it did hurt.</p>
+            <p>The doctors say she might come home tomorrow for a few days to rest up and kick the pneumonia before they
+              start chemo.</p>
+            <h4>28 February 2000</h4>
+            <p>She didn't come home today. At about 4: 2000 AM this morning she starting vomiting blood. She had started
+              hemorrhaging in her stomach. The Doctors worked on her until about 10:30 AM. She might be released tomorrow
+              if the pneumonia is cleared up and her stomach is OK. </p>
+            <p>I, and her little dog, surely hope so. </p>
+            <p>She's home! Sheryl called tonight and told me that if she I would come and get her, she would be released.
+              Needless to say I headed over to get her. We returned home about 11: 2000 PM, and her little dog - Booger,
+              a Pomeranian - jumped for joy. She has a bunch of medications, and a kangaroo pump will be delivered today
+              so she can be feed through a tube at night.</p>
+            <p>We go back in about a week for a reevaluation, and hopefully start the chemo and radiation. </p>
+            <h4>29 February 2000</h4>
+            <p>The kangaroo pump was delivered tonight - now she can get the nutrients she needs as she sleeps. Good thing.</p>
+            <h4>4 March 2000</h4>
+            <p>Sheryl goes back to see her doctors on Tuesday, 7 March for another evaluation; if her last surgery has healed
+              enough, and her general condition is good enough, she can begin chemo and radiation therapy. Hope they can
+              start soon, everyday without it is a day lost. It's getting harder for her to get food down her esophagus;
+              now it's nearly all liquid. </p>
+            <p>I'm beginning to dislike the &#034;health fad&#034;. Her doctors don't want her to eat any thing that's fat-free
+              or low-cal; and no junk food either. I looked in several stores to find non-fat-free cottage cheese. She gets
+              close to a thousand calories a day from the tube feed, but needs at least two thousand a day to maintain her
+              weight. Everything seems to be fat free. Maintaining her weight is not as easy as it sounds.</p>
+            <h4>7 March 2000</h4>
+            <p>I took Sheryl back to the hospital today to have the staples removed from the last surgery. Her doctor decided
+              to admit her and start the chemo and radiation therapy today. Praise the gods, as every day delayed is one
+              more day for the cancer to grow and spread. </p>
+            <h4>8 March 2000</h4>
+            <p>Her first day of chemo went pretty good - no apparent side effects at all. The next two or three days will
+              tell how she handles it. The radiation therapy starts tomorrow. </p>
+            <h4>9 March 2000</h4>
+            <p>So much for an easy chemo. She spent the night vomiting, it started when they introduced a painkiller (hydrocodone)
+              into her feeding tube, and she didn't get much sleep. She started radiation therapy today, and now has a splitting
+              headache as well as the nausea. When she gets home, there will be some pot waiting. I've talked to a lot of
+              people who went through chemo, and marijuana is the best anti-nausea drug known to man - but it seems to have
+              a very terrible side effect that keeps it illegal. Not only does it gets rid of the nausea and stimulate the
+              appetite - necessary for cancer patients, but it actually makes them feel good! We can't have cancer patients
+              using a drug that makes them feel good. Screw the feds!</p>
+            <h4>10 March 2000</h4>
+            <p>Sheryl was chipper this morning. I checked and she didn't touch her breakfast - except the juice - and she
+              barfed up yesterday's supper. Thank god for the feeding tube.</p>
+            <p>Good news! She might come home tomorrow! Her last chemo is today, and tomorrow I get with the doctor and discuss
+              me administering the chemo at home (I hope) myself. The Naval Medical Center Portsmouth is a great facility,
+              and I have no complaints whatsoever; except that I can handle the IVs and feeding tube better than the staff.
+              I have a vested interest, and while I have no &#034;RN&#034; or &#034;MD&#034; behind my name, I am not unskilled.</p>
+            <h4>11 March 2000</h4>
+            <p>Oh well - coming home was a definite &#034;maybe&#034;. It seems someone miscounted the bags of floro she
+              received - she needs one more. She will most definitely, maybe, be released tomorrow for a while. She will
+              then go in every day for radiation. Fun, fun. </p>
+            <p>Her blood work and other tests have been comming back OK - the chemo has not been affecting her liver, kidneys,
+              etc. The cancer has not spread. She is moving to the right side of the bell curve!</p>
+            <h4>13 March 2000</h4>
+            <p>I brought her back from the hospital at 2:30AM this morning. We went back for radiation therapy at 1:00PM
+              today - well, she IS back, and her little dog is estatic, as am I.</p>
+            <h4>16 March 2000</h4>
+            <p>Thank god for weekends. Her radiation therapy is Monday - Friday with weekends off, and she needs a break.
+              She is always tired and has no energy. Sheryl vomits every morning around 3:00AM, and this morning it was mostly
+              blood.</p>
+            <p>Next week she gets a new MRI to compare to the last one. Hope that tumor's shrinking!</p>
+            <h4>19 March 2000</h4>
+            <p>Sheryl's doing great today, no vomiting for two days. She was feeling good enough to do some house cleaning
+              - it was almost like the old (PreCancer) days!</p>
+            <h4>20 March 2000</h4>
+            <p>She saw the chemo doctor after the radiation therapy today, another set of blood tests - everything came back
+              fine, no peripheral damage from the therapy! She goes back in for another week of chemo on 3 April. Sure hope
+              this goes as easy as the last one.</p>
+            <h4>26 March 2000</h4>
+            <p>Weekends are great - no therapy and she gets a chance to recover from a week's worth of radiation. The only
+              side effect she has is the fatigue, and by Friday she's pretty well worn out. Saturday she recoups and Sunday
+              she feels almost normal again. She hasn't been losing any more weight; in fact, she actually gained about five
+              pounds.</p>
+            <p>Sheryl has been following the doctor's orders to the letter - no &#034;alternative medicine&#034; or desperate
+              measures. </p>
+            <h4>5 April 2000</h4>
+            <p>This round of chemo is not going as easily as the first. She has been up most of the night vomiting. Her doctor
+              ist trying other anti-nausea drugs to find one that will work. Yesterday she was red and somewhat swollen.
+              That has gone away for now. </p>
+            <h4>7 April 2000</h4>
+            <p>This round of chemo is not getting any better. She seems to have aged about ten years in the last three days.
+              Her hair is thinning rapidly - not falling out in clumps but thinning; where the hair at the pony tail tie
+              was about two inches thick with a tight tie, it's now about half an inch thick with a loose tie. You wouldn't
+              notice that she was loosing it if you didn't know her. Her chemo doctor has decided to wait a month before
+              starting the next round instead of two weeks to give her a chance to recover. It wouldn't do to die from the
+              cure.</p>
+            <h4>9 April 2000</h4>
+            <p>She was released from the hospital about 9: 2000 last night. Hard radiation burns front and back, hair much
+              thinner than before (she happy that she doesn't have to shave her arm pits now!), dark bags around her eyes;
+              but - happy to be home. Her little dog was jumping around in circles when he saw she was back. She vomited
+              several times last night, but it should last only a couple days. Her doctors think the tumor is shrinking faster
+              than expected. </p>
+            <h4>12 April 2000</h4>
+            <p>Sheryl will have two or three more chemo sessions and a major surgery ahead of her, but so far so good. Without
+              the radiation, the chemo will go easier.</p>
+            <h4>18 April 2000</h4>
+            <p>Today is her last radiation treatment. She vomited several times last night, and has been in considerable
+              pain the last few days. Hopefully she'll be feeling better when the effects of the radiation subside.</p>
+            <h4>23 April 2000</h4>
+            <p>Sheryl is still in a lot of pain. She has been unable to eat for nearly a week; even trying to drink water
+              is painful. Thank God for the feeding tube and pump. We see her chemo doctor tomorrow, maybe he'll be able
+              to help. Her pain medication (Tylox) isn't very effective. Maybe there will be something stronger they can
+              prescribe - but I'm doubtful. Thanks to our &#034;War on Drugs&#034; many doctors are afraid to prescribe,
+              and as this is a government hospital and doctor, they might not even carry anything stronger. I'll find out
+              tomorrow. It hurts me to see my wife in continual pain.</p>
+            <h4>24 April 2000</h4>
+            <p>My fears were for nothing. Sheryl now has liquid morphine that I can inject through her J tube. It helps considerably
+              - for a short time. The Tylox will keep the pain down on a continual basis, and when the pain flares, the morphine
+              can knock it back down. It's not for continual use like the Tylox, but it's good to have when needed.</p>
+            <p>Sheryl's father died this afternoon. She was devastated. I hope it doesn't have an adverse effect on her recovery. </p>
+            <h4>4 May 2000</h4>
+            <p>Sheryl has been pretty much depressed the last week and a half. Between her father's death and the tumor,
+              she hasn't eaten much so has lost another 5 pounds. A good day of eating means a small cup of pudding - but
+              it only happens every other day or so.</p>
+            <p>We saw the chemo doctor today - he'll put her back in the hospital Monday for another chemo session if today's
+              blood work comes back good. The nutritionist told her that if she didn't start eating, she'd be on the feeding
+              machine 24/7 for the rest of her life. She came home and ate a cup of Jell-O. There is pain when she eats and
+              food tastes different - but she has to eat! I get tired of her bitching about my nagging her to eat, but I'm
+              not about to stop - until she starts eating again. </p>
+            <h4>5 May 2000</h4>
+            <p>I was reminded today that Sheryl's chances are really pretty bad. The cure rate is 5-10% for her cancer. We
+              have been optimistic of late, but she told me today - on the way in for another CT scan, &#034;I hope the scan
+              shows the tumor's shrinking&#034;. By the gods, so do I! After everything she's gone through, to have the cancer
+              take her</p>
+            <p>We don't often dwell on it. If her time is limited, why spend it in gloom? Why not enjoy what's left? She
+              has been criticized for not weeping and wailing about having cancer - what good would it do? Enjoy life while
+              you can, no one knows when the end will come. No one has yet to get out of life alive.</p>
+            <h4>8 May 2000</h4>
+            <p>Sheryl's back in the hospital for her third chemo session. She wasn't very happy. The first session went pretty
+              easy, so her thoughts when starting the second were along the lines of, &#034;well, I'm stuck here for a week,
+              and I don't like hospitals, but it will make me better and it doesn't really hurt.&#034; The second session
+              kicked her butt. This time her attitude was, &#034;A week of chemical torture! I hate hospitals! I don't want
+              to go!&#034; But of course, she had no choice.</p>
+            <h4>11 May 2000</h4>
+            <p>Sheryl was looking rough this morning. She had vomiting and diarrhea all night, so she got little or no sleep.
+              She has four IV running. We are both looking forward to Sunday when I can bring her home. </p>
+            <h4>12 May 2000</h4>
+            <p>I set by her for about an hour this morning - she was sleeping; the first sleep she's had this week. I wasn't
+              about to wake her up, so I left a note and went home. Her little dog, &#034;The Booger&#034; still avoids me
+              - I'm the one who takes her away and doesn't bring her back for a week. All he does is look at me and growl.</p>
+            <h4>14 May 2000</h4>
+            <p>Sheryl was released from the hospital this morning! Her little dog and I are ecstatic, although I admit I
+              enjoyed the rest. My arthritis is kicking my butt lately, and I should break down and get a few joints replaced
+              - as soon as Sheryl's cancer is resolved. I'm going to have to ease up on waiting on her hand and foot - she
+              needs to move around more, and I need to give the feet, knees, hips, and back a break.</p>
+            <h4>20 May 2000</h4>
+            <p>She is feeling much better the last few days. She thought that using the feeding tube was making her vomit
+              at night; it would start about an hour and a half after the pump was started, regardless of when it was started.
+              When she first started using the pump she was vomiting at night, and I cut the feed back from 120 ml/hr to
+              about 90 ml/hr and the effects eased up. This time I had cut it back to 50ml/hr - meaning she was hooked up
+              for 16 hours a day. She was still nauseous and vomiting. She finally refused to use it at all for a few days
+              - to give her system a break. It worked, no vomiting. She is even eating real food now, but not much - about
+              500 - 600 calories a day, not enough to sustain her weight. One Taco Bell salad lasted a day and a half.</p>
+            <p>I'm now glad she was over weight when this started - if she had been at her &#034;ideal weight&#034; of about
+              130 lbs., she would have died some time ago. She's lost over 50lbs. so far.</p>
+            <div align="center"><IMG src = "/web/20110827094255im_/http://www.eccafe.org/sto/sscott/beforenafter.jpg" width=288 height=166  border=0></div>
+            <h4>25 May 2000</h4>
+            <p>Sheryl's last CT scan showed good. The tumor is shrinking and hasn't spread. All her other organs are doing
+              fine. She starts her next chemo session is on 5 June.</p>
+            <h4>2 June 2000</h4>
+            <p>Sheryl decided to get her hair cut tonight. She has lost more than half due to the therapies, and it was quite
+              thin, showing scalp through the hair. She was shedding hair all over the apartment too. It looks good now,
+              about &#188; inch long and tapered and trimmed properly (I did it myself). The thinness isn't that noticeable
+              now, and it looks rather sexy!</p>
+            <h4>7 June 2000</h4>
+            <p>Sheryl reentered the hospital Monday for her 4th chemo treatment. The potassium she's getting burns, both
+              oral and the IV form. She's not feeling much of the effects of the chemo yet, but It'll probably start tomorrow.
+              She can't eat; nearly everything she swallows stops when it hits the tumor constriction and, after causing
+              a lot of discomfort - comes back up. Her stomach is burning from the ulceration again, maybe because the hospital
+              schedule for the prilosec is not the same as at home.</p>
+            <h4>10 June 2000</h4>
+            <p>Sheryl's doing OK on this chemo session, and I should be able to bring her home this afternoon. It hasn't
+              knocked her down as bad as the last one, possibly because she has not been using the feeding tube.</p>
+            <h4>19 June 2000</h4>
+            <p>She's been home from the hospital a week now. The first few days she was still sick every night, and has used
+              the feeding tube only two nights so she is still losing weight - to much weight. The pain seems to be more
+              intense then before and that interferes with eating. She doesn't like to use the morphine because it makes
+              her sleepy (oh sweet Morpheus!), but she will use it with a lot of nagging. There is a procedure similar to
+              balloon angioplasty that can be used to expand the esophagus. I hope it can be used in her case - it will help
+              her to eat. I can see why she wouldn't want to eat, even it not doing so means starving, when every bite she
+              swallows is painful.</p>
+            <h4>26 June 2000</h4>
+            <p>It seems Sheryl has given up. Yesterday was typical. She got out of bed about 9:30 AM and set watching TV.
+              I asked if there was anything I could fix her to eat. She made a sandwich, ate a few bites - and puked it up.
+              She had a swallow of &#034;Boost&#034;, and puked it. Her total consumption for the day consisted of a handful
+              of potato chips. I asked about the anti-nausea pills she is supposed to take (I haven't had to refill them
+              in a long time). She won't take them because they don't work well enough.</p>
+            <p>I set and watch as she slowly starves. </p>
+            <h4>9 July 2000</h4>
+            <p>She entered the hospital on the 5th for what will be her (hopefully) last chemo session. She was dehydrated
+              and her electrolytes were way off. Sheryl still can't tolerate the feeding tube at night, and the only food
+              that will stay down is soup and Jell-O, and this is not enough for her to gain any weight back. I pray (as
+              can you) that she can somehow gain enough to be able to handle the surgery in a couple of months. </p>
+            <h4>27 July 2000</h4>
+            <p>Sheryl is back to using the feeding tube at night, about 5 2000 calories on a real slow feed. She hasn't vomited
+              in several days - the effects of her last chemo are wearing off. She does have one more chemo to take and will
+              be entering the hospital again on 2 August. I'm hoping she will get to where she can tolerate a full 1 2000
+              calories a night on the feeding tube - that with what she can eat will allow her to gain some weight back -
+              God knows she needs it.</p>
+            <h4>20 July 2000</h4>
+            <p>I started this as much to show the effects of the cancer on me as on my wife, and I seem to have neglected
+              that portion of the page. Here goes:</p>
+            <p>I miss my wife. Oh, she's still here, in body only. She is so weak she can't walk down the stairs without
+              stopping to rest. She is in pain, even with the morphine and codeine. </p>
+            <p>I miss going out with her for a beer.</p>
+            <p>I miss going out with her just for a ride.</p>
+            <p>I miss going out to dinner with her.</p>
+            <p>I miss holding her. I would love to be able to give her a hug, but it causes pain. I would love to make love
+              to her, but that is out of the question.</p>
+            <p>I miss my wife.</p>
+            <p>I miss her sense of humor.</p>
+            <p>I miss her smile. </p>
+            <h4>27 July 2000</h4>
+            <p>Sheryl is back to using the feeding tube at night, about 5 2000 calories on a real slow feed. She hasn't vomited
+              in several days - the effects of her last chemo are wearing off. She does have one more chemo to take and will
+              be entering the hospital again on 2 August. I'm hoping she will get to where she can tolerate a full 1 2000
+              calories a night on the feeding tube - that with what she can eat will allow her to gain some weight back -
+              God knows she needs it.</p>
+            <h4>27 July 2000</h4>
+            <p>She hit the one thousand calorie mark today!!!</p>
+            <h4>6 August 2000</h4>
+            <p>Sheryl actually gained some weight, up to nearly 120 lbs.! She still can't handle more than about 750 calories
+              from the feeding tube at night, but she's eating another 5 2000-1 2000 calories during the day.</p>
+            <p>I picked up a Chinese take out order for her a couple days ago. Sesame Chicken. So far, it has been three
+              meals, with about three more in the freezer; from ONE serving. She can't eat much at one time and she only
+              eats twice a day - but she IS eating again.</p>
+            <h4>15 August 2000</h4>
+            <p>Almost like the old days. Sheryl had to energy to get off the couch and do some light housework. She cleaned
+              the bedroom - dusted, changed the sheets, cleaned the mirrors, etc. She hasn't been able to burn that much
+              energy in a very long time. Maybe now she can start getting some muscle tone back.</p>
+            <h4>16 August 2000</h4>
+            <p>We just returned from the doctor's. He doesn't think Sheryl needs another chemo treatment, but will have the
+              tumor board evaluate her after another CAT scan. If no more chemo is needed, her next hurdle is the surgery.</p>
+            <p>She still has a surplus of energy! She walked her dog to day when we returned! </p>
+            <h4>27 August 2000</h4>
+            <p>The closer we come to the end of this journey, the more it seems to affect her. She is, for the first time,
+              beginning to really worry. The CT scan on the 30th will be the most meaningful - if the tumor has shrunk enough
+              she will have her surgery soon, if not - more chemo. Neither is an option to look forward to. The chemo is
+              extremely unpleasant and the surgery is extremely dangerous; there is a 1 in 5 chance of dying on the table,
+              and the recovery won't be very pleasant. Major trauma. </p>
+            <p>I know she worries about it, and she is taking it out on me - and her dog. We both put up with as much as
+              possible. The end of the road is near, a person (or a dog) can handle nearly anything if they know it won't
+              go on forever.</p>
+            <h4>7 September 2000</h4>
+            <p>There is one aspect I haven't discussed much. The chemo treatments brought on an early menopause, and there
+              are some uncomfortable effects. People are aware of the &#034;hot flashes&#034;. The name doesn't come close
+              to describing the symptom. She will be comfortable in bed, get hit with a hot flash and suddenly - with no
+              warning - throw off the blanket and sheet, complain about how hot the room is, and toss and turn. The room
+              temperature might be 55 degrees, she'd still swear the room was hot. When this happens, I gladly take the blanket
+              and wrap up in it. There are also &#034;cold flashes&#034;. These are the same as hot flashes, except she swears
+              the room is freezing, regardless of the temperature. The worst effect (from my point of view) is her absolute
+              lack of any form of a sex drive. Oh well, it won't last forever.</p>
+            <p>Her next appointment is with the surgeon, that's scheduled for the 15th of this month.</p>
+            <h4>15 September 2000</h4>
+            <p>We saw the surgeon today, and learned the results of the latest CT scan.</p>
+            <p>Sheryl has two spots on her right lung.</p>
+            <p>Surgery is scheduled for 2 October 2000. </p>
+            <h4>30 September 2000</h4>
+            <p>Her surgery is now just two days away. I don't know who is more frightened by it, Sheryl or me. It's difficult
+              not to think of. She doesn't want to go through the pain and agony of the recovery, and she definitely doesn't
+              want to die on the table or as a result of complications. The same goes for me. We also know that without the
+              surgery her chances are just about zero.</p>
+            <p align="center"><strong>Part 1 | <a href="/sto/sscott/scott2.html">Part 2</a> | <a href="/sto/sscott/scott3.html">Part 3</a></strong></p>
+            <p align="center"><a href="mailto:robertscott1@cox.net"><strong>Send an e-mail to Robert</strong></a></p>
+            <!-- InstanceEndEditable --></div>
+  <img id="cafe_screen_disclaimer" src="/web/grn/dsc.gif" alt="Information found here is not to be a substitute for professional care.">
+  <div align="center" class="webonly">
+    <div id="cafegoogle">
+      <script type="text/javascript"><!--
+google_ad_client = "pub-2176662973486049";
+google_ad_width = "468";
+google_ad_height = "60";
+google_ad_format = "468x60_as";
+google_ad_type = "text";
+google_ad_channel ="";
+google_color_border = "CCCCCC";
+google_color_bg = "FFFFFF";
+google_color_link = "000000";
+google_color_url = "666666";
+google_color_text = "333333";
+//--></script>
+      <script type="text/javascript"
+  src="/web/20110827094255js_/http://pagead2.googlesyndication.com/pagead/show_ads.js">
+      </script>
+      <br>
+      <p>The above advertisements, provided automatically, are neither selected nor endorsed by us.<br>
+        Some may lead to web sites that provide questionable or controversial medical information.<br>
+        If you encounter advertisements inappropriate for the Caf&eacute;, send us the advertisement's URL.</p>
+    </div>
+    <h5><a href="/index.html">home</a> | <a href="/cnt/index.html">contents</a> | <a href="/sto/index.html">stories</a> | <a href="/ecg/index.html">ec-group</a> | <a href="/lnk/index.html">links</a> | <a href="/etc/index.html">etc.</a></h5>
+    <img src="/web/art/footer.gif" width="509" alt="Some graphics courtesy of Hoopla! disc, copyright 1995 Image Club Graphics. 1-800-661-9410" height="50">
+    <p><a href="/cnt/contact.html">Send a message to Marc &amp; Tammy Wolfgram</a></p>
+    <table width="610" border="0" cellpadding="0" cellspacing="0">
+      <tr valign="middle">
+        <td width="49" align="center"><img src="/web/cssprint.gif" alt="This page is printer friendly" width="45" height="50" border="0"></td>
+        <td align="center"><h6>Copyright &copy; 1995-2008&mdash;Last changed on
+            <!-- #BeginDate format:Am1 -->June 17, 2008<!-- #EndDate -->
+            &mdash; We comply with the<br> 
+            <a href="/web/20110827094255/http://www.hon.ch/HONcode/Conduct.html" onclick="window.open(this.href); return false;"> HONcode standard for trustworthy health</a> information: <a href="/web/20110827094255/https://www.hon.ch/HONcode/Conduct.html?HONConduct294647" onclick="window.open(this.href); return false;">verify here</a>.</h6></td>
+        <td width="45"><a href="/web/20110827094255/https://www.hon.ch/HONcode/Conduct.html?HONConduct294647" onclick="window.open(this.href); return false;" > <img src="/web/20110827094255im_/https://www.hon.ch/HONcode/Seal/HONConduct294647_s.gif" width="49" height="72" style="border:0px" title="This website is accredited by Health On the Net Foundation. Click to verify." alt="This website is accredited by Health On the Net Foundation. Click to verify." /></a></td>
+      </tr>
+    </table>
+  </div>
+<img id="cafe_screen_footer" src="/web/grn/bot.gif"> </div>
+<map name="Map">
+  <area shape="rect" coords="240,113,286,143" href="/index.html" alt="Home">
+  <area shape="rect" coords="297,113,367,143" href="/cnt/index.html" alt="Contents">
+  <area shape="rect" coords="376,113,434,143" href="/sto/index.html" alt="Stories">
+  <area shape="rect" coords="443,113,516,143" href="/ecg/index.html" alt="EC-Group">
+  <area shape="rect" coords="527,113,574,143" href="/lnk/index.html" alt="Links">
+  <area shape="rect" coords="583,113,613,143" href="/etc/index.html" alt="Etcetera">
+</map>
+</body><!-- InstanceEnd -->
+</html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 9:42:55 Aug 27, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 4:50:36 Dec 15, 2013.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
