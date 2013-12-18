@@ -1,0 +1,430 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><!-- #BeginTemplate "/Templates/cafe_green_1.dwt" --><!-- DW6 -->
+<head>
+
+<script type="text/javascript" src="/static/js/analytics.js" ></script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+
+<!-- #BeginEditable "doctitle" --> 
+<title>Cathy's EC Caf&eacute;</title>
+<!-- #EndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="Cathy's Esophageal Cancer Cafe -- Providing information on esophageal cancer to patients and caregivers.">
+<meta name="Keywords" content="esophagus, gerd, oesophasgus, ec, barretts, adenocarcinoma, squamous, ec-group, cancer, support, health, medical, patient, caregiver, ecaa, acor, esophagectomy, esophageal, oesophageal, ec cafe">
+<link rel="stylesheet" href="/cafe.css" type="text/css" media="screen">
+
+<style type="text/css">
+<!--
+.bodyback {
+	background-image: url(../../web/grn/bgd.gif);
+	background-repeat: repeat-y;
+}
+-->
+</style>
+<link rel="stylesheet" href="/cafe_prt.css" type="text/css" media="print">
+<!-- #BeginEditable "head" --><!-- #EndEditable -->
+</head>
+<body>
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script> if (window.archive_analytics) { window.archive_analytics.values['server_name']="wwwb-app13.us.archive.org";}; </script>
+
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1388534399999;
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http:\/\/eccafe.org\/sto\/cweeks\/journal4.html";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth = 450;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "26";
+var displayMonth = "Sep";
+var displayYear = "2010";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" lang="en" class="__wb_banner_div" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px">
+
+
+<div id="wm-ipp-inside" class="__wb_banner_div" style="position:fixed;padding:0!important;margin:0!important;width:97%;min-width:780px;border:5px solid #000;border-top:none;background-image:url(/static/images/toolbar/wm_tb_bk_trns.png);text-align:center;-moz-box-shadow:1px 1px 3px #333;-webkit-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333;font-size:11px!important;font-family:'Lucida Grande','Arial',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://eccafe.org/sto/cweeks/journal4.html" style="width:400px;font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20100926142250" /><input type="submit" value="Go" style="font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;margin-left:5px;width: inherit !important" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:'Helvetica','Lucida Grande','Arial',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/sto/cweeks/journal4.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="19 Nov 2008"><strong>NOV</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 14:22:50 Sep 26, 2010">SEP</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/sto/cweeks/journal4.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="22 Nov 2010"><strong>NOV</strong></a>
+		                
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/sto/cweeks/journal4.html" title="14:37:05 Nov 19, 2008" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 14:22:50 Sep 26, 2010">26</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/sto/cweeks/journal4.html" title="18:00:14 Nov 22, 2010" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0"/></a>
+		                
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/sto/cweeks/journal4.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="19 Nov 2008"><strong>2008</strong></a>
+		                
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 14:22:50 Sep 26, 2010">2010</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       2011
+                       
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="/sto/cweeks/journal4.html" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>16 captures</strong></a>
+           <div class="__wb_banner_div" style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">19 Apr 03 - 16 Dec 10</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:450px;height:27px;" href="" id="wm-graph-anchor">
+       <div class="__wb_banner_div" id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:450px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers('inline');" 
+				onmouseout="showTrackers('none');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="450"
+				height="27"
+				border="0"
+				src="/web/jsp/graph.jsp?graphdata=450_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000100100101_2004:-1:010101010101_2005:-1:010000000000_2006:-1:000000001000_2007:-1:000000000000_2008:-1:000000000010_2009:-1:000000000000_2010:8:000000001011_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="/static/images/toolbar/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="/static/images/toolbar/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById('wm-ipp').style.display='none';" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_close.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;margin-bottom:23px;background-color:transparent;border:none;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_help.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;background-color:transparent;border:none;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<div id="cafebody" class="bodyback">
+  <div align="center"><img id="cafe_print_header"src="/web/print_header.jpg" width="504" height="72"></div>
+  <img id="cafe_screen_header" src="/web/grn/top.gif" usemap="#Map" border="0" alt="Cathy's EC Cafe">
+  <div id="cafemain"> <!-- #BeginEditable "body" --> 
+            <h1 align="center"><a href="/sto/cweeks/index.html">My Dad's Story</a></h1>
+            <h4 align="center">by Cathy Weeks</h4>
+            <h2 align="center">The Treatment: Chemotherapy and Radiation</h2>
+            <p>Monday, November 27th, 1995: Dad entered the hospital for treatment. He was undergoing what was called the 
+              "Ann Arbor Protocol," which I was later to learn was the most harsh treatment protocol known. I'm not sure, 
+              but I believe it was developed by Dr. Orringer. It basically meant 21 days of continuous IV chemotherapy treatment 
+              and twice-daily radiation treatments (for a total of 30).</p>
+            <table border="0" cellspacing="0" cellpadding="10" align="center">
+              <tr valign="top"> 
+                <td>It went like this:</td>
+                <td>Days 1-4<br>
+                  Day 5<br>
+                  Days 6-16<br>
+                  Days 17-21</td>
+                <td>Cisplatin, 5FU and Vinblastine<br>
+                  Cisplatin and 5FU<br>
+                  5FU<br>
+                  Cisplatin, 5FU and Vinblastine</td>
+              </tr>
+            </table>
+            <p>They had Dad hooked up and the Chemo started within a couple of hours of his entering the hospital. They had 
+              surgically implanted a catheter in a vein in his chest (much more convenient than a wrist, and I think they 
+              needed a bigger vein) for the chemo and other drugs to enter his bloodstream. Dad dragged around a "tree" on 
+              wheels that ALWAYS had a bunch of bags and tubes hanging from it. I found out later that the majority of what 
+              went into his body was water. The drugs are so poisonous that they would destroy his kidneys if they weren't 
+              continually flushed with water. As it was, he did sustain some kidney damage (as do 50% of all patients undergoing 
+              this protocal) anyway--he had to take extra potassium for a few months after treatment. But his kidneys healed 
+              up fine.</p>
+            <p>Funny, the hospitals record EVERYTHING. As a result of all the fluids (water, chemo drugs, anti-nauseants, 
+              etc), Dad had to urinate all the time, and of course they wrote down how much, how often, how much he ate, what 
+              he ate, if he had a BM, EVERYTHING. I guess they needed that data. Another annoying thing is that the alarm 
+              on Dad's IV pole was always going off. If it was low on batteries, if it was out of some drug, if a hose got 
+              kinked and, it seemed much of the time that it would go off for no reason. A nurse would always come in and 
+              fix it.</p>
+            <p>The first week wasn't bad. Dad was fairly healthy to start with; regular exercize, a well-balanced diet, didn't 
+              smoke or drink, etc. His good health made the entire treatment easier on him. He did better (ie. he was able 
+              to eat all the way through the 21 days) than 90% of the patients that go through this protocol, and his good 
+              health was a major contributing factor.</p>
+            <p>Another contributing factor was his attitude. He WAS GOING TO GET THROUGH THIS. He also renewed his faith in 
+              God, and was listening to guided imagery tapes to help his body fight the disease. Dad consciously fought the 
+              disease. And whenever he got depressed, he either requested or one of his doctors requested that Dad's counselor, 
+              who is trained in hypnosis and cancer treatment, come see him in the hospital (which he did). He made a HUGE 
+              difference, and really, really helped Dad maintain a positive attitude.</p>
+            <p>That's actually one of my favorite pieces of advice for people in Dad's situation. GET HELP!! Whether it be 
+              a clergyman/woman, a psychologist, or someone else. Someone who isn't a family member and thereby doesn't have 
+              to deal with their own worries about the situation is a better and clearer-headed listener than a loved one. 
+              I am NOT suggesting that family members be excluded. A counselor/psychologist is certainly not a replacement 
+              for a loved one and vice-versa.</p>
+            <p>I also did what I could to keep his spirits up. On his first day in the hospital, I brought him a computer 
+              to play with. He hadn't used the World Wide Web much, and I thought he'd enjoy surfing to combat boredom. I 
+              also attempted to give him some extra motivation to be stubborn and fight the disease. "Dad, you have to get 
+              through this. I expect you to walk me down the aisle when Chris and I get married. And you know what else? Chris 
+              and I plan on having children, and I want them to know their grandfather. And later on, Paul and Sean will have 
+              kids, and *they* will need a grandfather. And next summer you are taking Paul camping at the Boundary Waters. 
+              So you see, you really need to beat this disease." Dad smiled at me. "I will," he said.</p>
+            <p>While Dad was getting his continuous IV chemotherapy, Dad also got Radiation twice a day during the business 
+              week. He'd walk down to the radiation oncology offices, which were a surprisingly cheerful place, and get irradiated. 
+              Prior to treatment, the doctor had shaved Dad's chest, and a spot on his back. In each area a rectangle was 
+              painted on his skin, and were used to aim the radiation at the proper place. The machine used to irradiate cancer 
+              patients looked like a massive Hobart mixer laid over on its side. A technician told me it weighed over 20 tons. 
+              Dad would lay down on the table, which would then raise him up and over so that he was near the "Tuning fork" 
+              which would pivot and rotate such that one arm was over Dad, and the other under him. Simultaneously, one arm 
+              would deliver radiation to his front while the other did his back. A week and a half later, they painted new 
+              rectangles on each side of his rib cage, and adjusted the machine so that radiation would come through his sides, 
+              instead of front and back (It's to spread out the radiation so that it's less concentrated in the surrounding 
+              organs).</p>
+            <p>I visited Dad every day over my lunch hour during the week, and every day over the weekend. It was rough to 
+              say the least. As I mentioned earlier, the first week wasn't bad at all. Dad was in good spirits, and he hadn't 
+              yet experienced most of the side-effects of the treatment. The second week again wasn't as bad as any of us 
+              were expecting. I never saw Dad's hair fall out, but he never vomited, and didn't lose all that much weight. 
+              He was pale and tired, but mostly ok.</p>
+            <p>But it was during this second week that we got some rather unsettling news. While I was visiting, Dad's surgeon 
+              visited him for the first time, and told us a little about how he'd procede with the surgery. If at the time 
+              of surgery, Dad's lymph nodes were clean, and the cancer hadn't spread, then he had an 85% chance of surviving 
+              2 years. If his lymph nodes were involved, but the cancer hasn't spread otherwise, then his chances dropped 
+              to 50%. And if the surgeon found that if the cancer had spread to outside the esophagus, then he'd close Dad 
+              up without doing the surgery at all. I had to go back to work soon after this, but I understand from my parents 
+              that the conversation was fairly brief.</p>
+            <p>Two days later, the head of the oncology group visited us. I again happened to be visiting. Dad's doctor, whom 
+              we didn't like very well (he was a competent doctor, but had a terrible bedside manner) was out of the office 
+              that day, and the head of his group came by to tell us the results of the ultrasounds, which would reveal whether 
+              or not Dad had lymph node involvement. The news was bad. The lymph node immediately adjacent to Dad's tumor 
+              was indeed involved. We had been hoping for that 85% chance, and Dad visibly sagged in disappointment. "I had 
+              hoped that wasn't the case," Dad told the doctor and I. "Well, I'm not great at reading ultrasounds. I can get 
+              the radiologist to interpret them for you, if you'd like," the doctor said. "No, that's not necessary," Dad 
+              replied.</p>
+            <p>It was also during this time that an amusing (in a dark sort of way) event happened: Some of Dad's chemo drugs 
+              spilled on the floor. Dad had gone to the bathroom, and rolled his IV pole over one of the dangling tubes, puncturing 
+              it. We called a nurse, who called an "environmental mess" team, who came in wearing full-face masks, gloves, 
+              plastic clothing, etc, to clean it up. Wow. I had had no idea that the stuff was so dangerous. The nurse told 
+              me that Dad's chemo drugs were not nearly as bad as one other very corrosive chemo drug that would actually 
+              burn if it got on the skin (!!). They merely try to minimize the exposure of hospital staff to these chemicals, 
+              since they are around them constantly.</p>
+            <p>The third week was a different story from the first two weeks. Dad clearly felt awful. He was weak, exhausted 
+              and ready to go home. The doctors said that Dad was doing so well, that they expected him to be home for Christmas. 
+              How could he be doing well, when he looked looked so wretched? Two things stick out in my memory during this 
+              week: He laughed at some ridiculous story that I had downloaded off the net, and the laughter was so unanticipated, 
+              especially with how awful he felt and how long since I'd seen him smile, that it brought tears to my eyes. And 
+              it was during this week that he spoke to his counselor about dying. All along, he had been so *sure* that he 
+              was going to make it. I hadn't realized how much Dad's certainty had given me hope, until he himself had doubts.</p>
+            <p>Dad was on painkillers by this point. He didn't have the mouthsores that many others do (some medicinal gargle 
+              prevented this), but his throat hurt terribly from the radiation, which I've been told is the part that tires 
+              people out the most. He also had hiccups almost constantly, and few of the home remedies that people told me 
+              about worked. The doctors tried different combinations of drugs, but to no effect. The hiccups, however, did 
+              stop when he was sleeping. Sleep is a better muscle relaxant than any drug, it seems. By the end of his final 
+              week, Dad was so weak, he could barely walk on his own.</p>
+            <p><a href="/sto/cweeks/journal5.html">Entry 5: The Second Interim (Post Chemo/Radiation, Pre-surgery).</a></p>
+            <p align="center"><a href="mailto:cweeks@eclipse.net">Send Cathy a note</a></p>
+            <!-- #EndEditable --></div>
+  <img id="cafe_screen_disclaimer" src="/web/grn/dsc.gif" alt="Information found here is not to be a substitute for professional care.">
+  <div align="center" class="webonly">
+    <div id="cafegoogle">
+      <script type="text/javascript"><!--
+google_ad_client = "pub-2176662973486049";
+google_ad_width = "468";
+google_ad_height = "60";
+google_ad_format = "468x60_as";
+google_ad_type = "text";
+google_ad_channel ="";
+google_color_border = "CCCCCC";
+google_color_bg = "FFFFFF";
+google_color_link = "000000";
+google_color_url = "666666";
+google_color_text = "333333";
+//--></script>
+      <script type="text/javascript"
+  src="/web/20100926142250js_/http://pagead2.googlesyndication.com/pagead/show_ads.js">
+      </script>
+      <br>
+      <p>The above advertisements, provided automatically, are neither selected nor endorsed by us.<br>
+        Some may lead to web sites that provide questionable or controversial medical information.<br>
+        If you encounter advertisements inappropriate for the Caf&eacute;, send us the advertisement's URL.</p>
+    </div>
+    <h5><a href="/index.html">home</a> | <a href="/cnt/index.html">contents</a> | <a href="/sto/index.html">stories</a> | <a href="/ecg/index.html">ec-group</a> | <a href="/lnk/index.html">links</a> | <a href="/etc/index.html">etc.</a></h5>
+    <img src="/web/art/footer.gif" width="509" alt="Some graphics courtesy of Hoopla! disc, copyright 1995 Image Club Graphics. 1-800-661-9410" height="50">
+    <p><a href="/cnt/contact.html">Send a message to Marc &amp; Tammy Wolfgram</a></p>
+    <table width="610" border="0" cellpadding="0" cellspacing="0">
+      <tr valign="middle">
+        <td width="49" align="center"><img src="/web/cssprint.gif" alt="This page is printer friendly" width="45" height="50" border="0"></td>
+        <td align="center"><h6>Copyright &copy; 1995-2008&mdash;Last changed on
+            <!-- #BeginDate format:Am1 -->June 17, 2008<!-- #EndDate -->
+            &mdash; We comply with the<br> 
+            <a href="/web/20100926142250/http://www.hon.ch/HONcode/Conduct.html" onclick="window.open(this.href); return false;"> HONcode standard for trustworthy health</a> information: <a href="/web/20100926142250/https://www.hon.ch/HONcode/Conduct.html?HONConduct294647" onclick="window.open(this.href); return false;">verify here</a>.</h6></td>
+        <td width="45"><a href="/web/20100926142250/https://www.hon.ch/HONcode/Conduct.html?HONConduct294647" onclick="window.open(this.href); return false;" > <img src="/web/20100926142250im_/https://www.hon.ch/HONcode/Seal/HONConduct294647_s.gif" width="49" height="72" style="border:0px" title="This website is accredited by Health On the Net Foundation. Click to verify." alt="This website is accredited by Health On the Net Foundation. Click to verify." /></a></td>
+      </tr>
+    </table>
+  </div>
+  <img id="cafe_screen_footer" src="/web/grn/bot.gif"> </div>
+<map name="Map">
+  <area shape="rect" coords="240,113,286,143" href="/index.html" alt="Home">
+  <area shape="rect" coords="297,113,367,143" href="/cnt/index.html" alt="Contents">
+  <area shape="rect" coords="376,113,434,143" href="/sto/index.html" alt="Stories">
+  <area shape="rect" coords="443,113,516,143" href="/ecg/index.html" alt="EC-Group">
+  <area shape="rect" coords="527,113,574,143" href="/lnk/index.html" alt="Links">
+  <area shape="rect" coords="583,113,613,143" href="/etc/index.html" alt="Etcetera">
+</map>
+</body>
+<!-- #EndTemplate --></html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 14:22:50 Sep 26, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 18:07:01 Dec 18, 2013.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

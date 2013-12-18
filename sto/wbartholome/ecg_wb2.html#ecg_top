@@ -1,0 +1,422 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><!-- #BeginTemplate "/Templates/cafe_lavender_wbecg.dwt" --><!-- DW6 -->
+<head>
+
+<script type="text/javascript" src="/static/js/analytics.js" ></script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+
+<!-- #BeginEditable "doctitle" -->
+<title>Cathy's EC Caf&eacute; - Bartholome - April, 1998</title>
+<!-- #EndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="Cathy's Esophageal Cancer Cafe -- Providing information on esophageal cancer to patients and caregivers.">
+<meta name="Keywords" content="esophagus, gerd, oesophasgus, ec, barretts, adenocarcinoma, squamous, ec-group, cancer, support, health, medical, patient, caregiver, ecaa, acor, esophagectomy, esophageal, oesophageal, ec cafe">
+<link rel="stylesheet" href="/web/20100926140454cs_/http://eccafe.org/cafe.css" type="text/css" media="screen">
+
+<style type="text/css">
+<!--
+.bodyback {
+	background-image: url(../../web/lav/bgd.gif);
+	background-repeat: repeat-y;
+}
+-->
+</style>
+<link rel="stylesheet" href="/web/20100926140454cs_/http://eccafe.org/cafe_prt.css" type="text/css" media="print">
+<!-- #BeginEditable "head" --><!-- #EndEditable -->
+</head>
+<body>
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script> if (window.archive_analytics) { window.archive_analytics.values['server_name']="wwwb-app17.us.archive.org";}; </script>
+
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1388534399999;
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http:\/\/eccafe.org\/sto\/wbartholome\/ecg_wb2.html";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth = 450;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "26";
+var displayMonth = "Sep";
+var displayYear = "2010";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" lang="en" class="__wb_banner_div" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px">
+
+
+<div id="wm-ipp-inside" class="__wb_banner_div" style="position:fixed;padding:0!important;margin:0!important;width:97%;min-width:780px;border:5px solid #000;border-top:none;background-image:url(/static/images/toolbar/wm_tb_bk_trns.png);text-align:center;-moz-box-shadow:1px 1px 3px #333;-webkit-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333;font-size:11px!important;font-family:'Lucida Grande','Arial',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://eccafe.org/sto/wbartholome/ecg_wb2.html" style="width:400px;font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20100926140454" /><input type="submit" value="Go" style="font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;margin-left:5px;width: inherit !important" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:'Helvetica','Lucida Grande','Arial',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20080724015712/http://www.eccafe.org/sto/wbartholome/ecg_wb2.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="24 Jul 2008"><strong>JUL</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 14:04:54 Sep 26, 2010">SEP</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20101122173456/http://eccafe.org/sto/wbartholome/ecg_wb2.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="22 Nov 2010"><strong>NOV</strong></a>
+		                
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/web/20080724015712/http://www.eccafe.org/sto/wbartholome/ecg_wb2.html" title="1:57:12 Jul 24, 2008" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 14:04:54 Sep 26, 2010">26</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/web/20101122173456/http://eccafe.org/sto/wbartholome/ecg_wb2.html" title="17:34:56 Nov 22, 2010" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0"/></a>
+		                
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20080724015712/http://www.eccafe.org/sto/wbartholome/ecg_wb2.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="24 Jul 2008"><strong>2008</strong></a>
+		                
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 14:04:54 Sep 26, 2010">2010</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       2011
+                       
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="/web/20100926140454*/http://eccafe.org/sto/wbartholome/ecg_wb2.html" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>21 captures</strong></a>
+           <div class="__wb_banner_div" style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">29 Mar 03 - 16 Dec 10</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:450px;height:27px;" href="" id="wm-graph-anchor">
+       <div class="__wb_banner_div" id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:450px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers('inline');" 
+				onmouseout="showTrackers('none');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="450"
+				height="27"
+				border="0"
+				src="/web/jsp/graph.jsp?graphdata=450_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:001100110001_2004:-1:010010010101_2005:-1:011100000000_2006:-1:000010002000_2007:-1:000000001000_2008:-1:000000100000_2009:-1:000000000000_2010:8:000000001011_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="/static/images/toolbar/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="/static/images/toolbar/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById('wm-ipp').style.display='none';" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_close.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;margin-bottom:23px;background-color:transparent;border:none;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_help.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;background-color:transparent;border:none;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<div id="cafebody" class="bodyback">
+  <div align="center"><img id="cafe_print_header"src="/web/20100926140454im_/http://eccafe.org/web/print_header.jpg" width="504" height="72"></div>
+  <img id="cafe_screen_header" src="/web/20100926140454im_/http://eccafe.org/web/lav/top.gif" usemap="#Map" border="0" alt="Cathy's EC Cafe">
+  <div id="cafemain"> <a name="ecg_top"></a>
+            <h1 align="center"><a href="/web/20100926140454/http://eccafe.org/sto/wbartholome/index.html">William G. Bartholome, MD, MTS</a></h1>
+            <h2 align="center">ACOR EC-Group Posts: <!-- #BeginEditable "ecg_date" -->April, 1998<!-- #EndEditable --></h2>
+            <p align="center"><strong>1998 ACOR EC-Group Posts: <a href="/web/20100926140454/http://eccafe.org/sto/wbartholome/ecg_wb1.html">Mar</a> | <a href="/web/20100926140454/http://eccafe.org/sto/wbartholome/ecg_wb2.html">Apr</a> | <a href="/web/20100926140454/http://eccafe.org/sto/wbartholome/ecg_wb3.html">May</a> | <a href="/web/20100926140454/http://eccafe.org/sto/wbartholome/ecg_wb4.html">Jun</a> | <a href="/web/20100926140454/http://eccafe.org/sto/wbartholome/ecg_wb5.html">Jul</a> | <a href="/web/20100926140454/http://eccafe.org/sto/wbartholome/ecg_wb6.html">Aug</a> | <a href="/web/20100926140454/http://eccafe.org/sto/wbartholome/ecg_wb7.html">Sep</a><br>
+              <a href="/web/20100926140454/http://eccafe.org/sto/wbartholome/ecg_wb8.html">Oct</a> | <a href="/web/20100926140454/http://eccafe.org/sto/wbartholome/ecg_wb9.html">Nov</a> | <a href="/web/20100926140454/http://eccafe.org/sto/wbartholome/ecg_wb10.html">Dec</a> | 1999 Posts: <a href="/web/20100926140454/http://eccafe.org/sto/wbartholome/ecg_wb11.html">Jan</a> | <a href="/web/20100926140454/http://eccafe.org/sto/wbartholome/ecg_wb12.html">Feb</a> | <a href="/web/20100926140454/http://eccafe.org/sto/wbartholome/ecg_wb13.html">Mar</a> | <a href="/web/20100926140454/http://eccafe.org/sto/wbartholome/ecg_wb14.html">Apr</a> | <a href="/web/20100926140454/http://eccafe.org/sto/wbartholome/ecg_wb15.html">May</a> | <a href="/web/20100926140454/http://eccafe.org/sto/wbartholome/ecg_wb16.html">Jun</a></strong></p>
+            <hr>
+            <!-- #BeginEditable "ecg_body" -->
+                  <p> <b>Date:</b> Wed, 1 Apr 1998 08:46:07 <br>
+                    <b>Subject:</b> "...the wonder of everything..." </p>
+                  <p>Gwen writes: "...we enjoy life with a greatly heightened sensitivity to the wonder of everything." </p>
+                  <p>One of the most powerful aspects of "living in the present" [What I call "living with mortality" or "living in the light of death"] is the experience Gwen describes. To be able to open my eyes and ears and mind/heart to the miracle of absolutely everything...at any time...in any place is indeed one of the many "blessings" that come with a life-threatening illness. I find it almost impossible to describe to people how much more alive I am than I have ever been before...how much more aware I am of everything that goes on around me...how much more electric are each and every encounter I have with the people...the animals...the trees...the rocks that populate this magical place. And, I cannot do more than point and weep with joy with the coming of this most magic of all times...this explosion of life and beauty we call spring. </p>
+                  <p>Found someone who says it much more beautifully than I can.
+                  <p align="center"><b>Miracles</b> <br>
+                    by Walt Whitman
+                  <p align="center">Why, who makes much of a miracle? <br>
+                    As to me I know of nothing else but miracles, <br>
+                    Whether I walk the streets of Manhattan, <br>
+                    Or dart my sight over the roofs of houses toward the sly, <br>
+                    Or wade with naked feet along the beach just in the edge of the water, <br>
+                    Or stand under trees in the woods. <br>
+                    Or talk by day with any one I love, or sleep in the bed at night with any one I love, <br>
+                    Or sit at table at dinner with the rest, <br>
+                    Or look at strangers opposite me riding in the car, <br>
+                    Or watch honey-bees busy around the hive of a summer forenoon, <br>
+                    Or animals feeding in the fields, <br>
+                    Or birds, or the wonderfulness of insects in the air, <br>
+                    Or the exquisite delicate thin curve of the new moon in spring; <br>
+                    These with the rest, one and all, are to me miracles, <br>
+                    The whole referring, yet each distinct and in its place.
+                  <p align="center">To me every hour of the light and dark is a miracle, <br>
+                    Every cubic inch of space is a miracle, <br>
+                    Every square yard of the surface of the earth is spread with the same, <br>
+                    Every foot of the interior swarms with the same.
+                  <p align="center">To me the sea is a continual miracle, <br>
+                    The fishes that swim--the rocks---the motion of the waves-- <br>
+                    the ships with men in them, <br>
+                    What stranger miracles are there? </p>
+                  <p>bill bartholome </p>
+                  <hr>
+                  <p><b>Date:</b> Mon, 6 Apr 1998 10:17:25 <br>
+                    <b>Subject:</b> Frank and "doctors who tell patients that they are going to die" </p>
+                  <p>Frank, </p>
+                  <p>Since I am a physician who has incorporated care of the dying into my work for over 25 years; and am now devoting whatever time I have left to teaching, scholarly work and practice in palliative/hospice medicine, I MUST respond to your post. </p>
+                  <p>Throughout the history of medicine (up till the 2nd half of the 20th century], patients and physicians engaged in what I call "the ritual of warning." Citizens depended on their physicians to "fire this shot across the bow" of their lives. You have all seen this in films and read about it in novels. Patient and "significant other" on one side of large desk; darkened room; a few diplomas on the wall; no flowers. Doctor sits at desk going through papers. Patient is slumped forward in chair. Finally, the doctor looks up at patient and says something like: "Frank, the last round of tests was not good. In fact, the news is rather bad. And, it is my duty as your doctor to tell you....that it is time for you to put your affairs in order." </p>
+                  <p>Given the prognosis of EC, particularly given the prognosis of EC that is more extensive at the time of diagnosis, I feel very strongly that any physician making the diagnosis of EC-- particularly in an elderly patient who has other significant health related problems that might worsen prognosis--has an ethical obligation to engage in this important ritual with her patient. I teach medical students and residents that this is an incredibly important part of what they owe to their patients. Unfortunately, under the influence of specialization; AND the loss of continuity with one primary care physician; AND the "wonders of modern medicine" that we have seen in the last half century this TASK of the physician got lost in the shuffle or fell thru the cracks. The result is that the majority of Americans who die each year have NOT been told by any physician that it was time for them to "get their affairs in order"...they die without ever having been treated as a dying person...they die "robbed of the opportunity </p>
+                  <p>of living a last chapter" of their lives. I regard this as a tragedy of major proportions. </p>
+                  <p>Getting one's affairs in order is seen by members of an aging- and death-denying culture as morbid...as negative...as a real bummer. IT NEED NOT BE THIS KIND OF EXPERIENCE AT ALL!!! In fact, there is abundant evidence to suggest that people who do this in a systematic way when facing a life-threatening illness are actually LIBERATED to focus attention on dealing with their illnesses. NOT FACING DEATH actually costs us a tremendous amount of energy in the long run...actually cuts us off from one of the most important sources of meaning in our lives. To have a life-threatening illness and continue to operate as if "nothing has really happened in my life," is to take lots of risks. It involves risking being irresponsible about preparing for one's own death (dumping this responsibility on grieving relatives]. It involves exposing oneself to a wide variety of rarely or marginally beneficial treatments (get the side effects of the treatment without the benefit]. It involves not "waking up" to the possibility of living in the present...living life as intensely as it can be lived for as long as one has. I could go on listing these benefits of knowing. I have actually compiled a list of over twenty reasons. </p>
+                  <p>We need to know when we are facing a life-threatening illness...we need to know when our physicians feel that our disease is likely to result in our death (so called "terminal diseases" or "a terminal condition). The vast majority of Americans want physicians who will be straight and honest with them. They want physicians who will take responsibility for engaging in the "ritual of warning" with them. And, most people who have the time to work through the "anticipatory mourning" or "grief work" that follows such a warning, actually experience this "wake up call" as a very valuable thing. <br>
+                    bill bartholome </p>
+                  <hr>
+                  <p><b>Date:</b> Wed, 8 Apr 1998 12:20:34 <br>
+                    <b>Subject:</b> Responses to "Ritual of Warning" </p>
+                  <p>Well....I guess I stirred up quite a hornets nest with my post. I want to respond to Frank first....then to Al and Diana. </p>
+                  <p>Frank, in your post you write "BUT THEY (doctors) SHOULD NOT TELL THEM THEY ARE GOING TO DIE." Interesting. First, we are all going to die and don't need anyone to tell us that...all possible futures for all humans lead to death...you can't get out of life alive. Second, no one knows when they are going to die. Clearly no doctor knows when his/her patient is going to die. Third, the whole idea behind the category of "terminal illness" is that we need our docs to engage in this "ritual of warning" whenever we get one of these. When a doctor says: "It's time to get your affairs in order," he/she is also saying: "It is my judgement that you have acquired/developed a terminal illness...i.e. a process that is very likely to result in your death in the not too distant future." What that information is taken to mean in terms of the person's mortality and death is a very separate question. </p>
+                  <p>The second paragraph of your post reflects a very interesting tendency on the part of Americans who are told by physicians that they have a terminal illness. Many of us...when we hear this warning...not only seek out second opinions (a very good thing to do), but actually seek out doctors who will treat us with the most aggressive treatments available or even treat us with experimental treatments in spite of the prognosis of our disease. In our health care non-system it has almost always been the case that patients could find someone who would try some type of curative treatment regardless of the odds against that treatment working. {Please note that in the era of managed care this will change dramatically, esp. where experimental treatments are involved) I think that this points out the important difference between having a "terminal disease/illness" and choosing to be treated as a dying person. Many Americans defer the decision to be treated as dying persons until the very last days of their lives. In fact, the majority of Americans who die every year never "wear the label dying"...never have the experience of living in the last chapter of their lives. Less that 15% of Americans ever get "hospice care" and at least a third of all hospice patients start this care within the last week of their lives. For people like us...people with cancer...that often means that we end up living lives dominated by doctors and anti-cancer treatments (and all the costs and burdens involved with having "modern medicine" involved in our lives) until the day we die. We (and our physicians) "rob" ourselves...deny ourselves the experience of having a last chapter in which doctors and health care play only a supporting role...a palliative care or hospice care role. We deny ourselves the opportunity of being free of this kind of medical tyranny out of fear that stopping aggressive medical treatment will shorten the time we have left. Yet, there is evidence to suggest that many patients with terminal illnesses that elect palliative or hospice care have not only a better quality of life during their last chapter...but may actually have a longer last chapter! </p>
+                  <p>Al and Diane speak of the EC group as "a place of hope" and of the importance of not "squashing her patient's hopes and spirit to fight." It is very important that we be clear about this business of hope. First of all, there are radically different levels or kinds of "hope." Many of us have a strong "spiritual" or "supernatural kind of hope." It is the "sister" virtue of "faith." We have hope in the Ultimate Source of our existence...hope in God. No doctor can "squash" or "destroy" or "take away" this kind of hope. In fact, those who have it find that when faced with a life-threatening illness, their hope in God is dramatically intensified. This is the hope of miracles. Those with this kind of hope know that there is always "room for miracles" in our lives since someone other than ourself is ultimately the Waymaker. There is also something that might be called "natural hope"...hope for a good outcome...hope that we will be O.K. regardless of what comes our way. People who discover that they have a life-threatening illness often feel that this kind of hope is threatened...and indeed disease is a very threatening kind of process. But, even at this level we need to be clear that helping a patient to maintain hope does not require that the patient be involved in a "war" or "battle" against a disease...does not require--to give a very specific example, that people with metastatic EC be receiving anti-cancer treatment at all. In fact, doing battle against the beast is clearly only one way in which people with metastatic EC might choose to respond to their situation in a hopeful way. I would argue, for example, that even persons with wide-spread EC or recurrence of EC who elect to be given only palliative or hospice caring can still have "hope." As my physicians told me, "somebody wins the lottery." And, such persons can also have the very precious "hope" that they and their families will experience a rich and rewarding last chapter...and a dignified and peaceful death. </p>
+                  <p>In his post, Al speaks of "...anecdotes of remarkable defiance of the sentence of "clearly terminal." Please note the word "sentence." When a physician tells a patient that he/she has a terminal illness, there is no sentencing involved. In fact, we need to carefully distinguish between "prediction" and "prognosis." Doctors cannot "predict" the future of any particular patient. They can (and have become much more sophisticated in their ability) give patients a very accurate "prognosis." Obviously, this raises the issue of statistics and how hard it is to explain and to understand "statistical judgements." But, it is important to remember that docs to not have access to crystal balls. </p>
+                  <p>Al also states: "I have no idea how I could develop the sense to look into someone's heart and guess how much they want to know and when they want to know it. Let alone how to tell them." As a person who has devoted his entire adult life to teaching health care students and practicing medicine, this is exactly why they call the practice of medicine (and nursing and all the other health care practices) an "art." It is not an applied science. To take the scientifically-based judgement that a person has a terminal illness and assist the patient to develop an awareness of what that might mean in terms of their on-going life is an art. I assume that human beings want to know what is going on with them. I assume that anything I think I know about my patient is something that my patient has a need...if not a right to know. HOW I go about assisting this person in a coming-to-awareness and assist that person in "constructing and discovering" the meaning that such information has for them and their lives is what I (and they) struggle with. For me, this is an all-too-real struggle since all the terminally ill patients I work with are children. </p>
+                  <p>This post is too long for responding to Al's challenge re the "benefits of knowing" or what I call "the benefits of wearing the label dying." I will post my list of these reasons some other day. </p>
+                  <p>Peace, <br>
+                    bill bartholome </p>
+                  <hr>
+                  <p><b>Date:</b> Thu, 23 Apr 1998 18:19:03 <br>
+                    <b>Subject:</b> Psychological/Spiritual Adjustment to Living with EC </p>
+                  <p>It is with a good bit of trepidation that I again write to "put in my two cents worth" in response to a number of members who have written about the psych/socio/spiritual side of living with EC. </p>
+                  <p>I am resisting my desire to respond to all the individual responses that were sent directly to me or posted on the listserv relating to my views of the physician's obligation to engage in a "ritual of warning' with patients who are dealing with life-threatening illness. I do want to respond to one observation, however. Several of you felt that I was attempting to "preach" to the group...to tell you what I felt was "the right way" of dealing with this business of mortality. A short explanation is in order. Following my training in medicine, I took a fellowship in medical ethics during the early years of the bioethics movement (l974-76). Since that time I have undertaken what is often called "hybrid" or "cross-disciplinary" scholarship and teaching in an area that combines medicine (particularly my chosen field of pediatrics) with philosophy, esp. ethics. So, almost all of my work...even the short stories and "meditations" that I have written recently...deal with basic questions of right and wrong...good and bad. I do ethics. So, sounding "preachy" is an occupation hazard of people who do the kind of work that I do. It's just a part of who I have become. Doing ethics is kind of like doing ministry in the sense that it involves a willingness to expose oneself to "transformation." However, I would quickly add that dealing with illness has the same power.. the power to transform the lives of us mere mortals...often to transform our lives in ways that we never imagined possible. An illness like cancer can "grow a person up" in often incredible ways. (Some of these hugely "growed" people accept responsibility for creating and maintaining this listserve so that others may benefit from their experience and wisdom) </p>
+                  <p>Although I will continue to "recommend" that one of the key issues in adjusting to living life with a life-threatening cancer is what might be called "death work"...a sustained and disciplined examination of what it means to be living with mortality (a particularly important kind of work for people who live in one of the most age- and death-denying societies on the globe), I will also commend other less threatening issues for examination. </p>
+                  <p>One of these is the problem of living with pervasive uncertainty about one's future...living under the preverbal Sword of Damocles (one of the symbols of the American Cancer Society). Most of us have to live with this day-after-day sense that we are waiting for the "other shoe to fall" in some basic existential sense. This is basically the problem of living without a core sense of personal security. Is this possible? How can this be done? </p>
+                  <p>One of the most helpful meditations I have ever run into on this issue of security was written by Helen Keller in l940. It's from her book "Let Us Have Faith."
+                  <p align="center">Security is mostly a superstition. <br>
+                    It does not exist in nature, <br>
+                    nor do the children of men as a whole experience it. <br>
+                    Avoiding danger is no safer in the long run than outright exposure. <br>
+                    Life is either a daring adventure, or nothing. <br>
+                    To keep our faces toward change and <br>
+                    behave like free spirits in the presence of fate <br>
+                    is strength undefeatable. </p>
+                  <p>I have this meditation on the door of my office. I also have a framed version of it hanging on the wall just outside our bedroom where I see it (and stop to read it) on a regular basis. Read it once a day for the next week. Let it surface and re-surface in your thoughts. I think there is considerable wisdom in this little text that we can all use to make this journey a little more possible. </p>
+                  <p>But, as Dennis Miller would quickly add: "But, that's just my opinion. And, I could be wrong." </p>
+                  <p>Take care of your goodness, <br>
+                    bill bartholome</p>
+                  <hr>
+                  <p><b>Date:</b> Fri, 24 Apr 1998 15:59:52 <br>
+                    <b>Subject:</b> "Phases" of Cancer Research Protocols </p>
+                  <p>Phyllis mentions "Phase I trials" in her post. Unfortunately, she also misrepresents such trials as studies that "test drug efficacy." Since many persons in the US with metastatic or non-operable or refractory or recurrent esophageal cancer consider becoming human subjects in cancer trials or cancer research, it is important that we all be very aware of the various "phases" of cancer research. </p>
+                  <p>After a drug has completed animal studies and is ready to be moved to research involving human subjects, studies have to be done to determine what dose of the drug should be used when it is given to humans. In cancer research, it is assumed that the highest dose that a human being can tolerate without serious or intolerable side effects is the dose that should be used. So, that means that the first studies--called Phase I studies--are actually studies designed to evaluate the toxicity of the drug; and to establish the "maximum tolerated dose" of the drug. In order to do this, groups or cohorts of subjects (usually three at a time) are given a dose of the drug. Each subsequent group of three subjects is given the next higher dose of the drug until one group of three experiences intolerable side effects from the drug. Although efficacy (does the drug appear to be working) is often looked for, it is not a purpose of doing a Phase I trial. </p>
+                  <p>The drug then moves into Phase II testing. In Phase II testing, the dose determined in the Phase I study is given to people with various kinds of cancer looking for any evidence of a "response" to the drug. In most cases this means that the tumors in the subject's body "shrink" or "become smaller" as measured on x-rays like CAT scans and MRIs. These studies are also done to get additional information about the toxicity or side effects of the drug. </p>
+                  <p>If a drug shows evidence of what is called "activity" (causes tumors to shrink" for example) in persons with a particular form of cancer, the drug then moves to Phase III testing. In a Phase III trial the new drug (often in combination with other anti-cancer drugs or treatments) is compared to more established drug and/or treatment combinations to see which is more effective and which has the fewest side effects. </p>
+                  <p>Subjects in single drug or agent Phase I studies rarely benefit from taking part in the research. Response or effectiveness of the drug is not being tested. But, Phase I research subjects also rarely experience much in the way of serious side effects unless they are unfortunate enough to be in the last group of subjects admitted into the study, i.e. the group that got the intolerable level of side effects. </p>
+                  <p>Subjects in Phase II studies also rarely benefit from participation. The study usually involves a drug that has never previously been studied in persons with the particular kind of cancer being studied. If there is any evidence of "response," (which rarely occurs in more than 20% of subjects) it is almost always a very short lived response that does little to alter the course of the person's cancer; and never "cures" the cancer. Subjects in Phase II studies usually do have significant side effects to deal with because they are being given high doses of the anti-cancer drug or agent. </p>
+                  <p>Subjects in Phase III studies often benefit from taking part in these studies. It is usually the case that the new combination of treatments being tested ends up being at least as good as the older combination; and, sometimes it is better. The side effects that these subjects experience are usually very similar to the side effects they would experience if they were not research subjects, ie. The normal side effects of getting multiple drugs and, usually, multiple treatments (like surgery + chemotherapy + radiation]. </p>
+                  <p>So, if you agree to participate in a research study, it can make a huge difference which "Phase" of research you take part in. If you don't know, find out. Read consent forms very carefully and ask questions about everything you're not sure you understand. </p>
+                  <p>Being a research subject or, if you like, becoming a guinea pig can involve doing mostly something for the good of other people...people in the future (Phase I studies and Phase II studies] or, it can be doing something that may benefit you and help other people with cancer in the future (most Phase III studies] </p>
+                  <p>But, that's just my opinion. And, I could be wrong. </p>
+                  <p>Peace, <br>
+                    bill</p>
+            <!-- #EndEditable -->
+            <hr>
+            <p align="center"><strong><a href="/web/20100926140454/http://eccafe.org/sto/wbartholome/index.html">William G. Bartholome, MD, MTS</a> | <a href="/web/20100926140454/http://eccafe.org/sto/wbartholome/ecg_wb2.html#ecg_top">Back to Top</a><br>
+              1998 ACOR EC-Group Posts: <a href="/web/20100926140454/http://eccafe.org/sto/wbartholome/ecg_wb1.html">Mar</a> | <a href="/web/20100926140454/http://eccafe.org/sto/wbartholome/ecg_wb2.html">Apr</a> | <a href="/web/20100926140454/http://eccafe.org/sto/wbartholome/ecg_wb3.html">May</a> | <a href="/web/20100926140454/http://eccafe.org/sto/wbartholome/ecg_wb4.html">Jun</a> | <a href="/web/20100926140454/http://eccafe.org/sto/wbartholome/ecg_wb5.html">Jul</a> | <a href="/web/20100926140454/http://eccafe.org/sto/wbartholome/ecg_wb6.html">Aug</a> | <a href="/web/20100926140454/http://eccafe.org/sto/wbartholome/ecg_wb7.html">Sep</a><br>
+              <a href="/web/20100926140454/http://eccafe.org/sto/wbartholome/ecg_wb8.html">Oct</a> | <a href="/web/20100926140454/http://eccafe.org/sto/wbartholome/ecg_wb9.html">Nov</a> | <a href="/web/20100926140454/http://eccafe.org/sto/wbartholome/ecg_wb10.html">Dec</a> | 1999 Posts: <a href="/web/20100926140454/http://eccafe.org/sto/wbartholome/ecg_wb11.html">Jan</a> | <a href="/web/20100926140454/http://eccafe.org/sto/wbartholome/ecg_wb12.html">Feb</a> | <a href="/web/20100926140454/http://eccafe.org/sto/wbartholome/ecg_wb13.html">Mar</a> | <a href="/web/20100926140454/http://eccafe.org/sto/wbartholome/ecg_wb14.html">Apr</a> | <a href="/web/20100926140454/http://eccafe.org/sto/wbartholome/ecg_wb15.html">May</a> | <a href="/web/20100926140454/http://eccafe.org/sto/wbartholome/ecg_wb16.html">Jun</a></strong></p>
+            </div>
+  <img id="cafe_screen_disclaimer" src="/web/20100926140454im_/http://eccafe.org/web/lav/dsc.gif" alt="Information found here is not to be a substitute for professional care.">
+  <div align="center" class="webonly">
+    <div id="cafegoogle">
+      <script type="text/javascript"><!--
+google_ad_client = "pub-2176662973486049";
+google_ad_width = "468";
+google_ad_height = "60";
+google_ad_format = "468x60_as";
+google_ad_type = "text";
+google_ad_channel ="";
+google_color_border = "CCCCCC";
+google_color_bg = "FFFFFF";
+google_color_link = "000000";
+google_color_url = "666666";
+google_color_text = "333333";
+//--></script>
+      <script type="text/javascript"
+  src="/web/20100926140454js_/http://pagead2.googlesyndication.com/pagead/show_ads.js">
+      </script>
+      <br>
+      <p>The above advertisements, provided automatically, are neither selected nor endorsed by us.<br>
+        Some may lead to web sites that provide questionable or controversial medical information.<br>
+        If you encounter advertisements inappropriate for the Caf&eacute;, send us the advertisement's URL.</p>
+    </div>
+    <h5><a href="/web/20100926140454/http://eccafe.org/index.html">home</a> | <a href="/web/20100926140454/http://eccafe.org/cnt/index.html">contents</a> | <a href="/web/20100926140454/http://eccafe.org/sto/index.html">stories</a> | <a href="/web/20100926140454/http://eccafe.org/ecg/index.html">ec-group</a> | <a href="/web/20100926140454/http://eccafe.org/lnk/index.html">links</a> | <a href="/web/20100926140454/http://eccafe.org/etc/index.html">etc.</a></h5>
+    <img src="/web/20100926140454im_/http://eccafe.org/web/art/footer.gif" width="509" alt="Some graphics courtesy of Hoopla! disc, copyright 1995 Image Club Graphics. 1-800-661-9410" height="50">
+    <p><a href="/web/20100926140454/http://eccafe.org/cnt/contact.html">Send a message to Marc &amp; Tammy Wolfgram</a></p>
+    <table width="610" border="0" cellpadding="0" cellspacing="0">
+      <tr valign="middle">
+        <td width="49" align="center"><img src="/web/20100926140454im_/http://eccafe.org/web/cssprint.gif" alt="This page is printer friendly" width="45" height="50" border="0"></td>
+        <td align="center"><h6>Copyright &copy; 1995-2008&mdash;Last changed on
+            <!-- #BeginDate format:Am1 -->June 17, 2008<!-- #EndDate -->
+            &mdash; We comply with the<br> 
+            <a href="/web/20100926140454/http://www.hon.ch/HONcode/Conduct.html" onclick="window.open(this.href); return false;"> HONcode standard for trustworthy health</a> information: <a href="/web/20100926140454/https://www.hon.ch/HONcode/Conduct.html?HONConduct294647" onclick="window.open(this.href); return false;">verify here</a>.</h6></td>
+        <td width="45"><a href="/web/20100926140454/https://www.hon.ch/HONcode/Conduct.html?HONConduct294647" onclick="window.open(this.href); return false;" > <img src="/web/20100926140454im_/https://www.hon.ch/HONcode/Seal/HONConduct294647_s.gif" width="49" height="72" style="border:0px" title="This website is accredited by Health On the Net Foundation. Click to verify." alt="This website is accredited by Health On the Net Foundation. Click to verify." /></a></td>
+      </tr>
+    </table>
+  </div>
+  <img id="cafe_screen_footer" src="/web/20100926140454im_/http://eccafe.org/web/lav/bot.gif"> </div>
+<map name="Map">
+  <area shape="rect" coords="240,113,286,143" href="/web/20100926140454/http://eccafe.org/index.html" alt="Home">
+  <area shape="rect" coords="297,113,367,143" href="/web/20100926140454/http://eccafe.org/cnt/index.html" alt="Contents">
+  <area shape="rect" coords="376,113,434,143" href="/web/20100926140454/http://eccafe.org/sto/index.html" alt="Stories">
+  <area shape="rect" coords="443,113,516,143" href="/web/20100926140454/http://eccafe.org/ecg/index.html" alt="EC-Group">
+  <area shape="rect" coords="527,113,574,143" href="/web/20100926140454/http://eccafe.org/lnk/index.html" alt="Links">
+  <area shape="rect" coords="583,113,613,143" href="/web/20100926140454/http://eccafe.org/etc/index.html" alt="Etcetera">
+</map>
+</body>
+<!-- #EndTemplate --></html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 14:04:54 Sep 26, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 18:09:12 Dec 18, 2013.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

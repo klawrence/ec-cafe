@@ -1,0 +1,423 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><!-- #BeginTemplate "/Templates/cafe_lavender_wbecg.dwt" --><!-- DW6 -->
+<head>
+
+<script type="text/javascript" src="/static/js/analytics.js" ></script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+
+<!-- #BeginEditable "doctitle" -->
+<title>Cathy's EC Caf&eacute; - Bartholome - August, 1998</title>
+<!-- #EndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="Cathy's Esophageal Cancer Cafe -- Providing information on esophageal cancer to patients and caregivers.">
+<meta name="Keywords" content="esophagus, gerd, oesophasgus, ec, barretts, adenocarcinoma, squamous, ec-group, cancer, support, health, medical, patient, caregiver, ecaa, acor, esophagectomy, esophageal, oesophageal, ec cafe">
+<link rel="stylesheet" href="/web/20100926140743cs_/http://eccafe.org/cafe.css" type="text/css" media="screen">
+
+<style type="text/css">
+<!--
+.bodyback {
+	background-image: url(../../web/lav/bgd.gif);
+	background-repeat: repeat-y;
+}
+-->
+</style>
+<link rel="stylesheet" href="/web/20100926140743cs_/http://eccafe.org/cafe_prt.css" type="text/css" media="print">
+<!-- #BeginEditable "head" --><!-- #EndEditable -->
+</head>
+<body>
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script> if (window.archive_analytics) { window.archive_analytics.values['server_name']="wwwb-app12.us.archive.org";}; </script>
+
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1388534399999;
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http:\/\/eccafe.org\/sto\/wbartholome\/ecg_wb6.html";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth = 450;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "26";
+var displayMonth = "Sep";
+var displayYear = "2010";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" lang="en" class="__wb_banner_div" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px">
+
+
+<div id="wm-ipp-inside" class="__wb_banner_div" style="position:fixed;padding:0!important;margin:0!important;width:97%;min-width:780px;border:5px solid #000;border-top:none;background-image:url(/static/images/toolbar/wm_tb_bk_trns.png);text-align:center;-moz-box-shadow:1px 1px 3px #333;-webkit-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333;font-size:11px!important;font-family:'Lucida Grande','Arial',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://eccafe.org/sto/wbartholome/ecg_wb6.html" style="width:400px;font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20100926140743" /><input type="submit" value="Go" style="font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;margin-left:5px;width: inherit !important" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:'Helvetica','Lucida Grande','Arial',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20080724020103/http://www.eccafe.org/sto/wbartholome/ecg_wb6.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="24 Jul 2008"><strong>JUL</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 14:07:43 Sep 26, 2010">SEP</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20101122173508/http://eccafe.org/sto/wbartholome/ecg_wb6.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="22 Nov 2010"><strong>NOV</strong></a>
+		                
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/web/20080724020103/http://www.eccafe.org/sto/wbartholome/ecg_wb6.html" title="2:01:03 Jul 24, 2008" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 14:07:43 Sep 26, 2010">26</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/web/20101122173508/http://eccafe.org/sto/wbartholome/ecg_wb6.html" title="17:35:08 Nov 22, 2010" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0"/></a>
+		                
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20080724020103/http://www.eccafe.org/sto/wbartholome/ecg_wb6.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="24 Jul 2008"><strong>2008</strong></a>
+		                
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 14:07:43 Sep 26, 2010">2010</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       2011
+                       
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="/web/20100926140743*/http://eccafe.org/sto/wbartholome/ecg_wb6.html" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>20 captures</strong></a>
+           <div class="__wb_banner_div" style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">29 Mar 03 - 16 Dec 10</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:450px;height:27px;" href="" id="wm-graph-anchor">
+       <div class="__wb_banner_div" id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:450px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers('inline');" 
+				onmouseout="showTrackers('none');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="450"
+				height="27"
+				border="0"
+				src="/web/jsp/graph.jsp?graphdata=450_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:001100110100_2004:-1:010011000000_2005:-1:011100000000_2006:-1:000010001000_2007:-1:000110001000_2008:-1:000000100000_2009:-1:000000000000_2010:8:000000001011_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="/static/images/toolbar/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="/static/images/toolbar/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById('wm-ipp').style.display='none';" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_close.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;margin-bottom:23px;background-color:transparent;border:none;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_help.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;background-color:transparent;border:none;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<div id="cafebody" class="bodyback">
+  <div align="center"><img id="cafe_print_header"src="/web/20100926140743im_/http://eccafe.org/web/print_header.jpg" width="504" height="72"></div>
+  <img id="cafe_screen_header" src="/web/20100926140743im_/http://eccafe.org/web/lav/top.gif" usemap="#Map" border="0" alt="Cathy's EC Cafe">
+  <div id="cafemain"> <a name="ecg_top"></a>
+            <h1 align="center"><a href="/web/20100926140743/http://eccafe.org/sto/wbartholome/index.html">William G. Bartholome, MD, MTS</a></h1>
+            <h2 align="center">ACOR EC-Group Posts: <!-- #BeginEditable "ecg_date" -->August, 1998<!-- #EndEditable --></h2>
+            <p align="center"><strong>1998 ACOR EC-Group Posts: <a href="/web/20100926140743/http://eccafe.org/sto/wbartholome/ecg_wb1.html">Mar</a> | <a href="/web/20100926140743/http://eccafe.org/sto/wbartholome/ecg_wb2.html">Apr</a> | <a href="/web/20100926140743/http://eccafe.org/sto/wbartholome/ecg_wb3.html">May</a> | <a href="/web/20100926140743/http://eccafe.org/sto/wbartholome/ecg_wb4.html">Jun</a> | <a href="/web/20100926140743/http://eccafe.org/sto/wbartholome/ecg_wb5.html">Jul</a> | <a href="/web/20100926140743/http://eccafe.org/sto/wbartholome/ecg_wb6.html">Aug</a> | <a href="/web/20100926140743/http://eccafe.org/sto/wbartholome/ecg_wb7.html">Sep</a><br>
+              <a href="/web/20100926140743/http://eccafe.org/sto/wbartholome/ecg_wb8.html">Oct</a> | <a href="/web/20100926140743/http://eccafe.org/sto/wbartholome/ecg_wb9.html">Nov</a> | <a href="/web/20100926140743/http://eccafe.org/sto/wbartholome/ecg_wb10.html">Dec</a> | 1999 Posts: <a href="/web/20100926140743/http://eccafe.org/sto/wbartholome/ecg_wb11.html">Jan</a> | <a href="/web/20100926140743/http://eccafe.org/sto/wbartholome/ecg_wb12.html">Feb</a> | <a href="/web/20100926140743/http://eccafe.org/sto/wbartholome/ecg_wb13.html">Mar</a> | <a href="/web/20100926140743/http://eccafe.org/sto/wbartholome/ecg_wb14.html">Apr</a> | <a href="/web/20100926140743/http://eccafe.org/sto/wbartholome/ecg_wb15.html">May</a> | <a href="/web/20100926140743/http://eccafe.org/sto/wbartholome/ecg_wb16.html">Jun</a></strong></p>
+            <hr>
+            <!-- #BeginEditable "ecg_body" -->
+
+                  <p><b>Date</b><b>:</b> Sat, 1 Aug 1998 14:14:24 <br>
+                  <b>Subject:</b> Colleen's Dad and Diana's Dad and sensitive subject</p>
+                  <p>Diana,</p>
+                  <p>Don't know what's going on here. In most circumstances, the chemical and pathological evaluation of the fluid accumulating in the pleural space (around the lung) is the most important information in figuring out what is going on. Would push to get answers on the results of the testing of the "pleural fluid" or "pleural effusion:" chemical testing, cultures, pathological testing, etc. There are literally scores of tests that are run on the fluid. Hope things turn around fast.</p>
+                  <p>Colleen,</p>
+                  <p>Haven't a clue what the remark re "chest bigger than we thought" might have meant. Would ask for explanation of meaning and significance of the comment from the doc who made it. [Love the way docs make these off the cuff remarks. Ugh!] May have meant absolutely nothing. Docs don't seem to understand that their meaningless bantering can be very confusing to people who think they only speak meaningful and important things. Path results do take a few days to get back. The tissue requires special processing and cutting and then a very laborious process of evaluating hundreds of slides. Five to seven days is reasonable time frame. Also, there is no rush to get these results. Nothing is going to be done differently in the short run. In terms of what you can do, the MOST IMPORTANT thing you and the family can do for your Dad is to stay with him, company him. If possible, don't leave him alone. My family maintained a round-the-clock vigil in my room until I told them that I didn't need it anymore. Being alone in a hospital...with tubes in every orifice..unable to even get out of bed to go to the bathroom...pain every time you breathe or, esp. cough. It's the pits. What a person wants most is to have someone they trust in the room with them. It also keeps the staff on their toes to know that they are being watched at all times.</p>
+                  <p>Have been accumulating your very helpful responses related to my question about libido or interest in physical intimacy in the spouse/partner of the "cancerous one." Pam and I are very relieved to know that we are not alone with this set of problems...that we are not "deviant" in what is happening to us. Also appreciate all your kind words and suggestions. Being careful to protect everyone's' identity, I will give you a summary of what we have learned from this group in a few days.</p>
+                  <p>Thanks for being "there" (or is it "here") for us.</p>
+                  <p>Peace,</p>
+                  <p>bill bartholome
+                  <hr>
+                  <p><b>Date:</b> Sun, 2 Aug 1998 14:49:10 <br>
+                    <b>Subject:</b> Susan/Douglas,</p>
+                  <p>Wait for final results on the biopsy. Results not good. Indicate that the treatment did not get rid of all the tumor. The cell type can actually be a mixture of elements: some cells looking like skin cells (squamous) and some cells looking like glandular cells (adenocarcinoma). A cancerous lesion or tumor is often called "squamous" or "adenocarcinoma" on the basis of a preponderance of the cell types in the tumor.</p>
+                  <p>Recurrence of this degree of pain this suddenly requires prompt and complete evaluation, esp. looking for the possibility of spread of the cancer to bone. Treat the pain aggressively. This is one aspect of "aggressive medicine," I can heartily endorse...aggressive pain management. Remember, the biggest obstacle to good pain control will be your man, Douglas. Hound him! Haunt him! Get him to take care of his pain. But, be just as complete in finding out what you are up against. If it's bone tumors, a little radiation can make a HUGE difference in how much this kind of pain has to be endured.</p>
+                  <p>You have every right in the world to feel discouraged. My heart goes out to you.</p>
+                  <p>And in the midst of this discouragement, you were kind enough to offer some reassurance to me and my wife. Your humanity is showing, Susan...thank you for "being here."</p>
+                  <p>Hang in there, esp. to each other. Sounds like there's some rough water ahead and the bear just got back on the raft with you. Just remember, we are all here for you two. Take the little bit of time it takes to let us know what's going on...every day if you can...and, with Ann as our electronic equivalent of a EC Mother Theresa as an example, we'll exchange these incredible stories of life...in the river of cancer.
+                  <p>bill bartholome
+                  <hr>
+                  <p><b>Date:</b> Fri, 7 Aug 1998 10:20:18 <br>
+                    <b>Subject:</b> "35% chance of living 5 years"</p>
+                  <p>We need our "statistics pundints to do an analysis of this useless phrase. I love that it's 35% and not 30% or 40%. Would be more obviously meaningless if it were "34.5%."</p>
+                  <p>Strongly recommend that all of us "cancerous ones" utilize the "calendar system" for living. It is a lot more do-able than living each day as if it was your last...constantly "living in the moment." Leave each birthday as if it were to be your last...each holiday...each spring. Being cancerous...even being "terminal" is a lot like being "mortal"...just a different time frame.</p>
+                  <p>Again, I commend what for Americans is the most counter-intuitive thing imaginable...embrace death...celebrate death...live your life with death on your shoulder..."live in the light of death." Death is a good deal like sugar...it is what gives life it's sweetness. I think we would all lead much more "liberated lives"...much richer lives if we would just "get down" with this mortality business. Cancer offers us the opportunity of dealing with the end of our lives in ways that those Americans walking around thinking of themselves as "temporarily immortal" are denied.</p>
+                  <p>Will be attending the Bartholome Family Reunion at Bowstring Lake in northern Minnesota for the nest week or so. Will not be taking this machine with me! Remember, folks, take care of each other...and take care of your goodness.</p>
+                  <p>Peace,</p>
+                  <p>bill bartholome
+                  <hr>
+                  <p><b>Date:</b> Fri, 21 Aug 1998 10:54:29 <br>
+                    <b>Subject:</b> Reply to posts - Bartholome</p>
+                  <p>Response to Susie re her husband,</p>
+                  <p>While you continue to pursue possible anti-cancer options for your husband, would strongly suggest that you also pursue investigation of the benefits of his becoming a hospice patient, i.e. the benefits and burdens of electing to be given comprehensive, supportive care only...the benefits of "wearing the label dying person." As long-timers on this list know, I am increasingly convinced that far too many Americans with metastatic cancers are being denied (and often denying themselves) the many benefits of this approach to their illnesses. The result is that the last chapter of their lives is often dominated by physicians, hospitals, procedures, drugs and the burdens of pursuing aggressive anti-cancer treatments "to the bitter end." They are robbed (or rob themselves) of the peace and dignity that can be theirs when the last chapter is spent being provided "only intensive caring"...intensive biological, psychological, social and spiritual care. There is nothing to lose in pursuing this option. In fact, it is important to know that patients can actually leave hospice and go back to aggressive anti-cancer treatment if they don't think they are getting what they need from hospice.</p>
+                  <p>Re Karolyn's friend and her pain:</p>
+                  <p>Pain that is the result of damage to a nerve (often called neuropathic or neurogenic pain) is often very difficult to control. Narcotics are often NOT very effective. There are a wide variety of other drugs (egs: nortryptiline, tegretol, gabapentin) and other measures (eg. nerve blocks)that should be investigated. Recommend getting to a pain management specialist, often anesthesiologists or neurologists rather than oncologists.
+                  <p>bill bartholome
+                  <hr>
+                  <p><b>Date:</b> Sat, 22 Aug 1998 10:21:02 <br>
+                    <b>Subject:</b> Re: eating - Bartholome</p>
+                  <p>Liz,</p>
+                  <p>A major source of frustration for members of this list serv has been how few of us have gotten appropriate nutritional counselling following surgery for EC. It is very likely that your friend, Marge, is suffering from a combination of two of the most common side effects of this kind of surgery, namely. what we have come to call "dumping syndrome" and recurrent narrowing (the formation of strictures) at the site of connection between her stomach and the remainder of her esophagus.</p>
+                  <p>A few basic rules might be helpful. First and foremost, she must separate her intake of fluids and solid foods. Almost all of us had problems with the nutritional supplements since they are mostly liquid and move too quickly through the intestine. She should avoid drinking while eating (although tiny sips of liquid might be necessary to help get food stuff "down" into her stomach). She should also eat any food that doesn't "hang up" at the site of stricture formation. My dietician commended that I think of myself as "Pudding Man." I ate so much pudding, yogurt and the like that now the mere site of this stuff sends chills down my spine. For a while, I ate either pudding or yogurt or something of the same consistency 10 to 15 times a day! I also was able to tolerate poached eggs...ate four to six a day. I also ate massive amounts of peanut butter, nuts and seeds. Marge needs to eat constantly ...like a bird. She should eat a little something at least once an hour while she is awake. She should be encouraged to drink before she eats or to wait at least a half hour after eating.</p>
+                  <p>She may continue to need dilation procedures. I had seven of these procedures during the first six months after my surgery. Others have had two or three times that number. A few lucky ones have had none or only one or two. Whether or not a person needs these procedures and the number of procedures means nothing in terms of the cancer.</p>
+                  <p>Stronly suggest you visit our EC Cafe's wonderful resources on what to eat and how to eat following EC surgery. She might also ask her docs to send her to a dietetics and nutrition person who has experience with caring for people following surgery for EC.
+                  <p>Hope this is helpful.
+                  <p>bill bartholome
+                  <hr>
+                  <p><b>Date:</b> Sun, 23 Aug 1998 13:43:09 <br>
+                    <b>Subject:</b> Palliative aspects of surgery - Bartholome</p>
+                  <p>Susan,</p>
+                  <p>Want to second Larry's supportive post to you re surgery for your Dad. Another aspect of surgery that you should think about is the quality of life made possible by the surgery, i.e. the palliative aspects of having esophageal surgery. Although the surgery is anything but a "cake walk" and carries significant risks including a small but very real risk of death, it is very likely that having the surgery will allow your Dad to live longer and live more fully even if it does not "cure" him or rid him of the cancer. (It should also be noted that the risks associated with esophagectomy are dramatically lower that the risks associated with your father's liver surgery.) One of the more obnoxious aspects of esophageal cancer is that growth of the tumor often leads to obstruction of the esophagus. Although there are a wide variety of palliative procedures for obstructing tumors (egs. stints of various kinds; laser treatments; etc), this is often a very debilitating kind of development. Having one's esophagus and "primary tumor" removed decreases the risk that a person with this disease will ever have to deal with this problem.</p>
+                  <p>This was the thinking behind my approach to esophageal cancer since I was Stage IV (metastatic) disease at the time of diagnosis. I think it is also important for you to remember that your father's inability to do chemotherapy (because of his liver transplant) does not necessarily mean that he cannot live a long time with good "quality of life" regardless of whether his cancer can be "cured." The rate at which a person's esophageal cancer grows is highly variable. In some of us, the tumor grows extremely rapidly. Others have had tumors with doubling times measured in years rather than months. It is important to remember that there is a tremendous amount of variability in this disease that is hidden by a focus only on the statistics.
+                  <p>bill bartholome
+                  <hr>
+                  <p><b>Date:</b> Thu, 27 Aug 1998 13:23:51 <br>
+                    <b>Subject:</b> Marge re Ray and Liz</p>
+                  <p>Marge,</p>
+                  <p>The evaluation you describe for your son, Ray, sounds right on target. If it turns out that he has a hiatal hernia and reflux of acid containing material into his esophagus (the Ph study will establish this), he will need at least long-term treatment with drugs to inhibit the secretion of acid. He may eventually need surgery to keep material from refluxing up into the esophagus. It is thought that years and years of reflux lead to the formation of changes in the lining of the esophagus. The lining of the esophagus gradually gets transformed to look a good deal like the lining of the stomach. This is called a Barrett's esophagus. It is now thought that, given a long enough period of time, many people with a Barrett's esophagus will develop adenocarcinoma of the esophagus. So....what is needed is to take care of Ray's hiatal hernia and reflux problems BEFORE he develops a Barrett's esophagus. If he never develops the changes of a Barrett's esophagus, he is very, very unlikely to ever develop the cancer that his dad did. Make sense??</p>
+                  <p>Liz,</p>
+                  <p>The EC CAFE is the web site that is the work of Cathy and Al and Marc and others who maintain BOTH this "EC list serve" (that allows us to communicate with one another) AND a site on the World Wide Web ( a "web site") You need to explore the information and the entire "menu" at our "web site" in addition to engaging in this conversation. You can get to the web site in a wide variety of ways. You can, for example, use a search tool like Netscape to look up information on "esophageal cancer." This will give you our web site and lots of other sites on the web where you can get info re EC. Or you can go to our web site. However, I would recommend that you allow one of our web masters to give you a better set of instructions. You should send a personal e-mail to marc wolfgram at wolfgram@eccafe.org.
+                  <p>bill bartholome
+                  <hr>
+                  <p><b>Date:</b> Fri, 28 Aug 1998 10:41:05 <br>
+                    <b>Subject:</b> Reply to Karen re dry mouth; Jennifer and her heartburn problem</p>
+                  <p>Karen,</p>
+                  <p>There are a wide variety of agents that might help your husband's dry mouth problem including topical anesthetic agents; solutions of Benadryl + antacid solutions; oral morphine solutions and the like. Get the hospice people to ask their pharmacist consultant to prepare several solutions for you to try.</p>
+                  <p>In my mind, the bigger question is that relating to your husband's use of the gastrostomy tube. Given his situation, I would strongly suggest that you discuss with him the option of NOT using that tube. Administration of enteral feeding solutions or even water will dramatically prolong his suffering and dying. Many people mistakenly think that giving nutrition and fluids to people who are dying is "required" or necessary as a matter of comfort care. Nothing could be father from the truth. It is continuing to administer these formulas and fluids that works against the dying person. Dehydration is often a critical part of what is needed in order for us to experience a peaceful death. Suggest that you use G-tube only for medications. Hang in there. Keep demanding that you hospice people respond to your husband's needs (AND your needs) for support during this difficult time.</p>
+                  <p>Jennifer,</p>
+                  <p>If your symptoms persist in spite of the medications you are taking, you should discuss with your gastroenterologist the possibility that you may need surgery to keep stomach contents from refluxing into your esophagus (causing the "heartburn"] You may also want to talk with your docs about some of the newer approaches to treating Barretts's including photodynamic therapy.
+                  <p>bill bartholome
+                  <hr>
+                  <p><b>Date:</b> Sat, 29 Aug 1998 10:30:18 <br>
+                    <b>Subject:</b> Reply to Mary re chemo/j-tube; Sue "getting desperate"</p>
+                  <p>Mary,</p>
+                  <p>The problems you describe are quite common with initial course of many combinations of chemotherapy drugs. Your Bill clearly got the short end of the stick in terms of developing a severe degree of all these complications. However, the j-tube is NOT an intervention without problems of its own. Would NOT push for j-tube until you get a sense of how Bill is going to respond to the next course of Chemo. Many people have less trouble on the second and subsequent courses of Chemo. Hang in there. All the problems you describe are awful, but they are reversible. You may also want to talk to the oncologists about slight reductions in the dose of Chemo for the next go round.</p>
+                  <p>Sue, Read your post. The line that jumps out at me is "getting desperate." Your hubby does not need a wife that is "getting desperate." He needs a wife that will help him remain calm in spite of the very, very hard road that the two of your are facing. People who don't respond to the "front line" chemotherapy drugs for this disease rarely respond to the "second line drugs." People who don't respond to both "front line" drugs AND fail to respond to "second line drugs" almost never respond to less established treatment. And, the odds on significant responses to "experimental" drugs are very, very small indeed.</p>
+                  <p>You and Fred may want to continue to pursue "curative approaches" to his disease. If you do so, you should become increasingly skeptical of any claims that are made about chemotherapy helping him. AND, you should also consider other alternatives. One of the alternatives you should be investigating -- with as much determination and calmness as you can muster--is comprehensive supportive care only, i.e. being provided care by a hospice. It is very likely that your Fred would have a better quality of life and, perhaps, even more time to spend with you and his family if you were to select this option for responding to his obviously highly resistant-to-chemotherapy disease. Knowing what is out there for him (and you) should you chose this option may well help you from feeling so desperate. Hang in there.
+                  <p>bill bartholome
+                  <hr>
+                  <p><b>Date:</b> Sun, 30 Aug 1998 12:24:48 <br>
+                    <b>Subject:</b> Mary re brother's fever</p>
+                  <p>Mary,</p>
+                  <p>Temperature elevation of less that 101.5 is rarely a problem. Your brother's feeling wasted and having no energy probably not secondary to fever, but secondary to radiation and Chemo. Low grade fever is common in persons with cancer. Low grade fever is also common in patients undergoing aggressive radiation therapy and chemotherapy. Antibiotics may or may not help depending on whether or not the fever is related to infection. The gold standard in terms of diagnosis of the cause of fever is usually doing cultures of various parts of the body and bodily fluids to look for evidence of infection.</p>
+                  <p>Although it his highly counterintuitive, if his temperature has been consistently less than 101.5 and there are no other signs or symptoms of infection following careful physical examination and laboratory evaluation, he may want to consider not taking his temperature or at least not taking it so frequently.</p>
+                  <p>Phyllis,</p>
+                  <p>Sorry to hear about your Bill. Don't beat yourself up and don't spend a lot of energy on being angry at the docs. Bill had very extensive disease and may have had a very similar course to his illness regardless of where or how he was treated.</p>
+                  <p>Unlike some members of this list, I have NOT seen evidence of any dramatic changes in outcomes of treatment in patients who have extensive disease at the time of diagnosis (Stage III and IV); and I have seen no evidence of dramatic changes in outcomes of persons who have evidence of progressive disease in spite of aggressive chemotherapy/radiation therapy. In fact, I feel strongly that persons with EC who show evidence of progression of disease in spite of aggressive anti-cancer treatment should be strongly considering supportive or palliative care instead of additional anti-cancer treatment unless they are genuinely motivated to become research subjects in order to benefit people with EC in the future.</p>
+                  <p>I am truly sorry that you and Bill got to hospice so late in the course of his illness; and, that you did not get what you wanted to get from hospice.
+                  <p>bill bartholome
+            <!-- #EndEditable -->
+            <hr>
+            <p align="center"><strong><a href="/web/20100926140743/http://eccafe.org/sto/wbartholome/index.html">William G. Bartholome, MD, MTS</a> | <a href="/web/20100926140743/http://eccafe.org/sto/wbartholome/ecg_wb6.html#ecg_top">Back to Top</a><br>
+              1998 ACOR EC-Group Posts: <a href="/web/20100926140743/http://eccafe.org/sto/wbartholome/ecg_wb1.html">Mar</a> | <a href="/web/20100926140743/http://eccafe.org/sto/wbartholome/ecg_wb2.html">Apr</a> | <a href="/web/20100926140743/http://eccafe.org/sto/wbartholome/ecg_wb3.html">May</a> | <a href="/web/20100926140743/http://eccafe.org/sto/wbartholome/ecg_wb4.html">Jun</a> | <a href="/web/20100926140743/http://eccafe.org/sto/wbartholome/ecg_wb5.html">Jul</a> | <a href="/web/20100926140743/http://eccafe.org/sto/wbartholome/ecg_wb6.html">Aug</a> | <a href="/web/20100926140743/http://eccafe.org/sto/wbartholome/ecg_wb7.html">Sep</a><br>
+              <a href="/web/20100926140743/http://eccafe.org/sto/wbartholome/ecg_wb8.html">Oct</a> | <a href="/web/20100926140743/http://eccafe.org/sto/wbartholome/ecg_wb9.html">Nov</a> | <a href="/web/20100926140743/http://eccafe.org/sto/wbartholome/ecg_wb10.html">Dec</a> | 1999 Posts: <a href="/web/20100926140743/http://eccafe.org/sto/wbartholome/ecg_wb11.html">Jan</a> | <a href="/web/20100926140743/http://eccafe.org/sto/wbartholome/ecg_wb12.html">Feb</a> | <a href="/web/20100926140743/http://eccafe.org/sto/wbartholome/ecg_wb13.html">Mar</a> | <a href="/web/20100926140743/http://eccafe.org/sto/wbartholome/ecg_wb14.html">Apr</a> | <a href="/web/20100926140743/http://eccafe.org/sto/wbartholome/ecg_wb15.html">May</a> | <a href="/web/20100926140743/http://eccafe.org/sto/wbartholome/ecg_wb16.html">Jun</a></strong></p>
+            </div>
+  <img id="cafe_screen_disclaimer" src="/web/20100926140743im_/http://eccafe.org/web/lav/dsc.gif" alt="Information found here is not to be a substitute for professional care.">
+  <div align="center" class="webonly">
+    <div id="cafegoogle">
+      <script type="text/javascript"><!--
+google_ad_client = "pub-2176662973486049";
+google_ad_width = "468";
+google_ad_height = "60";
+google_ad_format = "468x60_as";
+google_ad_type = "text";
+google_ad_channel ="";
+google_color_border = "CCCCCC";
+google_color_bg = "FFFFFF";
+google_color_link = "000000";
+google_color_url = "666666";
+google_color_text = "333333";
+//--></script>
+      <script type="text/javascript"
+  src="/web/20100926140743js_/http://pagead2.googlesyndication.com/pagead/show_ads.js">
+      </script>
+      <br>
+      <p>The above advertisements, provided automatically, are neither selected nor endorsed by us.<br>
+        Some may lead to web sites that provide questionable or controversial medical information.<br>
+        If you encounter advertisements inappropriate for the Caf&eacute;, send us the advertisement's URL.</p>
+    </div>
+    <h5><a href="/web/20100926140743/http://eccafe.org/index.html">home</a> | <a href="/web/20100926140743/http://eccafe.org/cnt/index.html">contents</a> | <a href="/web/20100926140743/http://eccafe.org/sto/index.html">stories</a> | <a href="/web/20100926140743/http://eccafe.org/ecg/index.html">ec-group</a> | <a href="/web/20100926140743/http://eccafe.org/lnk/index.html">links</a> | <a href="/web/20100926140743/http://eccafe.org/etc/index.html">etc.</a></h5>
+    <img src="/web/20100926140743im_/http://eccafe.org/web/art/footer.gif" width="509" alt="Some graphics courtesy of Hoopla! disc, copyright 1995 Image Club Graphics. 1-800-661-9410" height="50">
+    <p><a href="/web/20100926140743/http://eccafe.org/cnt/contact.html">Send a message to Marc &amp; Tammy Wolfgram</a></p>
+    <table width="610" border="0" cellpadding="0" cellspacing="0">
+      <tr valign="middle">
+        <td width="49" align="center"><img src="/web/20100926140743im_/http://eccafe.org/web/cssprint.gif" alt="This page is printer friendly" width="45" height="50" border="0"></td>
+        <td align="center"><h6>Copyright &copy; 1995-2008&mdash;Last changed on
+            <!-- #BeginDate format:Am1 -->June 17, 2008<!-- #EndDate -->
+            &mdash; We comply with the<br> 
+            <a href="/web/20100926140743/http://www.hon.ch/HONcode/Conduct.html" onclick="window.open(this.href); return false;"> HONcode standard for trustworthy health</a> information: <a href="/web/20100926140743/https://www.hon.ch/HONcode/Conduct.html?HONConduct294647" onclick="window.open(this.href); return false;">verify here</a>.</h6></td>
+        <td width="45"><a href="/web/20100926140743/https://www.hon.ch/HONcode/Conduct.html?HONConduct294647" onclick="window.open(this.href); return false;" > <img src="/web/20100926140743im_/https://www.hon.ch/HONcode/Seal/HONConduct294647_s.gif" width="49" height="72" style="border:0px" title="This website is accredited by Health On the Net Foundation. Click to verify." alt="This website is accredited by Health On the Net Foundation. Click to verify." /></a></td>
+      </tr>
+    </table>
+  </div>
+  <img id="cafe_screen_footer" src="/web/20100926140743im_/http://eccafe.org/web/lav/bot.gif"> </div>
+<map name="Map">
+  <area shape="rect" coords="240,113,286,143" href="/web/20100926140743/http://eccafe.org/index.html" alt="Home">
+  <area shape="rect" coords="297,113,367,143" href="/web/20100926140743/http://eccafe.org/cnt/index.html" alt="Contents">
+  <area shape="rect" coords="376,113,434,143" href="/web/20100926140743/http://eccafe.org/sto/index.html" alt="Stories">
+  <area shape="rect" coords="443,113,516,143" href="/web/20100926140743/http://eccafe.org/ecg/index.html" alt="EC-Group">
+  <area shape="rect" coords="527,113,574,143" href="/web/20100926140743/http://eccafe.org/lnk/index.html" alt="Links">
+  <area shape="rect" coords="583,113,613,143" href="/web/20100926140743/http://eccafe.org/etc/index.html" alt="Etcetera">
+</map>
+</body>
+<!-- #EndTemplate --></html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 14:07:43 Sep 26, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 18:09:07 Dec 18, 2013.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

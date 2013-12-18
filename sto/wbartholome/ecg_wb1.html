@@ -1,0 +1,404 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><!-- #BeginTemplate "/Templates/cafe_lavender_wbecg.dwt" --><!-- DW6 -->
+<head>
+
+<script type="text/javascript" src="/static/js/analytics.js" ></script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+
+<!-- #BeginEditable "doctitle" -->
+<title>Cathy's EC Caf&eacute; - Batholome - March, 1998</title>
+<!-- #EndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="Cathy's Esophageal Cancer Cafe -- Providing information on esophageal cancer to patients and caregivers.">
+<meta name="Keywords" content="esophagus, gerd, oesophasgus, ec, barretts, adenocarcinoma, squamous, ec-group, cancer, support, health, medical, patient, caregiver, ecaa, acor, esophagectomy, esophageal, oesophageal, ec cafe">
+<link rel="stylesheet" href="/cafe.css" type="text/css" media="screen">
+
+<style type="text/css">
+<!--
+.bodyback {
+	background-image: url(../../web/lav/bgd.gif);
+	background-repeat: repeat-y;
+}
+-->
+</style>
+<link rel="stylesheet" href="/cafe_prt.css" type="text/css" media="print">
+<!-- #BeginEditable "head" --><!-- #EndEditable -->
+</head>
+<body>
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script> if (window.archive_analytics) { window.archive_analytics.values['server_name']="wwwb-app13.us.archive.org";}; </script>
+
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1388534399999;
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http:\/\/eccafe.org\/sto\/wbartholome\/ecg_wb1.html";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth = 450;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "26";
+var displayMonth = "Sep";
+var displayYear = "2010";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" lang="en" class="__wb_banner_div" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px">
+
+
+<div id="wm-ipp-inside" class="__wb_banner_div" style="position:fixed;padding:0!important;margin:0!important;width:97%;min-width:780px;border:5px solid #000;border-top:none;background-image:url(/static/images/toolbar/wm_tb_bk_trns.png);text-align:center;-moz-box-shadow:1px 1px 3px #333;-webkit-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333;font-size:11px!important;font-family:'Lucida Grande','Arial',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://eccafe.org/sto/wbartholome/ecg_wb1.html" style="width:400px;font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20100926140901" /><input type="submit" value="Go" style="font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;margin-left:5px;width: inherit !important" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:'Helvetica','Lucida Grande','Arial',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/sto/wbartholome/ecg_wb1.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="24 Jul 2008"><strong>JUL</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 14:09:01 Sep 26, 2010">SEP</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/sto/wbartholome/ecg_wb1.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="22 Nov 2010"><strong>NOV</strong></a>
+		                
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/sto/wbartholome/ecg_wb1.html" title="1:57:04 Jul 24, 2008" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 14:09:01 Sep 26, 2010">26</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/sto/wbartholome/ecg_wb1.html" title="17:38:32 Nov 22, 2010" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0"/></a>
+		                
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/sto/wbartholome/ecg_wb1.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="24 Jul 2008"><strong>2008</strong></a>
+		                
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 14:09:01 Sep 26, 2010">2010</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       2011
+                       
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="/sto/wbartholome/ecg_wb1.html" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>23 captures</strong></a>
+           <div class="__wb_banner_div" style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">4 Apr 03 - 16 Dec 10</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:450px;height:27px;" href="" id="wm-graph-anchor">
+       <div class="__wb_banner_div" id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:450px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers('inline');" 
+				onmouseout="showTrackers('none');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="450"
+				height="27"
+				border="0"
+				src="/web/jsp/graph.jsp?graphdata=450_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000100110101_2004:-1:010011010101_2005:-1:011100001000_2006:-1:000000002000_2007:-1:000100001000_2008:-1:000000100000_2009:-1:000000000000_2010:8:000000001011_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="/static/images/toolbar/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="/static/images/toolbar/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById('wm-ipp').style.display='none';" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_close.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;margin-bottom:23px;background-color:transparent;border:none;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_help.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;background-color:transparent;border:none;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<div id="cafebody" class="bodyback">
+  <div align="center"><img id="cafe_print_header"src="/web/print_header.jpg" width="504" height="72"></div>
+  <img id="cafe_screen_header" src="/web/lav/top.gif" usemap="#Map" border="0" alt="Cathy's EC Cafe">
+  <div id="cafemain"> <a name="ecg_top"></a>
+            <h1 align="center"><a href="/sto/wbartholome/index.html">William G. Bartholome, MD, MTS</a></h1>
+            <h2 align="center">ACOR EC-Group Posts: <!-- #BeginEditable "ecg_date" -->March, 1998<!-- #EndEditable --></h2>
+            <p align="center"><strong>1998 ACOR EC-Group Posts: <a href="/sto/wbartholome/ecg_wb1.html">Mar</a> | <a href="/sto/wbartholome/ecg_wb2.html">Apr</a> | <a href="/sto/wbartholome/ecg_wb3.html">May</a> | <a href="/sto/wbartholome/ecg_wb4.html">Jun</a> | <a href="/sto/wbartholome/ecg_wb5.html">Jul</a> | <a href="/sto/wbartholome/ecg_wb6.html">Aug</a> | <a href="/sto/wbartholome/ecg_wb7.html">Sep</a><br>
+              <a href="/sto/wbartholome/ecg_wb8.html">Oct</a> | <a href="/sto/wbartholome/ecg_wb9.html">Nov</a> | <a href="/sto/wbartholome/ecg_wb10.html">Dec</a> | 1999 Posts: <a href="/sto/wbartholome/ecg_wb11.html">Jan</a> | <a href="/sto/wbartholome/ecg_wb12.html">Feb</a> | <a href="/sto/wbartholome/ecg_wb13.html">Mar</a> | <a href="/sto/wbartholome/ecg_wb14.html">Apr</a> | <a href="/sto/wbartholome/ecg_wb15.html">May</a> | <a href="/sto/wbartholome/ecg_wb16.html">Jun</a></strong></p>
+            <hr>
+            <!-- #BeginEditable "ecg_body" -->
+            <p><em>What follows are the e-mail posts that Dr. Bill sent to the  EC-Group over the sixteen months  he contributed to that ACOR list. These are reproduce here with Bill's express permission. Other than removing any last names (to provide some degree of anonymity for others) and minor cleanup of the formatting from &quot;plain text&quot; messages, the content is unaltered from his original messages.<br>
+&mdash; Marc Wolfgram </em></p>
+            <hr>
+            <p><b>Date:</b> Fri, 13 Mar 1998 17:15:04 <br>
+              <b>Subject:</b> First Post </p>
+            <p>[WARNING: LONG post by first time flyer] </p>
+            <p>Greetings and Salutations. (As Charlotte said to Wilbur) </p>
+            <p>Got info re this group from one of your fellow subscribers, Sam Haskins from Lawrence, KS. As you know, her dad has esophageal cancer. </p>
+            <p>My name is Bill Bartholome. I live in Kansas City, Missouri with my wife Pam and, on weekends, my youngest daughter, Claire (age 16). I have two older daughters, Bridget (age 28) and Sheila (age 26) My wife has a son, Ian, who is also 26. We share our home with a canine daughter, Lucy (age 2). </p>
+            <p>I first suspected I had esophageal cancer after I had a dream about one of my mentors who died of esophageal cancer. I had never previously dreamt about him and it freaked me out. I also had the experience of having food "hang up" in my throat several times, esp. beagles. When I told the doctor I was seeing that I was worried that I had esophageal cancer, he laughed and shared with me his own cancer phobias. He felt very strongly that a healthy, 51 year old man was not a good candidate for this disease. But, he humored me and I got my UGI. I have a very vivid memory of watching the dark column of barium slide down my esophagus on the screen of the x-ray machine. I noticed right away that there was an irregular "bite" in the otherwise smooth column of barium just as it entered my stomach. I said to myself: "There is a fungating mass in the distal esophagus of this patient." I talked that funny way to myself because I am a doctor and am used to speaking in "medspeak." Another voice from somewhere inside of me, immediately corrected me: "That's YOUR esophagus, stupid!" Well, I had my endoscopy and biopsy within 24hrs (things happen very fast when you are a "Professor" on the faculty of a medical school.] By the end of the week, I had the complete picture: "Stage IV Adenocarcinoma of the esophagus with extension into adjacent structures; local lymph nodes; and a solitary nodule in the liver." Not a pretty picture. I was able to convince a couple of my friends who are surgeons to undertake what we called "radical palliative surgery." We assumed that my disease could not be cured, but that by removing all evidence of the disease, I would have the longest time and the least amount of symptoms related to my disease. So, in June of 1994, I had my esophagus removed, all the lymph nodes they could find in my chest and a large portion of my liver. My stomach was resected, converted into a tube-like structure and pulled up through my diaphragm to replace my now missing esophagus. This was my first experience as a hospitalized patient, my first experience with an operation and it was horrible beyond my wildest dreams. I managed to get myself out of the hospital in 11 days! After surgery, my doctor friends and I consulted with cancer doctors all over the US; and decided that there was no evidence that any additional treatment for my cancer would change how much time I had left. So, I have not had any more cancer treatment. </p>
+            <p>Some day down the road, I'll fill you in on all of what I have been doing "with my cancer" since June of 94. But, for now, let's just say that I have been living...living more fully and richly than I ever dreamed possible...living in what I have come to call "The Light of Death"...living as a man with death sitting on his shoulder. It has been, beyond a doubt, the most wonderful period of my life. AND, I am STILL/HERE Above Ground...STILL TERMINAL...what I am coming to call a "cancerous survivor" [not a cancer survivor]. </p>
+            <p>Well, enough of me...for now. I have entered your lives both in search of "good company" and in order to share with you some of the wonderful discoveries living with cancer has made possible for me. For example, I am in the process of re-directing my professional career to spend the rest of whatever time I have left studing, teaching and providing palliative/hospice care. I feel like I have some "serious experience" to bring to the bedside with me! </p>
+            <p>Peace, <br>
+              bill bartholome </p>
+            <hr>
+            <p><b>Date:</b> Mon, 16 Mar 1998 14:45:09 <br>
+              <b>Subject:</b> Second Post--Testing the Waters</p>
+            <p>[Warning, another incredibly long post]</p>
+            <p>Group,</p>
+            <p>As you may have noted via my first post of 13 March, I am a patient who has been living with this disease for quite a while, i.e. since June 1994. I have been "above ground" much, much, MUCH longer than I ever expected. [Am willing to share with of you long termers discussion of the interesting problems outliving one's prognosis poses for us and our families.] </p>
+            <p>One of the most helpful things I have done with my illness is to share it with others...as a visiting scholar, lecturer and the like. In fact, my illness has become the primary focus of most of my efforts as a scholar and teacher in a medical school. Another vehicle through which I have shared my illness has been by publishing at regular intervals, "meditations" on my situation. I have written four of these and am in the process of writing number five: "A World Unraveling; Living in the Light of Death; STILL/HERE Above Ground; Are you STILL Terminal?; and, "May I Be A Cancerous Survivor?". </p>
+            <p>As a test, I share with you my second meditiation. It was written a little over a year after my diagnosis. If you like these or find them at least interesting...if not helpful, I'll post the rest of them. </p>
+            <p>So here goes....</p>
+            <table width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td><p align="center">Bartholome, William G.<b><br>
+                    Living in the Light of Death</b><br>
+                    BULLETIN FROM THE UNVERSITY OF KANSAS MEDICAL CENTER<br>
+                    45, 2:52, 1995</p>
+                  <p>It's been a little over a year now since I discovered I have a fatal disease.</p>
+                  <p>In trying to explain to family and friends what having this period of time has meant to me, I have found it helpful to characterize it as a gift. It's as though the existential bus stopped to pick me up back in June of 94, but the bus driver looked out...saw me standing there, quaking in my boots...and said: "OK, OK, Bill, you can stay a while longer, but remember...I'm coming back soon!"</p>
+                  <p>This gift has allowed me to prepare myself, my incredible new spouse (We got married in January--six months after we learned about my situation.) and my three daughters for what is to come. It provided me time to revise my Advance Treatment Directives and to create a Living Trust for my wife and daughters. It has allowed me time to prepare my family for a future in which I will not be physically present to them. It has given me the opportunity of tying up all the loose ends that our lives all have. I have been provided the opportunity of reconnecting with those who have taught me, who have shared their lives with me, who have touched my life. I have been able to reconnect with those from whom I had become estranged over the years, to apologize for past wrongs, to seek forgiveness for past failings. But even more than all these, this gift has provided me the opportunity of discovering what it is like to live in the light of death, to live with death sitting on my shoulder. It has had a powerful effect on me, my perspective on the world and my priorities.</p>
+                  <p> I live with a kind of freedom now that I had never allowed myself before. I am free to be myself, to be what can only be called radically honest with myself and with others. On one of our long walks, I told my wife, Pam, that I liked the person I am becoming more than I have ever liked myself before. There is a kind of spontaneity and joyfulness in my life that I had rarely known before. I am free of the tyranny of all the things that need to get done. I realize more than I have ever before that I exist in a web of relationships that support and nourish me, that clinging to each other here against the dark beyond is what makes us human. I have experienced a shower of attention, support and love the likes of which I had never known. From those who make up the web of my being--particularly my new life partner, Pam--I have come to know more about what it means to receive and give love unconditionally.</p>
+                  <p>To live in the bright light of death is to live a life in which colors and sounds and smells are all more intense, in which smiles and laughs are irresistibly infectious, in which touches and hugs are warm and tender almost beyond belief. To live in this awareness of who, what and where I am is to live more fully than I had ever dreamed possible. Life doesn't seem like a box of chocolates, it seems like serving after serving of incredibly rich chocolate mousse. I had not known this kind of living before. I wish that the final chapter in all your stories is a chapter in which you are given the gift of some time to live with your fatal illness. But even more, I wish that you could discover what I now know--that this is the only way for us humans to live."</p></td>
+              </tr>
+            </table>
+            <p>Peace, <br>
+              bill bartholome </p>
+            <hr>
+            <p><b>Date:</b> Fri, 20 Mar 1998 13:40:16 <br>
+              <b>Subject:</b> Responses to Posts of 18 Mar 98 </p>
+            <p>Response to post by Regina: </p>
+            <p>The business of hope is much more complicated than reflected in this story. Regina seems to feel that her husband died in 3 months, at least in part, because "he worked to fulfill the prophecy that the doctor had given"..."he never thought he could win"...his doctor left him with no hope whatsoever and I couldn't remove that obstacle from his memory." </p>
+            <p>There are many different kinds and levels of this business of hope. I was given the same prognosis Regina's husband was given. I accepted my prognosis as "the best guesstimate possible based on what is known about this disease." Although I felt that my future was being taken away from me, I was very hopeful that I and my family would be able to prepare and deal with whatever happened. I was very hopeful that, if my death was to come within a matter of a few months, that we would be able to meet it and take steps to make sure that I experienced the most peaceful death I could; and that those I left behind would be as prepared as they could be for going on without me. This hope was extremely important to me. And, it was a hope that was actively supported and nourished by several of the oncologists I saw and by my own physician. I am also blessed to have a kind of hope or faith that no doctor...no human could ever "destroy"... a hope that even in death I will be OK...a kind of supernatural hope or faith. Doctors don't make prophecies. Doctors can't predict the future. What they can do is share with us what is known about the prognosis of the diseases we struggle to deal with. They can give us their best guestimates. I asked several of my oncologists to give me their best estimate of the time frame in which I was operating. I wanted to know this estimate because there were a number of steps we were considering that were very important to me and my family that involved considerable planning and expenditure of resources: TWO WEDDINGS (my own and one of my daughters). What we chose to make of the prognosis we are given is the critical issue. What we decide the prognosis MEANS in terms of our lives is what is important. </p>
+            <p>Hope for "cure" is not the only kind of hope that informs the lives of people with cancer. Even though I am over three years out from my surgery, I do NOT think I am cured; and, I have little hope that I will be. In fact, for many people who are dealing with metastatic cancer...hope for cure is something that they realize is beyond their reach. Yet, they do NOT lead hopeless lives. Many lead very full, very rich lives...some of them are leading lives that are more free and more full than they have ever been! And, no human can ever take away the kind of "ultimate hope" that all us all-too-mortal creatures seek. </p>
+            <p>Respnse to Diane re Food: </p>
+            <p>Food is an issue for a number of reasons. It is hard to get food down since the stomach-substituting-for-esophagus doesn't work well to push food down; AND, most of us have narrow openings between what's left of the esophagus and the new "stomach-tube;" AND, since our stomach is being used as a tube in our chests, we have no "storage" space for food; AND, our food tends to get into the small intestine too fast causing "dumping." So, food is an issue. For what its worth, here some of what I've discovered: </p>
+            <p>-Chew everything like there is no tomorrow; mix food. -Avoid drinking and eating at the same time as much as possible. If you are thirsty, drink before you eat rather than after you eat. -Use tiny swallows of liquid if you need something to "get stuff down;" I use a half a glass of milk to wash things down at each meal...a tiny sip at a time. -Eat all the time; no matter what you are doing or where you are eat! -Eat anything that works for you. Keep a list of foods that don't work and stay away from them. -Eat food that "delivers" calories/nutrition. I eat pounds of nuts, seeds, dried fruit, cheese, fresh and cooked vegetables; granola bars, peanut butter, "trail mix;" AND at least a half a pound of Hersey's Almond Nuggets per day! (I am NOT kidding!) -Avoid things that are hard to get down. For me the hardest thing to get down is bread or things that "gum up" like bread. Meat is second hardest, esp. beef. -Avoid things that cause dumping. For me that means avoiding syrup; high sugar content foods; orange juice; grape juice; grapes; watermelon; pancakes; waffles; anything made from corn meal; most cookies and some crackers. -Be careful about alcoholic beverages. I can drink a beer or two as long as I'm not eating something at the same time. I can't drink wine and eat at the same time. I can drink expensive gin, but can't drink inexpensive gin. </p>
+            <p>Enough. Peace, <br>
+              bill bartholome </p>
+            <hr>
+            <p><b>Date:</b> Mon, 30 Mar 1998 11:52:30 <br>
+              <b>Subject:</b> Responding to posts 25 Mar-29 Mar </p>
+            <p>[Warning: Long Post] </p>
+            <p>One quick response to David: </p>
+            <p>As a person with "experience with surgery," you need to know that the surgery you need for your disease is very much "do-able;" absolutely no fun, but do-able. You also need to think of it as one big surgical procedure (with an in-patient stay of approximately two weeks) plus, for most of us, 2 to 5 procedures to dilate the site of connection between what is left of your esophagus and the "stomach tube" that is used to replace the portion they will remove. And, you need to know that the members of this group will be an invaluable resource to you as you work to adjust to life after esophagectomy. </p>
+            <p>Re: Weddings. </p>
+            <p>At the time of my diagnosis (Stage IV) I had been engaged to a wonderful woman for six months. We had no "firm plans" re the timing of our wedding. However, following the diagnosis--and particularly after learning the prognosis of my condition--we decided to get married. We got married on Jan 15th of 1995. Our wedding day was extremely bitter-sweet for me since I did NOT expect that we would ever have the chance to celebrate a wedding anniversary. Also, at the time of my diagnosis, one of my daughters was engaged to be married. So, she decided that she wanted her dad at her wedding. So, she and her husband got married (Feb 4th, 1995). I think that these weddings, particularly my wedding, we "life creating" events for me; part of why I'm still here above ground. Don't underestimate the extent to which life can be created in ways that have nothing to do with doctors and medicine. </p>
+            <p>Responses to Riley re her dad's "struggling with mortality;" AND to Cathy's post re her dad and his being "emotionally empty" and "emotionally distant;" AND to Fran's post re Mitch's struggles; AND to Kathi's post re her mom's "hopelessness;" AND to Cathy's post re her dad's depression and pending surgery: First, I want to strongly support Michele's recommendations to Cathy. The diagnosis and treatment of this disease can precipitate significant psychological problems that often respond well to both therapy and to the incredible range of new drugs that are now available to help those who struggle with serious psychological problems. So, use these resources as well as those made available by the wide variety of support groups that are now available to patients and families. </p>
+            <p>Second, I want to also support Maryln's post responding to Riley. Dealing with the reality of a life-threatening AND often terminal illness does require that patient's and families do GRIEF WORK. </p>
+            <p>That now leads me into the points I want to make. Those of us who are dealing with this kind of illness are dealing with MUCH MORE THAN A DISEASE. Much of what get's talked about on this list relates to how can the group be of assistance to people and their families as they deal with the DISEASE of EC. BUT, this is much, much more than a disease. Living with EC or with someone who has EC involves living with an ILLNESS--a process that has enormous PSYCHOLOGICAL, SOCIAL AND SPIRITUAL aspects in addition to its biology. </p>
+            <p>Much of what is challenging about this "situation" relates to these aspects of EC. And, there is a HUGE hidden problem in this aspect of EC. EC is a major life-threatening process; and, for most of those who get involved with this process, a terminal process. It involves a dramatic change in one's relationship with one's mortality. This has been my biggest struggle. How can I "live with my mortality?" How can I live "in the bright light of death?" </p>
+            <p>AND, the biggest problem I have encountered in this aspect of my illness is that I AM ATTEMPTING TO MAKE THESE CHANGES IN MY LIFE IN A SOCIETY THAT SYSTEMATICALLY DENIES AGING, MORTALITY AND DEATH! ...in a society in which talk of dying is banished...in a society in which most people are "cut off" from the dead and lead lives that do not involve any kind of relationship with the dead at all. So, people facing death in this society are marginalized to an almost incredible disease. It is so bad that the only way we could develop systems for helping dying people and their families was to develop an almost completely separate system...outside mainstream health care...namely, hospice. </p>
+            <p>I feel very strongly that I have managed to work my way through this problem IN SPITE OF THE SOCIETY I LIVE IN. However, I continue to encounter serious problems. The greatest of these is the problem of ISOLATION. Because I am "marked" by living with what I regard as a terminal illness, I am seen and responded to as an "Other"--as someone to be avoided. Aside from my wife and daughters and a handful of members of my immediate family, I have no real social life. Yes I go to work every day and yes I have a large list of "friends," but not people who are willing to embrace both me and the skeleton that lurks inside me. </p>
+            <p>Dealing with a life-threatening process in a world that has no room for aging...for disability...for death is a huge problem. I would strongly encourage the members of this list to look at the extent to which our thinking about this process as primarily a "beast" that operates at the biological level--cancer cells that need to be killed or cut out or whatever...adds to this isolation. </p>
+            <p>For me, a systematic process of examination of the "meaning" of my illness in terms of my life was a process that EMPOWERED me like nothing else has (with the possible exception of my new life partner). It may well be the case that working through and constructing a new way of being in the world...i.e. being in the world with death sitting on one's shoulder...is a big part of the work that needs to be done by EC patients and their families. It may well be that this is just as important as learning how to "eat" after surgery. I for one, would like to encourage every person on this list who has EC (hopefully with the support of their families) to make an appointment to visit with a hospice professional...to visit with someone who might be of help IF AND WHEN the time comes that their services would be needed. </p>
+            <p>I grant you that the process of getting in touch with death...of reading the massive body of literature now available about death and dying...of preparing one's family for going on even if you won't be there in the flesh...of preparing for one's own memorial service and burial...and more IS A VERY DIFFICULT PROCESS...it does involve extreme sadness...it involves the HARD WORK OF GRIEF. But, for me, it was an extremely valuable process...it has liberated me to live the rest of my days as richly and fully as I can. In fact, I am completely convinced that no matter what happens with my disease, I will live the rest of my days on this planet as a "terminally ill" person; living as if I was in the last chapter of my life has been a very smart decision (in a strategic sense), but it has also been one of the most spiritually enriching decisions I ever made. I've discovered something very, very important in wrestling with this illness. Being "terminal" and being "mortal" are "situations" that are remarkably similar (?are they the same?) </p>
+            <p>It may well be the case that others on this list are "struggling" because they have not considered going down this path...they have not been encouraged to deal with this illness as something that is much, much more than a biological process....to deal with this illness as a profound psychological, social and SPIRITUAL process. And to deal with the spiritual aspect of this disease is to deal with the specter of mortality. Perhaps many more of us will discover that death is not so much something that casts a dark shadow over our lives..but something that casts a bright and energizing light on our lives. It's not for nothing that our greatest poets have regarded death as the "wellspring" of life...as that which makes our life meaningful. </p>
+            <p>Enough said. </p>
+            <p>Peace, <br>
+              bill bartholome </p>
+            <!-- #EndEditable -->
+            <hr>
+            <p align="center"><strong><a href="/sto/wbartholome/index.html">William G. Bartholome, MD, MTS</a> | <a href="/sto/wbartholome/ecg_wb1.html#ecg_top">Back to Top</a><br>
+              1998 ACOR EC-Group Posts: <a href="/sto/wbartholome/ecg_wb1.html">Mar</a> | <a href="/sto/wbartholome/ecg_wb2.html">Apr</a> | <a href="/sto/wbartholome/ecg_wb3.html">May</a> | <a href="/sto/wbartholome/ecg_wb4.html">Jun</a> | <a href="/sto/wbartholome/ecg_wb5.html">Jul</a> | <a href="/sto/wbartholome/ecg_wb6.html">Aug</a> | <a href="/sto/wbartholome/ecg_wb7.html">Sep</a><br>
+              <a href="/sto/wbartholome/ecg_wb8.html">Oct</a> | <a href="/sto/wbartholome/ecg_wb9.html">Nov</a> | <a href="/sto/wbartholome/ecg_wb10.html">Dec</a> | 1999 Posts: <a href="/sto/wbartholome/ecg_wb11.html">Jan</a> | <a href="/sto/wbartholome/ecg_wb12.html">Feb</a> | <a href="/sto/wbartholome/ecg_wb13.html">Mar</a> | <a href="/sto/wbartholome/ecg_wb14.html">Apr</a> | <a href="/sto/wbartholome/ecg_wb15.html">May</a> | <a href="/sto/wbartholome/ecg_wb16.html">Jun</a></strong></p>
+            </div>
+  <img id="cafe_screen_disclaimer" src="/web/lav/dsc.gif" alt="Information found here is not to be a substitute for professional care.">
+  <div align="center" class="webonly">
+    <div id="cafegoogle">
+      <script type="text/javascript"><!--
+google_ad_client = "pub-2176662973486049";
+google_ad_width = "468";
+google_ad_height = "60";
+google_ad_format = "468x60_as";
+google_ad_type = "text";
+google_ad_channel ="";
+google_color_border = "CCCCCC";
+google_color_bg = "FFFFFF";
+google_color_link = "000000";
+google_color_url = "666666";
+google_color_text = "333333";
+//--></script>
+      <script type="text/javascript"
+  src="/web/20100926140901js_/http://pagead2.googlesyndication.com/pagead/show_ads.js">
+      </script>
+      <br>
+      <p>The above advertisements, provided automatically, are neither selected nor endorsed by us.<br>
+        Some may lead to web sites that provide questionable or controversial medical information.<br>
+        If you encounter advertisements inappropriate for the Caf&eacute;, send us the advertisement's URL.</p>
+    </div>
+    <h5><a href="/index.html">home</a> | <a href="/cnt/index.html">contents</a> | <a href="/sto/index.html">stories</a> | <a href="/ecg/index.html">ec-group</a> | <a href="/lnk/index.html">links</a> | <a href="/etc/index.html">etc.</a></h5>
+    <img src="/web/art/footer.gif" width="509" alt="Some graphics courtesy of Hoopla! disc, copyright 1995 Image Club Graphics. 1-800-661-9410" height="50">
+    <p><a href="/cnt/contact.html">Send a message to Marc &amp; Tammy Wolfgram</a></p>
+    <table width="610" border="0" cellpadding="0" cellspacing="0">
+      <tr valign="middle">
+        <td width="49" align="center"><img src="/web/cssprint.gif" alt="This page is printer friendly" width="45" height="50" border="0"></td>
+        <td align="center"><h6>Copyright &copy; 1995-2008&mdash;Last changed on
+            <!-- #BeginDate format:Am1 -->June 17, 2008<!-- #EndDate -->
+            &mdash; We comply with the<br> 
+            <a href="/web/20100926140901/http://www.hon.ch/HONcode/Conduct.html" onclick="window.open(this.href); return false;"> HONcode standard for trustworthy health</a> information: <a href="/web/20100926140901/https://www.hon.ch/HONcode/Conduct.html?HONConduct294647" onclick="window.open(this.href); return false;">verify here</a>.</h6></td>
+        <td width="45"><a href="/web/20100926140901/https://www.hon.ch/HONcode/Conduct.html?HONConduct294647" onclick="window.open(this.href); return false;" > <img src="/web/20100926140901im_/https://www.hon.ch/HONcode/Seal/HONConduct294647_s.gif" width="49" height="72" style="border:0px" title="This website is accredited by Health On the Net Foundation. Click to verify." alt="This website is accredited by Health On the Net Foundation. Click to verify." /></a></td>
+      </tr>
+    </table>
+  </div>
+  <img id="cafe_screen_footer" src="/web/lav/bot.gif"> </div>
+<map name="Map">
+  <area shape="rect" coords="240,113,286,143" href="/index.html" alt="Home">
+  <area shape="rect" coords="297,113,367,143" href="/cnt/index.html" alt="Contents">
+  <area shape="rect" coords="376,113,434,143" href="/sto/index.html" alt="Stories">
+  <area shape="rect" coords="443,113,516,143" href="/ecg/index.html" alt="EC-Group">
+  <area shape="rect" coords="527,113,574,143" href="/lnk/index.html" alt="Links">
+  <area shape="rect" coords="583,113,613,143" href="/etc/index.html" alt="Etcetera">
+</map>
+</body>
+<!-- #EndTemplate --></html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 14:09:01 Sep 26, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 18:08:12 Dec 18, 2013.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

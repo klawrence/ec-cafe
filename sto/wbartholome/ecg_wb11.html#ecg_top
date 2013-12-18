@@ -1,0 +1,413 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><!-- #BeginTemplate "/Templates/cafe_lavender_wbecg.dwt" --><!-- DW6 -->
+<head>
+
+<script type="text/javascript" src="/static/js/analytics.js" ></script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+
+<!-- #BeginEditable "doctitle" -->
+<title>Cathy's EC Caf&eacute; -Bartholome - January, 1999</title>
+<!-- #EndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="Cathy's Esophageal Cancer Cafe -- Providing information on esophageal cancer to patients and caregivers.">
+<meta name="Keywords" content="esophagus, gerd, oesophasgus, ec, barretts, adenocarcinoma, squamous, ec-group, cancer, support, health, medical, patient, caregiver, ecaa, acor, esophagectomy, esophageal, oesophageal, ec cafe">
+<link rel="stylesheet" href="/web/20100926141923cs_/http://eccafe.org/cafe.css" type="text/css" media="screen">
+
+<style type="text/css">
+<!--
+.bodyback {
+	background-image: url(../../web/lav/bgd.gif);
+	background-repeat: repeat-y;
+}
+-->
+</style>
+<link rel="stylesheet" href="/web/20100926141923cs_/http://eccafe.org/cafe_prt.css" type="text/css" media="print">
+<!-- #BeginEditable "head" --><!-- #EndEditable -->
+</head>
+<body>
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script> if (window.archive_analytics) { window.archive_analytics.values['server_name']="wwwb-app19.us.archive.org";}; </script>
+
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1388534399999;
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http:\/\/eccafe.org\/sto\/wbartholome\/ecg_wb11.html";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth = 450;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "26";
+var displayMonth = "Sep";
+var displayYear = "2010";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" lang="en" class="__wb_banner_div" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px">
+
+
+<div id="wm-ipp-inside" class="__wb_banner_div" style="position:fixed;padding:0!important;margin:0!important;width:97%;min-width:780px;border:5px solid #000;border-top:none;background-image:url(/static/images/toolbar/wm_tb_bk_trns.png);text-align:center;-moz-box-shadow:1px 1px 3px #333;-webkit-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333;font-size:11px!important;font-family:'Lucida Grande','Arial',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://eccafe.org/sto/wbartholome/ecg_wb11.html" style="width:400px;font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20100926141923" /><input type="submit" value="Go" style="font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;margin-left:5px;width: inherit !important" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:'Helvetica','Lucida Grande','Arial',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20080724015632/http://www.eccafe.org/sto/wbartholome/ecg_wb11.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="24 Jul 2008"><strong>JUL</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 14:19:23 Sep 26, 2010">SEP</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20101122172812/http://eccafe.org/sto/wbartholome/ecg_wb11.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="22 Nov 2010"><strong>NOV</strong></a>
+		                
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/web/20080724015632/http://www.eccafe.org/sto/wbartholome/ecg_wb11.html" title="1:56:32 Jul 24, 2008" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 14:19:23 Sep 26, 2010">26</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/web/20101122172812/http://eccafe.org/sto/wbartholome/ecg_wb11.html" title="17:28:12 Nov 22, 2010" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0"/></a>
+		                
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20080724015632/http://www.eccafe.org/sto/wbartholome/ecg_wb11.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="24 Jul 2008"><strong>2008</strong></a>
+		                
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 14:19:23 Sep 26, 2010">2010</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       2011
+                       
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="/web/20100926141923*/http://eccafe.org/sto/wbartholome/ecg_wb11.html" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>12 captures</strong></a>
+           <div class="__wb_banner_div" style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">26 Apr 05 - 16 Dec 10</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:450px;height:27px;" href="" id="wm-graph-anchor">
+       <div class="__wb_banner_div" id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:450px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers('inline');" 
+				onmouseout="showTrackers('none');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="450"
+				height="27"
+				border="0"
+				src="/web/jsp/graph.jsp?graphdata=450_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000100010000_2006:-1:000010002000_2007:-1:000110001000_2008:-1:000000100000_2009:-1:000000000000_2010:8:000000001011_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="/static/images/toolbar/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="/static/images/toolbar/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById('wm-ipp').style.display='none';" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_close.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;margin-bottom:23px;background-color:transparent;border:none;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_help.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;background-color:transparent;border:none;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<div id="cafebody" class="bodyback">
+  <div align="center"><img id="cafe_print_header"src="/web/20100926141923im_/http://eccafe.org/web/print_header.jpg" width="504" height="72"></div>
+  <img id="cafe_screen_header" src="/web/20100926141923im_/http://eccafe.org/web/lav/top.gif" usemap="#Map" border="0" alt="Cathy's EC Cafe">
+  <div id="cafemain"> <a name="ecg_top"></a>
+            <h1 align="center"><a href="/web/20100926141923/http://eccafe.org/sto/wbartholome/index.html">William G. Bartholome, MD, MTS</a></h1>
+            <h2 align="center">ACOR EC-Group Posts: <!-- #BeginEditable "ecg_date" -->January, 1999<!-- #EndEditable --></h2>
+            <p align="center"><strong>1998 ACOR EC-Group Posts: <a href="/web/20100926141923/http://eccafe.org/sto/wbartholome/ecg_wb1.html">Mar</a> | <a href="/web/20100926141923/http://eccafe.org/sto/wbartholome/ecg_wb2.html">Apr</a> | <a href="/web/20100926141923/http://eccafe.org/sto/wbartholome/ecg_wb3.html">May</a> | <a href="/web/20100926141923/http://eccafe.org/sto/wbartholome/ecg_wb4.html">Jun</a> | <a href="/web/20100926141923/http://eccafe.org/sto/wbartholome/ecg_wb5.html">Jul</a> | <a href="/web/20100926141923/http://eccafe.org/sto/wbartholome/ecg_wb6.html">Aug</a> | <a href="/web/20100926141923/http://eccafe.org/sto/wbartholome/ecg_wb7.html">Sep</a><br>
+              <a href="/web/20100926141923/http://eccafe.org/sto/wbartholome/ecg_wb8.html">Oct</a> | <a href="/web/20100926141923/http://eccafe.org/sto/wbartholome/ecg_wb9.html">Nov</a> | <a href="/web/20100926141923/http://eccafe.org/sto/wbartholome/ecg_wb10.html">Dec</a> | 1999 Posts: <a href="/web/20100926141923/http://eccafe.org/sto/wbartholome/ecg_wb11.html">Jan</a> | <a href="/web/20100926141923/http://eccafe.org/sto/wbartholome/ecg_wb12.html">Feb</a> | <a href="/web/20100926141923/http://eccafe.org/sto/wbartholome/ecg_wb13.html">Mar</a> | <a href="/web/20100926141923/http://eccafe.org/sto/wbartholome/ecg_wb14.html">Apr</a> | <a href="/web/20100926141923/http://eccafe.org/sto/wbartholome/ecg_wb15.html">May</a> | <a href="/web/20100926141923/http://eccafe.org/sto/wbartholome/ecg_wb16.html">Jun</a></strong></p>
+            <hr>
+            <!-- #BeginEditable "ecg_body" -->
+            <p><b>Date:</b> Tue, 5 Jan 1999 11:35:35 <br>
+              <b>Subject:</b> Reply to Sylvia and David</p>
+            <p>Sylvia,</p>
+            <p>In my humble opinion a firm dedication to living as fully and richly as humanly possible in the face of this disease is the best strategy...the best medicine...and the best antidote to the swamp of depression. Also, please remember that depression is a swamp...it "sucks" you in deeper and deeper once it gets hold of you. So, if you feel like the depression is worsening in spite of your efforts to stay as active and alive as possible, get help for it, i.e. therapy or antidepressants or both.</p>
+            <p>David,</p>
+            <p>Get Rob a word processor so that you and he (and he and the the staff) can communicate more effectively. The staff will object, but it will greatly enhance Rob's sense of power...his sense of control over what is happening to him. The ability to communicate one's want's and needs effectively is an essential aspect of recovery in Rob's situation. He needs to feel as powerful as possible in order to "extricate" himself from the technology that now dominates his life. Do anything and everything you can to make him feel more powerful...to enhance his sense of control and predictability over what is happening.
+            <p>bill bartholome
+            <hr>
+            <p><b>Date:</b> Tue, 5 Jan 1999 11:51:39 <br>
+              <b>Subject:</b> Reply to Nancy re George</p>
+            <p>Nancy,
+            <p>This may not be what you wanted to hear, but it's my two cents worth anyway. From your description it is very clear that what is making your husband George so very sick is the treatment he is getting and not his cancer.</p>
+            <p>It may well be that you and George would be much better off if he was getting less "treatment" for his disease, i.e. if you and he were using a "palliative" approach to his disease, i.e. treatment limiited to control of symptoms.</p>
+            <p>Clearly this would require you and he to undertake a fundamental "re-thinking" of your approach to his disease, but it may well be an approach that would dramatically improve his quality of life.</p>
+            <p>You and he might want to at least discuss this approach with his care providers and ask for information about palliative/hospice care. It never hurts to at least consult with palliative/hospice care providers or programs about what they might have to offer.</p>
+            <p>Please try to "hear" this in the spirit in which it is offered, i.e. a spirit of caring...a proposal offerred in good faith. Would be more than willing to talk with you about it by phone if you like.
+            <p>Peace,&nbsp; <br>
+              bill bartholome
+            <hr>
+            <p><b>Date:</b> Tue, 5 Jan 1999 12:05:01 <br>
+              <b>Subject:</b> Bill and Pam - Update </p>
+            <p>Group,
+            <p>I underwent evaluation of my vocal cords on 31 December. Got the usual mixture of bad and good news that one always seems to get with any encounter with doctors and medicine. The bad news is that I have total paralysis of my right vocal fold and cord. This is likely the result of one of the tumor masses I have in my chest near my windpipe destroying the nerve (It's called the right recurrent laryngeal nerve.] The good news is I'm doing pretty well with voice therapy; and, if the therapy doesn't work, there are several surgical procedures that can be done to improve my voice.</p>
+            <p>The news of this permanent "loss" of function of an important part of my body was tought to accept. Had a very "weepy" couple of days. It's also a little scary since I have several tumor masses along the course of my left recurrent laryngeal nerve so the same damn thing could happen to my left vocal fold/cord. That development would be a real disaster since having both vocal folds paralyzed means one can't breathe adequately in addition to it's impairment of voice--would require that I have a tracheostomy. Ugh!</p>
+            <p>Won't find out about the results of the radiosurgery for my brain tumor for a few more weeks, but I'm having no symptoms.</p>
+            <p>The gabapentin/Neurontin finally kicked in. Took a large dose--1,200 mg a day--to get control of my post-thoracotomy pain.</p>
+            <p>Had a horde of family come into town to visit over the holidays. It was fun, but also totally exhausting.</p>
+            <p>I'm back at work. Hope to be able to do this.</p>
+            <p>Keep in touch,</p>
+            <p>Peace, <br>
+              bill bartholome
+            <hr>
+            <p><b>Date:</b> Sun, 10 Jan 1999 15:37:39 <br>
+              <b>Subject:</b> A Post from a Blessed Cancerous Survivor</p>
+            <p>At the time of my palliative surgery in June of 1994, my adenocarcinoma of the esophagus had already spread to multiple sites in my body (lymph nodes and liver.) As a result, I elected not to do chemotherapy; and radiation was not thought to be of benefit to me. So, until 15 December 1998, a peiod of four and a half years, I just lived with my cancer. I recently underwent a palliative radiosurgery procedure for a brain lesion, but my cancerous self continues to slowly gain ground on me.</p>
+            <p>Although the course of my disease has been incredibly slow by comparison to others, I can honestly say that living these last four years "in the light of death"...living as a "terminally ill person"...living as a cancerous survivor have been --beyond a shadow of a doubt--THE BEST YEARS OF MY LIFE. In an important sense, my cancer caused in me and my life something like a "rebirth"...a profound existential and spiritual "awakening" the likes of which I had never experienced.</p>
+            <p>In the last four and half years, I have experienced pleasure, happiness, peace and joy at a frequency and intensity that I had never known.</p>
+            <p>Yes, we have been incredibly and inexplicibly "blessed" in having had this incredibly prolonged "last chapter." But, our story is powerful testimony to the idea that a diagnosis of esophageal cancer need not be followed by hopelessness much less dispair. Living with cancer can be not only challenging, but transforming and enobling. Living with cancer--even if it means living "unto one's death" can be one of the greatest and most wonderful experiences allowed to us humans.</p>
+            <p>I have experienced this kind of living...my wife--who joined her life to mine six months after I was diagnosed with terminal cancer--has experienced this cancer journey...this story of illness. Last week she turned to me while we were both preparing dinner and said simply: "It has been so good to have shared this time with you." I was "melted" by her love.
+            <p>bill bartholome
+            <hr>
+            <p><b>Date:</b> Wed, 13 Jan 1999 09:46:59 <br>
+              <b>Subject:</b> Memories</p>
+            <p>Patty's post re her ability to allow herself to remember her mother and husband raises several of my pet peeves re this business of death and dying.</p>
+            <p>The first is that we Americans have so little space in our lives for our dead. This unwillingness to allow the dead any "presence" or "power" in our lives makes dying even harder for Americans than it is in other cultures. I've told my wife, my daughters, my siblings and my friends that I want to know that I will "live on" in their lives...that I will have "space" in their lives...that I will have a "presence" in their homes...that they will continue to involve me in their on-going lives. In fact, I've shared with them my belief that this is the only way in which I will "live on" after my death. In spite of my repeated requests for evidence that this will be the case, I have gotten very little reassurance on this issue. A few weeks ago I asked one of my daughters whether or not she would create a special place in her home where I could "be"...where she could go to be alone with me...where she could go to "talk to" me about what was going on in her life. She told me that she would "think about it." In a very important sense, as I face my death, I "need" to know that I will live on in the mind/hearts of those who I am leaving.</p>
+            <p>The second issue is the flip side of this one. We Americans have a very negative view of the process of grief. We see it as the process by which people "let go" and "forget" and "get on with their lives." In other cultures, grieving people are encouraged to remember...to create ways and means of being connected to the dead person...to find and build ways to have the dead person be a continuing presence in their lives. In my work with parents who have had children die, I now tell them that for every ounce of energy they put into "letting go" of their dead child, they need to put an ounce of energy into "creating ways of remembering" and remaining "connected" to their dead child. I encourage them to create and maintain a "room"...a space in the home that belongs to the dead child...to celebrate the dead child's birthday...to include the dead child in holiday celebrations and the like.</p>
+            <p>Our beliefs and practices make dying so much harder for those of us who are facing death. These same beliefs and practices make death harder for the people who are left behind. As a person facing death, I want to do what I can to change these. As persons engaged in this electronic conversation, I encourage us to critically examine these beliefs and practices.
+            <p>bill bartholome
+            <hr>
+            <p><b>Date:</b> Thu, 14 Jan 1999 13:02:42 <br>
+              <b>Subject:</b> Humor as food for the soul</p>
+            <p>George's responses to my post re "memories" are the perfect complement to my musings. I tend to forget that in addition to "food for thought" (the philosopher's role) we all need "food for the soul." And, some of the best nourishment our souls can be given is the kind of humor that George provides us.</p>
+            <p>Thanks so much, George, keep it up! [I'm assuming that you realize I'm talking about your humorous postings when I encourage you to "keep it up."] { : - ) On the other hand...</p>
+            <p>bill&nbsp;
+            <hr>
+            <p><b>Date:</b> Sun, 17 Jan 1999 13:28:44 <br>
+              <b>Subject:</b> Follow-up re posts on "memories"</p>
+            <p>Ken's reference to the Dios de los Muertos celebration is exactly what I have in mind. In fact there is evidence to suggest that this celebration is "spilling out" of our Mexican-American communities into the mainstream culture of the US. Last year tens of thousands of people participated in the celebraton in Chicago. Here in KC the celebration at the Guadelupe Center was mobbed. And, every hospice in KC had a Days of the Dead Celebration. In the Brookside area of KC where I live two of the local shops - Latin American Imports and World's Window-- put up huge, highly elaborate altars and posters to explain the celebration to patrons of the store.</p>
+            <p>Ros and Jeanne: Thanks for your support re this set of issues. I feel strongly that this group (and other cancerous groups of Americans) could do a great deal to assist in the process of cultural change that would allow for us to have and maintain "vital connections" with our dead. The visibility of the dead and our connection with them would go a long way towards "taming" (to borrow a term from Phillipe Aries) death again...making it a less terrifying and more "acceptable" part of our lives.</p>
+            <p>The French postmodern philosopher Derrida has argued that we need to come to an understanding of death that will allow us to see it as the "gift" that it is. Clearly we are a long way from this consciousness.</p>
+            <p>I would point out to those of you who are dealing with the terminal phase of this process that it is possible to "cultivate" one's relationship with death...to develop a kind of "calm" or "comfort" with this "strange travelling companion" of ours...to come to a kind of understanding that the gift of life includes this strange "gift of death." And, I feel strongly that as we develop these strategies for dealing with death, we have every right in the world to talk with those we will leave behind re this issue of "connection"...to work with them to develop means of maintaining these "vital links."</p>
+            <p>George's 200 foot obelisk with the flashing neon signs is an inadequate memorial. Yes it will allow us to more easily locate his place in the cemetary, but whatever structure is "erected" (...say, what's up with a man who seeks a giant obelisk as a memorial...)needs to be a better reflection of his incredible wit and humorous insights. I would ask all of us to give this issue serious consideration. ?A Cancer Comedy Stage.
+            <p>bill bartholome
+            <hr>
+            <p><b>Date:</b> Mon, 18 Jan 1999 13:09:07 <br>
+              <b>Subject:</b> Response to Michelle re "Mother" and dilation queston</p>
+            <p>Terms "dilation" and "dilitation" are used interchangeably.</p>
+            <p>Michelle, Thanks so much for sharing the story of your on-going relationship with your mother. I want sooooo much to know that my daughters will have that kind of relationship with me after I go "below ground."
+            <p>bill bartholome
+            <hr>
+            <p><b>Date:</b> Tue, 26 Jan 1999 12:04:23 <br>
+              <b>Subject:</b> Comments re "just let it close up" and "update" - Bartholome</p>
+            <p>Was out of town last week. Headed out of town for another week tomorrow. (Going to Ely, MN for a North Woods Family Reunion of cross-country skiing]. Just managed to catch up on six days of postings.</p>
+            <p>Someone asked for my reaction to a physician proposing "just let the esophagus close up" as an option for dealing with EC during the terminal stages of the disease.</p>
+            <p>It seems to me that appropriate "palliative care" for people with esophageal cancer that is causing obstruction of the esophagus should be something we keep an open mind about. Dilation of the cancerous growth is usually not terribly helpful since the lesion rarely "gives" very much during the procedure. Some have found the use of "stents" of various kinds to be helpful. However, others have had almost constant pain with them; and, others have had the well documented problem of the stent ending up in the stomach over and over again. Clearly the use of laser technology might be helpful by allowing a "channel" to be "burnt through" the cancerous growth. However, this procedure is experimental and not widely available. So, "letting the esophagus just close up" might well be an option that some of us may chose at this "end point" in the process of our illnesses. If we were dealing with widespread and symptomatic disease in multiple organs of our bodies, it might well make sense to withdraw ourselves from food...and eventually even from fluid during this "terminal phase" of the process. From the hospice literature it is very clear that deliberately "selected" malnutrition and dehydration are a common part of what makes death comfortable at the end.</p>
+            <p>So, depending on the context, this "option" might be one that would be offerred by a physician in a spirit of encouraging a patient to elect a particular "path" towards death in the course of palliative/hospice care. I do think that this "option" should ALWAYS be presented in the context of a discussion of palliative/hospice care of EC.</p>
+            <p>I'm still/here "above ground." My voice is awful. Am in the process of getting a voice augmentation system to try (a mike that sits in front of my mouth connected to a speaker that fits in my shirt pocket). May also have surgery on my vocal fold if that doesn't work. Having more pain from my chest and lung tumors. Cough is a problem including coughing up blood. Tumors may be working their way into my bronchi ("air tubes"). Finally broke down and asked my doc for a prescription for oral morphine tablets to take when the pain gets intolerable. Energy level and exercize tolerance are both declining. Have recently switched my "living plan"from the 12 month "calender system" to a 6 month system. Have lost a lot of the "confidence" I had in my body's ability to "wrestle with my cancerous self." My spirits (and Pam's) are still good. I am aware of feeling more "scared" re this process than I was in the past. At church I find myself praying mostly for "courage" in the face of our "adventure."</p>
+            <p>Love you all. Will get back in touch in early February.
+            <p>Good luck, Sylvia. I'll keep you in my heart...again!
+            <p>bill</p>
+            <!-- #EndEditable -->
+            <hr>
+            <p align="center"><strong><a href="/web/20100926141923/http://eccafe.org/sto/wbartholome/index.html">William G. Bartholome, MD, MTS</a> | <a href="/web/20100926141923/http://eccafe.org/sto/wbartholome/ecg_wb11.html#ecg_top">Back to Top</a><br>
+              1998 ACOR EC-Group Posts: <a href="/web/20100926141923/http://eccafe.org/sto/wbartholome/ecg_wb1.html">Mar</a> | <a href="/web/20100926141923/http://eccafe.org/sto/wbartholome/ecg_wb2.html">Apr</a> | <a href="/web/20100926141923/http://eccafe.org/sto/wbartholome/ecg_wb3.html">May</a> | <a href="/web/20100926141923/http://eccafe.org/sto/wbartholome/ecg_wb4.html">Jun</a> | <a href="/web/20100926141923/http://eccafe.org/sto/wbartholome/ecg_wb5.html">Jul</a> | <a href="/web/20100926141923/http://eccafe.org/sto/wbartholome/ecg_wb6.html">Aug</a> | <a href="/web/20100926141923/http://eccafe.org/sto/wbartholome/ecg_wb7.html">Sep</a><br>
+              <a href="/web/20100926141923/http://eccafe.org/sto/wbartholome/ecg_wb8.html">Oct</a> | <a href="/web/20100926141923/http://eccafe.org/sto/wbartholome/ecg_wb9.html">Nov</a> | <a href="/web/20100926141923/http://eccafe.org/sto/wbartholome/ecg_wb10.html">Dec</a> | 1999 Posts: <a href="/web/20100926141923/http://eccafe.org/sto/wbartholome/ecg_wb11.html">Jan</a> | <a href="/web/20100926141923/http://eccafe.org/sto/wbartholome/ecg_wb12.html">Feb</a> | <a href="/web/20100926141923/http://eccafe.org/sto/wbartholome/ecg_wb13.html">Mar</a> | <a href="/web/20100926141923/http://eccafe.org/sto/wbartholome/ecg_wb14.html">Apr</a> | <a href="/web/20100926141923/http://eccafe.org/sto/wbartholome/ecg_wb15.html">May</a> | <a href="/web/20100926141923/http://eccafe.org/sto/wbartholome/ecg_wb16.html">Jun</a></strong></p>
+            </div>
+  <img id="cafe_screen_disclaimer" src="/web/20100926141923im_/http://eccafe.org/web/lav/dsc.gif" alt="Information found here is not to be a substitute for professional care.">
+  <div align="center" class="webonly">
+    <div id="cafegoogle">
+      <script type="text/javascript"><!--
+google_ad_client = "pub-2176662973486049";
+google_ad_width = "468";
+google_ad_height = "60";
+google_ad_format = "468x60_as";
+google_ad_type = "text";
+google_ad_channel ="";
+google_color_border = "CCCCCC";
+google_color_bg = "FFFFFF";
+google_color_link = "000000";
+google_color_url = "666666";
+google_color_text = "333333";
+//--></script>
+      <script type="text/javascript"
+  src="/web/20100926141923js_/http://pagead2.googlesyndication.com/pagead/show_ads.js">
+      </script>
+      <br>
+      <p>The above advertisements, provided automatically, are neither selected nor endorsed by us.<br>
+        Some may lead to web sites that provide questionable or controversial medical information.<br>
+        If you encounter advertisements inappropriate for the Caf&eacute;, send us the advertisement's URL.</p>
+    </div>
+    <h5><a href="/web/20100926141923/http://eccafe.org/index.html">home</a> | <a href="/web/20100926141923/http://eccafe.org/cnt/index.html">contents</a> | <a href="/web/20100926141923/http://eccafe.org/sto/index.html">stories</a> | <a href="/web/20100926141923/http://eccafe.org/ecg/index.html">ec-group</a> | <a href="/web/20100926141923/http://eccafe.org/lnk/index.html">links</a> | <a href="/web/20100926141923/http://eccafe.org/etc/index.html">etc.</a></h5>
+    <img src="/web/20100926141923im_/http://eccafe.org/web/art/footer.gif" width="509" alt="Some graphics courtesy of Hoopla! disc, copyright 1995 Image Club Graphics. 1-800-661-9410" height="50">
+    <p><a href="/web/20100926141923/http://eccafe.org/cnt/contact.html">Send a message to Marc &amp; Tammy Wolfgram</a></p>
+    <table width="610" border="0" cellpadding="0" cellspacing="0">
+      <tr valign="middle">
+        <td width="49" align="center"><img src="/web/20100926141923im_/http://eccafe.org/web/cssprint.gif" alt="This page is printer friendly" width="45" height="50" border="0"></td>
+        <td align="center"><h6>Copyright &copy; 1995-2008&mdash;Last changed on
+            <!-- #BeginDate format:Am1 -->June 17, 2008<!-- #EndDate -->
+            &mdash; We comply with the<br> 
+            <a href="/web/20100926141923/http://www.hon.ch/HONcode/Conduct.html" onclick="window.open(this.href); return false;"> HONcode standard for trustworthy health</a> information: <a href="/web/20100926141923/https://www.hon.ch/HONcode/Conduct.html?HONConduct294647" onclick="window.open(this.href); return false;">verify here</a>.</h6></td>
+        <td width="45"><a href="/web/20100926141923/https://www.hon.ch/HONcode/Conduct.html?HONConduct294647" onclick="window.open(this.href); return false;" > <img src="/web/20100926141923im_/https://www.hon.ch/HONcode/Seal/HONConduct294647_s.gif" width="49" height="72" style="border:0px" title="This website is accredited by Health On the Net Foundation. Click to verify." alt="This website is accredited by Health On the Net Foundation. Click to verify." /></a></td>
+      </tr>
+    </table>
+  </div>
+  <img id="cafe_screen_footer" src="/web/20100926141923im_/http://eccafe.org/web/lav/bot.gif"> </div>
+<map name="Map">
+  <area shape="rect" coords="240,113,286,143" href="/web/20100926141923/http://eccafe.org/index.html" alt="Home">
+  <area shape="rect" coords="297,113,367,143" href="/web/20100926141923/http://eccafe.org/cnt/index.html" alt="Contents">
+  <area shape="rect" coords="376,113,434,143" href="/web/20100926141923/http://eccafe.org/sto/index.html" alt="Stories">
+  <area shape="rect" coords="443,113,516,143" href="/web/20100926141923/http://eccafe.org/ecg/index.html" alt="EC-Group">
+  <area shape="rect" coords="527,113,574,143" href="/web/20100926141923/http://eccafe.org/lnk/index.html" alt="Links">
+  <area shape="rect" coords="583,113,613,143" href="/web/20100926141923/http://eccafe.org/etc/index.html" alt="Etcetera">
+</map>
+</body>
+<!-- #EndTemplate --></html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 14:19:23 Sep 26, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 18:09:03 Dec 18, 2013.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

@@ -1,0 +1,452 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><!-- #BeginTemplate "/Templates/cafe_lavender_wbecg.dwt" --><!-- DW6 -->
+<head>
+
+<script type="text/javascript" src="/static/js/analytics.js" ></script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+
+<!-- #BeginEditable "doctitle" -->
+<title>Cathy's EC Caf&eacute; - bartholome - May, 1998</title>
+<!-- #EndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="Cathy's Esophageal Cancer Cafe -- Providing information on esophageal cancer to patients and caregivers.">
+<meta name="Keywords" content="esophagus, gerd, oesophasgus, ec, barretts, adenocarcinoma, squamous, ec-group, cancer, support, health, medical, patient, caregiver, ecaa, acor, esophagectomy, esophageal, oesophageal, ec cafe">
+<link rel="stylesheet" href="/cafe.css" type="text/css" media="screen">
+
+<style type="text/css">
+<!--
+.bodyback {
+	background-image: url(../../web/lav/bgd.gif);
+	background-repeat: repeat-y;
+}
+-->
+</style>
+<link rel="stylesheet" href="/cafe_prt.css" type="text/css" media="print">
+<!-- #BeginEditable "head" --><!-- #EndEditable -->
+</head>
+<body>
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script> if (window.archive_analytics) { window.archive_analytics.values['server_name']="wwwb-app3.us.archive.org";}; </script>
+
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1388534399999;
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http:\/\/eccafe.org\/sto\/wbartholome\/ecg_wb3.html";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth = 450;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "26";
+var displayMonth = "Sep";
+var displayYear = "2010";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" lang="en" class="__wb_banner_div" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px">
+
+
+<div id="wm-ipp-inside" class="__wb_banner_div" style="position:fixed;padding:0!important;margin:0!important;width:97%;min-width:780px;border:5px solid #000;border-top:none;background-image:url(/static/images/toolbar/wm_tb_bk_trns.png);text-align:center;-moz-box-shadow:1px 1px 3px #333;-webkit-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333;font-size:11px!important;font-family:'Lucida Grande','Arial',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://eccafe.org/sto/wbartholome/ecg_wb3.html" style="width:400px;font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20100926141756" /><input type="submit" value="Go" style="font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;margin-left:5px;width: inherit !important" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:'Helvetica','Lucida Grande','Arial',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/sto/wbartholome/ecg_wb3.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="24 Jul 2008"><strong>JUL</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 14:17:56 Sep 26, 2010">SEP</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/sto/wbartholome/ecg_wb3.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="22 Nov 2010"><strong>NOV</strong></a>
+		                
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/sto/wbartholome/ecg_wb3.html" title="2:00:55 Jul 24, 2008" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 14:17:56 Sep 26, 2010">26</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/sto/wbartholome/ecg_wb3.html" title="17:33:26 Nov 22, 2010" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0"/></a>
+		                
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/sto/wbartholome/ecg_wb3.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="24 Jul 2008"><strong>2008</strong></a>
+		                
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 14:17:56 Sep 26, 2010">2010</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       2011
+                       
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="/sto/wbartholome/ecg_wb3.html" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>23 captures</strong></a>
+           <div class="__wb_banner_div" style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">19 Apr 03 - 16 Dec 10</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:450px;height:27px;" href="" id="wm-graph-anchor">
+       <div class="__wb_banner_div" id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:450px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers('inline');" 
+				onmouseout="showTrackers('none');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="450"
+				height="27"
+				border="0"
+				src="/web/jsp/graph.jsp?graphdata=450_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000100110101_2004:-1:010011000101_2005:-1:011100001000_2006:-1:000010001000_2007:-1:000011001000_2008:-1:000000100000_2009:-1:000000000000_2010:8:000000001011_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="/static/images/toolbar/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="/static/images/toolbar/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById('wm-ipp').style.display='none';" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_close.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;margin-bottom:23px;background-color:transparent;border:none;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_help.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;background-color:transparent;border:none;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<div id="cafebody" class="bodyback">
+  <div align="center"><img id="cafe_print_header"src="/web/print_header.jpg" width="504" height="72"></div>
+  <img id="cafe_screen_header" src="/web/lav/top.gif" usemap="#Map" border="0" alt="Cathy's EC Cafe">
+  <div id="cafemain"> <a name="ecg_top"></a>
+            <h1 align="center"><a href="/sto/wbartholome/index.html">William G. Bartholome, MD, MTS</a></h1>
+            <h2 align="center">ACOR EC-Group Posts: <!-- #BeginEditable "ecg_date" -->May, 1998<!-- #EndEditable --></h2>
+            <p align="center"><strong>1998 ACOR EC-Group Posts: <a href="/sto/wbartholome/ecg_wb1.html">Mar</a> | <a href="/sto/wbartholome/ecg_wb2.html">Apr</a> | <a href="/sto/wbartholome/ecg_wb3.html">May</a> | <a href="/sto/wbartholome/ecg_wb4.html">Jun</a> | <a href="/sto/wbartholome/ecg_wb5.html">Jul</a> | <a href="/sto/wbartholome/ecg_wb6.html">Aug</a> | <a href="/sto/wbartholome/ecg_wb7.html">Sep</a><br>
+              <a href="/sto/wbartholome/ecg_wb8.html">Oct</a> | <a href="/sto/wbartholome/ecg_wb9.html">Nov</a> | <a href="/sto/wbartholome/ecg_wb10.html">Dec</a> | 1999 Posts: <a href="/sto/wbartholome/ecg_wb11.html">Jan</a> | <a href="/sto/wbartholome/ecg_wb12.html">Feb</a> | <a href="/sto/wbartholome/ecg_wb13.html">Mar</a> | <a href="/sto/wbartholome/ecg_wb14.html">Apr</a> | <a href="/sto/wbartholome/ecg_wb15.html">May</a> | <a href="/sto/wbartholome/ecg_wb16.html">Jun</a></strong></p>
+            <hr>
+            <!-- #BeginEditable "ecg_body" -->
+                  <p><b>Date:</b> Mon, 4 May 1998 15:26:08 <br>
+                    <b>Subject:</b> bartholome--responses; Warning long post. </p>
+                  <p>Cathy suggested on 25 April that I put something in the subject line of my posts that might allow those who aren't interested a way to avoid having to read posts that they might not want to. Not sure what to put, so I put my name.</p>
+                  <p>Last posted 23 April. Was out of town for the last nine days.</p>
+                  <p>Several members wondered if I might have been amused by some of the reactions that my recent posts seem to have engendered. Found that strange. At least one of you was closer to the mark. My reaction was one of sadness or disappointment.</p>
+                  <p>Want to go on record as accepting Danna's plain and simple "I'm sorry." In an earlier post, Danna asked for "understanding." I think it is very important for us all to realize what kind of pressures exist in the lives of those who are at the "front lines" like Danna is.</p>
+                  <p>[Danna, I should have clarified in my original post that I was making a reference to Dennis Miller the stand up comedian who always ends his show with the line: "That's my opinion, And I might be wrong." I included this reference in an effort to try to "lighten up" the conversation. As usual, this electronic medium does not work well with such efforts. :-) :-) :-) :-) :-) :-) :-) :-)</p>
+                  <p>These reactions did force me to examine a question I assume all of you ask yourselves regularly. "Why am I doing this EC list serv stuff? What am I looking for? What do I want to find at the EC Cafe?" I think part of what drew me and keeps me part of this group are my "natural tendencies" as a doctor and as a teacher. Docs (and most health care professionals) are obsessive do-gooders...if they can't find someone to "do good for" they haven't had a good day. And docs are also highly neurotic when it comes to this business of health...real health fanatics. And teachers are highly neurotic about education...again always looking for someone to play student. So, when I stumbled upon this group, I saw an opportunity to indulge my neuroses...to try to help and to educate.</p>
+                  <p>Like many of you, I also came to this group for information. But, this was not a major need for me. So, as I thought about it more and more, I realized that what keeps me part of this group is a need for connection....a need to be somehow tied into the lives of people who are dealing with the same disease that I am...a need to "identify" with other people in the same boat as me.</p>
+                  <p>It's strange. I have a wonderful new wife...who has done more than any single individual in the world to keep me "above ground" over these last years, but she has trouble connecting with me on this business of living with cancer...living with a life threatening illness. I can't connect with her on this level or in this aspect of my life. Neither can I connect in this way with my daughters or family members or friends or co-workers. So, who do I turn to when I want a sense of belonging to a group of fellow-sufferers? The only person I have sought this kind of relationship with is a wonderful friend in San Francisco who has relapsed non-Hodgkin's lymphoma and recently underwent a last ditch high-dose chemotherapy followed by bone marrow/stem cell transplantation. She and I were high school sweethearts. It's incredible that we found each other again...forty years later...around this business of cancer. We have been posting to each other at least a couple times a week for well over a year now. But, I have not gone to any other cancer patient support activities.</p>
+                  <p>Have most of the folks on this list participated (or continue to participate) via in-the-flesh cancer support/cancer survivor groups? Should we all be doing this in addition to maintaining these electronic connections? Is it "better" in the flesh? One issue I imagine getting into real quick is that it is hard to find other in-the-flesh EC sufferers. There is no EC support group here in Kansas City.</p>
+                  <p>A few more responses:</p>
+                  <p>To Danna:</p>
+                  <p>In one of your posts to me, you mention the business of the "blueprint for dying." One of the most difficult things about facing death for most Americans is that our society --unlike almost every other society on the face of the earth--has very, very few "blueprints for dying"...i.e. established social rituals which help people understand how they should behave around this business of dying and death. So, we have to go about "creating" or "building" rituals for this business...like, for example, the cultural ritual that says that people can depend on their doctors to let them know when it is time for them to "get their affairs in order." I'm pushing docs to examine whether or not they would be willing to support this becoming an established ritual for all citizen/patients and their primary care doctors.</p>
+                  <p>To Anna who posts in honor of the passing away of her mother on April 26th:</p>
+                  <p>Anna, in the midst of your grieving, take the time and energy to create lots of ways of remembering; of keeping your mother alive in your mind/heart; of helping her to continue to be part of your on-going life and that of your family. This creative process of "remembering" and creating "structures for remembering" (which can be as simple as a small "shrine" in your home at which you can "visit" her as often as you want/need to do so) will not only honor the woman she managed to become in her lifetime, but help to sweeten considerably the bitterness of your loss. Keep her with you all the days of your life.</p>
+                  <p>Unfortunately, again, we Americans make this business of death harder than it has to be. We lead lives that are so little informed by our dead, that people facing death have to deal with the all-too-obvious fact that once your are dead, you have little or no impact on the on-going lives of those you leave behind. When your dead you really are "history"..."out of here!" Death is one thing...it's doubly hard if you have to contemplate dying without a trace. If we had rituals--at least once a year as they do in Mexico-- to celebrate the dead and to honor our family's dead members in our home with an altar and a feast, it might go a long way toward helping the dying know that they will live on...beyond the "fleshy phase"...in the mind hearts of those we leave behind.</p>
+                  <p>It's also why it is so very important that all of us who are facing life threatening illness live fully...live more freely; that we "dive" into the lives of those who make up our web-of-being. We need to be about the business of living lives that are so OUTRAGEOUS that we will live on at least until the deaths of those whose lives we have touched.</p>
+                  <p>Assumptions about "reflux:"</p>
+                  <p>A number of people have written about continuing problems with "reflux" after they have the standard surgery for this cancer. I am assuming that all--or most of us--are taking some kind of acid blocking drug...particularly those of us with adenocarcinomas and a Barrett's esophagus; and, that we plan to take acid blockers of one kind or another for the rest of our lives. Right? If not, post-operative reflux sufferers should at least discuss this with their doctors. A little reflux into the esophagus isn't gonna hurt you as long as the fluid has little or no acid in it. I am also assuming that most of us find it necessary to sleep at a 30-45 degree angle to prevent reflux of stomach contents into our throats at night. And, that we know to exercise caution when leaning over in a head below the level of the belly position, eg. bending down while kneeling, for example.</p>
+                  <p>To Phyllis:</p>
+                  <p>You and I are going to go to the mat on this business of what are the purposes of a Phase I oncology trial. You continue to claim that they are "to test drug efficacy." I think it is extremely important that all members of this group have this business of Phases down pat. In a Phase I oncology study a single drug is given. In most cases, it is only given in two courses. Even if a subject's disease responds, the drug is not usually given on a continuing basis. The drug is given at any increasing dose to cohorts (usually of three) of subjects. When one cohort experiences life-threatening complications of a given dose of the drug, the study is ended, i.e. a "maximum tolerated dose" has been determined. And, the drug is then moved on to Phase II where efficacy of the drug and toxicity of the drug is studied in persons with cancer that have never been given the drug before to determine which type(s) of cancer the drug is "active" against, ie. in subjects with what kinds of cancer are tumors seen to shrink in at least 20% of the subjects who are taking the drug (that's how "active" or "response" is usually defined). It should be noted, that in even in many Phase II studies, drugs are only available for a few courses, i.e. are not available on a long-term basis.</p>
+                  <p>Historically, the number of subjects who benefit in any way from participation in Phase I studies is less than 2%-3% and the risk of harm from the drug is usually at least that high. Persons who volunteer for Phase I studies should regard themselves as most fundamentally doing something for others..for future persons with cancer. Such altruistic behavior is clearly to be commended and supported. These are real saints/heroes...these are people who "go the second mile." I have absolutely no problem with us "commending" and "supporting" those members of this list who feel that they can take this step. I also hope that we would be equally understanding and supportive of those who felt that they could not.</p>
+                  <p>Enough for now, <br>
+                    bill bartholome
+                  <hr>
+                  <p><b>Date:</b> Mon, 4 May 1998 16:24:38 <br>
+                    <b>Subject:</b> Bartholome--"Value of Dying"</p>
+                  <p>Have made reference in earlier posts to work that I have been doing on the "value of wearing the label dying" or "the value of assuming that one has a terminal illness" or "the value of becoming a hospice patient." When I am feeling a little bolder, I will post some of this work.</p>
+                  <p>For today, I offer you the work of Ira Byock, MD who heads up an end-of-life project supported by the Robert Wood Johnson Foundation in Missoula, MT (my home state) [Ira Byock; 341 University Ave; Missoula, MT] Ira is also author of a new best selling book: "Dying Well: The Prospect for Growth at the End of Life" Riverhead Books, 1997]</p>
+                  <p>Ira gives the following at "Developmental Milestones and Tasks at the End of Life"</p>
+                  <p>["MILESTONES" in <b>BOLD</b>]</p>
+                  <blockquote>
+                    <p><b>SENSE OF COMPLETION WITH WORDLY AFFAIRS</b> &ndash; Transfer of fiscal, legal and formal social responsibilities</p>
+                    <p><strong>SENSE OF COMPLETION IN RELATIONSHIPS WITH COMMUNITY</strong> &ndash;&nbsp;Closure of multiple social relationships (employment, commerce, organizational, congregational) Components include: expressions of regret, expressions of forgiveness, acceptance of gratitude and appreciation.</p>
+                    <p><b>SENSE OF MEANING ABOUT ONE'S INDIVIDUAL LIFE</b> &ndash; Live review &ndash;&nbsp;The telling of "one's stories"</p>
+                    <p><b>EXPERIENCE LOVE OF OTHERS</b> &ndash;&nbsp;Acceptance of worthiness</p>
+                    <p><b>SENSE OF COMPLETION IN RELATIONSHIPS WITH FAMILY AND FRIENDS</b> &ndash;&nbsp;Reconciliation, fullness of communication and closure in each of one's important relationships. Component taks include: expressions of regret, expressions of forgiveness and acceptance, expressions of gratitude and appreciation, acceptance of gratitude and appreciation, expressions of affection -Leave taking; the saying of goodbyes</p>
+                    <p><b>ACCEPTANCE OF THE FINALITY OF LIFE - OF ONE'S EXISTENCE AS AN INDIVIDUAL</b> &ndash;&nbsp;Acknowlegement of the totality of personal loss represented by one's dying and experience of personal pain of existential loss -Expression of the depth of personal tragedy that dying represents &ndash;&nbsp;Decathexis (emotional withdrawal) from worldly affiars and cathexis (emotional connection) with an enduring construct -Acceptance of dependency</p>
+                    <p><b>SENSE OF A NEW SELF (PERSONHOOD) BEYOND PERSONAL LOSS</b></p>
+                    <p><b>SENSE OF MEANING ABOUT LIFE IN GENERAL</b> &ndash;&nbsp;Achieving a sense of awe -Recognition of a transcendent realm -Developing/achieving a sense of comfort with chaos and uncertainty</p>
+                    <p><b>SURRENDER TO THE TRANSCENDENT, TO THE UNKNOWN - "LETTING GO"</b></p>
+                  </blockquote>
+                  <p>When I read this for the first time, I was struck by how well this list describes what I have taken to be my "work" since my diagnosis and surgery in June of 1994. I think I have been "at these" tasks. And, I can tell you, it feels good to have been involved with them. Gives me a sense of "peace" with myself and the world that I had never known before. Feels goooooooooooood!</p>
+                  <p>Peace, <br>
+                    bill bartholome
+                  <hr>
+                  <p><b>Date:</b> Wed, 6 May 1998 12:45:06 <br>
+                    <b>Subject:</b> Questions re reflux </p>
+                  <p>Gwen,</p>
+                  <p>I know that there were concerns expressed about using Prilosec on a long-term basis when the drug first came out. People were concerned about shutting down the acid production system completely for long periods of time. There was also some concern about pancreatic tumors in some animals given very large doses of the drug. I think that these have not panned out, but you should check with your doctor re his/her views on the matter.</p>
+                  <p>Theoretically, the H2 blocker type drugs shut down acid production to very low levels; Prilosec is thought to completely shut down acid production. However, reflux of stomach contents into the chest portion of the stomach and even up into the throat is still a problem for people who have had esophagectomies that involved removal of the junction between the stomach and the lower esophagus. This relates to the fact that the "valve" that keeps material from coming back up is gone. The muscles of the diaphragm help to keep stuff from coming back, but not as well as the original valve.</p>
+                  <p>Yes the esophagus has been replaced by stomach, but in most of us, not the entire esophagus. Particularly for people who had tumors low in the esophagus, as much as a half of the original structure may still be in place. Thus, there can be irritation of the stump of the esophagus to which the stomach has been attached. Usually, the amount of reflux involved (particularly if we continue to take acid blockers) is not enough to cause problems related to irritation of the esophagus.</p>
+                  <p>Bending and yoga. I think exercise, including yoga, is very important for all of us. I was simply noting that when we get into positions in which the head is lower than the belly, it is likely that material will end up coming up into our throats...and, if we're not careful, we could breathe this junk down into our lungs (called "aspiration."). So, I was simply commending caution. I was at a party my daughter was having last year...and one thing lead to another...and next thing I knew people where seeing how long they could stand on their heads. Well......you know the rest of this tale.</p>
+                  <p>bill bartholome
+                  <hr>
+                  <p><b>Date:</b> Thu, 7 May 1998 14:16:50 <br>
+                    <b>Subject:</b> Bartholome - Responses to Posts of 5/6 May </p>
+                  <p>Doug,</p>
+                  <p>I like the last two lines of your post very much. As you point out, many people would be reluctant to say such things to a physician, particularly a physician they didn't know very well. I agree that there is a need for physicians to expressly disavow patients of any sense that the physician could possibly "know the patient's future" in a crystal ball sense of prediction (vs. prognosis). This is an issue that continues to be important regardless of what course of action or treatment the patient and health care providers might select. For example, even after a patient has been enrolled in a hospice program-which requires that a physician and the hospice medical director agree that the patient is both terminal and is likely to have less than six months to live-it is imporant that "space" or "room" be left for the unexpected to occur, i.e. room for the patient to do so well that they are "discharged" from the hospice! I once had a four year old girl as a patient whose entire body had been taken over by a very aggressive form of childhood cancer called neuroblastoma. She was in hospice for three months...withering away. She looked very much like those pictures that you see in National Geographic of children starving to death in Africa. She got down to 28 pounds. Then, she got her appetite back...she began to gain weight...she stopped having fevers and her pain level radically reduced. By the end of her fourth month in hospice, she had gained back up to over 40 pounds. We finally got so confused, we sent her back to the pediatric oncologist for evaluation. They did every test known to mankind on her over a two week period and could find no evidence of her cancer. She is now 26 years old, married and has a couple kids!</p>
+                  <p>Kathy and Dottie both raise the question of blood clots or thrombus formation. Patients with cancer--particularly with multiple metastatic tumors--are at very high risk of having blood clots form (also called thrombi). These clots can form in large blood vessels leading to major complications (clots in the blood vessels of the kidneys leading to kidney failure). They can also break off and travel through blood vessels to cause things like heart attacks and strokes. This is thought to relate to substances secreted into the blood stream by tumors...substances that lead to a hyper-coagulable state....a state of a tendency to form abnormal blood clots; and also to tumor cells growing on the walls of blood vessels to which blood clots attach.</p>
+                  <p>Al asks about surgery. Although both occur in the esophagus and can be called esophageal cancer, squamous cell carcinoma and adenocarcinoma of the esophagus are very different diseases in terms of how they act in the body and how they are best treated. Since adenocarcinoma is a very "aggressive" kind of cancer in terms of its tendency to spread, surgery is a commonly part of the treatment of the disease. This is not a true for the squamous cell variety of EC. Suggest: Continue to discuss with your doctor and ask doctor's assistance in getting info re surgery in your particular kind of cancer.</p>
+                  <p>Dawn (and others) ask about surgery when there is evidence of spread of the disease to the liver. Surgery may still be appropriate in this situation, but it would be undertaken in an effort to provide better "palliative" treatment...or to provide a better quality of life. Adenocarcinoma of the esophagus which has spread to involve both lymph nodes and distant sites (like liver or brain] is not regarded as a disease that can be "cured" by most oncologists. So, the surgery decision would depend a lot on other factors...age, general physical condition, nutritional status, other chronic illnesses (eg. bad lund disease), and the like. My disease was Stage IV (with liver spread) at the time of my diagnosis. I did the surgery to "buy" myself the most time and the best quality of life. I even managed to convince the surgeons to whack out a chunk of my liver where a large tumor was located while they had me open. Many of the oncologists we consulted with thought that part of my treatment was going overboard. But, I also did no chemotherapy or radiation therapy.</p>
+                  <p>Patty asks about how to know whether or not stuff refluxing up into the back of the throat is acidic or not. It is my understanding that Prilosec shuts off acid production completely (in fact that's why people worried about it...it was so good at shutting it off). So, since you are taking Prilosec, I would assume that it couldn't be acidic. Obviously, this could be measured if one needed to know. Would need to have you swallow a tube and take some of the juice out of your stomach and test it. Since you claim to still be having ulcers and irritation, that might be worth doing. The other way I tell is to take a Tums. If that awful burning sensation goes away immediately, I assume there was some acid.</p>
+                  <p>Peace, <br>
+                    bill bartholome
+                  <hr>
+                  <p><b>Date:</b> Sun, 10 May 1998 14:47:23 <br>
+                    <b>Subject:</b> Jeff's Questions and Reflux Symptoms </p>
+                  <p>Jeff,</p>
+                  <p>Don't know the specific answer to your question about diving. My guess would be that you will have to simply experiment with it. I would suggest that you consider taking an acid blocking drug in addition to your carafate, even if you only did it once at night or before you tried diving. You will also want to keep stomach as empty as possible before both sleep and any diving. If you do get "acidy" throat at night, you should add a shot of antacid or antacid tablet to your procedure for getting back to sleep. The extent of reflux and its relationship to stomach position is also a question that could be studied by having an x-ray procedure or scanning procedure to evaluate the extent that you are having any reflux problem. I am four years out from surgery and still have problems with reflux. Yesterday, for example, I spent part of the day gardening and weeding and digging and transferring compost for the lawn and trees. By the end of the day, my esophagus was irritated and "acidy" and I had more trouble with swallowing at dinner last night than I usually have. Also, had a "lump in my chest" feeling last night. Check with your doctor re the specific question re diving. There also might be some information re the problem in the diving community, eg. people with diaphragmatic hernias (which are very common) must scuba dive. What do they do to prevent problems while diving?</p>
+                  <p>Peace, <br>
+                    bill bartholome
+                  <hr>
+                  <p><b>Date:</b> Mon, 11 May 1998 13:15:32 <br>
+                    <b>Subject:</b> Marvin's celebrations </p>
+                  <p>[Tried to send this post to Danna's address, but my computer told me it had been "crossed out." Don't know if that means she will also not see the message if posted to the list serv. Bill]</p>
+                  <p>Danna,</p>
+                  <p>In your posts re your father you provided all of us with a rich and moving account of these wonderful "celebrations." I assume you are aware of how important and helpful these texts are for those of us living with our own life-threatening ec/mortality; and for those who share this struggle with us.</p>
+                  <p>I just wanted to write to thank you and to encourage you to continue to be a part of this group for as long as you can. Although I can imagine it being somewhat helpful for you to do this [a good way to honor your dad], I also think it would send a powerful message to the other members of this group: that even those who leave will not be forgotten; that death may involve the end of the "fleshy phase" of our lives, but that we will live on in the mind/hearts of those whose lives we have touched.</p>
+                  <p>Thanks again for sharing your dad and his "celebrations" with us. <br>
+                    bill bartholome
+                  <hr>
+                  <p><b>Date:</b> Thu, 14 May 1998 12:38:58 <br>
+                    <b>Subject:</b> Request for Info </p>
+                  <p>Was contacted by woman here in KC area with metastatic esophageal cancer. She is not anxious to do more Chemo at this time, but was looking for information re two "treatments" that had been brought to her attention. She contacted me seeking additional information and asking that I post her request to this group. [She has been in touch with several members of this group in the past, most recently with Al]</p>
+                  <p>What do I tell her about:</p>
+                  <p>(1) Hydrazine Sulfate [She is attracted to this on the basis of low cost and low reported side effects.] I was not aware of anything being done with this drug since the early 60's. She was sent info and the name and address of a company that is making the drug available.</p>
+                  <p>(2) Essiac Tea. Told her I was familiar with some literature suggesting that "green tea(s)" had a role in preventing certain cancers, including esophageal cancer. She is already doing green tea on a daily basis, but was told she should add this other blend of teas to her regime as a "stimulator of the immune system."</p>
+                  <p>Thanks in advance for your help. Respond to me directly unless you think that other members might be interested. <br>
+                    bill bartholome
+                  <hr>
+                  <p><b>Date:</b> Fri, 22 May 1998 11:00:52 <br>
+                    <b>Subject:</b> smokeable herb; assisted suicide; and hospice - bartholome </p>
+                  <p>I know many people with life-limiting illnesses...esp. people who have terminal illnesses....who believe that they are living the last chapter of their lives that find that smoking a grass several times a day helps to improve the quality of their lives. Grass is a fairly good drug for reducing anxiety....it is a great drug for nausea (may be one of the best)...it does a great job of helping "get a little distance" from pain...it does stimulate appetite (the "munchies"]...it also helps to induce a kind of "mellowness" that can be highly desirable. I feel strongly that anyone who is seriously considering suicide or assisted suicide as a "solution" to dealing with the challenges and struggles of life MUST at least be allowed to consider that hospice is the right way to go. I have worked with hundreds of dying children and their families over the past 20 years and I am absolutely convinced that hospice is the way to go. Want to thank Danna for her wonderful post on this subject. I strongly commend it.</p>
+                  <p>Peace, <br>
+                    bill bartholome
+                  <hr>
+                  <p><b>Date:</b> Mon, 25 May 1998 21:54:02 <br>
+                    <b>Subject:</b> Popcorn </p>
+                  <p>Had surgery (standard procedure) June 94. Had five dilation procedures. Have a small (0.75 cm in diameter) opening at my anastamosis between what's left of esophagus and pulled up stomach. Eat at least two quarts of buttered popcorn every day. We have a local theater that gives free refills for people who order a large popcorn. They lose a lot of money on me!</p>
+                  <p>bill bartholome
+                  <hr>
+                  <p><b>Date:</b> Thu, 28 May 1998 09:54:23 <br>
+                    <b>Subject:</b> Responses re dumping, hospice and heredity - Bartholome </p>
+                  <p>Re: dumping</p>
+                  <p>Ed and others provide useful info re dumping syndrome. However, I can personally testify that at least one patient (me) has experienced both early and late dumping. In fact, late dumping is the most mysterious for me. When I experience early dumping I can almost always figure out how I went about doing it. With late dumping, I am often unsure what I did to cause it. I still have both experiences at least several times a month and I am almost four years post surgery. Re: Hospice. I think the most important message we need to share with one another re hospice is that dying "in the arms" of a hospice is the best kind of death a person can experience. Dying without the care that hospice can provide is, in my mind, very sad, if not tragic. I tell people that dying without hospice is like undergoing major surgery without anesthesia. Unfortunately, hospice is seen by many Americans as about doom and gloom. In fact, hospice is about helping people live as well as they possibly can while they die...it is about bringing intensive support and caring to a person's body, psyche, family and soul. Re: heredity and EC The only thing I would add to Al's post is that one of the more common predisposing factors for the development of EC is, as you all know, the development of a condition in the esophagus known as Barrett's esophagus. This change in the lining cells of the esophagus is thought to be a response to long standing regurgitation of acidic stomach contents into the esophagus, so called GERD--gastroesophageal reflux disease. One of the more common conditions that gives rise to GERD is a disorder known as a hiatal hernia. This disorder is commonly familial. My mother had such a hernia and I and five of my siblings have this disorder. So, it may not be that EC itself is familial or hereditary, but several of the predisposing conditions to the development of this cancer do "run in families." Family members who have lots of "heartburn" or "acid indigestion" or symptoms of GERD should have these conditions evaluated. Most will need to be on long-term treatment to block acid production by the stomach. Some will require endoscopy to evaluate whether or not they are developing changes in the lining of the esophagus. Those who do develop changes, i.e. Barrett's esophagus, will need regular (every 6-12months) endoscopy and biopsy. In Japan, people who have persistent Barrett's changes are being encouraged to have prophylactic removal of their esophagus. This approach may be adopted by other health care systems given the notoriously aggressive nature of our disease.</p>
+                  <p>bill bartholome
+                  <hr>
+                  <p><b>Date:</b> Sun, 31 May 1998 15:06:18 <br>
+                    <b>Subject:</b> Dilations; stomach contents; "Doctor talk" </p>
+                  <p>Patty,</p>
+                  <p>Stints are used to keep the esophagus open for a short time in persons with recurrent, inoperable or refractory cancer. They are a palliative/hospice care type intervention. Suggest that you tell the doctor that you would like to have your esophagus dilated on an "as needed" basis from now on, i.e. you would decide when and if you needed dilation, not the doc.</p>
+                  <p>Don't worry about what the doctor sees in your stomach during an endoscopy procedure. Weight and nutritional status are the appropriate signs to evaluate in terms of appropriate digestion and absorption of foodstuffs.</p>
+                  <p>All too often doctors have a tendency to think out loud, esp. when they don't know what to make of something; when they are caught off guard and can't come up with an explanation. They have a real hard time saying things like: "I don't know;" or "I don't understand why we are having to dilate your esophagus so frequently;" or "For some reason, there was some undigested food in your stomach."</p>
+                  <p>They forget that patients listen to their idle musings; and, that patient's take what doctors say very seriously.</p>
+                  <p>May be a case where the patient needs to take a little more control of the course of treatment. For example, I would argue that you are in a far better position to know when you need to be dilated than the doctor. It's your esophagus!</p>
+                  <p>Peace,<br>
+                    bill bartholome</p>
+            <!-- #EndEditable -->
+            <hr>
+            <p align="center"><strong><a href="/sto/wbartholome/index.html">William G. Bartholome, MD, MTS</a> | <a href="/sto/wbartholome/ecg_wb3.html#ecg_top">Back to Top</a><br>
+              1998 ACOR EC-Group Posts: <a href="/sto/wbartholome/ecg_wb1.html">Mar</a> | <a href="/sto/wbartholome/ecg_wb2.html">Apr</a> | <a href="/sto/wbartholome/ecg_wb3.html">May</a> | <a href="/sto/wbartholome/ecg_wb4.html">Jun</a> | <a href="/sto/wbartholome/ecg_wb5.html">Jul</a> | <a href="/sto/wbartholome/ecg_wb6.html">Aug</a> | <a href="/sto/wbartholome/ecg_wb7.html">Sep</a><br>
+              <a href="/sto/wbartholome/ecg_wb8.html">Oct</a> | <a href="/sto/wbartholome/ecg_wb9.html">Nov</a> | <a href="/sto/wbartholome/ecg_wb10.html">Dec</a> | 1999 Posts: <a href="/sto/wbartholome/ecg_wb11.html">Jan</a> | <a href="/sto/wbartholome/ecg_wb12.html">Feb</a> | <a href="/sto/wbartholome/ecg_wb13.html">Mar</a> | <a href="/sto/wbartholome/ecg_wb14.html">Apr</a> | <a href="/sto/wbartholome/ecg_wb15.html">May</a> | <a href="/sto/wbartholome/ecg_wb16.html">Jun</a></strong></p>
+            </div>
+  <img id="cafe_screen_disclaimer" src="/web/lav/dsc.gif" alt="Information found here is not to be a substitute for professional care.">
+  <div align="center" class="webonly">
+    <div id="cafegoogle">
+      <script type="text/javascript"><!--
+google_ad_client = "pub-2176662973486049";
+google_ad_width = "468";
+google_ad_height = "60";
+google_ad_format = "468x60_as";
+google_ad_type = "text";
+google_ad_channel ="";
+google_color_border = "CCCCCC";
+google_color_bg = "FFFFFF";
+google_color_link = "000000";
+google_color_url = "666666";
+google_color_text = "333333";
+//--></script>
+      <script type="text/javascript"
+  src="/web/20100926141756js_/http://pagead2.googlesyndication.com/pagead/show_ads.js">
+      </script>
+      <br>
+      <p>The above advertisements, provided automatically, are neither selected nor endorsed by us.<br>
+        Some may lead to web sites that provide questionable or controversial medical information.<br>
+        If you encounter advertisements inappropriate for the Caf&eacute;, send us the advertisement's URL.</p>
+    </div>
+    <h5><a href="/index.html">home</a> | <a href="/cnt/index.html">contents</a> | <a href="/sto/index.html">stories</a> | <a href="/ecg/index.html">ec-group</a> | <a href="/lnk/index.html">links</a> | <a href="/etc/index.html">etc.</a></h5>
+    <img src="/web/art/footer.gif" width="509" alt="Some graphics courtesy of Hoopla! disc, copyright 1995 Image Club Graphics. 1-800-661-9410" height="50">
+    <p><a href="/cnt/contact.html">Send a message to Marc &amp; Tammy Wolfgram</a></p>
+    <table width="610" border="0" cellpadding="0" cellspacing="0">
+      <tr valign="middle">
+        <td width="49" align="center"><img src="/web/cssprint.gif" alt="This page is printer friendly" width="45" height="50" border="0"></td>
+        <td align="center"><h6>Copyright &copy; 1995-2008&mdash;Last changed on
+            <!-- #BeginDate format:Am1 -->June 17, 2008<!-- #EndDate -->
+            &mdash; We comply with the<br> 
+            <a href="/web/20100926141756/http://www.hon.ch/HONcode/Conduct.html" onclick="window.open(this.href); return false;"> HONcode standard for trustworthy health</a> information: <a href="/web/20100926141756/https://www.hon.ch/HONcode/Conduct.html?HONConduct294647" onclick="window.open(this.href); return false;">verify here</a>.</h6></td>
+        <td width="45"><a href="/web/20100926141756/https://www.hon.ch/HONcode/Conduct.html?HONConduct294647" onclick="window.open(this.href); return false;" > <img src="/web/20100926141756im_/https://www.hon.ch/HONcode/Seal/HONConduct294647_s.gif" width="49" height="72" style="border:0px" title="This website is accredited by Health On the Net Foundation. Click to verify." alt="This website is accredited by Health On the Net Foundation. Click to verify." /></a></td>
+      </tr>
+    </table>
+  </div>
+  <img id="cafe_screen_footer" src="/web/lav/bot.gif"> </div>
+<map name="Map">
+  <area shape="rect" coords="240,113,286,143" href="/index.html" alt="Home">
+  <area shape="rect" coords="297,113,367,143" href="/cnt/index.html" alt="Contents">
+  <area shape="rect" coords="376,113,434,143" href="/sto/index.html" alt="Stories">
+  <area shape="rect" coords="443,113,516,143" href="/ecg/index.html" alt="EC-Group">
+  <area shape="rect" coords="527,113,574,143" href="/lnk/index.html" alt="Links">
+  <area shape="rect" coords="583,113,613,143" href="/etc/index.html" alt="Etcetera">
+</map>
+</body>
+<!-- #EndTemplate --></html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 14:17:56 Sep 26, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 18:08:19 Dec 18, 2013.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

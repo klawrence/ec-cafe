@@ -1,0 +1,397 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><!-- #BeginTemplate "/Templates/cafe_lavender_wbecg.dwt" --><!-- DW6 -->
+<head>
+
+<script type="text/javascript" src="/static/js/analytics.js" ></script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+
+<!-- #BeginEditable "doctitle" -->
+<title>Cathy's EC Caf&eacute; - Bartholome - June, 1998</title>
+<!-- #EndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="Cathy's Esophageal Cancer Cafe -- Providing information on esophageal cancer to patients and caregivers.">
+<meta name="Keywords" content="esophagus, gerd, oesophasgus, ec, barretts, adenocarcinoma, squamous, ec-group, cancer, support, health, medical, patient, caregiver, ecaa, acor, esophagectomy, esophageal, oesophageal, ec cafe">
+<link rel="stylesheet" href="/cafe.css" type="text/css" media="screen">
+
+<style type="text/css">
+<!--
+.bodyback {
+	background-image: url(../../web/lav/bgd.gif);
+	background-repeat: repeat-y;
+}
+-->
+</style>
+<link rel="stylesheet" href="/cafe_prt.css" type="text/css" media="print">
+<!-- #BeginEditable "head" --><!-- #EndEditable -->
+</head>
+<body>
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script> if (window.archive_analytics) { window.archive_analytics.values['server_name']="wwwb-app11.us.archive.org";}; </script>
+
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1388534399999;
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http:\/\/eccafe.org\/sto\/wbartholome\/ecg_wb4.html";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth = 450;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "26";
+var displayMonth = "Sep";
+var displayYear = "2010";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" lang="en" class="__wb_banner_div" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px">
+
+
+<div id="wm-ipp-inside" class="__wb_banner_div" style="position:fixed;padding:0!important;margin:0!important;width:97%;min-width:780px;border:5px solid #000;border-top:none;background-image:url(/static/images/toolbar/wm_tb_bk_trns.png);text-align:center;-moz-box-shadow:1px 1px 3px #333;-webkit-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333;font-size:11px!important;font-family:'Lucida Grande','Arial',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://eccafe.org/sto/wbartholome/ecg_wb4.html" style="width:400px;font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20100926141903" /><input type="submit" value="Go" style="font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;margin-left:5px;width: inherit !important" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:'Helvetica','Lucida Grande','Arial',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/sto/wbartholome/ecg_wb4.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="24 Jul 2008"><strong>JUL</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 14:19:03 Sep 26, 2010">SEP</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/sto/wbartholome/ecg_wb4.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="22 Nov 2010"><strong>NOV</strong></a>
+		                
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/sto/wbartholome/ecg_wb4.html" title="1:56:48 Jul 24, 2008" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 14:19:03 Sep 26, 2010">26</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/sto/wbartholome/ecg_wb4.html" title="17:29:13 Nov 22, 2010" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0"/></a>
+		                
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/sto/wbartholome/ecg_wb4.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="24 Jul 2008"><strong>2008</strong></a>
+		                
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 14:19:03 Sep 26, 2010">2010</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       2011
+                       
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="/sto/wbartholome/ecg_wb4.html" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>23 captures</strong></a>
+           <div class="__wb_banner_div" style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">29 Mar 03 - 16 Dec 10</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:450px;height:27px;" href="" id="wm-graph-anchor">
+       <div class="__wb_banner_div" id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:450px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers('inline');" 
+				onmouseout="showTrackers('none');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="450"
+				height="27"
+				border="0"
+				src="/web/jsp/graph.jsp?graphdata=450_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:001100110001_2004:-1:010010010101_2005:-1:011100000000_2006:-1:000010001100_2007:-1:000101001000_2008:-1:000000100000_2009:-1:000000000000_2010:8:000000001011_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="/static/images/toolbar/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="/static/images/toolbar/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById('wm-ipp').style.display='none';" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_close.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;margin-bottom:23px;background-color:transparent;border:none;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_help.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;background-color:transparent;border:none;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<div id="cafebody" class="bodyback">
+  <div align="center"><img id="cafe_print_header"src="/web/print_header.jpg" width="504" height="72"></div>
+  <img id="cafe_screen_header" src="/web/lav/top.gif" usemap="#Map" border="0" alt="Cathy's EC Cafe">
+  <div id="cafemain"> <a name="ecg_top"></a>
+            <h1 align="center"><a href="/sto/wbartholome/index.html">William G. Bartholome, MD, MTS</a></h1>
+            <h2 align="center">ACOR EC-Group Posts: <!-- #BeginEditable "ecg_date" -->June, 1998<!-- #EndEditable --></h2>
+            <p align="center"><strong>1998 ACOR EC-Group Posts: <a href="/sto/wbartholome/ecg_wb1.html">Mar</a> | <a href="/sto/wbartholome/ecg_wb2.html">Apr</a> | <a href="/sto/wbartholome/ecg_wb3.html">May</a> | <a href="/sto/wbartholome/ecg_wb4.html">Jun</a> | <a href="/sto/wbartholome/ecg_wb5.html">Jul</a> | <a href="/sto/wbartholome/ecg_wb6.html">Aug</a> | <a href="/sto/wbartholome/ecg_wb7.html">Sep</a><br>
+              <a href="/sto/wbartholome/ecg_wb8.html">Oct</a> | <a href="/sto/wbartholome/ecg_wb9.html">Nov</a> | <a href="/sto/wbartholome/ecg_wb10.html">Dec</a> | 1999 Posts: <a href="/sto/wbartholome/ecg_wb11.html">Jan</a> | <a href="/sto/wbartholome/ecg_wb12.html">Feb</a> | <a href="/sto/wbartholome/ecg_wb13.html">Mar</a> | <a href="/sto/wbartholome/ecg_wb14.html">Apr</a> | <a href="/sto/wbartholome/ecg_wb15.html">May</a> | <a href="/sto/wbartholome/ecg_wb16.html">Jun</a></strong></p>
+            <hr>
+            <!-- #BeginEditable "ecg_body" -->
+            <p><b>Date:</b> Mon, 8 Jun 1998 11:39:48 <br>
+              <b>Subject:</b> PDT Treatment; Trip to Ireland</p>
+            <p>In response to John's post re PDT, I think it is important that we bear in mind that this procedure is still quite experimental. I agree that there is a great deal of enthusiasm for the idea that PDT may be an effective "treatment" for the metaplasia of the esophagus called Barrett's esophagus. If studies that are on-going demonstrate that these changes can be eliminated by this technique, it may well be a godsend to people with GERD (gastro-esophageal reflux) who have developed these changes. They may be able to be given medical treatment for GERD (acid blocking drugs and the like) and PDT for the Barrett's. They might then require endoscopy every other year or so rather than endoscopy with biopsy every 6 months which is now what is recommended for people with Barrett's. It may even be the case that with proper treatment of the underlying GERD, people would be able to have their Barrett's eliminated permanently, i.e. they would only need esophagoscopy and biopsy for three to five years to document that it was indeed permanently eliminated.</p>
+            <p>I would also point out that even if PDT is effective in eliminating Barrett's changes from the esophagus, individuals undergoing this procedure will still need treatment for hiatal hernia and/or GERD since these problems gave rise to the Barrett's and are not corrected by PDT. Many individuals will need surgery to correct the underlying problem, i.e. fundoplication procedures.</p>
+            <p>The role of PDT in the actual treatment of people with EC is even more controversial. Again, this is highly experimental. The people at the Thompson in Knoxville may very well be telling people that they have "ablated early adenocarcinomas with PDT." It may also be true that they have done this in selected cases. But, that is a very far cry from proving that PDT is as effective for early adenocarcinoma than standard treatment of this disease. It should also be pointed out that we are talking about people with Stage I disease T1 N0 M0.</p>
+            <p>The role of PDT in individuals with more advanced EC is even more controversial. It may well be the case that PDT can be used in some cases as a palliative intervention (much like esophageal stints) that can be used in cases in which individuals have inoperative lesions of the esophagus that are obstructing.</p>
+            <p>For the last five decades, cancer treatment has slowly evolved. Although there have been major "leaps" forward, most of the progress that has been made has been the result of the hard, "grunt" work of doing high-quality clinical research. PDT is a very promising intervention. It is likely that when the dust settles, it will find a "niche" in the armamentarium of treatments for EC. But, it is very premature to claim to know what the appropriate niche is at this point in time.</p>
+            <p>re: Don's Mom and the trip to Ireland.</p>
+            <p>As a general rule, I think that folks with life-threatening cancers (particularly those with inoperable, large lesions) should see themselves as operating within a considerably restricted time frame, i.e. less than a year. I think that any important, meaningful, significant events--like a woman's trip to Ireland with her five children--should take place as soon as possible, i.e. not deferred until the summer of 1999. In fact, it may even be that the chemotherapy regime in this case should be modified as necessary so that she will be able to make this very important trip.</p>
+            <p>It is very unlikely that chemotherapy and radiation therapy of an inoperable lesion such as your mom's will be "curative," i.e. it is most likely that the treatment is being given to make it possible for your mom to live as long and as well as she can live with her cancer. In this kind of scenario, other values that inform the value of a person's life...such as a once-in-a-lifetime trip...should be factored into the treatment plan.</p>
+            <p>If I were in your shoes, I would have your Mom tell her docs that this trip is something that she "has to" do; and, that she wants the chemotherapy to be administered in such a way that she will be physically able to make this trip. Such requests (the doctors will hear it as a "demand") are "more than reasonable." Unfortunately, I can't tell you how her docs will respond. All too often, doctors think that patients should live their entire lives as if the only thing that mattered was the doctor's "orders." All medical interventions should be evaluated in light of the patient's particular values. This is even more important when the illness is cancer; and, even more important when it is inoperable esophageal cancer. One of the most important aspects of the psychological and social aspects of living with cancer is finding the appropriate "place" for cancer and its treatment in one's on-going life.</p>
+            <p>bill bartholome
+            <hr>
+            <p><b>Date:</b> Thu, 11 Jun 1998 13:08:17 <br>
+              <b>Subject:</b> Appropriate interval for following Barrett's esophageal changes</p>
+            <p>Steve,</p>
+            <p>You claimed that you had heard different opinions re following of Barrett's esophageal changes. Marc Wolfgram suggests an interval of one year. The gastroenterologist here at KU Med Center recommends every six months. The important issue is that the procedure include multiple biopsies. Endoscopy itself (just looking through the scope) is NOT adequate for follow-up.</p>
+            <p>The other factor to be looked at is treatment of the underlying mechanism that created the Barrett's changes in the first place. If the Barrett's is a new diagnosis in a person who had never been treated for GERD (reflux disease), I would argue that the follow-up interval should be short (3-6 months for first few follow-up exams with biopsy] If the Barrett's has been stable and measures have been taken to treat the underlying reflux, i.e. acid blockers and/or surgery, the "best" or "appropriate" interval might be longer (6-12 months).</p>
+            <p>One of the most controversial questions is that of what to do if the GERD has been treated and the Barrett's changes don't revert to normal after several (3-4 years) of endoscopies and biopsies. Some recommend that Barrett's that persists even after maximal treatment of GERD should prompt surgical removal of the involved portion of the esophagus. (This is the approach, for example, that is used in Japan.]</p>
+            <p>Obviously the issue of PDT and the possibility of ablating or eliminating Barrett's with PDT might play into the decision at this point in time.</p>
+            <p>While I have the floor, I also wanted to tell Danna thanks for her wonderful stories of her father and her grief. My head fills with pictures as I read her stories. I was able to see the watch...the birds...the footprint. PLEASE continue to share these experiences with us.</p>
+            <p>bill bartholome
+            <hr>
+            <p><b>Date:</b> Tue, 16 Jun 1998 10:01:05 <br>
+              <b>Subject:</b> Chemotherapy for metastatic EC</p>
+            <p>Several participants raise questions about chemotherapy for metastatic EC. This is a question that faces a huge number of people with metastatic solid tumors. It is very rare that people with metastatic solid tumors are cured of cancer. Yet, some people with metastatic solid tumors "respond" to chemotherapy, i.e. growths of cancer "shrink" and occasionally seem to "disappear" in response to chemotherapy. This is known to happen to about 20% of people with metastatic EC. It may also be the case (although this has not been proven) that chemotherapy will alter the trajectory or course of metastatic EC, i.e. that the 20% of people with metastatic EC who "respond" live longer than they would had they not received chemotherapy. {It should be noted that the 80% of people with metastatic EC who do not "respond" to chemotherapy are thought to have a worse quality of life than those who do not receive chemotherapy; and, that they do not live longer than they would have if they had not received chemotherapy}</p>
+            <p>The other problem is that posed by participants, namely once a person has completed a course of chemotherapy; and appears to have "responded" to chemotherapy, then what? Or, if a person develops significant complications of chemotherapy, then what? Come off chemotherapy and see what happens? Go on to some other form of chemotherapy? Elect to join a clinical cancer study and go on to investigational chemotherapy? There is no "right" answer to these questions as far as I am concerned. There is certainly no "science" which tells people what to do at this point in the course of the illness. People take very different paths at this juncture.</p>
+            <p>The question of radiation therapy was also raised. The critical issue in the use of radiation therapy with metastatic solid tumors like EC is the question of what do you radiate? If there is evidence of involvement of multiple sites and organs with cancer, even if these growths "respond" to chemotherapy, it still makes little sense to use radiation, esp. when tumors are in the lungs or the liver (organs with tolerate radiation therapy very poorly). The only documented role for radiation therapy in persons with metastatic solid tumors is as a part of palliative care, usually directed at bone lesions as a way of controlling pain.
+            <p>bill bartholome
+            <hr>
+            <p><b>Date:</b> Thu, 18 Jun 1998 12:40:41 <br>
+              <b>Subject:</b> Reply to posts of 16 June</p>
+            <p>Marge,</p>
+            <p>Discuss your concerns with Ray's pediatrician. Could have a hiatal hernia (these are felt to be congenital abnormalities). Diagnostic procedure of choice would be Upper GI and probably not esophagoscopy. It is thought that Barrett's changes in the esophagus take many years to develop. Would be unlikely to be present in 12y/o. If he has persistent symptoms of reflux of stomach contents into his esophagus, he will need long-term management. May need to go on acid blocking drugs; may need surgery.</p>
+            <p>Danna/Karen,</p>
+            <p>Highly likely that your recurrent phone calls are being placed by a computer. It has happened to me repeatedly. Often the computer will keep calling and keep calling often at the same time of day or often one call right after another call, esp. if the caller doesn't say anything. If you really want to know, the phone company can identify your caller from its records or you can punch "Star - 69" and the phone company will connect you with the party that placed the call. I have a hard time with the idea that the dead can reach out to us through the phone or TV or radio. But, I have a hard time with the idea that the dead can reach us at all, so you may want to take that into account.</p>
+            <p>Ted,</p>
+            <p>Tough call re surgery. I think many docs would argue that your best shot at "cure" would be to complete the "triple treatment." It is also true that surgery is probably the best way to determine the exact extent of your disease process, i.e. the involved esophagus and stomach as well as multiple lymph nodes can be removed and examined for evidence of response to treatment and residual disease. It also might be of help to you in determining whether or not you wanted to hedge your bets even further by having some post-operative chemotherapy. For example, if the surgery revealed that your tumor had responded very well to Chemo/radiation and that there were only a few involved lymph nodes in your chest, but that there was some evidence of persistent tumor in one or two of the nodes, you and your docs may want to crank it up and do a few more rounds of chemotherapy. On the other hand, if the surgery revealed that your tumor had not responded well and that there was extensive lymph node involvement, you may want to avoid the extra burdens of doing more chemotherapy. The surgery is NOT a piece of cake, however. So, if you don't feel you need to "go for a cure" it is something that you may want to skip. The other thing to remember about surgery is that it may be a good palliative procedure, i.e. it may make living and dying with the disease a little easier since you would not be dealing with obstruction of the esophagus, but with other problems related to the cancer. Would be more than willing to discuss in more detail off line if you prefer.
+            <p>bill bartholome
+            <hr>
+            <p><b>Date:</b> Fri, 19 Jun 1998 11:08:32 <br>
+              <b>Subject:</b> COLD HELIUM NEON LIGHT BEAM (Lazer) treatments..."</p>
+            <p>Joe,</p>
+            <p>Unless you believe in "cold fusion" or "magic beans" would STRONGLY encourage your staying the hell away from COLD HELIUM NEON LIGHT BEAMS. In fact, the practitioner who is offering you this treatment should be reported to your State Board of Healing Arts for a health care fraud investigation. THERE IS NO SUCH ESTABLISHED TREAMENT ENTITY. This is bogus..."blue smoke and mirrors"...sham....whatever you want to call it.</p>
+            <p>Strongly encourage your consulting with a good rehab physical therapist who will be able to assess the problem and prescribe a directed program of exercise and habilitation for your neck. My guess is that you could learn the set of exercises you would have to do in two or three visits.</p>
+            <p>bill bartholome
+            <hr>
+            <p><b>Date:</b> Mon, 22 Jun 1998 21:18:23 <br>
+              <b>Subject:</b> God talk on the Internet</p>
+            <p>Like humor doing God talk in the context of an electronic relationship can be very tricky. Our tendency in is to over-reading and over-interpret electronic texts from people that we have no face to face relationship with. Our tendency is to read into the text much more than is really there. This makes taking things lightly very hard as in attempts at humor. It also makes taking things just seriously enough difficult also. I heard the cry "What kind of God would....?" to be nothing more or less than the cry of Job. Highly recommend reading and even rereading your Job. Job's God was not at all offended by Job's anger...by Job's interrogation. He has no trouble at all with the idea that man is called to "wrestle" and "stuggle" with God. This cry was the cry of one of us cancerous ones...crying out to his God in frustration...in anger...in confusion. The question: "Who could believe in a God who would allow infants to get leukemia and suffer all-too-brief lives and die tearing the hearts out of their parents?" is not a challenge to anyone's religious belief systems. It is a fundamental theological question that humans have been struggling with since the dawn of recorded history. Every "believer" has the problem of explaining the existence of incomprehensible degrees of pain and suffering and sorrow and evil in a universe in which we take to exist an all-knowing, all-powerful One who loves us.</p>
+            <p>In order to engage in talk about matters theological...esp. matters religious, we need to be cognizant of the fact that we need to both "lighten up" on each other's words; and, open our ear/hearts to hear the other's truth.</p>
+            <p>My new relationship with Death has opened up in me an enlarging sense of the spiritual. I find myself once again asking theological questions. It is as if Death and God are cut from the same cloth. Living in the light of death seems to be living in an intense spiritual light. Living with Death on my shoulder feels a lot like I've always thought it would be like to live with God on my shoulder. I recently wrote: "To bend one's ear toward Death is to listen for the voice of God."</p>
+            <p>We need to try hard to "hear" the voice of each other in these chiken scratches we make and see on these glowing screens.</p>
+            <p>bill bartholome
+            <hr>
+            <p><b>Date:</b> Mon, 29 Jun 1998 13:08:22 <br>
+              <b>Subject:</b> "...the best years of my life..."</p>
+            <p>Doug responding to a post by Bjorn states that he felt similarly about the two years he has had since his diagnosis yet he was reluctant to say anything about it because it seemed somehow "callous;" and, because it might sound "unbelievable."</p>
+            <p>Just wanted to share with you two (and with the other participants) that my past four years with Stage IV EC (anniversary date of my palliative surgery 26 June) have been without a doubt the best years of my life...I am alive in a way I never was before...I live in the present to an extent that I never thought possible...I allow myself more freedom than I have ever allowed myself before...I am more open and honest than I ever was before...I have become a better person than I ever thought I could be. In the words of Walt Whitman, "I know nothing but miracles." Living in the light of death...living with death on my shoulder...living as a terminally ill person has allowed me to experience a kind of living that is so incredible that I honestly hope each and every American can have it...can have a chance to live with a terminal illness...to live out a last chapter.</p>
+            <p>I think it important that we talk about this experience...that we let all of those involved in this electronic conversation know about what we are experiencing. The image that Americans have of the last chapter of life is profoundly negative. They imagine the last chapter of their lives to be nothing less than the worst...most awful chapter they will experience. This is NOT the case! And, it's the Doug's and Bjorn's and the Bill's of this world who are going to keep challenging this mistaken notion until the rest of you get sick of listening to us!</p>
+            <p>If fact, the biggest problem I face (and I would bet that Doug and Bjorn do as well) is the fact that we have been systematically isolated from society by virtue of our cancers and the life-threatening nature of our conditions. We are "Others" ...deviants...people to be avoided. So, our biggest problems are actually created by those around us who are so afraid of cancer and death that they have to push us away...and deprive themselves of the opportunity of finding out what it is really like to live with cancer...what it's really like to life with a life-threatening illness.</p>
+            <p>So there! (Don't mean to be quite so, "in your face" (Or do I?????)</p>
+            <p>[ : - )</p>
+            <p>bill bartholome</p>
+            <!-- #EndEditable -->
+            <hr>
+            <p align="center"><strong><a href="/sto/wbartholome/index.html">William G. Bartholome, MD, MTS</a> | <a href="/sto/wbartholome/ecg_wb4.html#ecg_top">Back to Top</a><br>
+              1998 ACOR EC-Group Posts: <a href="/sto/wbartholome/ecg_wb1.html">Mar</a> | <a href="/sto/wbartholome/ecg_wb2.html">Apr</a> | <a href="/sto/wbartholome/ecg_wb3.html">May</a> | <a href="/sto/wbartholome/ecg_wb4.html">Jun</a> | <a href="/sto/wbartholome/ecg_wb5.html">Jul</a> | <a href="/sto/wbartholome/ecg_wb6.html">Aug</a> | <a href="/sto/wbartholome/ecg_wb7.html">Sep</a><br>
+              <a href="/sto/wbartholome/ecg_wb8.html">Oct</a> | <a href="/sto/wbartholome/ecg_wb9.html">Nov</a> | <a href="/sto/wbartholome/ecg_wb10.html">Dec</a> | 1999 Posts: <a href="/sto/wbartholome/ecg_wb11.html">Jan</a> | <a href="/sto/wbartholome/ecg_wb12.html">Feb</a> | <a href="/sto/wbartholome/ecg_wb13.html">Mar</a> | <a href="/sto/wbartholome/ecg_wb14.html">Apr</a> | <a href="/sto/wbartholome/ecg_wb15.html">May</a> | <a href="/sto/wbartholome/ecg_wb16.html">Jun</a></strong></p>
+            </div>
+  <img id="cafe_screen_disclaimer" src="/web/lav/dsc.gif" alt="Information found here is not to be a substitute for professional care.">
+  <div align="center" class="webonly">
+    <div id="cafegoogle">
+      <script type="text/javascript"><!--
+google_ad_client = "pub-2176662973486049";
+google_ad_width = "468";
+google_ad_height = "60";
+google_ad_format = "468x60_as";
+google_ad_type = "text";
+google_ad_channel ="";
+google_color_border = "CCCCCC";
+google_color_bg = "FFFFFF";
+google_color_link = "000000";
+google_color_url = "666666";
+google_color_text = "333333";
+//--></script>
+      <script type="text/javascript"
+  src="/web/20100926141903js_/http://pagead2.googlesyndication.com/pagead/show_ads.js">
+      </script>
+      <br>
+      <p>The above advertisements, provided automatically, are neither selected nor endorsed by us.<br>
+        Some may lead to web sites that provide questionable or controversial medical information.<br>
+        If you encounter advertisements inappropriate for the Caf&eacute;, send us the advertisement's URL.</p>
+    </div>
+    <h5><a href="/index.html">home</a> | <a href="/cnt/index.html">contents</a> | <a href="/sto/index.html">stories</a> | <a href="/ecg/index.html">ec-group</a> | <a href="/lnk/index.html">links</a> | <a href="/etc/index.html">etc.</a></h5>
+    <img src="/web/art/footer.gif" width="509" alt="Some graphics courtesy of Hoopla! disc, copyright 1995 Image Club Graphics. 1-800-661-9410" height="50">
+    <p><a href="/cnt/contact.html">Send a message to Marc &amp; Tammy Wolfgram</a></p>
+    <table width="610" border="0" cellpadding="0" cellspacing="0">
+      <tr valign="middle">
+        <td width="49" align="center"><img src="/web/cssprint.gif" alt="This page is printer friendly" width="45" height="50" border="0"></td>
+        <td align="center"><h6>Copyright &copy; 1995-2008&mdash;Last changed on
+            <!-- #BeginDate format:Am1 -->June 17, 2008<!-- #EndDate -->
+            &mdash; We comply with the<br> 
+            <a href="/web/20100926141903/http://www.hon.ch/HONcode/Conduct.html" onclick="window.open(this.href); return false;"> HONcode standard for trustworthy health</a> information: <a href="/web/20100926141903/https://www.hon.ch/HONcode/Conduct.html?HONConduct294647" onclick="window.open(this.href); return false;">verify here</a>.</h6></td>
+        <td width="45"><a href="/web/20100926141903/https://www.hon.ch/HONcode/Conduct.html?HONConduct294647" onclick="window.open(this.href); return false;" > <img src="/web/20100926141903im_/https://www.hon.ch/HONcode/Seal/HONConduct294647_s.gif" width="49" height="72" style="border:0px" title="This website is accredited by Health On the Net Foundation. Click to verify." alt="This website is accredited by Health On the Net Foundation. Click to verify." /></a></td>
+      </tr>
+    </table>
+  </div>
+  <img id="cafe_screen_footer" src="/web/lav/bot.gif"> </div>
+<map name="Map">
+  <area shape="rect" coords="240,113,286,143" href="/index.html" alt="Home">
+  <area shape="rect" coords="297,113,367,143" href="/cnt/index.html" alt="Contents">
+  <area shape="rect" coords="376,113,434,143" href="/sto/index.html" alt="Stories">
+  <area shape="rect" coords="443,113,516,143" href="/ecg/index.html" alt="EC-Group">
+  <area shape="rect" coords="527,113,574,143" href="/lnk/index.html" alt="Links">
+  <area shape="rect" coords="583,113,613,143" href="/etc/index.html" alt="Etcetera">
+</map>
+</body>
+<!-- #EndTemplate --></html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 14:19:03 Sep 26, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 18:08:27 Dec 18, 2013.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

@@ -1,0 +1,488 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><!-- #BeginTemplate "/Templates/cafe_lavender_wbecg.dwt" --><!-- DW6 -->
+<head>
+
+<script type="text/javascript" src="/static/js/analytics.js" ></script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+
+<!-- #BeginEditable "doctitle" -->
+<title>Cathy's EC Caf&eacute; - Bartholome - December, 1998</title>
+<!-- #EndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="Cathy's Esophageal Cancer Cafe -- Providing information on esophageal cancer to patients and caregivers.">
+<meta name="Keywords" content="esophagus, gerd, oesophasgus, ec, barretts, adenocarcinoma, squamous, ec-group, cancer, support, health, medical, patient, caregiver, ecaa, acor, esophagectomy, esophageal, oesophageal, ec cafe">
+<link rel="stylesheet" href="/web/20100926140827cs_/http://eccafe.org/cafe.css" type="text/css" media="screen">
+
+<style type="text/css">
+<!--
+.bodyback {
+	background-image: url(../../web/lav/bgd.gif);
+	background-repeat: repeat-y;
+}
+-->
+</style>
+<link rel="stylesheet" href="/web/20100926140827cs_/http://eccafe.org/cafe_prt.css" type="text/css" media="print">
+<!-- #BeginEditable "head" --><!-- #EndEditable -->
+</head>
+<body>
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script> if (window.archive_analytics) { window.archive_analytics.values['server_name']="wwwb-app3.us.archive.org";}; </script>
+
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1388534399999;
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http:\/\/eccafe.org\/sto\/wbartholome\/ecg_wb10.html";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth = 450;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "26";
+var displayMonth = "Sep";
+var displayYear = "2010";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" lang="en" class="__wb_banner_div" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px">
+
+
+<div id="wm-ipp-inside" class="__wb_banner_div" style="position:fixed;padding:0!important;margin:0!important;width:97%;min-width:780px;border:5px solid #000;border-top:none;background-image:url(/static/images/toolbar/wm_tb_bk_trns.png);text-align:center;-moz-box-shadow:1px 1px 3px #333;-webkit-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333;font-size:11px!important;font-family:'Lucida Grande','Arial',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://eccafe.org/sto/wbartholome/ecg_wb10.html" style="width:400px;font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20100926140827" /><input type="submit" value="Go" style="font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;margin-left:5px;width: inherit !important" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:'Helvetica','Lucida Grande','Arial',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20080724015927/http://www.eccafe.org/sto/wbartholome/ecg_wb10.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="24 Jul 2008"><strong>JUL</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 14:08:27 Sep 26, 2010">SEP</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20101122173926/http://eccafe.org/sto/wbartholome/ecg_wb10.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="22 Nov 2010"><strong>NOV</strong></a>
+		                
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/web/20080724015927/http://www.eccafe.org/sto/wbartholome/ecg_wb10.html" title="1:59:27 Jul 24, 2008" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 14:08:27 Sep 26, 2010">26</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="/web/20101122173926/http://eccafe.org/sto/wbartholome/ecg_wb10.html" title="17:39:26 Nov 22, 2010" style="background-color:transparent;border:none;"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0"/></a>
+		                
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="/web/20080724015927/http://www.eccafe.org/sto/wbartholome/ecg_wb10.html" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="24 Jul 2008"><strong>2008</strong></a>
+		                
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 14:08:27 Sep 26, 2010">2010</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       2011
+                       
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="/web/20100926140827*/http://eccafe.org/sto/wbartholome/ecg_wb10.html" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>14 captures</strong></a>
+           <div class="__wb_banner_div" style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">26 Apr 05 - 16 Dec 10</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:450px;height:27px;" href="" id="wm-graph-anchor">
+       <div class="__wb_banner_div" id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:450px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers('inline');" 
+				onmouseout="showTrackers('none');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="450"
+				height="27"
+				border="0"
+				src="/web/jsp/graph.jsp?graphdata=450_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000100000000_2006:-1:010010001101_2007:-1:000111001000_2008:-1:000000100000_2009:-1:000000000000_2010:8:000000001011_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="/static/images/toolbar/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="/static/images/toolbar/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById('wm-ipp').style.display='none';" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_close.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;margin-bottom:23px;background-color:transparent;border:none;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="display:block;padding-right:18px;background:url(/static/images/toolbar/wm_tb_help.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;background-color:transparent;border:none;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<div id="cafebody" class="bodyback">
+  <div align="center"><img id="cafe_print_header"src="/web/20100926140827im_/http://eccafe.org/web/print_header.jpg" width="504" height="72"></div>
+  <img id="cafe_screen_header" src="/web/20100926140827im_/http://eccafe.org/web/lav/top.gif" usemap="#Map" border="0" alt="Cathy's EC Cafe">
+  <div id="cafemain"> <a name="ecg_top"></a>
+            <h1 align="center"><a href="/web/20100926140827/http://eccafe.org/sto/wbartholome/index.html">William G. Bartholome, MD, MTS</a></h1>
+            <h2 align="center">ACOR EC-Group Posts: <!-- #BeginEditable "ecg_date" -->December, 1998<!-- #EndEditable --></h2>
+            <p align="center"><strong>1998 ACOR EC-Group Posts: <a href="/web/20100926140827/http://eccafe.org/sto/wbartholome/ecg_wb1.html">Mar</a> | <a href="/web/20100926140827/http://eccafe.org/sto/wbartholome/ecg_wb2.html">Apr</a> | <a href="/web/20100926140827/http://eccafe.org/sto/wbartholome/ecg_wb3.html">May</a> | <a href="/web/20100926140827/http://eccafe.org/sto/wbartholome/ecg_wb4.html">Jun</a> | <a href="/web/20100926140827/http://eccafe.org/sto/wbartholome/ecg_wb5.html">Jul</a> | <a href="/web/20100926140827/http://eccafe.org/sto/wbartholome/ecg_wb6.html">Aug</a> | <a href="/web/20100926140827/http://eccafe.org/sto/wbartholome/ecg_wb7.html">Sep</a><br>
+              <a href="/web/20100926140827/http://eccafe.org/sto/wbartholome/ecg_wb8.html">Oct</a> | <a href="/web/20100926140827/http://eccafe.org/sto/wbartholome/ecg_wb9.html">Nov</a> | <a href="/web/20100926140827/http://eccafe.org/sto/wbartholome/ecg_wb10.html">Dec</a> | 1999 Posts: <a href="/web/20100926140827/http://eccafe.org/sto/wbartholome/ecg_wb11.html">Jan</a> | <a href="/web/20100926140827/http://eccafe.org/sto/wbartholome/ecg_wb12.html">Feb</a> | <a href="/web/20100926140827/http://eccafe.org/sto/wbartholome/ecg_wb13.html">Mar</a> | <a href="/web/20100926140827/http://eccafe.org/sto/wbartholome/ecg_wb14.html">Apr</a> | <a href="/web/20100926140827/http://eccafe.org/sto/wbartholome/ecg_wb15.html">May</a> | <a href="/web/20100926140827/http://eccafe.org/sto/wbartholome/ecg_wb16.html">Jun</a></strong></p>
+            <hr>
+            <!-- #BeginEditable "ecg_body" -->
+<p> <b>Date:</b> Tue, 1 Dec 1998 11:25:30 <br>
+                  <b>Subject:</b> Response to Kerrie re her father and eating following surgery&nbsp;            </p>
+                  <p>Kerrie,
+                  <p>Following my surgery, I became what we called "pudding man" I ate pudding, custards, yogurt, frozen yogurt, ice cream CONSTANTLY. During my waking hours, I never went an hour without eating something from the fridge. I supplemented this diet with breakfast of all the poached eggs I could manage to eat plus bananas or applesauce or both. I also ate at least a jar of peanut butter every week--usually with bananas, but often straight from the jar. I also ate lots of pasta (minimal amounts of sauce).&nbsp;
+                  <p>There were lots of times when I "had no appetite," but watching the "incredible shrinking man" (I went from 214 to 164 in a period of six weeks following my surgery] in the mirror each morning was motivation enough for me to eat even when eating was the last thing in the world I wanted to do.&nbsp;
+                  <p>Depression is a swamp from which it is often extremely difficult to extracate oneself, i.e. usually requires help from some kind of counsellor, psychologist, psychiatrist or the like. Coming to terms with cancer is a major life transforming process. Help your father GET HELP with his depression. In fact, depression is more "treatable" now than at anytime in the hisory of man given both advances in therapy for depression and the virtual explosion in medications available for its treatment.
+                  <p>bill bartholome
+                  <hr>
+                  <p><b>Date:</b> Wed, 2 Dec 1998 22:32:51 <br>
+                    <b>Subject:</b> Update re Bartholome&nbsp;
+                  </p>
+                  <p>Group,
+                  <p>Looks like my lengthy "reprive" may be getting ready to wind down. Have been having problems with hoarseness and headaches. Finally broke down and allowed my doc to order a CAT scan to "find out what was going on with my EC" when he discovered a "rock" of a lump in my neck. Most of you know that I had promised myself to not allow CAT scan images to dominate my "last chapter." Well, the disease may have been relatively quiet, but it has been very busy. Have several quite large (grapefruit size) lesions in both of my lungs and a nasty golf ball sized lesion in the right temporal lobe of my brain along with a host of lesser nodules. Since the damn stuff has been growing so slowly (remember I'm four and half years from my original surgery), the docs want me to at least let them wander into my head and pluck out the brain tumor. Pam and I are considering whether or not to let them do it. Doubt I will let them cut open my chest again. Never did get over the pain of them cutting me open the first time!&nbsp;
+                  <p>So, if you have any extra good thoughts, karma or good old fashioned prayers, send em our way.
+                  <p>Hangin' in there,&nbsp;
+                  <p>bill bartholome&nbsp;
+                  <hr>
+                  <p><b>Date:</b> Sat, 5 Dec 1998 11:44:00 <br>
+                    <b>Subject:</b> Update Bartholome&nbsp;
+                  </p>
+                  <p>Group,
+                  <p>I stopped counting after I got to fifty! Fifty messages of concern and love and support! You people are incredible!&nbsp;
+                  <p>Pam and I are doing fine. I seem to be in process of losing my voice, so I may become much more of an electronic communicator than I ever thought I would!&nbsp;
+                  <p>I have an MRI scan of my brain scheduled for Monday. If the brain spread is "singular," i.e. one lesion, we may opt to let my neurosurgical buddies pop open my skull and get the little bugger out of me. If there is more than one, I will probably elect to have my "bug zapper" buddies in radiation oncology radiate them. Both strategies would be undertaken to improve the quality of life during our "end-game." Was started yesterday on high dose steriods to control for the brain swelling these tumor nodules cause.&nbsp;
+                  <p>Don't plan to undertake any direct anti-cancer treatments for the "main mass" of my disease--the large tumors and masses in my lungs and chest. I view this as a decision that reflects both my not being impressed with the results of chemotherapy in the treatment of widely metastatic EC and the fact that my particular EC--what I call the "cancerous Bill Bartholome" is so slow growing, chemo would not likely have much effect on it. As you know the faster cells are dividing, the more susceptible they are to the poisoning by chemo we call cancer treatment. So, slow growing cancers respond very poorly. Obviously, my oncology buddies are still pushing us to "give it a try....just try it...you'll like it." We are trying to see this "turn" in my "final chapter" as an opportunity to critically examine the "path" we have been trying to create for ourselves through this very scary process. Fortunately for us, the young man who has recently become my oncologist is also the co-director of our hospital's Palliative Care Service and the medical director of one of the area's hospices. So, he is very comfortable with our "palliative" approach to this disease and the illness it has brought our lives. He and I also have a great deal of love and respect for one another. This makes playing doctor and patient quite an emotional struggle for us both, but the intimacy of our relationship makes the process so much more human and so much more do-able. I wish you all had doctors like this incredible young man.&nbsp;
+                  <p>Have always prided myself on being in touch with the "reality" of my situation--"Living in the Light of Death;" STILL/HERE Above Ground;" "Are You Still Terminal?" and "May I Be a Cancerous Survivor?" But, there is something "hyper-real" about swallowing pills to decrease the swelling in your own brain that is being caused my your "cancerous self." A little freaky. I'm sure may of you understand and can appreciate that.&nbsp;
+                  <p>So, keep us in your mind/hearts. And I promise to keep you "posted" re our journey. I think that's the basic idea of this group--sharing the stories of our journeys with this strange, often frightening, often unpredictable, quite irrascible and all-too-deadly "travelling companion" Mr. EC. On the other hand, travelling with this "strange companion" puts us in touch with his buddy and the travelling companion that is built into our very beings--Mr. Death. And, I think that being in touch with this "companion" is what opens our mind/heart/spirit to the All...to the Ultimate. As I wrote in my last meditation: "To incline one's ear toward death is to listen for the voice of God."
+                  <p>Keep the faith people,&nbsp;
+                  <p>Love ya, <br>
+                    bill bartholome
+                  <hr>
+                  <p><b>Date:</b> Tue, 8 Dec 1998 16:50:58 <br>
+                    <b>Subject:</b> Update - Bartholome&nbsp;
+                  </p>
+                  <p>Group,
+                  <p>Got some great news yesterday. Looks like I have only one brain met...and it is not near any vital structures and near the surface of my brain. So, a friendly team of neurosurgeons and radiation ocologists has decided to take me on and perform a procedure called steriotactic radiosurgery. Next Tuesday, I will have a metal halo attached to my head...be taken into a CAT scan machine to have the exact position of my tumor in relation to the metal halo calculated...then a few hours later, I will be wheeled into a radiation treatment chamber for a single lethal blast of radiation aimed exactly at my tumor...then off with the halo and home for Bill and Pam for gin martinis! Not bad hey?&nbsp;
+                  <p>Also need info from you all. I know that a number of you have experienced problems with loss of voice during the course of your lives with EC. I think I remember a number of your saying that ENT surgeons had proposed operating on vocal cords and the like, but you had taken yourselves to see speech therapists or speech pathologists who figured out what the problem was and assisted you in getting your ability to speak back. Did I just dream this? If not, please let me know what your speech therapist/pathologist figured out was the problem and what therapy or the like was given to help you turn the problem alone. I have nothing more than a rough whisper left at this time. Help!&nbsp;
+                  <p>Pam and I are doing well. Enjoying preparing for our "last Christmas" for the FIFTH time since my diagnosis with this terminal illness. Ain't life grand. Can't believe how lucky we have been.&nbsp;
+                  <p>Peace to all, <br>
+                    bill
+                  <hr>
+                  <p><b>Date:</b> Wed, 9 Dec 1998 23:37:48 <br>
+                    <b>Subject:</b> Bartholome&nbsp;
+                  </p>
+                  <p>Group,
+                  <p>Will keep you posted re my steriotactic radiosurgery (Tuesday, 15 Dec). Thanks for the advice re voice related problems. Will let you know what I discover after getting my speech evaluation done (probably won't get to this until after my radiosurgery).&nbsp;
+                  <p>Am also experimenting with a new pain drug for my neuropathic pain syndrome (I have had daily constant chest pain since my surgery in June of 1994 secondary to something called post-thoracotomy syndrome. The new drug is Neurotin or gapapentin. I am subsituting it for the elavil (nortryptiline) I have been using for some time. The gapapentin has the added advantage of being an anti-seizure medicine which I will need since I have a lesion (soon to be ex-lesion turned scar) in my brain. Lesions (esp. after treatment) often serve as the site for development of seizures. So, I will be killing two birds with one stone: new drug for my chest pain and drug for preventing seizures secondary to my brain lesion.
+                  <p>Hanging in there,&nbsp;
+                  <p>Peace, <br>
+                    bill bartholome
+                  <hr>
+                  <p><b>Date:</b> Sat, 12 Dec 1998 21:47:15 <br>
+                    <b>Subject:</b> Jim and having/taking the time to prepare for death&nbsp;
+                  </p>
+                  <p>Was struck my Jim's post. I think those of us who have been dealing with this disease for long periods of time forget how much having these prolonged periods of time "advantage" us over newer members of this group. We have been given the gift of being able to live with and in a process long enough to come to terms with it...to develop a sense of how it fits into the on-going patterns of our lived-lives. And, yes to come to terms with our mortality and that strange travelling compainion who accompanies Mr. Cancer in this process, Mr. Death. By having the time and taking the time to "be" in the process, we can come to an awareness of ourselves and our lives that trancend those of other "mere mortals" in many respects. I don't mean that to sound at all "elitist." It is simply a matter of personal growth and development. Illness, esp. this kind of chronic, life-threatening illness grows us humans in ways that few other things do. I feel very strongly that I have become so much more of a human than I ever imagined possible. I like myself more...I more comfortable with myself and my life. Nothing has had this kind of transforming power over me. Thanks, Jim, for reminding us how "advantaged" we are to have had this "special time" to live with ol' EC.
+                  <p>bill bartholome
+                  <hr>
+                  <p><b>Date:</b> Thu, 17 Dec 1998 13:11:27 <br>
+                    <b>Subject:</b> Bill B and Pam&nbsp;
+                  </p>
+                  <p>Group,
+                  <p>Well, I had my steriotactic radiosurgery on Tuesday the 15h. Everything went according to the book. Looks like they were able to get a beam of radiation on my lesion and "Zap" it quite nicely. Spent yesterday (the 16h) asleep all day. Haven't slept all day in my adult life. Today feeling almost back to baseline.&nbsp;
+                  <p>Next step is to get my voice evaluated. Although the craziest thing seems to be happening...namely my voice is growing considerably stronger over the last three days. Pretty crazy.&nbsp;
+                  <p>We are almost ready for Xmas. All our kids will be here. Our house looks beautiful all decorated for Christmas. Ever since I wa a kid this is the most magic time of year for me.&nbsp;
+                  <p>My family held a prayer vigil for me the day before my surgery. It was interesting since it was very obvious that they needed the vigil more than Pam or I did. I even wrote and read a prayer of my own...a prayer for them. Had never written a prayer before. I gave the prayer the title: "A Prayer in Celebration of Our Fifth "Last" Christmas Together."&nbsp;
+                  <p>The last stanza of the prayer reads:&nbsp;
+                  <p>"I have been so blessed. You cannot possibly know the depth of my gratitude at having had these precious years to share with you. This special time of Christmas calls for celebration, joy and acknowledgement of the multitude of gifts that fill our lives. This whole journey has been for me an incredible gift. I have had the opportunity to experience life and love and joy and peace beyond my dreams. Thank you, God, for this great gift."
+                  <p>Peace to all of you, <br>
+                    bill bartholome
+                  <hr>
+                  <p><b>Date:</b> Sat, 19 Dec 1998 11:26:57 <br>
+                    <b>Subject:</b> Response Georgia and Anna - Bill B&nbsp;
+                  </p>
+                  <p>Georgia,
+                  <p>Regarding your friend Ceil and the x-rays showing that "things go through too fast." I think one of the most common causes of nausea and pain after eating in us EC people who have had our esophaguses removed is this business of things going through too fast.&nbsp;
+                  <p>I have found that the most important part of avoiding this nausea and pain and "things going through too fast" business is the separation of eating and drinking. Drinking before eating is fine. Tell Ceil to do her drinking before she eats. BUT, while eating try very, very hard to avoid drinking anything. It may be necessary to "wash food down" depending on what she is eating, but even then she should use tiny sips of fluid to do this. I ALWAYS limit myself to one half cup of liquids during a meal. Then, another important part of this separation of food and fluids, AVOID DRINKING AFTER A MEAL for at least a half hour or so. Worth a try.&nbsp;
+                  <p>Anna, Venting is good for the soul...venting is the right of every member of this group...venting here in cyberspace is not as good as venting in the fleshy world, but you can vent to your hearts content with this group. It is important for all of us to remember that this is a safe place...this is the place that we can say anything...this is the place for us to let it all hang out...this is our place!
+                  <p>Love you all,&nbsp;
+                  <p>Peace, <br>
+                    bill
+                  <hr>
+                  <p><b>Date:</b> Mon, 21 Dec 1998 10:54:51 <br>
+                    <b>Subject:</b> Response to Patty and Lee&nbsp;
+                  </p>
+                  <p>Patty,
+                  <p>I don't think your father is being treated as a guinea pig...in the sense that they are doing experimental treatment. I do think your father is having a severe complication of chemotherapy and it might make a lot of sense to temporarily stop the chemotherapy to allow time to sort out what the hell is going on with him. Unfortunately a lot of oncology docs think that any interruption in the course of treatment is unthinkable. There is no evidence to support that short term interruptions lead to significant reductions in the long term results of chemotherapy. You may have to really insist and remember your father has a constititutionally protected liberty interest in refusing any form of medical treatment, i.e. an ABSOLUTE right to refuse any particular medical intervention. Cancer patients in the midst of real suffering often forget that they are in the driver's seat of their medical care.&nbsp;
+                  <p>Hang in there. Be assertive in your support of your father. Make sure he is insisting on his right to determine the course of his treatment.&nbsp;
+                  <p>Lee,&nbsp;
+                  <p>It is theoretically possible that Barrett's without any evidence of dysplasia (pre-cancerous changes) can revert to normal esophaeal lining. This happens in response to treatment (like you have been taking), esp. when there was a small area of Barrett's.&nbsp;
+                  <p>On the other hand small areas of Barrett's are easy to miss, esp. if multiple biopsies are not taken at the time of endoscopy. Would insist on another endoscopy with at least 8 to 12 biopsies of the former area in six months.
+                  <p>bill bartholome
+                  <hr>
+                  <p><b>Date:</b> Mon, 21 Dec 1998 11:05:52 <br>
+                    <b>Subject:</b> Bill and Pam&nbsp;
+                  </p>
+                  <p>Group,
+                  <p>It's snowing here in Kansas City...fulfilling my boyhood fantasy of having a White Christmas. I'm spending the day baking Christmas cookies with Pam to distribute to family and friends. We are planning a Christmas eve celebration with our children. All of them will be here with us for our fifth "last" Christmas together.&nbsp;
+                  <p>Reading the posts over the last few weeks in the light the "cake walk" of what Pam and I have been going through has been a constant reminder of how blessed we have been. My heart aches when I read of the ravages of this disease and even more so the ravages of the treatments that you are enduring. As a physician, I can actually "see" each and every situation you describe and imagine myself in your shoes or those of your loved ones. I sit here looking at these words on a screen and weep for you. I want so much to be able to reach out and touch you...to hold you in my arms.&nbsp;
+                  <p>May this special time of year bring you some measure of solace...some modicum of peace...some little bit of joy in the midst of your suffering. I want that for all of you.
+                  <p>Peace, <br>
+                    bill
+                  <hr>
+                  <p><b>Date:</b> Wed, 23 Dec 1998 11:04:37 <br>
+                    <b>Subject:</b> Response to Laura, Marc and endorsement of Elavil&nbsp;
+                  </p>
+                  <p>Laura,
+                  <p>You may be experiencing something some of us call the "late dumping syndrome." Early dumping is nausea, severe abdominal pain, cramping...followed by explosive diarrhea--"dumping" of everything that was just eaten. I think that the primary cause of this problem is food, esp. the mixture of food and fluid, getting into the small intestine too quickly; and, thus overwhelming the capacity of the intestine to process the food. In my experience the primary way to avoid this is to avoid foods and liquids known to cause it in your experience; and avoiding drinking any fluid with or immediately after eating.&nbsp;
+                  <p>Some of us experience a late dumping syndrome. It is much harder for me to predict what will cause this in my case. I often experience it after eating out, esp. if I order something I have not had before at that particular restaurant. It usually hits me about 30 to 35 minutes after I eat. I get waves of nausea...break out in a sweat and develop the shakes. I think this reaction is caused by hypoglycemia, but I have no proof of that. I think what happens is that the body overproduces insulin in response to whatever I ate...probably something with a lot of sugar or simple carbohydrates. The overproduction of insulin leads to blood sugar being low and thus the reaction. What I do when I get this problem is suck/eat hard candy, esp. peppermint and lie down until it passes...which usually takes only 15 to 30 minutes.&nbsp;
+                  <p>Just one EC patient's experience and thoughts. Don't take it as more than that.&nbsp;
+                  <p>Marc, your question about compassion is a central one for those of us working in medical/clinical ethics. Part of the lore of the good physician...good health care provider is that they be compassionate. Yet, when you actually look hard at what that means, it's a tough call. I used to think it was the capacity and willingness to "co-suffer" with a person...the idea of being able to "feel your pain" in the glib sense that Bill Clinton uses that phrase.&nbsp;
+                  <p>I now think it is primarily the ability and willingness to listen...to listen in a way that is helpful to another...to "actively listen" as it is sometimes called. A willingness to "hear" and imaginately enter into the story of another in order to help them "construct" a story that works for them...a story that they can "live with."&nbsp;
+                  <p>Just a quick word re nortryptiline or Elavil. This drug has been found to be one of the most helpful drugs we have for what's called neuropathic pain, like the pain of shingles or other forms of viral nerve infections. I used it until two weeks ago to control the "post-thoracotomy pain syndrome" I have had since my surgery in 1994. I had to stop it because of my brain tumor and radiosurgery. My pain has flared significantly. Am now trying a newer drug...gabapentin or Neurontin. Unfortunately, it is not wroking for me. I want my Elavil back!&nbsp;
+                  <p>Peace, <br>
+                    bill bartholome
+                  <hr>
+                  <p><b>Date:</b> Thu, 24 Dec 1998 11:44:35 <br>
+                    <b>Subject:</b> Response: Georgia, David and Warren&nbsp;
+                  </p>
+                  <p>Georgia,
+                  <p>Ceil needs intensive medical management of her reflux including the drugs you mentioned. There is no good surgery for reflux after an esophagectomy.
+                  <p>David,&nbsp;
+                  <p>Just a suggestion. Get Rob off the sedatives. He no longer needs them. And, the most powerful force re getting him off the ventilator is him getting himself off the damn machine. He needs his own power right now and the sedatives are getting in the way. Also, he should not be having a lot of pain. So, you also may want to re-visit the question of how much pain is he having. Incidently, you made the right decision re the trach.&nbsp;
+                  <p>Warren,&nbsp;
+                  <p>Get dilated as often and for as long as you need to have them...even if it takes twenty dilations. Do NOT, however, let them use any more stents. The scar tissue formed my using the stent will work against you. Esophageal stents should probably only be used as a form of palliative therapy in people who are in the terminal stages of EC and having tumor obstruct their esophagus.&nbsp;
+                  <p>Merry Xmas/Happy Holidatys to all of you. Pam and I are doing great. Getting prepared for our Xmas celebration tonite. Our fifth "last" Christmas...Ho, Ho, Ho!
+                  <p>Love,&nbsp; <br>
+                    bill bartholome
+                  <hr>
+                  <p><b>Date:</b> Tue, 29 Dec 1998 11:19:56 <br>
+                    <b>Subject:</b> Response to Rosemary and Mike - Bartholome&nbsp;
+                  </p>
+                  <p>Rosemary,
+                  <p>Loss of vision related to low blood pressure is most commonly the result of episodes of shock in which blood pressure is low enough to result in damage to the brain or cranial nerves (like the nerves to the eye). If it was going to occur it would occur very shortly after the episode of shock. Doubt your Fred has any risk of loss of vision related to low blood pressure at this point in time even though he may have orthostatic hypotension.&nbsp;
+                  <p>Mike,&nbsp;
+                  <p>I think it unlikely that orthopedic surgery is going to be able to help you much. Obviously, it is incredibly important that you have an evaluation of your pain including a good orthopedic evaluation including x-rays of the involved hip. It is more likely that you will be turning to pain control interventions as a means of helping you maintain mobility. If ortho says they have nothing to offer you that would result in control of your symptoms, I would request referral to pain control folks. Most medical centers now have Pain Management Teams some of which are now associated with formal Palliative Care Teams. These teams are going to play an increasing role in helping folks with metastatic cancer maintain acceptable quality of life; and, in helping them to transition to home-based hospice program when the time is appropriate for such a transition. Obviously, insurance coverage for such services is a major consideration. However, since most of what these folks do is relatively "low tech" (eg. does not involve people spending time in intensive care units "wired for sound" with advanced technology), it is usually covered pretty willingly. Most Pain Mangement and Palliative Care Teams have Social Workers who make sure coverage is available. Good Luck, Mike, from a fellow Stage IV or "cancerous one."&nbsp;
+                  <p>bill bartholome
+                  <hr>
+                  <p><b>Date:</b> Wed, 30 Dec 1998 15:40:01 <br>
+                    <b>Subject:</b> Reply to Steve and Erin and Sylvia&nbsp;
+                  </p>
+                  <p>Steve,
+                  <p>Your Dad should have comprehensive evaluation by medical oncologist before surgery. It is often the case that the best outcome in EC is achieved by doing pre-surgical radiation and chemotherapy. Strongly recommend seeing oncologist before any surgery.&nbsp;
+                  <p>Erin,&nbsp;
+                  <p>Your father may be in the process of getting ready to die. Strongly recommend that you work to get him into hospice care. If he is still having severe chest pain related to the removal of the rib, he may want to try a course of nortryptiline or Elavil instead of the anti-depressant he is using. Hospice would likely be able to help him in coping with what he is experiencing and in constructing the best possible "last chapter" for his life. Strongly recommend consulation with hospice.
+                  <p>Sylvia, Will carry you in my heart.
+                  <p>bill bartholome
+                  <hr>
+                  <p><b>Date:</b> Thu, 31 Dec 1998 10:23:40&nbsp; <br>
+                    <b>Subject:</b> Long Distance Relationships with "Cancerous" Loved Ones&nbsp;
+                  </p>
+                  <p>Connie/Barbara,
+                  <p>My oldest daughter, Bridget, just blew into KC for Xmas and blew back out to return to New Orleans. Since my disease has recently become symptomatic again, she and I talked about my expectations re our "long distance" relationship; and, my expectations re her "company" during "my last days."&nbsp;
+                  <p>One thing is clear to me. I want contact with her. I want to feel like she is part of my life...part of what Pam is now proposing that we call "our adventure" with EC. I also want her to feel that she is part of my life...part of this process. We came up with the following: (1) regular e-mail correspondance--at least several times a week; totally candid; radically honest exchange of "texts;" (2) phone calls: at least weekly; needed to clarify, amplify or allow "deeper" discussion of e-mail exchanges; (3) short visits: every two to three months as feasible for her given her/my resources; (4) "notice" provided to her in a timely fashion of any dramatic worsening of my conditon.&nbsp;
+                  <p>My youngest daughter, Claire, has just been accepted at Mount Holyoke College in Massachusetts. She won't be leaving KC until September 1999, but I hope to establish a similar set of strategies for maintaining a long-distance relationship with her.&nbsp;
+                  <p>bill bartholome</p>
+            <!-- #EndEditable -->
+            <hr>
+            <p align="center"><strong><a href="/web/20100926140827/http://eccafe.org/sto/wbartholome/index.html">William G. Bartholome, MD, MTS</a> | <a href="/web/20100926140827/http://eccafe.org/sto/wbartholome/ecg_wb10.html#ecg_top">Back to Top</a><br>
+              1998 ACOR EC-Group Posts: <a href="/web/20100926140827/http://eccafe.org/sto/wbartholome/ecg_wb1.html">Mar</a> | <a href="/web/20100926140827/http://eccafe.org/sto/wbartholome/ecg_wb2.html">Apr</a> | <a href="/web/20100926140827/http://eccafe.org/sto/wbartholome/ecg_wb3.html">May</a> | <a href="/web/20100926140827/http://eccafe.org/sto/wbartholome/ecg_wb4.html">Jun</a> | <a href="/web/20100926140827/http://eccafe.org/sto/wbartholome/ecg_wb5.html">Jul</a> | <a href="/web/20100926140827/http://eccafe.org/sto/wbartholome/ecg_wb6.html">Aug</a> | <a href="/web/20100926140827/http://eccafe.org/sto/wbartholome/ecg_wb7.html">Sep</a><br>
+              <a href="/web/20100926140827/http://eccafe.org/sto/wbartholome/ecg_wb8.html">Oct</a> | <a href="/web/20100926140827/http://eccafe.org/sto/wbartholome/ecg_wb9.html">Nov</a> | <a href="/web/20100926140827/http://eccafe.org/sto/wbartholome/ecg_wb10.html">Dec</a> | 1999 Posts: <a href="/web/20100926140827/http://eccafe.org/sto/wbartholome/ecg_wb11.html">Jan</a> | <a href="/web/20100926140827/http://eccafe.org/sto/wbartholome/ecg_wb12.html">Feb</a> | <a href="/web/20100926140827/http://eccafe.org/sto/wbartholome/ecg_wb13.html">Mar</a> | <a href="/web/20100926140827/http://eccafe.org/sto/wbartholome/ecg_wb14.html">Apr</a> | <a href="/web/20100926140827/http://eccafe.org/sto/wbartholome/ecg_wb15.html">May</a> | <a href="/web/20100926140827/http://eccafe.org/sto/wbartholome/ecg_wb16.html">Jun</a></strong></p>
+            </div>
+  <img id="cafe_screen_disclaimer" src="/web/20100926140827im_/http://eccafe.org/web/lav/dsc.gif" alt="Information found here is not to be a substitute for professional care.">
+  <div align="center" class="webonly">
+    <div id="cafegoogle">
+      <script type="text/javascript"><!--
+google_ad_client = "pub-2176662973486049";
+google_ad_width = "468";
+google_ad_height = "60";
+google_ad_format = "468x60_as";
+google_ad_type = "text";
+google_ad_channel ="";
+google_color_border = "CCCCCC";
+google_color_bg = "FFFFFF";
+google_color_link = "000000";
+google_color_url = "666666";
+google_color_text = "333333";
+//--></script>
+      <script type="text/javascript"
+  src="/web/20100926140827js_/http://pagead2.googlesyndication.com/pagead/show_ads.js">
+      </script>
+      <br>
+      <p>The above advertisements, provided automatically, are neither selected nor endorsed by us.<br>
+        Some may lead to web sites that provide questionable or controversial medical information.<br>
+        If you encounter advertisements inappropriate for the Caf&eacute;, send us the advertisement's URL.</p>
+    </div>
+    <h5><a href="/web/20100926140827/http://eccafe.org/index.html">home</a> | <a href="/web/20100926140827/http://eccafe.org/cnt/index.html">contents</a> | <a href="/web/20100926140827/http://eccafe.org/sto/index.html">stories</a> | <a href="/web/20100926140827/http://eccafe.org/ecg/index.html">ec-group</a> | <a href="/web/20100926140827/http://eccafe.org/lnk/index.html">links</a> | <a href="/web/20100926140827/http://eccafe.org/etc/index.html">etc.</a></h5>
+    <img src="/web/20100926140827im_/http://eccafe.org/web/art/footer.gif" width="509" alt="Some graphics courtesy of Hoopla! disc, copyright 1995 Image Club Graphics. 1-800-661-9410" height="50">
+    <p><a href="/web/20100926140827/http://eccafe.org/cnt/contact.html">Send a message to Marc &amp; Tammy Wolfgram</a></p>
+    <table width="610" border="0" cellpadding="0" cellspacing="0">
+      <tr valign="middle">
+        <td width="49" align="center"><img src="/web/20100926140827im_/http://eccafe.org/web/cssprint.gif" alt="This page is printer friendly" width="45" height="50" border="0"></td>
+        <td align="center"><h6>Copyright &copy; 1995-2008&mdash;Last changed on
+            <!-- #BeginDate format:Am1 -->June 17, 2008<!-- #EndDate -->
+            &mdash; We comply with the<br> 
+            <a href="/web/20100926140827/http://www.hon.ch/HONcode/Conduct.html" onclick="window.open(this.href); return false;"> HONcode standard for trustworthy health</a> information: <a href="/web/20100926140827/https://www.hon.ch/HONcode/Conduct.html?HONConduct294647" onclick="window.open(this.href); return false;">verify here</a>.</h6></td>
+        <td width="45"><a href="/web/20100926140827/https://www.hon.ch/HONcode/Conduct.html?HONConduct294647" onclick="window.open(this.href); return false;" > <img src="/web/20100926140827im_/https://www.hon.ch/HONcode/Seal/HONConduct294647_s.gif" width="49" height="72" style="border:0px" title="This website is accredited by Health On the Net Foundation. Click to verify." alt="This website is accredited by Health On the Net Foundation. Click to verify." /></a></td>
+      </tr>
+    </table>
+  </div>
+  <img id="cafe_screen_footer" src="/web/20100926140827im_/http://eccafe.org/web/lav/bot.gif"> </div>
+<map name="Map">
+  <area shape="rect" coords="240,113,286,143" href="/web/20100926140827/http://eccafe.org/index.html" alt="Home">
+  <area shape="rect" coords="297,113,367,143" href="/web/20100926140827/http://eccafe.org/cnt/index.html" alt="Contents">
+  <area shape="rect" coords="376,113,434,143" href="/web/20100926140827/http://eccafe.org/sto/index.html" alt="Stories">
+  <area shape="rect" coords="443,113,516,143" href="/web/20100926140827/http://eccafe.org/ecg/index.html" alt="EC-Group">
+  <area shape="rect" coords="527,113,574,143" href="/web/20100926140827/http://eccafe.org/lnk/index.html" alt="Links">
+  <area shape="rect" coords="583,113,613,143" href="/web/20100926140827/http://eccafe.org/etc/index.html" alt="Etcetera">
+</map>
+</body>
+<!-- #EndTemplate --></html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 14:08:27 Sep 26, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 18:09:05 Dec 18, 2013.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
