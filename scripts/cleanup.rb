@@ -10,11 +10,10 @@ File.open filename do |file|
     skip = false if line =~ /END WAYBACK TOOLBAR INSERT/  
     skip = true if line =~ /BEGIN WAYBACK TOOLBAR INSERT/  
     text << line unless skip
-    #puts line.gsub(/[\/a-z0-9]+\/http/, 'http') if line =~ /[\/a-z0-9]+\/http/
   end
 end
 
-text.gsub! /[\/a-z0-9]+\/http/, 'http'
+text.gsub! /[\/_a-z0-9]+\/http/, 'http'
 
 File.open filename, 'w' do |file|
   file.write text
