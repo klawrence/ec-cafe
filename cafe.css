@@ -131,10 +131,7 @@ li {
 }
 
 #cafegoogle {
-	margin: 0px auto;
-	padding: 6px 0px;
-	text-align: center;
-	clear: both;
+	display: none;
 }
 
 #cafegoogle p {
