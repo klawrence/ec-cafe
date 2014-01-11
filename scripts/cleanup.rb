@@ -14,6 +14,7 @@ File.open filename do |file|
 end
 
 text.gsub! /[\/_a-z0-9]+\/http/, 'http'
+text.gsub! /Send a message to Marc &amp; Tammy Wolfgram/, 'Send us a message'
 
 File.open filename, 'w' do |file|
   file.write text
